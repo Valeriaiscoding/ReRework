@@ -1,0 +1,102 @@
+﻿CNS = {
+	color = { 3  62  114 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { south_andean platinean }
+	capital = STATE_SANTIAGO
+}
+
+NEW = {
+	color = { 255  211  56 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { anglo_canadian }
+	capital = STATE_NEWFOUNDLAND
+	is_named_from_capital = yes
+}
+
+#liechtenstein
+LIE = {
+	color = { 33  66  107 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { south_german swiss }
+	capital = STATE_LICHTENSTEIN
+	is_named_from_capital = no
+}
+#andorra
+ANO = {
+	color = { 150 97 51 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { catalan }
+	capital = STATE_ANDORRA
+	is_named_from_capital = no
+}
+
+KAL = {
+	color = { 97  98  195 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { baluchi }
+	capital = STATE_KALAT
+}
+LAH = {
+	color = { 209  41  41 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin yemenite }
+	religion = sunni
+	capital = STATE_HAIL
+}
+
+JAB = {
+	color = { 183  62  62 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	capital = STATE_JAWF
+}
+
+MAH = {
+	color = { 0  153  76 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin yemenite }
+	capital = STATE_HAIL
+}
+
+KAT = {
+	color = { 79  152  64 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin yemenite }
+	capital = STATE_HAIL
+}

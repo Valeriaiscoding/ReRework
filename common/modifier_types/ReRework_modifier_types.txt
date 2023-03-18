@@ -1,0 +1,109 @@
+﻿
+building_tobacco_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+state_unincorporated_migration_pull_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+state_unincorporated_radicals_from_discrimination_mult = {
+	good = no
+	percent = yes
+}
+
+building_group_bg_subsistence_agriculture_throughput_mult = {
+	percent = yes
+	neutral = yes
+}
+
+building_ia_silver_mine_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+state_pop_migration_push_mult = {
+	good = no
+	percent = yes
+}
+
+state_slaves_migration_push_mult = {
+	good = no
+	percent = yes
+}
+
+state_peasants_migration_push_mult = {
+	good = no
+	percent = yes
+}
+
+building_input_securities_add = {
+	good = yes
+	percent = no
+}
+
+building_output_securities_add = {
+	good = yes
+	percent = no
+}
+
+building_input_banknotes_add = {
+	good = yes
+	percent = no
+}
+
+building_output_banknotes_add = {
+	good = yes
+	percent = no
+}
+
+# building_input_war_bonds_add = {
+# 	good = yes
+# 	percent = no
+# }
+
+# building_output_war_bonds_add = {
+# 	good = yes
+# 	percent = no
+# }
+
+building_output_ia_silver_add = {
+	good = yes
+	percent = no
+}
+building_input_ia_silver_add = {
+	good = yes
+	percent = no
+}
+building_output_finance_services_add = {
+	good = yes
+	percent = no
+}
+state_building_ia_river_port_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+building_input_services_add = {
+	good = no
+	percent = no	
+}
+
+building_input_telephones_add = {
+	good = no
+	percent = no	
+}
+state_building_hydroelectric_power_plant_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+building_hydroelectric_power_plant_throughput_mult = {
+	good = yes
+	percent = yes
+}

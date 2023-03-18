@@ -1,0 +1,311 @@
+﻿pmg_clerical_ownership_subsistance = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+        pm_no_clerical_ownership
+        pm_limited_clerical_ownership
+        pm_clerical_ownership
+        pm_extensive_clerical_ownership
+		pm_widespread_clerical_ownership
+	}
+}
+
+pmg_ownership_building_subsistence = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_building_subsistence
+		pm_freehold_farmers_building_subsistence
+		pm_land_owning_farmers_building_subsistence
+		pm_land_redistributed_building_subsistence
+		pm_worker_cooperative_building_subsistence
+	}
+}
+
+pmg_subsitence_mining = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+        pm_subsistance_mining
+        pm_no_subsistance_mining
+	}
+}
+pmg_subsistance_distilling = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_subsistance_distilling
+		pm_no_subsistance_distilling
+	}
+}
+
+pmg_home_workshops_building_subsistence_farms = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_farms
+		pm_home_workshops_building_subsistence_farms
+		pm_cottage_industry_building_subsistence_farms
+		pm_hunting_building_subsistence
+	}
+}
+
+pmg_home_workshops_building_subsistence_intensive = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_intensive
+		pm_home_workshops_building_subsistence_intensive
+		pm_cottage_industry_building_subsistence_intensive
+		pm_hunting_building_subsistence_intensive
+	}
+}
+
+pmg_home_workshops_building_subsistence_east_asia = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_east_asia
+		pm_home_workshops_building_subsistence_farms_east_asia
+		pm_cottage_industry_building_subsistence_farms_east_asia
+		pm_hunting_building_subsistence_intensive
+	}
+}
+
+pmg_subsitence_mining_intensive = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+        pm_subsistance_mining_intensive
+        pm_no_subsistance_mining_intensive
+	}
+}
+pmg_subsistance_distilling_intensive = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_subsistance_distilling_intensive
+		pm_no_subsistance_distilling_intensive
+	}
+}
+
+pmg_clerical_ownership_subsistance_intensive = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+        pm_no_clerical_ownership_intensive
+        pm_limited_clerical_ownership_intensive
+        pm_clerical_ownership_intensive
+        pm_extensive_clerical_ownership_intensive
+		pm_widespread_clerical_ownership_intensive
+	}
+}
+pmg_ownership_building_subsistence_intensive = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_building_subsistence_intensive 
+		pm_freehold_farmers_building_subsistence_intensive
+		pm_land_owning_farmers_building_subsistence_intensive
+		pm_land_redistributed_building_subsistence_intensive
+		pm_worker_cooperative_building_subsistence_intensive
+	}
+}
+pmg_ownership_building_subsistence_bureaucratic = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_state_controlled_building_subsistence_bureaucratic
+		pm_state_controlled_freeholders_building_subsistence_bureaucratic
+		pm_land_owning_farmers_building_subsistence_bureaucratic
+		pm_land_redistribution_building_subsistence_bureaucratic
+		pm_privately_owned_building_subsistence_bureaucratic 
+		pm_worker_cooperative_building_subsistence_bureaucratic 
+		pm_anarchist_cooperative_building_subsistence_bureaucratic
+	}
+}
+
+pmg_ownership_subsistence_new_world = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		 pm_privately_owned_new_world_subsistence
+		 pm_freehold_farmers_new_world_subsistence
+		 pm_land_owning_farmers_new_world_subsistence
+		 pm_worker_cooperative_new_world_subsistence
+	}
+}
+
+pmg_subsistance_vineyards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_subsistance_vineyards
+		pm_no_subsistance_vineyards
+	}
+}
+
+pmg_subsistance_opium = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_subsistance_opium
+		pm_no_subsistance_opium
+	}
+}
+
+pmg_subsistance_opium_intensive = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_subsistance_opium_intensive
+		pm_no_subsistance_opium_intensive
+	}
+}
+
+pmg_subsistance_rare_pelts = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_luxury_pelts_focus
+		pm_normal_pelts_focus
+	}
+}
+
+pmg_subsistance_rum = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_subsistance_rum
+		pm_no_subsistance_rum
+	}
+}
+
+pmg_base_building_subsistence_east_asia = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_east_asia
+		manoralism_building_subsistence_east_asia
+		tennant_farming_building_subsistence_east_asia
+	}
+}
+
+pmg_base_building_subsistence_south_east_asia = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_south_east_asia
+		manoralism_building_subsistence_south_east_asia
+		tennant_farming_building_subsistence_south_east_asia
+	}
+}
+
+pmg_base_building_subsistence_india = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_india
+		manoralism_building_subsistence_india
+		tennant_farming_building_subsistence_india
+	}
+}
+
+pmg_base_building_subsistence_central_asia = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_pastoral_nomadism_building_subsistence_central_asia
+		pm_ranching_building_subsistence_central_asia 
+		pm_tennant_ranching_building_subsistence_central_asia
+	}
+}
+
+pmg_base_building_subsistence_middle_eastern = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_middle_eastern
+		manoralism_building_subsistence_middle_eastern
+		tennant_farming_building_subsistence_middle_eastern
+	}
+}
+
+pmg_base_building_subsistence_mediterranean = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_subsistence_mediterranean
+		manoralism_building_subsistence_mediterranean
+		tennant_farming_building_subsistence_mediterranean
+	}
+}
+
+pmg_base_building_subsistence_tropical = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_tropical
+		manoralism_building_subsistence_tropical
+		tennant_farming_building_subsistence_tropical
+	}
+}
+
+pmg_base_building_subsistence_arctic = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_arctic
+		manoralism_building_subsistence_arctic
+		tennant_farming_building_subsistence_arctic
+	}
+}
+
+pmg_base_building_subsistence_dry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_dry
+		manoralism_building_subsistence_dry
+		tennant_farming_building_subsistence_dry
+	}
+}
+
+pmg_base_building_subsistence_european = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_european
+		manoralism_building_subsistence_european
+		tennant_farming_building_subsistence_european
+	}
+}
+
+pmg_base_building_subsistence_russia = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_russia
+		manoralism_building_subsistence_russia
+		tennant_farming_building_subsistence_russia
+	}
+}
+
+pmg_base_building_subsistence_china = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_china
+		manoralism_building_subsistence_china
+		tennant_farming_building_subsistence_china
+	}
+}
+pmg_ownership_building_subsistence_japan = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_building_subsistence_japan
+		pm_freeholders_building_subsistence_japan 
+		pm_land_owning_farmers_building_subsistence_japan
+		pm_land_redistributed_building_subsistence_japan
+		pm_worker_cooperative_building_subsistence_japan 
+	}
+}
+
+pmg_base_building_subsistence_south_east_asia_intensive = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_building_subsistence_south_east_asia_intensive 
+		manoralism_building_subsistence_south_east_asia_intensive
+		tennant_farming_building_subsistence_south_east_asia_intensive
+	}
+}
+
+pmg_base_building_subsistence_north_america = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		archaism_hearthland_subsistence_north_america
+		eclosed_hearthland_subsistence_north_america
+		homesteading_hearthland_subsistence_north_america
+		collectivized_hearthland_subsistence_north_america
+	}
+}
+pmg_base_building_subsistence_frontier_north_america = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		archaism_frontier_subsistence_north_america
+		eclosed_frontier_subsistence_north_america
+		homesteading_frontier_subsistence_north_america
+		collectivized_frontier_subsistence_north_america
+	}
+}
+

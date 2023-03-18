@@ -1,0 +1,179 @@
+ASB = { # Assiniboine
+
+	color = { 142 95 222 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { dakota }
+	capital = STATE_MONTANA
+}
+
+SSH = { # Shoshone
+
+	color = { 71 15 14 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_IDAHO
+}
+
+SLS = { # Selish
+
+	color = { 171 215 114 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	capital = STATE_MONTANA
+}
+
+SPK = { # Spokane
+
+	color = { 32 15 189 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	capital = STATE_WASHINGTON
+}
+
+PMO = { # Pomo
+
+	color = { 11 42 163 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	capital = STATE_CALIFORNIA
+}
+
+KRK = { # Karuk
+
+	color = { 181 156 63 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	capital = STATE_CALIFORNIA
+}
+
+WNT = { # Wintu
+
+	color = { 131 156 183 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	capital = STATE_CALIFORNIA
+}
+
+YKT = { # Yokuts
+
+	color = { 131 169 13 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	capital = STATE_CALIFORNIA
+}
+
+MNO = { # Mono
+
+	color = { 42 32 4 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_CALIFORNIA
+}
+
+WSH = { # Washoe
+
+	color = { 46 84 213 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	capital = STATE_NEVADA
+}
+
+NMU = { # Numu (Northern Paiute)
+
+	color = { 82 214 152 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_NEVADA
+}
+
+YVP = { # Yavapai
+
+	color = { 174 144 13 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { apache }
+	capital = STATE_ARIZONA
+}
+
+MPA = { # Moapa (Southern Paiute)
+
+	color = { 75 112 131 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_NEVADA
+}
+
+SHP = { # Sahaptin
+
+	color = { 172 169 183 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { nez_perce }
+	capital = STATE_OREGON
+}
+
+TTN = { # Tututni
+
+	color = { 31 169 213 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	capital = STATE_OREGON
+}

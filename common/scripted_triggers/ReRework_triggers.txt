@@ -1,0 +1,210 @@
+﻿
+ia_rp_on_river = { #Same as vanilla on_river except with lakes added
+OR = {
+	on_river = yes
+	#has_state_trait = state_trait_oresund #Technically not even a lake or river, but inland water nonetheless
+	has_state_trait = state_trait_great_lakes
+	has_state_trait = state_trait_lake_maracaibo
+	has_state_trait = state_trait_lake_victoria
+	has_State_trait = state_trait_lake_ladoga
+	has_State_trait = state_trait_lake_onega
+	has_State_trait = state_trait_caspian_sea
+}
+}
+on_river = {
+OR = {
+	has_state_trait = state_trait_rhine_river
+	has_state_trait = state_trait_danube_river
+	has_state_trait = state_trait_drava_river
+	has_state_trait = state_trait_volga_river
+	has_state_trait = state_trait_elbe_river
+	has_state_trait = state_trait_oder_river
+	has_state_trait = state_trait_dnieper_river
+	has_state_trait = state_trait_rhone_river
+	has_state_trait = state_trait_loire_river
+	has_state_trait = state_trait_seine_river
+	has_state_trait = state_trait_nile_river
+	has_state_trait = state_trait_congo_river
+	has_state_trait = state_trait_niger_river
+	has_state_trait = state_trait_zambezi_river
+	has_state_trait = state_trait_yangtze_river
+	has_state_trait = state_trait_pearl_river
+	has_state_trait = state_trait_yellow_river
+	has_state_trait = state_trait_ganges_river
+	has_state_trait = state_trait_tigris_river
+	has_state_trait = state_trait_euphrates_river
+	has_state_trait = state_trait_indus_river
+	has_state_trait = state_trait_brahmaputra_river
+	has_state_trait = state_trait_mekong_river
+	has_state_trait = state_trait_ob_river
+	has_state_trait = state_trait_po_river
+	has_state_trait = state_trait_mississippi_river
+	has_state_trait = state_trait_ohio_river
+	has_state_trait = state_trait_columbia_river
+	has_state_trait = state_trait_orinoco_river
+	has_state_trait = state_trait_uruguay_river
+	has_state_trait = state_trait_parana_river
+	has_state_trait = state_trait_paraguay_river
+	has_state_trait = state_trait_amazon_river
+	has_state_trait = state_trait_Murray_River
+	has_state_trait = state_trait_amur_river
+	has_state_trait = state_trait_huai_river
+	has_state_trait = state_trait_liao_river
+	has_state_trait = state_trait_vistula_river
+	has_state_trait = state_trait_hangang_river
+	has_state_trait = state_trait_geumgang_river
+	has_state_trait = state_trait_nakdong_river
+	has_state_trait = state_trait_colorado_river
+	has_state_trait = state_trait_orinoco_river
+	has_state_trait = state_trait_magdalena_river
+	has_state_trait = state_trait_nordfjella_river
+	has_state_trait = state_trait_glomma_river
+	has_state_trait = state_trait_jotunheimen_river
+	has_state_trait = state_trait_gironde_river
+	has_state_trait = state_trait_meuse_river
+	has_state_trait = state_trait_narva_river
+	has_State_trait = state_trait_yenisei_river
+	has_State_trait = state_trait_lena_river
+	has_State_trait = state_trait_irtysh_river
+	has_State_trait = state_trait_kama_river
+	has_State_trait = state_trait_oka_river
+	has_State_trait = state_trait_don_river
+	has_State_trait = state_trait_dniester_river
+	has_State_trait = state_trait_garonne_river
+	has_State_trait = state_trait_ebro_river
+	has_State_trait = state_trait_douro_river
+	has_State_trait = state_trait_mackenzie_river
+	has_State_trait = state_trait_stfrancisco_river
+	has_State_trait = state_trait_oxus_river
+	has_State_trait = state_trait_tobol_river
+	has_State_trait = state_trait_ishim_river
+	has_State_trait = state_trait_daugava_river
+	has_State_trait = state_trait_north_dvina_river
+	has_State_trait = state_trait_pechora_river
+	has_State_trait = state_trait_vyatka_river
+	has_State_trait = state_trait_belaya_river
+	has_State_trait = state_trait_irrwaddy_river
+}
+}
+
+dont_have_unique_currency = {
+    NOR = {
+		this = c:FRA
+		this = c:GBR
+		this = c:PRU
+		this = c:GER
+		this = c:BEL
+		this = c:SWI
+		this = c:CAN
+		this = c:USA
+		this = c:MEX
+		this = c:SPA
+		this = c:GRE
+		this = c:SIC
+		this = c:SAR
+		this = c:PAP
+		this = c:PAR
+		this = c:TUS
+		this = c:RUS
+		this = c:JAP
+		this = c:CHI
+		this = c:AUS
+		this = c:NET
+		this = c:BIC
+		this = c:TUR
+		this = c:POR
+		this = c:BRZ
+		this = c:CLM
+		this = c:ARG
+		this = c:CHL
+		this = c:BOL
+		this = c:VNZ
+		this = c:ECU
+		this = c:UCA
+		this = c:PEU
+		this = c:DEN
+		this = c:NOR
+		this = c:SWE
+		this = c:SCA
+		this = c:CNS
+		this = c:GCO
+		this = c:FOA
+		this = c:CSA
+	}
+}
+
+has_unique_currency = {
+    OR = {
+		this = c:FRA
+		this = c:GBR
+		this = c:PRU
+		this = c:GER
+		this = c:BEL
+		this = c:SWI
+		this = c:CAN
+		this = c:USA
+		this = c:MEX
+		this = c:SPA
+		this = c:GRE
+		this = c:SIC
+		this = c:SAR
+		this = c:PAP
+		this = c:PAR
+		this = c:TUS
+		this = c:RUS
+		this = c:JAP
+		this = c:CHI
+		this = c:AUS
+		this = c:NET
+		this = c:BIC
+		this = c:TUR
+		this = c:POR
+		this = c:BRZ
+		this = c:CLM
+		this = c:ARG
+		this = c:CHL
+		this = c:BOL
+		this = c:VNZ
+		this = c:ECU
+		this = c:UCA
+		this = c:PEU
+		this = c:DEN
+		this = c:NOR
+		this = c:SWE
+		this = c:SCA
+		this = c:CNS
+		this = c:GCO
+		this = c:FOA
+		this = c:CSA
+}
+}
+coa_communist_trigger = {
+	has_law = law_type:law_council_republic
+	NOR = { 
+			has_law = law_type:law_anarchy
+			has_law = law_type:law_mass_democracy
+		}
+	#OR = {
+	#	ig:ig_trade_unions = {
+	#		is_in_government = yes
+	#	}
+	#	any_interest_group = {
+	#		is_in_government = yes
+	#		has_ideology = ideology_proletarian
+	#	}
+	#}
+}
+coa_anarchy_trigger = {
+	has_law = law_type:law_anarchy
+}
+
+coa_commune_trigger = { 
+has_law = law_type:law_mass_democracy
+}
+
+coa_fascist_trigger = {
+	# A fascist can lead a monarchy or a theocracy without the government changing form. The Papal State should retain the same flag even if the Pope's a fascist, for example.
+	# A fascist can also lead a democracy without the democracy immediately becoming fascist. If the fascist successfully implements his wildest dreams and becomes a dictatorship, then sure the government will become Fascist, but while there's still voting the government shouldn't count as (fully) fascist yet.
+	coa_republic_trigger = yes
+	has_law = law_type:law_fascist_dictatorship
+}

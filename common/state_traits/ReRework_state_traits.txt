@@ -1,0 +1,16 @@
+﻿
+state_trait_poor_tobacco_fertility = {
+	icon = "/home/valya/Victoria 3/gfx/interface/icons/state_trait_icons/unused/poor_soils.dds"
+	
+	modifier = {
+		building_tobacco_plantation_throughput_mult = -0.4
+	}
+} 
+
+state_trait_poor_opium_fertility = {
+	icon = "/home/valya/Victoria 3/gfx/interface/icons/state_trait_icons/unused/poor_soils.dds"
+	
+	modifier = {
+		building_opium_plantation_throughput_mult = -0.4
+	}
+}

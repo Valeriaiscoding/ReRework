@@ -1,0 +1,105 @@
+﻿state_trait_serra_dos_carajas = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_mult = 0.2
+	}
+}
+
+state_trait_chincha_islands = {
+    icon = "gfx/interface/icons/state_trait_icons/bat.dds"
+	
+	modifier = {
+		building_sulfur_mine_throughput_mult = 0.2
+	}
+}
+
+state_trait_la_costa = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_el_mutun = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_mult = 0.2
+	}
+}
+
+state_trait_pantanal = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.15
+		building_group_bg_plantations_throughput_mult = 0.15
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_atacama_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
+
+	modifier = {
+		building_sulfur_mine_throughput_mult = 0.15
+		state_construction_mult = -0.1
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_andes = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.2
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_pampas = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_ranching_throughput_mult = 0.15
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_amazon_rainforest = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_output_hardwood_mult = 0.25
+		building_rubber_plantation_throughput_mult = 0.1
+		state_construction_mult = -0.33
+		state_infrastructure_mult = -0.33
+	}
+}
+state_trait_very_good_wine_climate = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_good_wine_climate = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_la_plata_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+		country_trade_route_cost_mult = -0.1
+	}
+}

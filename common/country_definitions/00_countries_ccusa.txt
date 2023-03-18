@@ -1,0 +1,136 @@
+﻿APP= { #Appalachia
+	color = { 96 152 209 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { appalachian }
+	capital = STATE_KENTUCKY
+}
+GNY= { #Yankeeland
+	color = { 204 164 61 }
+	
+	country_type = colonial
+
+	tier = kingdom
+	
+	cultures = { yankee }
+	capital = STATE_NEW_YORK
+}
+
+GYL= { #Yankee federation
+	color = { 250 164 61 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { yankee }
+	capital = STATE_NEW_YORK
+}
+
+# MAG = { #MagFed
+# 	color = { 20 75 9 }
+	
+# 	country_type = recognized
+	
+# 	tier = empire
+	
+# 	cultures = { dixie afro_american cajun appalachian}
+# 	capital = STATE_GEORGIA
+# }
+
+# MKG = { #Dixie
+# 	color = { 101 122 98 }
+	
+# 	country_type = colonial
+	
+# 	tier = kingdom
+	
+# 	cultures = { dixie afro_american cajun}
+# 	capital = STATE_GEORGIA
+# }
+PIE = { #Piedmont
+	color = { 84, 0, 42 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_VIRGINIA
+}
+TLC = { #The Low Country
+	color = {41 186 92}
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { dixie afro_american}
+	capital = STATE_SOUTH_CAROLINA
+}
+
+TMS = { #Transmississipi
+	color = { 101 122 98 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { dixie afro_american cajun}
+	capital = STATE_LOUISIANA
+}
+SHL = { #Middle Dixie
+	color = { 19 168 136 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { dixie afro_american}
+	capital = STATE_MISSISSIPPI
+}
+AMG = { #Amish
+	color = { 153 101 21 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { pennsyldutch }
+	capital = STATE_OHIO
+}
+
+MWU= { #MidwesternU
+	color = { 79 46 132 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { midwestern }
+	capital = STATE_ILLINOIS
+}
+UOM = {
+	color = { 0 39 76 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { midwestern }
+	capital = STATE_MICHIGAN
+	is_named_from_capital = yes
+}
+DES = {
+	color = { 125  92  110 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { mormon_pioneer }
+	capital = STATE_UTAH
+}

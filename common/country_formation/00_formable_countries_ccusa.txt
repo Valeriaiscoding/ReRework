@@ -1,0 +1,25 @@
+﻿
+GYL = {
+	states = {
+	STATE_NEW_YORK
+		STATE_PENNSYLVANIA
+		STATE_DELAWARE
+		STATE_NEW_JERSEY
+		STATE_MARYLAND
+		STATE_MASSACHUSETTS
+		STATE_NEW_HAMPSHIRE
+		STATE_MAINE
+		STATE_CONNECTICUT
+		STATE_RHODE_ISLAND
+		STATE_VERMONT
+		STATE_DISTRICT_OF_COLUMBIA
+	}
+	possible = {
+		#has_technology_researched = nationalism
+	}
+		
+
+	required_states_fraction = 0.80
+	
+	ai_will_do = { always = yes }
+}

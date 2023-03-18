@@ -1,0 +1,994 @@
+﻿# group = this is the law_group a law belongs to
+# icon = graphical icon shown in-game
+# modifier = {} modifier on country for having adopted this law
+
+law_autocracy = {	
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/autocracy.dds"
+	
+	progressiveness = -100
+
+	disallowing_laws = {
+		law_right_of_assembly
+		law_protected_speech
+	}
+
+	on_activate = {
+		deactivate_law = law_type:law_elected_bureaucrats
+		scripted_effect_parties_disappearence = yes
+	}
+
+	on_enact = {
+		custom_tooltip = autocracy_tt_nfm
+	}
+
+	modifier = {
+		country_legitimacy_headofstate_add = 40
+		country_legitimacy_govt_total_clout_add = 80 #was 120
+		country_legitimacy_govt_size_add = 1 #was none
+		country_legitimacy_ideological_incoherence_mult = 0.5
+		country_aristocrats_pol_str_mult = 0.50
+		country_capitalists_pol_str_mult = 0.15
+		country_officers_pol_str_mult = 0.25
+		country_clergymen_pol_str_mult = 0.25
+		country_bureaucrats_pol_str_mult = 0.1
+		country_authority_add = 250
+		political_movement_radicalism_mult = 0.33
+		state_radicals_from_sol_change_mult = 0.2
+		state_turmoil_effects_mult = 0.1
+	}
+	
+	possible_political_movements = {
+		law_oligarchy
+		law_landed_voting
+		law_elder_council
+		law_census_voting
+		law_weighted_wealth_voting
+		law_wealth_voting
+		law_weighted_universal_suffrage
+		#law_universal_suffrage
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_ARISTOCRATS"			
+			if = {
+				limit = {
+					owner = {
+						NOT = { has_law = law_type:law_oligarchy }
+					}
+					is_pop_type = aristocrats
+				}
+				value = 0.25
+				#multiply = literacy_rate
+			}
+		}
+	}
+}
+
+law_oligarchy = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/oligarchy.dds"
+	
+	progressiveness = -50
+
+	disallowing_laws = {
+		law_right_of_assembly
+		law_protected_speech
+	}
+
+	on_activate = {
+		deactivate_law = law_type:law_elected_bureaucrats
+		scripted_effect_parties_disappearence = yes
+	}
+	
+	modifier = {
+		country_legitimacy_headofstate_add = 30
+		country_legitimacy_govt_total_clout_add = 90
+		country_legitimacy_govt_size_add = 2
+		country_legitimacy_ideological_incoherence_mult = -0.1
+		country_authority_add = 200
+
+		country_aristocrats_pol_str_mult = 0.5
+		country_capitalists_pol_str_mult = 0.33
+		country_officers_pol_str_mult = 0.33
+		country_clergymen_pol_str_mult = 0.33
+		country_bureaucrats_pol_str_mult = 0.2
+		country_law_enactment_time_mult = -0.25
+		political_movement_radicalism_mult = 0.25
+		state_radicals_from_sol_change_mult = 0.1
+		state_turmoil_effects_mult = 0.05
+	}
+	
+	possible_political_movements = {
+		law_autocracy 
+		law_landed_voting
+		law_elder_council
+		law_census_voting
+		law_weighted_wealth_voting
+		law_wealth_voting
+		law_weighted_universal_suffrage
+		#law_universal_suffrage
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_ARISTOCRATS"			
+			if = {
+				limit = {
+					owner = {
+						NOT = { has_law = law_type:law_autocracy }
+					}
+					is_pop_type = aristocrats
+				}
+				value = 0.25
+				#multiply = literacy_rate
+			}
+		}
+		add = {
+			desc = "POP_CAPITALISTS"			
+			if = {
+				limit = {
+					owner = {
+						NOT = { has_law = law_type:law_wealth_voting }
+					}
+					is_pop_type = capitalists
+				}
+				value = 0.25
+				#multiply = literacy_rate
+			}
+		}
+	}
+}
+
+law_elder_council = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/elder_council.dds"
+	
+	progressiveness = -25
+
+	unlocking_laws = {
+		law_chiefdom
+	}
+
+	is_visible = {
+		is_country_type = decentralized
+	}
+	
+	on_activate = {
+		deactivate_law = law_type:law_elected_bureaucrats
+		scripted_effect_parties_disappearence = yes
+	}
+
+	modifier = {
+		country_legitimacy_headofstate_add = 20
+		country_legitimacy_govt_total_clout_add = 100
+		country_legitimacy_govt_size_add = 2
+		country_legitimacy_ideological_incoherence_mult = -0.1
+		country_aristocrats_pol_str_mult = 0.5
+		country_officers_pol_str_mult = 0.5
+		country_clergymen_pol_str_mult = 0.5
+		country_authority_add = 200
+	}
+	
+	possible_political_movements = {
+		law_autocracy 
+		law_oligarchy
+		law_landed_voting
+	}
+
+	pop_support = {
+		value = 0
+	}
+}
+
+law_landed_voting = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/landed_voting.dds"
+	
+	progressiveness = -25
+
+	unlocking_technologies = {
+		democracy
+	}
+
+	disallowing_laws = {
+		law_chiefdom
+		law_council_republic
+	}
+
+	modifier = {
+		country_legitimacy_govt_total_votes_add = 40
+		country_legitimacy_govt_total_clout_add = 80
+		country_legitimacy_govt_size_add = 1
+		country_legitimacy_ideological_incoherence_mult = 0.25
+		country_aristocrats_voting_power_add = 50
+		country_officers_voting_power_add = 25
+		country_clergymen_voting_power_add = 25
+		country_capitalists_voting_power_add = 25
+		country_farmers_voting_power_add = 15 # may be lowered
+		country_shopkeepers_voting_power_add = 10 # may be lowered
+		state_dependent_political_participation_add = 0.1
+		country_authority_add = 125
+
+		political_movement_radicalism_mult = 0.15
+	}
+	
+	possible_political_movements = {
+		law_oligarchy
+		law_autocracy 
+		law_weighted_wealth_voting
+		law_wealth_voting
+		law_census_voting
+		#law_universal_suffrage
+		law_weighted_universal_suffrage
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY" 
+			
+			if = {
+				limit = { 
+					OR = {
+						NOT = { strata = rich }
+						wealth < 30
+					}					
+					owner = { 
+						NOR = {
+							has_law = law_type:law_weighted_wealth_voting
+							has_law = law_type:law_wealth_voting
+							has_law = law_type:law_census_voting
+							has_law = law_type:law_weighted_universal_suffrage
+							has_law = law_type:law_universal_suffrage
+							has_law = law_type:law_anarchy
+						}	
+					}
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+				#multiply = literacy_rate
+			}
+		}			
+	}
+}
+
+law_weighted_wealth_voting = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/per_capita_based_taxation.dds"
+	
+	progressiveness = -10
+
+	unlocking_technologies = {
+		democracy
+	}
+
+	disallowing_laws = {
+		law_chiefdom
+		law_council_republic
+	}
+	
+	modifier = {
+		country_legitimacy_govt_total_votes_add = 50
+		country_legitimacy_govt_total_clout_add = 80
+		country_legitimacy_govt_size_add = 1
+		country_legitimacy_ideological_incoherence_mult = 0.1
+		country_voting_power_base_add = 10
+
+		country_aristocrats_voting_power_add = 40
+		country_capitalists_voting_power_add = 40
+
+		country_officers_voting_power_add = 25
+		country_clergymen_voting_power_add = 25
+
+		country_farmers_voting_power_add = 15
+		country_shopkeepers_voting_power_add = 15
+
+		country_engineers_voting_power_add = 10 
+		country_bureaucrats_voting_power_add = 10
+		country_academics_voting_power_add = 10
+		
+		country_laborers_voting_power_add = -9
+
+		country_soldiers_voting_power_add = -7
+
+		country_machinists_voting_power_add = -5
+		country_clerks_voting_power_add = -5
+		country_soldiers_voting_power_add = -5
+		country_machinists_voting_power_add = -9
+		country_voting_power_wealth_threshold_add = 20
+		country_authority_add = 100
+		state_dependent_political_participation_add = 0.1 #was none #Some elderly people can vote
+		state_political_strength_from_wealth_mult = 0.20 #was none
+
+		state_migration_pull_mult = 0.1
+		political_movement_radicalism_mult = 0.05
+	}
+	
+	possible_political_movements = {
+		law_landed_voting
+		law_wealth_voting
+		law_census_voting
+		law_weighted_universal_suffrage
+		#law_universal_suffrage
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY"
+			
+			if = {
+				limit = { 
+					NOT = { strata = rich }
+					wealth < 30
+					owner = { 
+						NOR = {
+							has_law = law_type:law_wealth_voting
+							has_law = law_type:law_census_voting
+							has_law = law_type:law_weighted_universal_suffrage
+							has_law = law_type:law_universal_suffrage
+							has_law = law_type:law_anarchy
+						}	
+					}
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+				#multiply = literacy_rate
+			}
+		}			
+	}
+}
+
+law_wealth_voting = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/wealth_voting.dds"
+	
+	progressiveness = 0
+
+	unlocking_technologies = {
+		democracy
+	}
+
+	disallowing_laws = {
+		law_chiefdom
+		law_council_republic
+	}
+	
+	modifier = {
+		country_legitimacy_govt_total_votes_add = 65
+		country_legitimacy_govt_total_clout_add = 65
+		country_legitimacy_govt_size_add = 1
+		country_legitimacy_ideological_incoherence_mult = 0.15
+		country_voting_power_base_add = 40
+
+		# country_aristocrats_voting_power_add = 40
+		# country_capitalists_voting_power_add = 40
+
+		# country_officers_voting_power_add = 25
+		# country_clergymen_voting_power_add = 25
+
+		# country_farmers_voting_power_add = 15
+		# country_shopkeepers_voting_power_add = 15
+
+		# country_engineers_voting_power_add = 10 
+		# country_bureaucrats_voting_power_add = 10
+		# country_academics_voting_power_add = 10
+		
+		# country_laborers_voting_power_add = -9
+
+		# country_soldiers_voting_power_add = -7
+
+		# country_machinists_voting_power_add = -5
+		# country_clerks_voting_power_add = -5
+
+		country_voting_power_wealth_threshold_add = 20
+		country_authority_add = 100
+		state_dependent_political_participation_add = 0.1 #was none #Some elderly people can vote
+		state_political_strength_from_wealth_mult = 0.3 #was 10 added to compesate the difference
+
+		state_migration_pull_mult = 0.1
+		political_movement_radicalism_mult = 0.05
+	}
+	
+	possible_political_movements = {
+		law_landed_voting
+		law_weighted_wealth_voting
+		law_census_voting
+		law_weighted_universal_suffrage
+		#law_universal_suffrage
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY"
+			
+			if = {
+				limit = { 
+					NOT = { strata = rich }
+					wealth < 30
+					owner = { 
+						NOR = {
+							has_law = law_type:law_census_voting
+							has_law = law_type:law_weighted_universal_suffrage
+							has_law = law_type:law_universal_suffrage
+							has_law = law_type:law_anarchy
+						}	
+					}
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+				#multiply = literacy_rate
+			}
+		}			
+	}
+}
+
+law_census_voting = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/census_voting.dds"
+	
+	progressiveness = 50
+
+	unlocking_technologies = {
+		democracy
+	}
+
+	disallowing_laws = {
+		law_chiefdom
+		law_council_republic
+	}
+
+	modifier = {
+		country_legitimacy_govt_total_votes_add = 85
+		country_legitimacy_govt_total_clout_add = 55
+		country_legitimacy_govt_size_add = 1
+		country_legitimacy_ideological_incoherence_mult = 0.1
+		country_voting_power_wealth_threshold_add = 15
+
+		country_voting_power_base_add = 5
+
+		country_voting_power_from_literacy_add = 25
+
+		country_authority_add = 50
+
+		state_dependent_political_participation_add = 0.1
+
+		state_migration_pull_mult = 0.15
+	}
+	
+	possible_political_movements = {
+		law_landed_voting
+		law_weighted_wealth_voting
+		law_wealth_voting
+		law_weighted_universal_suffrage
+		law_universal_suffrage
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY"
+			
+			if = {
+				limit = { 
+					wealth < 25
+					owner = { 
+						NOR = {
+							has_law = law_type:law_weighted_universal_suffrage
+							has_law = law_type:law_universal_suffrage
+							has_law = law_type:law_anarchy
+						}	
+					}
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+				#multiply = literacy_rate
+			}
+		}			
+	}
+}
+
+law_weighted_universal_suffrage = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/proportional_taxation.dds"
+	
+	progressiveness = 75
+
+	unlocking_technologies = {
+		egalitarianism
+	}
+
+	disallowing_laws = {
+		law_chiefdom
+		law_council_republic
+	}
+	
+	modifier = {
+		country_legitimacy_govt_total_votes_add = 100
+		country_legitimacy_govt_total_clout_add = 40
+		country_legitimacy_govt_size_add = 1
+		country_legitimacy_ideological_incoherence_mult = 0.05
+		country_voting_power_base_add = 5
+
+		country_aristocrats_voting_power_add = 30
+		country_capitalists_voting_power_add = 30
+
+		country_officers_voting_power_add = 15
+		country_clergymen_voting_power_add = 15
+
+		country_farmers_voting_power_add = 10
+		country_shopkeepers_voting_power_add = 10
+
+		country_engineers_voting_power_add = 5
+		country_bureaucrats_voting_power_add = 5
+		country_academics_voting_power_add = 5
+		
+		country_laborers_voting_power_add = -4
+		country_soldiers_voting_power_add = -4
+
+		country_authority_add = 25
+
+		state_dependent_political_participation_add = 0.1 #was none #Some elderly people can vote
+		state_political_strength_from_wealth_mult = -0.1 #was none #Universal Suffrage means wealth have less influence on the vote
+	}
+	
+	possible_political_movements = {
+		law_census_voting
+		law_weighted_wealth_voting
+		law_wealth_voting
+		law_universal_suffrage
+		#law_anarchy
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY"
+			
+			if = {
+				limit = { 
+					owner = { 
+						NOR = {
+							has_law = law_type:law_anarchy
+							has_law = law_type:law_universal_suffrage
+						}	
+						}	
+					}
+				if = {
+					limit = {
+						wealth < 20
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+			}
+			
+			if = {
+				limit = { 
+						wealth < 15
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+			}			
+				#multiply = literacy_rate
+			}			
+		}			
+	}
+}
+
+law_universal_suffrage = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/universal_suffrage.dds"
+	
+	progressiveness = 100
+
+	unlocking_technologies = {
+		egalitarianism
+	}
+
+	disallowing_laws = {
+		law_chiefdom
+		law_command_economy
+	}
+	
+	modifier = {
+		country_legitimacy_govt_total_votes_add = 125
+		country_legitimacy_govt_total_clout_add = 25
+		country_voting_power_base_add = 20
+		country_legitimacy_govt_size_add = 1
+
+		political_movement_radicalism_mult = -0.1
+		state_migration_pull_mult = 0.2
+		state_dependent_political_participation_add = 0.1 #was none #Some elderly people can vote
+		country_legitimacy_ideological_incoherence_mult = -0.2 #was none #Too harsh within parties rn
+		state_political_strength_from_wealth_mult = 0.4 #was negative
+		state_loyalists_from_sol_change_mult = 0.05
+		state_radicals_from_sol_change_mult = -0.05
+	}
+	
+	possible_political_movements = {
+		law_census_voting
+		#law_weighted_wealth_voting
+		law_wealth_voting
+		law_weighted_universal_suffrage
+		law_anarchy
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY"
+			
+			if = {
+				limit = { 
+					owner = { 
+						NOT = {
+							has_law = law_type:law_anarchy
+						}	
+					}
+				}
+				if = {
+					limit = {
+						wealth < 15
+					}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+			}
+			
+			if = {
+				limit = { 
+					wealth < 10
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+			}			
+				#multiply = literacy_rate
+			}			
+		}			
+	}
+}
+
+law_anarchy = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/anarchy.dds"
+	
+	progressiveness = 200
+
+	unlocking_technologies = {
+		anarchism 
+	}
+	
+	unlocking_laws = {
+		law_council_republic
+		#law_cooperative_ownership
+	}
+	
+	modifier = {
+		state_pop_pol_str_add = 1
+		country_bureaucrats_pol_str_mult = -0.9 # negates modifier from council republic
+		country_legitimacy_govt_total_clout_add = 100
+		state_political_strength_from_wealth_mult = -0.75
+		country_authority_mult = -0.5
+		country_legitimacy_govt_size_add = 2
+		state_migration_pull_mult = 0.2 # same as universal suffrage
+		state_dependent_political_participation_add = 0.15
+		country_aristocrats_pol_str_mult = -1
+		country_capitalists_pol_str_mult = -0.9
+	}
+	
+	possible_political_movements = {
+		law_universal_suffrage
+	}
+
+	on_activate = {
+		scripted_effect_parties_disappearence = yes
+	}
+	
+	ai_will_do = {
+		exists = ruler
+		ruler = {
+			has_ideology = ideology_anarchist
+		}
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY"
+			
+			if = {
+				limit = { 
+					wealth < 10
+				}
+				add = {
+					value = literacy_rate
+					#multiply = literacy_rate
+				}
+			}
+		}			
+	}
+}
+
+law_fascist_dictatorship = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/fascist_dictatorship.dds"
+	
+	progressiveness = 0
+
+	unlocking_technologies = {
+		political_agitation
+	}
+	
+	disallowing_laws = {
+		law_no_police
+		law_universal_suffrage
+		law_protected_speech
+		law_right_of_assembly
+		law_hereditary_bureaucrats
+		law_elected_bureaucrats
+		law_council_republic	
+	}
+	
+	modifier = {
+		country_legitimacy_headofstate_add = 50
+		country_legitimacy_govt_total_clout_add = 100 #was 120
+		country_legitimacy_govt_size_add = 1 #was none
+		country_legitimacy_ideological_incoherence_mult = 0.75
+
+		country_capitalists_pol_str_mult = 0.5
+		country_officers_pol_str_mult = 0.50
+		country_shopkeepers_pol_str_mult = 0.25
+		country_aristocrats_pol_str_mult = 0.25
+		country_bureaucrats_pol_str_mult = 0.25
+
+		country_authority_add = 400
+		political_movement_radicalism_mult = 0.5
+		state_radicals_from_sol_change_mult = 0.4
+		state_turmoil_effects_mult = 0.2
+	}
+	
+	possible_political_movements = {
+		law_universal_suffrage
+	}
+
+	on_activate = {
+		deactivate_law = law_type:law_elected_bureaucrats
+		scripted_effect_parties_disappearence = yes
+	}
+	
+	ai_will_do = {
+		exists = ruler
+		ruler = {
+			OR = {
+				has_ideology = ideology_fascist
+				has_ideology = ideology_ethno_nationalist
+			}
+		}
+	}
+	
+	pop_support = {
+		value = 0
+			
+	}
+}
+law_one_party_leadership = {	
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/one_party_leadership.dds"
+	
+	progressiveness = 0
+	
+	unlocking_technologies = {
+		political_agitation
+	}
+	
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	on_activate = {
+		scripted_effect_parties_disappearence = yes
+	}
+
+	institution = institution_party_organization
+	institution_modifier = {
+		country_promotion_ig_attraction_mult = 0.075
+		country_suppression_ig_attraction_mult = -0.075
+		country_bureaucrats_pol_str_mult = 0.1
+	}
+
+	modifier = {
+		country_institution_party_organization_max_investment_add = 5
+		country_legitimacy_govt_total_clout_add = 150
+		country_legitimacy_ideological_incoherence_mult = 0.50
+		country_authority_add = 300
+		country_legitimacy_govt_size_add = 2
+		country_aristocrats_pol_str_mult = -0.75
+		country_capitalists_pol_str_mult = -0.3	
+	}
+	
+	possible_political_movements = {
+        law_universal_suffrage
+        law_mass_democracy
+	}
+	
+	ai_will_do = {
+		exists = ruler
+		ruler = {
+			OR = {
+			has_ideology = ideology_vanguardist
+			has_ideology = ideology_communist
+			# has_ideology = ideology_fascist
+			# has_ideology = ideology_ethno_nationalist			
+		    }
+	    }
+    }
+}
+law_mass_democracy = {
+	group = lawgroup_distribution_of_power
+	
+	icon = "gfx/interface/icons/law_icons/mass_democracy.dds"
+	
+	progressiveness = 100
+
+	unlocking_technologies = {
+		political_agitation
+	}
+
+	disallowing_laws = {
+		law_chiefdom
+        law_censorship
+        law_outlawed_dissent
+	}
+	
+	unlocking_laws = {
+		law_council_republic		
+	}
+	
+	institution = institution_party_organization
+	institution_modifier = {
+		country_bureaucrats_pol_str_mult = -0.1
+	    
+			
+	}
+	
+	modifier = {
+		country_institution_party_organization_max_investment_add = 5
+		country_legitimacy_govt_size_add = 2		
+		country_legitimacy_govt_total_votes_add = 50
+		country_legitimacy_govt_total_clout_add = 100
+		state_political_strength_from_wealth_mult = -0.25
+		country_laborers_pol_str_mult = 0.15
+		country_machinists_pol_str_mult = 0.15
+		country_engeneers_pol_str_mult = 0.25
+		country_farmers_pol_str_mult = 0.2
+		country_bureaucrats_pol_str_mult = -0.6
+		country_capitalists_pol_str_mult = -0.5
+		country_aristocrats_pol_str_mult = -0.75
+		country_voting_power_base_add = 20
+		country_capitalists_voting_power_add = -20
+		country_aristocrats_voting_power_add = -20	
+		country_shopkeepers_voting_power_add = -10
+	}
+	
+	possible_political_movements = {
+		law_anarchy
+		law_universal_suffrage
+		law_one_party_leadership
+	}
+
+	on_activate = {
+		scripted_effect_parties_emergence = yes
+	}
+	
+	pop_support = {
+		value = 0
+
+		add = {
+			desc = "POP_LITERACY"
+			
+			if = {
+				limit = { 
+					wealth < 20
+					owner = { 
+					    has_law = law_type:law_council_republic
+						NOT = {						
+							has_law = law_type:law_anarchy
+						}	
+					}
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+			}
+			
+			if = {
+				limit = { 
+					wealth < 15
+					owner = { 
+					    has_law = law_type:law_council_republic
+						NOT = {						
+							has_law = law_type:law_anarchy
+						}	
+					}
+				}
+				add = {
+					value = literacy_rate
+				}
+			}			
+		}			
+	}
+	
+	ai_will_do = {
+		exists = ruler
+		ruler = {
+			OR = {
+			has_ideology = ideology_vanguardist
+			has_ideology = ideology_communist		
+		    }
+	    }
+    }
+}

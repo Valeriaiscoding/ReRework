@@ -1,0 +1,72 @@
+﻿bg_ia_silver_mining = {
+	parent_group = bg_mining
+	
+	default_building = building_ia_silver_mine
+	
+	can_use_slaves = yes
+}
+
+bg_ia_river_port = {
+	parent_group = bg_infrastructure
+	
+	is_government_funded = yes
+	
+	urbanization = 2
+}
+
+bg_vineyard = {
+	parent_group = bg_agriculture
+
+	default_building = building_vineyard
+
+	cash_reserves_max = 25000
+}
+
+bg_trade = {
+	parent_group = bg_urban_facilities
+	
+	category = urban
+	
+	lens = trade
+
+	always_possible = yes	
+	
+	created_by_trade_routes = yes
+	
+	auto_place_buildings = yes
+	
+	hiring_rate = 1.0
+	
+	proportionality_limit = 1.0
+	
+	economy_of_scale = no
+	
+	default_building = building_trade_center
+	
+	cash_reserves_max = 25000	
+	
+	urbanization = 5
+	
+	infrastructure_usage_per_level = 0.25
+	
+	fired_pops_become_radical = no
+	
+	should_auto_expand = {
+		always = no
+	}
+}
+
+bg_finance = {
+	parent_group = bg_service
+	cash_reserves_max = 100000
+}
+
+bg_logistics = {
+	parent_group = bg_service
+	
+	economy_of_scale = no
+	
+	default_building = building_teamster_office
+	
+	cash_reserves_max = 30000
+}

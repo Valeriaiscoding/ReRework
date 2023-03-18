@@ -1,0 +1,27 @@
+﻿state_trait_rio_grande_ranges = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_grazing.dds"
+	
+	modifier = {
+		building_group_bg_ranching_throughput_mult = 0.15
+		state_building_ia_river_port_max_level_add = 4
+	}
+}
+
+state_trait_yucatan_forests = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.15
+		state_construction_mult = -0.10
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_agave_cultivation = {
+	icon = "gfx/interface/icons/state_trait_icons/agave_cultivation.dds"
+
+	modifier = { 
+		building_output_liquor_mult = 0.20
+		building_group_bg_agriculture_throughput_mult = 0.1
+	}
+}

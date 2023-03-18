@@ -1,0 +1,53 @@
+# NEW FINANCE
+finance_services = {
+	texture = "gfx/interface/icons/goods_icons/securities.dds"
+	cost = 40
+	category = luxury
+	tradeable = no
+
+	prestige_factor = 5
+	consumption_tax_cost = 250
+}
+
+securities = {
+	texture = "gfx/interface/icons/goods_icons/treasury_bond.dds"
+	cost = 70
+	category = luxury
+	#tradeable = no
+
+	prestige_factor = 10
+	traded_quantity = 5
+	convoy_cost_multiplier = 0.2
+	consumption_tax_cost = 500
+}
+
+banknotes = {
+    texture = "gfx/interface/icons/goods_icons/banknotes.dds"
+	cost = 	50
+	category = luxury
+
+	fixed_price = no
+	prestige_factor = 0
+	traded_quantity = 5
+	convoy_cost_multiplier = 0.2
+}
+
+#war_bonds = {
+	#texture = "gfx/interface/icons/goods_icons/war_bonds.dds"
+	#cost = 50
+	#category = luxury
+
+	#fixed_price = no
+	#tradeable = no
+#}
+
+# Silver
+
+ia_silver = {
+	texture = "gfx/interface/icons/goods_icons/ia_silver.dds"
+	cost = 10
+	category = luxury
+	tradeable = yes
+	fixed_price = yes
+	prestige_factor = 5
+}

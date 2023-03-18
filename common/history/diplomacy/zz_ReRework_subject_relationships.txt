@@ -1,0 +1,9 @@
+﻿DIPLOMACY = {
+	c:GBR = {
+		# Newfoundland (they were a crown colony!)
+		create_diplomatic_pact = {
+			country = c:NEW
+			type = puppet
+		}
+	}
+}

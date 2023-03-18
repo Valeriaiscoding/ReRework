@@ -1,0 +1,140 @@
+#
+# Note: the triggers are checked at certain key points in the code, not all the time
+# color_key = {
+#    color = "black"      # the map color
+#    possible = { ... }   # the trigger to enable this color
+# }
+#
+
+# Example
+#dynamic_map_color_swedish_junta = {
+#    color = "black"
+#	
+#	possible = {
+#		exists = c:SWE # you /must/ check that a tag exists before doing anything else
+#		this = c:SWE
+#
+#        exists = ig:ig_armed_forces
+#        ig:ig_armed_forces = {
+#            is_in_government = yes
+#        }
+#	}
+#}
+
+soviet_red = {
+	color = "red_dark"
+
+	possible = {
+		exists = c:RUS
+		THIS = c:RUS
+		has_law = law_type:law_council_republic
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+communist_china = {
+	color = "communist_china_red"
+	possible = {
+		exists = c:CHI
+		THIS = c:CHI
+		has_law = law_type:law_council_republic
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+communist_britain = {
+	color = "british_red"
+
+	possible = {
+		exists = c:GBR
+		THIS = c:GBR
+		has_law = law_type:law_council_republic
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+ddr_germany = {
+	color = "DDR_green"
+
+	possible = {
+		exists = c:GER
+		THIS = c:GER
+		has_law = law_type:law_council_republic
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+commune_france = {
+	color = "paris_red"
+
+	possible = {
+		exists = c:FRA
+		THIS = c:FRA
+		has_law = law_type:law_council_republic
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+republican_india = {
+	color = "orange_india"
+
+	possible = {
+		exists = c:BHT
+		THIS = c:BHT
+		OR = {
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_council_republic
+		}
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+republican_hindustan = {
+	color = "hoi4_pakistan_blue"
+
+	possible = {
+		exists = c:HND
+		THIS = c:HND
+		OR = {
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_council_republic
+		}
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+
+turkish_republic = {
+	color = "turkish_republic_red"
+
+	possible = {
+		exists = c:TUR
+		THIS = c:TUR
+		OR = {
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_council_republic
+		}
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}
+
+generic_black_anarchist = {
+	color = "black"
+
+	possible = {
+		has_law = law_type:law_council_republic
+		has_law = law_type:law_anarchy
+	}
+}
+
+generic_red_communist = {
+	color = "red_dark"
+
+	possible = {
+		has_law = law_type:law_council_republic
+		NOT = { has_law = law_type:law_anarchy }
+	}
+}

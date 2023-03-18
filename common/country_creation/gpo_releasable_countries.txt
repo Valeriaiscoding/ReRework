@@ -1,0 +1,39 @@
+﻿
+CZE = {
+	states = {
+		STATE_BOHEMIA
+		STATE_MORAVIA
+		STATE_SUDETEN
+		#STATE_SOUTHSUDETEN
+		STATE_EASTSUDETEN
+	}
+	
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+AUS = {
+	states = {
+		STATE_AUSTRIA
+		STATE_STYRIA
+		STATE_TYROL
+		STATE_SOUTH_TYROL
+		#STATE_SLOVENIA
+		STATE_SUDETEN
+		#STATE_SOUTHSUDETEN
+		STATE_EASTSUDETEN
+	}
+	
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+DZG = {
+	provinces = {
+		x7CB839 x80A0A0
+	}
+
+	ai_will_do = { always = no }
+}

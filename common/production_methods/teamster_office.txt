@@ -1,0 +1,278 @@
+pm_teamster_office_handcart = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_handcart.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_wood_add = 2
+			building_input_tools_add = 1
+			building_output_transportation_add = 10
+		}
+		level_scaled = {
+			building_employment_laborers_add = 4750
+			building_employment_clerks_add = 250
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 5
+		}
+	}
+}
+
+pm_teamster_office_wagon = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_wagon.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_wood_add = 5
+			building_input_tools_add = 2
+			building_input_grain_add = 5
+			building_input_fruit_add = 2
+			building_input_fabric_add = 1
+			building_output_transportation_add = 25
+		}
+		level_scaled = {
+			building_employment_laborers_add = 4500
+			building_employment_machinists_add = 200
+			building_employment_clerks_add = 300
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 10
+		}
+	}
+}
+
+pm_teamster_office_truck = {
+	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	pollution_generation = 5
+	
+	unlocking_technologies = {
+		combustion_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 5
+			building_input_automobiles_add = 1
+			building_input_oil_add = 1
+			building_output_transportation_add = 50
+		}
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1000
+			building_employment_clerks_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 5 # may be entirely removed
+		}
+	}
+}
+
+pm_teamster_office_safe_load = {
+	texture = "gfx/interface/icons/production_method_icons/unused/pol_phil_dept.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 5
+		}
+	}
+}
+
+pm_teamster_office_loose_load_limits = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+	
+	disallowing_laws = {
+		law_worker_protections
+	}
+	
+	unlocking_production_methods = {
+		pm_teamster_office_handcart
+		pm_teamster_office_wagon
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 1
+			building_output_transportation_add = 10
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.025
+		}
+	}
+}
+
+pm_teamster_office_loose_load_limits_automobile = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+	
+	disallowing_laws = {
+		law_worker_protections
+	}
+	
+	unlocking_production_methods = {
+		pm_teamster_office_truck
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 1
+			building_output_transportation_add = 50
+		}
+		unscaled = {
+			building_machinists_mortality_mult = 0.025
+		}
+	}
+}
+
+pm_teamster_office_single_shift = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_single_shift.dds"
+}
+
+pm_teamster_office_extended_shift = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_extended_shift.dds"
+	
+	unlocking_production_methods = {
+		pm_teamster_office_wagon
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 2
+			building_output_transportation_add = 10
+		}
+		unscaled = {
+			building_employment_laborers_add = 2400
+			building_employment_machinists_add = 100
+		}
+	}
+}
+
+pm_teamster_office_second_shift = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_second_shift.dds"
+	
+	unlocking_production_methods = {
+		pm_teamster_office_wagon
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 4
+			building_output_transportation_add = 20
+		}
+		level_scaled = {
+			building_employment_laborers_add = 4800
+			building_employment_machinists_add = 200
+		}
+	}
+}
+
+pm_teamster_office_extended_shift_automobile = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_extended_shift.dds"
+	
+	unlocking_production_methods = {
+		pm_teamster_office_truck
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 2
+			building_output_transportation_add = 25
+		}
+		unscaled = {
+			building_employment_laborers_add = 1250
+			building_employment_machinists_add = 500
+		}
+	}
+}
+
+pm_teamster_office_second_shift_automobile = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_second_shift.dds"
+	
+	unlocking_production_methods = {
+		pm_teamster_office_truck
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 4
+			building_output_transportation_add = 40
+		}
+		level_scaled = {
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1000
+		}
+	}
+}
+
+pm_teamster_office_just_cargo = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_just_cargo.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 5
+		}
+	}
+}
+pm_teamster_office_rickshaw = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_rickshaw.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_wood_add = 1
+			building_input_tools_add = 1
+			building_input_fabric_add = 1
+			building_input_clothes_add = 1
+			building_output_transportation_add = 15
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1875
+			building_employment_clerks_add = 125
+		}
+	}
+}
+pm_teamster_office_hackney = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_wagon.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_wood_add = 5
+			building_input_tools_add = 2
+			building_input_grain_add = 5
+			building_input_fruit_add = 2
+			building_input_fabric_add = 1
+			building_output_transportation_add = 25
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1875
+			building_employment_clerks_add = 125
+		}
+	}
+}
+pm_teamster_office_taxi = {
+	texture = "gfx/interface/icons/production_method_icons/teamster_office_taxi.dds"
+	
+	unlocking_production_methods = {
+		pm_teamster_office_truck
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 1
+			building_input_fabric_add = 1
+			building_input_clothes_add = 1
+			building_input_automobiles_add = 1
+			building_input_oil_add = 1
+			building_output_transportation_add = 50
+		}
+		level_scaled = {
+			building_employment_machinists_add = 1875
+			building_employment_clerks_add = 125
+		}
+	}
+}

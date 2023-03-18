@@ -1,0 +1,310 @@
+﻿CNS = { # Conosur
+	flag_definition = {
+		coa = CNS_cono_sur
+		subject_canton = CNS_cono_sur
+		priority = 1
+	}
+}
+NEW = { # Newfoundland
+	flag_definition = {
+		priority = 15
+		coa = NEW
+		coa_with_overlord_canton = NEW_subject
+		allow_overlord_canton = yes
+        trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_republic
+		priority = 10
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_coa
+		priority = 20
+		trigger = {
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_theocracy
+		subject_canton = NEW_theocracy
+		priority = 20
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+
+CSA = { # Confederate States of America
+	flag_definition = {
+		coa = CSA
+		subject_canton = sub_CSA_canton_stars
+		priority = 1		
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[third*2.005] }
+	}
+	flag_definition = {
+		coa = CSA_dixieland
+		#subject_canton = sub_CSA_canton_stars
+		priority = 24		
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[third*2.005] }
+		trigger = {
+			has_law = law_type:law_slavery_banned
+		}
+	}
+	flag_definition = {
+		coa = CSA_magnolia
+		#subject_canton = sub_CSA_canton_stars
+		priority = 25		
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[third*2.005] }
+		trigger = {
+			has_law = law_type:law_slavery_banned
+			OR = {
+				has_law = law_type:law_cultural_exclusion
+				has_law = law_type:law_multiculturalism
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_stainless
+		subject_canton = sub_CSA_canton_saltire
+		priority = 10
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[third*2] }
+		trigger = { 
+			NAND = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = je_acw_war
+				}
+			}
+			scope:actor = { 
+				has_ruling_interest_group = ig_armed_forces
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_blood_stained
+		subject_canton = sub_CSA_canton_saltire
+		priority = 15
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[third*2] }
+		trigger = { 
+			NAND = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = je_acw_war
+				}
+			}
+			scope:actor = { 
+				has_ruling_interest_group = ig_armed_forces
+				has_ruling_interest_group_count = 1
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_battle_flag
+		subject_canton = sub_CSA_canton_saltire
+		priority = 20
+		trigger = { 
+			NAND = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = je_acw_war
+				}
+			}
+			scope:actor = { 
+				has_ruling_interest_group = ig_armed_forces
+			}
+			OR = {
+				coa_def_military_junta_flag_trigger = yes
+				coa_def_dictatorship_flag_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_theocracy
+		subject_canton = CSA_theocracy
+		priority = 20
+		trigger = { 
+			NAND = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = je_acw_war
+				}
+			}
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CSA_communist
+		priority = 1500
+		trigger = { 
+			NAND = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = je_acw_war
+				}
+			}
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CSA_magnolia_communist
+		priority = 1600
+		trigger = { 
+			NAND = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = je_acw_war
+				}
+			}
+			coa_def_communist_flag_trigger = yes
+			has_law = law_type:law_slavery_banned
+			OR = {
+				has_law = law_type:law_cultural_exclusion
+				has_law = law_type:law_multiculturalism
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_dixieland_communist
+		priority = 1400
+		trigger = { 
+			NAND = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = je_acw_war
+				}
+			}
+			coa_def_communist_flag_trigger = yes
+			has_law = law_type:law_slavery_banned
+		}
+	}
+	flag_definition = {
+		coa = CSA_subject_MEX
+		priority = 30
+		trigger = { 
+			coa_def_mexican_ensign_trigger = yes
+		}
+	}
+
+	### DUPLICATE FOR DURING THE ACW THAT REMOVES THE REVOLUTIONARY TEAR IN THE FLAG
+
+	flag_definition = {
+		coa = CSA
+		subject_canton = sub_CSA_canton_stars
+		priority = 2		
+		allow_overlord_canton = yes
+		allow_revolutionary_indicator = no
+		overlord_canton_scale = { 0.5 @[third*2.005] }
+		trigger = {
+			exists = c:USA
+			c:USA = {
+				has_journal_entry = je_acw_war
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_stainless
+		subject_canton = sub_CSA_canton_saltire
+		priority = 10
+		allow_overlord_canton = yes
+		allow_revolutionary_indicator = no
+		overlord_canton_scale = { 0.5 @[third*2] }
+		trigger = { 
+			exists = c:USA
+			c:USA = {
+				has_journal_entry = je_acw_war
+			}
+			scope:actor = { 
+				has_ruling_interest_group = ig_armed_forces
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_blood_stained
+		subject_canton = sub_CSA_canton_saltire
+		priority = 15
+		allow_overlord_canton = yes
+		allow_revolutionary_indicator = no
+		overlord_canton_scale = { 0.5 @[third*2] }
+		trigger = { 
+			exists = c:USA
+			c:USA = {
+				has_journal_entry = je_acw_war
+			}
+			scope:actor = { 
+				has_ruling_interest_group = ig_armed_forces
+				has_ruling_interest_group_count = 1
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_battle_flag
+		subject_canton = sub_CSA_canton_saltire
+		priority = 20
+		allow_revolutionary_indicator = no
+		trigger = { 
+			exists = c:USA
+			c:USA = {
+				has_journal_entry = je_acw_war
+			}
+			scope:actor = { 
+				has_ruling_interest_group = ig_armed_forces
+			}
+			OR = {
+				coa_def_military_junta_flag_trigger = yes
+				coa_def_dictatorship_flag_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = CSA_theocracy
+		subject_canton = CSA_theocracy
+		priority = 20
+		allow_revolutionary_indicator = no
+		trigger = { 
+			exists = c:USA
+			c:USA = {
+				has_journal_entry = je_acw_war
+			}
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CSA_communist
+		priority = 1500
+		allow_revolutionary_indicator = no
+		trigger = { 
+			exists = c:USA
+			c:USA = {
+				has_journal_entry = je_acw_war
+			}
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
+DEFAULT = {
+	flag_definition = {
+		coa = list "anarchy"
+		subject_canton = list "anarchy"
+		priority = 500
+		trigger = {
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = list "communist"
+		priority = 1000
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}

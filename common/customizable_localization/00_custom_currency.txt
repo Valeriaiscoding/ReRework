@@ -1,0 +1,1662 @@
+﻿
+currency = {
+	type = country
+	log_loc_errors = no
+	
+	text = {
+		trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:FRA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = french_franc
+	}
+	text = {
+		trigger = {
+			exists = c:GBR
+			this = c:GBR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:GBR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = sterling
+	}	
+	text = {
+		trigger = {
+			exists = c:GER
+			this = c:GER
+		}
+		trigger = {
+			exists = c:PRU
+			this = c:PRU
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				OR = {
+					has_diplomatic_pact = {
+						who = c:PRU
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:GER
+						type = customs_union
+					}
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = german_mark
+	}	
+	text = {
+		trigger = {
+			exists = c:BEL
+			this = c:BEL
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:BEL
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = belge_franc
+	}
+	text = {
+		trigger = {
+			exists = c:SWI
+			this = c:SWI
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:SWI
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = swiss_franc
+	}
+	text = {
+		trigger = {
+			exists = c:CAN
+			this = c:CAN
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CAN
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = canandian_dollar
+	}
+	
+	text = {
+		trigger = {
+			exists = c:USA
+			this = c:USA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:USA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar
+	}
+	text = {
+		trigger = {
+			exists = c:CSA
+			this = c:CSA
+			NOT = { has_law = law_type:law_slavery_banned }
+		}
+		trigger = {
+			c:CSA = { NOT = { has_law = law_type:law_slavery_banned } }
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CSA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_11_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CSA
+			this = c:CSA
+			has_law = law_type:law_slavery_banned
+			NOR = {
+				has_law = law_type:law_cultural_exclusion
+				has_law = law_type:law_multicultural
+			}
+		}
+		trigger = {
+			c:CSA = { 
+				 		has_law = law_type:law_slavery_banned 
+						NOR = {
+							has_law = law_type:law_cultural_exclusion
+							has_law = law_type:law_multicultural
+						}
+					}
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CSA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_12_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CSA
+			this = c:CSA
+			has_law = law_type:law_slavery_banned
+			OR = {
+				has_law = law_type:law_cultural_exclusion
+				has_law = law_type:law_multicultural
+			}
+		}
+		trigger = {
+			c:CSA = { 
+				 		has_law = law_type:law_slavery_banned 
+						OR = {
+							has_law = law_type:law_cultural_exclusion
+							has_law = law_type:law_multicultural
+						}
+					}
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CSA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_13_texture
+	}
+	text = {
+		trigger = {
+			exists = c:MEX
+			this = c:MEX
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:MEX
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = mexican_pesos
+	}
+	text = {
+		trigger = {
+			exists = c:SPA
+			this = c:SPA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:SPA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = peseta
+	}
+	text = {
+		trigger = {
+			exists = c:GRE
+			this = c:GRE
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:GRE
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = drachma
+	}
+	text = {
+		trigger = {
+			exists = c:ITA
+			this = c:ITA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:ITA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = lira
+	}
+	text = {
+		trigger = {
+			exists = c:SIC
+			this = c:SIC
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:SIC
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = two_sicilies_ducat
+
+	}
+	text = {
+		trigger = {
+			exists = c:SAR
+			this = c:SAR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:SAR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = 	sardinian_lira
+
+
+	}
+	text = {
+		trigger = {
+			exists = c:PAP
+			this = c:PAP
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:PAP
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = papal_states_scudo
+	}
+	text = {
+		trigger = {
+			exists = c:PAR
+			this = c:PAR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:PAR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = 	parman_lira
+	}
+	text = {
+		trigger = {
+			exists = c:TUS
+			this = c:TUS
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:TUS
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = 	tuscan_fiorino
+	}
+	text = {
+		trigger = {
+			exists = c:RUS
+			this = c:RUS
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:RUS
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = rouble
+	}
+	text = {
+		trigger = {
+			exists = c:JAP
+			this = c:JAP
+			NOR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:JAP
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:JAP = {
+				NOR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+		
+		localization_key = yen
+	}
+	text = {
+		trigger = {
+			exists = c:JAP
+			this = c:JAP
+			OR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:JAP
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:JAP = {
+				OR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+		localization_key = oban
+	}
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			OR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CHI
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:CHI = {
+				OR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+		localization_key = tael
+	}
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			NOR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CHI
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:CHI = {
+				NOR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+		localization_key = yuan
+	}
+	text = {
+		trigger = {
+			exists = c:AUS
+			this = c:AUS
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:AUS
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = austro_hungarian_crown
+	}
+	text = {
+		trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:NET
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = florin
+	}
+	text = {
+		trigger = {
+			exists = c:BIC
+			this = c:BIC
+		}
+		trigger = {
+			exists = c:HND
+			this = c:HND
+		}
+		trigger = {
+			exists = c:BHT
+			this = c:BHT
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				OR = {
+					has_diplomatic_pact = {
+						who = c:BIC
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:HND
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:BHT
+						type = customs_union
+					}
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = rupee
+	}
+	text = {
+		trigger = {
+			exists = c:TUR
+			this = c:TUR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:TUR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = turkish_lira
+	}
+	text = {
+		trigger = {
+			exists = c:POR
+			this = c:POR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:POR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = real
+	}
+	text = {
+		trigger = {
+			exists = c:BRZ
+			this = c:BRZ
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:BRZ
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = brazilian_real
+	}
+	text = {
+		trigger = {
+			exists = c:CLM
+			this = c:CLM
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CLM
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_1_texture
+	}
+	text = {
+		trigger = {
+			exists = c:ARG
+			this = c:ARG
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:ARG
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_2_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CHL
+			this = c:CHL
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CHL
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_3_texture
+	}
+	text = {
+		trigger = {
+			exists = c:BOL
+			this = c:BOL
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:BOL
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_4_texture
+	}
+	text = {
+		trigger = {
+			exists = c:VNZ
+			this = c:VNZ
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:VNZ
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_5_texture
+	}
+	text = {
+		trigger = {
+			exists = c:ECU
+			this = c:ECU
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:ECU
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_6_texture
+	}
+	text = {
+		trigger = {
+			exists = c:UCA
+			this = c:UCA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:UCA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_7_texture
+	}
+	text = {
+		trigger = {
+			exists = c:PEU
+			this = c:PEU
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:PEU
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_8_texture
+	}
+
+	text = {
+		trigger = {
+			exists = c:CNS
+			this = c:CNS
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CNS
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_9_texture
+	}
+
+	text = {
+		trigger = {
+			exists = c:FOA
+			this = c:FOA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:FOA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_10_texture
+	}
+	text = {
+		trigger = {
+			exists = c:GCO
+			this = c:GCO
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:FOA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_14_texture
+	}
+	text = {
+		trigger = {
+			exists = c:DEN
+			this = c:DEN
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:DEN
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = danish_krone
+	}
+	text = {
+		trigger = {
+			exists = c:NOR
+			this = c:NOR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:NOR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = norwegian_krone
+
+	}
+	text = {
+		trigger = {
+			exists = c:SWE
+			this = c:SWE
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:SWE
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = swedish_krone
+	}
+
+	text = {
+		trigger = {
+			exists = c:SCA
+			this = c:SCA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:SWE
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = scandinavian_krone
+	}
+
+	text = {
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+			}
+			any_country = {
+				limit = {
+					has_unique_currency = yes
+				}
+				NOT = {
+					has_diplomatic_pact = {
+						who = THIS
+						type = customs_union
+					}
+				}
+			}
+		}
+		localization_key = uni
+	}
+}
+currencytexture = {
+	type = country
+	log_loc_errors = no
+
+	text = {
+		trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:FRA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = french_franc_texture
+	}
+	text = {
+		trigger = {
+			exists = c:BEL
+			this = c:BEL
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:BEL
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = french_franc_texture
+	}
+	text = {
+		trigger = {
+			exists = c:SWI
+			this = c:SWI
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:SWI
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = french_franc_texture
+	}
+	text = {
+		trigger = {
+			exists = c:GBR
+			this = c:GBR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:GBR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = sterling_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CAN
+			this = c:CAN
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:CAN
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:GER
+			this = c:GER
+		}
+		trigger = {
+			exists = c:PRU
+			this = c:PRU
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				OR = {
+					has_diplomatic_pact = {
+						who = c:PRU
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:GER
+						type = customs_union
+					}
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = german_mark_texture
+	}
+	text = {
+		trigger = {
+			exists = c:USA
+			this = c:USA
+		}
+		trigger = {
+			exists = c:CSA
+			this = c:CSA
+		}
+		trigger = {
+			exists = c:GCO
+			this = c:GCO
+		}
+		trigger = {
+			exists = c:CNS
+			this = c:CNS
+		}
+		trigger = {
+			exists = c:FOA
+			this = c:USA
+		}
+		
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				OR = {
+					has_diplomatic_pact = {
+						who = c:USA
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:CSA
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:GCO
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:CNS
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:FOA
+						type = customs_union
+					}
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:MEX
+			this = c:MEX
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:MEX
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:PEU
+			this = c:PEU
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:PEU
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CLM
+			this = c:CLM
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:CLM
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:ARG
+			this = c:ARG
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:ARG
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CHL
+			this = c:CHL
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:CHL
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:BOL
+			this = c:BOL
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:BOL
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:VNZ
+			this = c:VNZ
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:VNZ
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:ECU
+			this = c:ECU
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:ECU
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:UCA
+			this = c:UCA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:UCA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = dollar_texture
+	}
+	text = {
+		trigger = {
+			exists = c:SPA
+			this = c:SPA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:SPA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = peseta_texture
+	}
+	text = {
+		trigger = {
+			exists = c:GRE
+			this = c:GRE
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:GRE
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = drachma_texture
+	}
+	text = {
+		trigger = {
+			exists = c:ITA
+			this = c:ITA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:ITA
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = lira_texture
+	}
+	text = {
+		trigger = {
+			exists = c:SAR
+			this = c:SAR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:SAR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = sterling_texture
+	}
+	text = {
+		trigger = {
+			exists = c:PAR
+			this = c:PAR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:PAR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = sterling_texture
+	}
+	text = {
+		trigger = {
+			exists = c:PAP
+			this = c:PAP
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:PAP
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = lira_texture
+	}
+	text = {
+		trigger = {
+			exists = c:SIC
+			this = c:SIC
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:SIC
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = lira_texture
+	}
+	text = {
+		trigger = {
+			exists = c:TUS
+			this = c:TUS
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes 
+				has_diplomatic_pact = {
+					who = c:TUS
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = lira_texture
+	}
+	text = {
+		trigger = {
+			exists = c:RUS
+			this = c:RUS
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:RUS
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = rouble_texture
+	}
+	text = {
+		trigger = {
+			exists = c:JAP
+			this = c:JAP
+			NOR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:JAP
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:JAP = {
+				NOR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+
+		localization_key = yen_texture
+	}
+	text = {
+		trigger = {
+			exists = c:JAP
+			this = c:JAP
+			OR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:JAP
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:JAP = {
+				OR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+
+		localization_key = oban_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			OR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CHI
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:CHI = {
+				OR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+		localization_key = tael_texture
+	}
+	text = {
+		trigger = {
+			exists = c:CHI
+			this = c:CHI
+			NOR = {
+				has_law = law_type:law_mercantilism
+				has_law = law_type:law_traditionalism
+			}
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:CHI
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+			c:CHI = {
+				NOR = {
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_traditionalism
+				}
+			}
+		}
+		localization_key = yuan_texture
+	}
+	text = {
+		trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:NET
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = florin_texture
+	}
+	text = {
+		trigger = {
+			exists = c:AUS
+			this = c:AUS
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:AUS
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = austro_hungarian_crown_texture
+	}
+	text = {
+		trigger = {
+			exists = c:POR
+			this = c:POR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:POR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = real_texture
+	}
+	text = {
+		trigger = {
+			exists = c:BRZ
+			this = c:BRZ
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:BRZ
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = real_texture
+	}
+	text = {
+		trigger = {
+			exists = c:TUR
+			this = c:TUR
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				has_diplomatic_pact = {
+					who = c:TUR
+					type = customs_union
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = turkish_lira_texture
+	}
+	text = {
+		trigger = {
+			exists = c:BIC
+			this = c:BIC
+		}
+		trigger = {
+			exists = c:HND
+			this = c:HND
+		}
+		trigger = {
+			exists = c:BHT
+			this = c:BHT
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				OR = {
+					has_diplomatic_pact = {
+						who = c:BIC
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:HND
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:BHT
+						type = customs_union
+					}
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = rupee_texture
+	}
+	text = {
+		trigger = {
+			exists = c:DEN
+			this = c:DEN
+		}
+		trigger = {
+			exists = c:NOR
+			this = c:NOR
+		}
+		trigger = {
+			exists = c:SWE
+			this = c:SWE
+		}
+		trigger = {
+			exists = c:SCA
+			this = c:SCA
+		}
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+				OR = {
+					has_diplomatic_pact = {
+						who = c:DEN
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:NOR
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:SWE
+						type = customs_union
+					}
+					has_diplomatic_pact = {
+						who = c:SCA
+						type = customs_union
+					}
+				}
+				is_junior_in_customs_union = yes
+			}
+		}
+		localization_key = danish_krone_texture
+	}
+
+	text = {
+		trigger = {
+			this = {
+				dont_have_unique_currency = yes
+			}
+			any_country = {
+				limit = {
+					has_unique_currency = yes
+				}
+				NOT = {
+					has_diplomatic_pact = {
+						who = THIS
+						type = customs_union
+					}
+				}
+			}
+		}
+		localization_key = uni_texture
+	}
+}

@@ -1,0 +1,64 @@
+﻿COUNTRIES = {
+	c:BRZ = {
+		# Exact date?
+		set_next_election_date = 1839.1.1
+		
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+
+		## GOVERNANCE PRINCIPLE ##
+		activate_law = law_type:law_monarchy
+		## DISTRIBUTION OF POWER ##
+		activate_law = law_type:law_wealth_voting # the 1824 constitution granted the vote to all Brazilian citizens, excluding those who did not have an annual net income of 200000 reais
+		## CITIZENSHIP ## 
+		activate_law = law_type:law_racial_segregation
+		## CHURCH & STATE ##
+		activate_law = law_type:law_state_religion
+		## BUREOCRACY ##
+		activate_law = law_type:law_appointed_bureaucrats
+		## ARMY MODEL ##
+		activate_law = law_type:law_professional_army
+		## INTERNAL SECURITY ##
+		activate_law = law_type:law_national_guard
+		## POLICING ##
+		activate_law = law_type:law_dedicated_police
+		## ECONOMY ##
+		activate_law = law_type:law_agrarianism
+		## TRADE  ##
+		activate_law = law_type:law_mercantilism
+		## TAXATION ## 
+		activate_law = law_type:law_per_capita_based_taxation
+		## EDUCATION SYSTEM ## 
+		activate_law = law_type:law_religious_schools
+		## HEALTH SYSTEM ## 
+		activate_law = law_type:law_charitable_health_system
+		## FREE SPEECH ##
+		activate_law = law_type:law_censorship
+		## CHILDREN RIGHTS ##
+		activate_law = law_type:law_restricted_child_labor
+		## WOMEN RIGHTS ##
+		activate_law = law_type:law_women_own_property
+		## MIGRATION ##
+		activate_law = law_type:law_no_migration_controls
+		## SLAVERY ##
+		activate_law = law_type:law_slave_trade
+		
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms
+
+		add_taxed_goods = g:liquor
+
+
+		add_journal_entry = {
+			type = ragamuffin_war
+		}
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

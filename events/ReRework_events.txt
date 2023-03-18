@@ -1,0 +1,186 @@
+ 
+# The formation of the Province of Canada
+tgn_je_events.4 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = tgn_je_events.4.t
+	desc = tgn_je_events.4.d
+	flavor = tgn_je_events.4.f
+
+	duration = 3
+
+	trigger = {
+		# triggered when je_tgn_forming_the_union completes
+	}
+
+	option = {
+		name = tgn_je_events.4.a
+		default_option = yes
+		add_journal_entry = {
+				type = je_tgn_build_ottawa
+		}
+		custom_tooltip = {
+			text = tgn_the_union_will_finally_form_tooltip
+			set_global_variable = {
+				name = ottawa_buildable
+				value = yes
+			}
+			if = {
+				limit = {
+					c:ONT = {
+						is_player = no
+					}
+					c:QUE = {
+						is_player = no
+					}
+				}
+				c:ONT = {
+					annex = c:QUE
+					add_modifier = canada_tgnxxx
+					add_modifier = canada_tgnxxx_ontario
+				}
+				set_global_variable = {
+					name = tgn_province_of_canada_formed_on
+					value = yes
+				}
+				every_scope_state = {
+					limit = {
+						is_incorporated = no
+						OR = {
+							state_region = {
+								is_homeland = cu:anglo_canadian
+							}
+							state_region = {
+								is_homeland = cu:franco_canadian
+							}
+						}
+					}
+					set_state_type = incorporated
+				}
+				c:GBR = {
+					hidden_effect = {
+						remove_diplomatic_pact = {
+							country = c:ONT
+							type = puppet
+						}
+					}
+					create_diplomatic_pact = {
+						country = c:ONT
+						type = dominion
+					}
+				}
+				s:STATE_ONTARIO = {
+                    add_modifer = parliament_of_canada
+				}
+			}
+			if = {
+				limit = {
+					c:ONT = {
+						is_player = yes
+					}
+					c:QUE = {
+						is_player = no
+					}
+				}
+				c:ONT = {
+					annex = c:QUE
+					add_modifier = canada_tgnxxx
+					add_modifier = canada_tgnxxx_ontario
+				}
+				set_global_variable = {
+					name = tgn_province_of_canada_formed_on
+					value = yes
+				}
+				every_scope_state = {
+					limit = {
+						is_incorporated = no
+						OR = {
+							state_region = {
+								is_homeland = cu:anglo_canadian
+							}
+							state_region = {
+								is_homeland = cu:franco_canadian
+							}
+						}
+					}
+					set_state_type = incorporated
+				}
+				c:GBR = {
+					hidden_effect = {
+						remove_diplomatic_pact = {
+							country = c:QUE
+							type = puppet
+						}
+					}
+					create_diplomatic_pact = {
+						country = c:QUE
+						type = dominion
+					}
+				}
+				s:STATE_ONTARIO = {
+                    add_modifer = parliament_of_canada
+				}
+			}
+			if = {
+				limit = {
+					c:ONT = {
+						is_player = no
+					}
+						c:QUE = {
+						is_player = yes
+					}
+				}
+				c:QUE = {
+					annex = c:ONT
+					add_modifier = canada_tgnxxx
+					add_modifier = canada_tgnxxx_quebec
+				}
+				set_global_variable = {
+					name = tgn_province_of_canada_formed_qc
+					value = yes
+				}
+				every_scope_state = {
+					limit = {
+						is_incorporated = no
+						OR = {
+							state_region = {
+								is_homeland = cu:anglo_canadian
+							}
+							state_region = {
+								is_homeland = cu:franco_canadian
+							}
+						}
+					}
+					set_state_type = incorporated
+				}
+				c:GBR = {
+					hidden_effect = {
+						remove_diplomatic_pact = {
+							country = c:QUE
+							type = puppet
+						}
+					}
+					create_diplomatic_pact = {
+						country = c:QUE
+						type = dominion
+					}
+				}
+			}
+			add_modifier = {
+				name = canada_test_modifier
+				months = 24
+			}
+			s:STATE_QUEBEC = {
+				add_modifer = parliament_of_canada
+			} 
+		}
+	}
+}

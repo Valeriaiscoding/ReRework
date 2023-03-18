@@ -1,0 +1,215 @@
+﻿AMG = { # Amish Deaconate
+	pattern = "pattern_border_two_stripes.dds"
+	color1 = "black"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_couped.dds"
+		color1 = "white"
+		instance = { scale = { 0.7 0.7 } position = { 0.3 .5 }}
+	}
+}
+
+MWU = { # Midwestern Union
+	pattern = "pattern_border_of_2.dds"
+	color1 = "blue"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+	}
+}
+
+APP = { # Appalachia
+	pattern = "pattern_per_saltire.dds"
+	color1 = "green"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_skye.dds"
+		color1 = "blue"
+		instance = {position = { 0.5 0.0 }}
+	}
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "white"
+	}
+}
+PIE = { # Piedmont
+	pattern = "pattern_border_two_stripes.dds"
+	color1 = "red"
+	color2 = "red"
+
+
+	colored_emblem = {
+		texture = "ce_tribar.dds"
+		color2 = "white"
+		color1 = "blue"
+		color3 = "red"
+	}
+}
+TLC = { # The Low Country
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = "purple"
+	color2 = "white"
+
+
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.6 0.6 } position = { 0.15 .5 }}
+	}
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+		instance = { scale = { 0.2 0.2 } position = { 0.3 .2 }}
+
+	}
+}
+SHL = { # Middle Dixie
+	pattern = "pattern_border_two_stripes.dds"
+	color1 = "white"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "red"
+
+	}
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = "red"
+		instance = { scale = { 0.4 0.4 } position = { 0.2 .2 }}
+
+	}
+}
+TMS = { # Piedmont
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = "blue"
+	color2 = "blue"
+
+
+	colored_emblem = {
+		texture = "ce_fleur_de_lis.dds"
+		color1 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.8 .2 }}
+		instance = { scale = { 0.4 0.3 } position = { 0.8 .5 }}
+		instance = { scale = { 0.4 0.3 } position = { 0.8 .8 }}
+	}
+}
+CSA_magnolia = { # Magnolia Federation
+	# Magnolian Flag
+	
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = {35 43 43}
+	color2 = {247 213 204}
+
+	colored_emblem = {
+		texture = "ce_maegnol.dds"
+		color1 = {247 213 204}
+		color2 = {201 174 93}
+		color2 = "white"
+		instance = { scale = { .5 .5 } position = { 0.2 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_stripes_05.dds"
+		color1 = {0 99 0}
+		instance = { scale = { .6 } position = { 0.7 0.5 } }		
+	}	
+}
+CSA_magnolia_communist = { # Magnolia Federation
+	# communist Magnolian Flag
+	
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = {35 43 43}
+	color2 = {201 174 93}
+
+	colored_emblem = {
+		texture = "ce_maegnol.dds"
+		color1 = {201 174 93}
+		color2 = {201 174 93}
+		color2 = "red"
+		instance = { scale = { .1 .1 } position = { 0.2 0.25 } }		
+	}
+
+	colored_emblem = {
+		texture = "ce_hammer_sickle_wreath.dds"
+		color1= "red"
+		instance = { scale = { .7 .7 } position = { 0.2 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_stripes_05.dds"
+		color1 = "red"
+		instance = { scale = { .6 } position = { 0.7 0.5 } }		
+	}	
+}
+
+GNY = { # Greater New York
+	
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = "white"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "blue"
+		color2 = {253 143 69}
+		
+	}
+}
+GYL = { # Yankee Federation
+	
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = "white"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "blue"
+		color2 = {253 143 69}
+		
+	}
+	colored_emblem = {
+		texture = "ce_tree_new_england.dds"
+		color1 = "green"
+		instance = { scale = { .6 } position = { 0.2 0.3 } }
+		
+	}
+}
+CSA_dixieland = { # Autononomous Dixie
+	# Magnolian Flag
+	
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = {0 99 0}
+	color2 = {0 99 0}
+
+	colored_emblem = {
+		texture = "ce_maegnol.dds"
+		color1 = {247 213 204}
+		color2 = {201 174 93}
+		color2 = "white"
+		instance = { scale = { .8 .8 } position = { 0.3 0.5 } }		
+	}
+}
+CSA_dixieland_communist = { #Autonomous Dixie Communist
+	
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = "red"
+	color2 = {201 174 93}
+
+	colored_emblem = {
+		texture = "ce_maegnol.dds"
+		color1 = {201 174 93}
+		color2 = {201 174 93}
+		color2 = "red"
+		instance = { scale = { .1 .1 } position = { 0.2 0.25 } }		
+	}
+
+	colored_emblem = {
+		texture = "ce_hammer_sickle_wreath.dds"
+		color1= "red"
+		instance = { scale = { .7 .7 } position = { 0.2 0.5 } }		
+	}
+}

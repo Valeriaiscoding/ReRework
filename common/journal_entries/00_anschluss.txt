@@ -1,0 +1,77 @@
+﻿#je_anschluss = {
+#	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+#
+#	is_shown_when_inactive = {
+#		OR = {
+#			AND = { 
+#				exists = c:PRU
+#				this = c:PRU
+#			}
+#			AND = { 
+#				NOT = { exists = c:PRU }
+#				exists = c:GER
+#				this = c:GER
+#			}
+#		}
+#		OR = {
+#			country_tier = kingdom
+#			country_tier = principality
+#		}
+#	}
+#
+#	possible = {
+#		country_rank >= rank_value:major_power
+#		has_technology_researched = nationalism
+#		is_subject = no
+#	}
+#
+#	complete = {
+#		calc_true_if = {
+#			C:AUS = {
+#				amount = 0
+#				owns_entire_state_region = STATE_POMERANIA
+#				owns_entire_state_region = STATE_ELBE
+#				owns_entire_state_region = STATE_WESTPHALIA
+#				owns_entire_state_region = STATE_ANHALT
+#				owns_entire_state_region = STATE_RHINELAND
+#				owns_entire_state_region = STATE_NORTH_RHINE
+#				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+#				owns_entire_state_region = STATE_HANNOVER
+#				owns_entire_state_region = STATE_BRUNSWICK
+#				owns_entire_state_region = STATE_SAXONY
+#				owns_entire_state_region = STATE_HESSE
+#				owns_entire_state_region = STATE_MECKLENBURG
+#				owns_entire_state_region = STATE_SILESIA
+#				owns_entire_state_region = STATE_WEST_PRUSSIA
+#				owns_entire_state_region = STATE_EAST_PRUSSIA
+#				owns_entire_state_region = STATE_POSEN
+#				owns_entire_state_region = STATE_ALSACE_LORRAINE
+#				owns_entire_state_region = STATE_WURTTEMBERG
+#				owns_entire_state_region = STATE_BADEN
+#				owns_entire_state_region = STATE_BAVARIA
+#				owns_entire_state_region = STATE_FRANCONIA
+#				}
+#			}
+#		}
+#	}
+#
+#	on_monthly_pulse = {
+#		events = {
+#			
+#		}
+#	}
+#
+#	on_complete = {
+#		trigger_event = { id = anschluss.1 } # Anschluss
+#	}
+#
+#	status_desc = {
+#		first_valid = {
+#			triggered_desc = {
+#				desc = je_north_german_status
+#			}
+#		}
+#	}
+#
+#	weight = 100
+#}

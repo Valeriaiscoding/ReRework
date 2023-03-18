@@ -1,0 +1,21 @@
+﻿EMC = { # East Micronesia
+	color = { 248 218 99 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { micronesian }
+	capital = STATE_EAST_MICRONESIA
+}
+
+WMC = { # West Micronesia
+	color = { 54 102 190}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { micronesian }
+	capital = STATE_WEST_MICRONESIA
+}

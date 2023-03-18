@@ -1,0 +1,149 @@
+﻿pm_trade_center_local_loading_horse_carriages = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.2
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_grain_add = 3				#x20 = 80
+			building_input_wood_add = 1					
+		}												#total = 160
+
+		level_scaled = {
+			building_employment_laborers_add = 500			#x
+		}
+	}
+}
+
+pm_trade_center_specialized_logistics = {
+
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.3
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_grain_add = 2				#x20 = 40
+			building_input_wood_add = 2					#x20 = 40
+			building_input_transportation_add = 2		#x30 = 60
+		}												#total = 140
+
+		level_scaled = {
+			building_employment_laborers_add = 300			
+			building_employment_machinists_add = 100		
+		}
+	}
+
+}
+
+pm_trade_center_local_loading_automobiles = {
+	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	pollution_generation = 5
+	unlocking_technologies = {
+		combustion_engine
+	}
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.4
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_transportation_add = 2		#x30 = 60
+			building_input_automobiles_add = 0.7		#x100 = 70
+														#total = 130
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 200			
+			building_employment_machinists_add = 150		
+		}
+	}
+}
+
+pm_trade_center_scribes = {
+	texture = "gfx/interface/icons/goods_icons/services.dds"
+
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clergymen_add = 200  # choice of clergymen is kinda arbitrary, but this is made for illiterate and backward nations, and should be switched to better ones asap.
+		}
+	}
+	ai_value = 100000
+}
+
+
+pm_trade_center_contact_mails = {
+	texture = "gfx/interface/icons/goods_icons/services.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_services_add = 2				#x30 = 60
+
+		}
+		level_scaled = {
+			building_employment_clerks_add = 200 #525
+		}
+	}
+	ai_value = 200000
+}
+
+pm_trade_center_contact_telegram = {
+	texture = "gfx/interface/icons/invention_icons/electrical_telegraph.dds"
+	unlocking_technologies = {
+		electric_telegraph
+	}
+	state_modifiers = {
+		unscaled = {
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_services_add = 1				#x30 = 30
+			building_input_electricity_add = 1.5		#x30 = 45
+		}
+		level_scaled = {
+			building_employment_clerks_add = 150
+		}
+	}
+	ai_value = 300000
+}
+
+pm_trade_center_contact_telephones = {
+	texture = "gfx/interface/icons/goods_icons/telephones.dds"
+	unlocking_technologies = {
+		telephone
+	}
+	state_modifiers = {
+		unscaled = {
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_services_add = 0.5			#x30 = 15
+			building_input_electricity_add = 1			#x30 = 30
+			building_input_telephones_add = 1			#x70 = 70
+		}
+		level_scaled = {
+			building_employment_clerks_add = 100 
+		}
+	}
+	ai_value = 400000
+}

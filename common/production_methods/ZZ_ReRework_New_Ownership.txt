@@ -1,0 +1,336 @@
+﻿pm_privately_owned_automobiles = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 75
+			building_employment_shopkeepers_add = 200 
+		}
+		unscaled = {
+			building_capitalists_shares_add = 4
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_automobiles = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+			building_employment_shopkeepers_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 9
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_automobiles = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_bureaucrats_shares_add = 2
+ building_government_shares_add  = 8
+		}
+	}
+}
+
+pm_worker_cooperative_automobiles = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_machinists_add = 100
+		}
+		unscaled = {
+			building_engineers_shares_add = 2
+			building_machinists_shares_add = 1
+			building_laborers_shares_add = 1
+		}
+	}
+}
+
+pm_privately_owned_building_explosives = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_production_methods = {
+		pm_leblanc_process
+		pm_ammonia-soda_process
+		pm_vacuum_evaporation
+		pm_brine_electrolysis
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 75 #was 100 total wage weight now 900
+			building_employment_shopkeepers_add = 200 #was 0
+		}
+		unscaled = {
+			building_capitalists_shares_add = 4
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_explosives = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_production_methods = {
+		pm_leblanc_process
+		pm_ammonia-soda_process
+		pm_vacuum_evaporation
+		pm_brine_electrolysis
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+			building_employment_shopkeepers_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 9
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_explosives = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_production_methods = {
+		pm_leblanc_process
+		pm_ammonia-soda_process
+		pm_vacuum_evaporation
+		pm_brine_electrolysis
+	}
+
+	unlocking_laws = {
+		law_command_economy
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_bureaucrats_shares_add = 5
+		}
+	}
+}
+
+pm_worker_cooperative_building_explosives = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_production_methods = {
+		pm_leblanc_process
+		pm_ammonia-soda_process
+		pm_vacuum_evaporation
+		pm_brine_electrolysis
+	}
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_engineers_add = 50
+		}
+		unscaled = {
+			building_laborers_shares_add = 1
+			building_engineers_shares_add = 2
+		}
+	}
+}
+# Luxury
+pm_privately_owned_luxuries = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 5
+		}
+	}
+}
+
+pm_government_controlled_luxuries = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+			building_employment_bureaucrats_add = 125
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 3
+			building_bureaucrats_shares_add = 2
+		}
+	}
+}
+
+pm_worker_cooperative_luxuries  = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_shopkeepers_shares_add = 250
+		}
+		unscaled = {
+			building_laborers_shares_add = 1
+			building_shopkeepers_shares_add = 2
+		}
+	}
+}
+
+pm_publicly_traded_building_power_plant = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+	
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+			building_employment_shopkeepers_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 9
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+#TGR Missing
+pm_merchant_guilds_building_artillery_industry = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_production_methods = {
+		pm_cannons
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 5
+		}
+	}
+}		
+
+pm_privately_owned_building_artillery_industry = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_production_methods = {
+		pm_smoothbores
+		pm_breech_loaders
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	unlocking_technologies = {
+		stock_exchange
+	}
+
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 50 #was 100 total wage weight now 900
+			building_employment_shopkeepers_add = 300 #was 0
+		}
+		unscaled = {
+			building_capitalists_shares_add = 3
+			building_shopkeepers_shares_add = 2
+		}
+	}
+}
+
+pm_publicly_traded_building_artillery_industry = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_production_methods = {
+		pm_breech_loaders
+	}
+
+ disallowing_laws = {
+		law_traditionalism
+		law_command_economy
+		law_council_republic
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100 #was 150 total wage weight 800
+			building_employment_shopkeepers_add = 100 #was 0
+		}
+		unscaled = {
+			building_capitalists_shares_add = 9
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}

@@ -1,0 +1,32 @@
+﻿catholic = {
+	heritage = yes
+}
+
+orthodox = {
+	heritage = yes
+}
+
+reformed = {
+	heritage = yes
+}
+
+buddhist = {
+	heritage = yes
+}
+
+indian = {
+	heritage = yes
+}
+
+eastern = {
+	#heritage = yes
+}
+
+christian = {
+	#heritage = yes
+}
+
+muslim = {
+	#heritage = yes
+}
+

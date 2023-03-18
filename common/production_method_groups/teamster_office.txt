@@ -1,0 +1,44 @@
+pmg_base_building_teamster_office = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_teamster_office_handcart
+		pm_teamster_office_wagon
+		pm_teamster_office_truck
+	}
+}
+pmg_teamster_work_modes = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_teamster_office_safe_load
+		pm_teamster_office_loose_load_limits
+	}
+}
+pmg_teamster_extra_shift = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_teamster_office_single_shift
+		pm_teamster_office_extended_shift
+		pm_teamster_office_extended_shift_automobile
+		pm_teamster_office_second_shift
+		pm_teamster_office_second_shift_automobile
+	}
+}
+pmg_teamster_rickshaw_and_taxi = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_teamster_office_just_cargo
+		pm_teamster_office_rickshaw
+		pm_teamster_office_hackney
+		pm_teamster_office_taxi
+	}
+}
+pmg_ownership_teamster_office = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_merchant_guilds_teamster_office
+		pm_privately_owned_building_railway
+		pm_publicly_traded_building_railway
+		pm_government_run_building_railway
+		pm_worker_cooperative_building_railway
+	}
+}

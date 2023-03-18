@@ -1,0 +1,29 @@
+building_teamster_office = {
+	building_group = bg_logistics	
+	texture = "gfx/interface/icons/building_icons/building_teamster_office.dds"
+	
+	unlocking_technologies = {
+		urbanization
+	}
+
+	production_method_groups = {
+		pmg_base_building_teamster_office
+		pmg_teamster_work_modes
+		pmg_teamster_extra_shift
+		pmg_teamster_rickshaw_and_taxi
+		pmg_ownership_teamster_office
+	}
+
+	#required_construction = construction_cost_low
+	
+	# ai_value = 2000
+	
+	# should_auto_expand = { 
+	# 	OR = {
+	# 		cash_reserves_ratio > 0.5
+	# 		is_subsidized = yes
+	# 	}
+	# 	state.market_access < 1
+	# 	owner.construction_queue_duration < max_autoexpand_queue_weeks
+	# }
+}

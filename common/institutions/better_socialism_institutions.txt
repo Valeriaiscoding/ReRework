@@ -1,0 +1,16 @@
+institution_development_and_reform_commission = {
+	icon = "gfx/interface/icons/institution_icons/fa_gai_wei.dds"
+	background_texture = "gfx/interface/illustrations/institutions/workplace_safety.dds"
+	modifier = {
+		state_laborers_investment_pool_contribution_add = 0.01
+		state_clerks_investment_pool_contribution_add = 0.02
+		state_machinists_investment_pool_contribution_add = 0.01
+		state_engineers_investment_pool_contribution_add = 0.02
+
+		state_clergymen_investment_pool_contribution_mult = -0.2
+		state_aristocrats_investment_pool_contribution_mult = -0.2
+		state_capitalists_investment_pool_contribution_mult = -0.15
+
+		tax_dividends_add = 0.04
+	}
+}

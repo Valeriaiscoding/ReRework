@@ -1,0 +1,81 @@
+﻿COUNTRIES = {
+	c:CHL = {
+		# presidential election did occur around this date but only uncomment if giving Chile a voting franchise
+		# set_next_election_date = 1836.3.15
+		
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+
+		## Governance Principles ##
+		activate_law = law_type:law_presidential_republic
+		## DISTRIBUTION OF POWER ##
+		activate_law = law_type:law_oligarchy
+		## CITIZENSHIP ## 
+		activate_law = law_type:law_racial_segregation
+		## CHURCH & STATE ##
+		activate_law = law_type:law_freedom_of_conscience
+		## BUREOCRACY ##
+		activate_law = law_type:law_appointed_bureaucrats
+		## ARMY MODEL ##
+		activate_law = law_type:law_professional_army
+		## INTERNAL SECURITY ##
+		activate_law = law_type:law_national_guard
+		## POLICING ##
+		activate_law = law_type:law_dedicated_police
+		## ECONOMY ##
+		activate_law = law_type:law_agrarianism
+		## TRADE  ##
+		activate_law = law_type:law_mercantilism
+		## TAXATION ## 
+		activate_law = law_type:law_per_capita_based_taxation
+		## EDUCATION SYSTEM ## 
+		activate_law = law_type:law_religious_schools
+		## HEALTH SYSTEM ## 
+		activate_law = law_type:law_charitable_health_system
+		## WELFARE ##
+		## FREE SPEECH ##
+		activate_law = law_type:law_censorship
+		## CHILDREN RIGHTS ##
+		activate_law = law_type:law_restricted_child_labor
+		## WOMEN RIGHTS ##
+		activate_law = law_type:law_women_own_property
+		## MIGRATION ##
+		activate_law = law_type:law_no_migration_controls
+		## SLAVERY ##
+		activate_law = law_type:law_slavery_banned
+		
+		
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms	
+		
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 2
+		}
+
+		ig:ig_armed_forces = {
+			add_ideology = ideology_caudillismo
+			add_ruling_interest_group = yes
+		}
+		ig:ig_landowners = {
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_caudillismo
+			#add_ideology = ideology_patriotic
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+			#add_ideology = ideology_patriotic
+		}
+		ig:ig_rural_folk = {
+			remove_ideology = ideology_isolationist
+			add_ideology = ideology_isolationist_expansionism
+			#add_ideology = ideology_patriotic
+		}
+
+		add_modifier = {
+			name = age_of_caudillos_modifier
+			months = very_long_modifier_time
+			is_decaying = yes
+		}
+	}
+}

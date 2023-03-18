@@ -1,0 +1,681 @@
+﻿### Generic
+
+## Ice
+state_trait_cold_water_port = {
+	icon = "gfx/interface/icons/state_trait_icons/cold_water_port.dds"
+
+	modifier = {
+		building_shipyards_throughput_mult = -0.10
+		state_building_port_max_level_add = -2
+		building_port_throughput_mult = -0.15
+		state_building_naval_base_max_level_add = -10
+	}
+}
+
+state_trait_freezing_water_port = {
+	icon = "gfx/interface/icons/state_trait_icons/freezing_water_port.dds"
+
+	modifier = {
+		building_shipyards_throughput_mult = -0.20
+		state_building_port_max_level_add = -3
+		building_port_throughput_mult = -0.30
+		state_building_naval_base_max_level_add = -20
+	}
+}
+
+### Regional
+
+
+### Western Europe
+
+## Home Counties
+state_trait_london_dockworks = {
+	icon = "gfx/interface/icons/state_trait_icons/london_docklands2.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Munster
+state_trait_cork_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/cork_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Elbe
+state_trait_mouth_of_the_elbe = {
+	icon = "gfx/interface/icons/state_trait_icons/mouth_of_the_elbe.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Ulster
+state_trait_killybegs_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/killybegs_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Wales
+state_trait_milford_haven = {
+	icon = "gfx/interface/icons/state_trait_icons/milford_haven.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Lancashire
+state_trait_lancashire_harbors = {
+	icon = "gfx/interface/icons/state_trait_icons/liverpool_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## West Country
+
+state_trait_poole_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/poole_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Provence
+state_trait_port_hercules = {
+	icon = "gfx/interface/icons/state_trait_icons/port_hercules.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Brittany
+state_trait_roadstead_of_brest = {
+	icon = "gfx/interface/icons/state_trait_icons/roadstead_of_brest.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Scotland
+
+state_trait_scapa_flow = {
+	icon = "gfx/interface/icons/state_trait_icons/scapa_flow.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Southern Finland
+state_trait_coastal_archipelagos = {
+	icon = "gfx/interface/icons/state_trait_icons/helsinki_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+### Southern Europe
+
+## Malta
+state_trait_grand_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/grand_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+### Eastern Europe
+
+## Crimea
+state_trait_sevastopol_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/sevastopol_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+### North America
+
+## New York
+state_trait_new_york_harbor2 = {
+	icon = "gfx/interface/icons/state_trait_icons/new_york_harbor2.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.4
+		building_port_throughput_mult = 0.4
+		state_building_port_max_level_add = 3
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+## British Columbia
+
+state_trait_burrard_inlet = {
+	icon = "gfx/interface/icons/state_trait_icons/burrard_inlet.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Hawaii
+
+state_trait_pearl_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/pearl_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Alaska
+
+state_trait_prince_william_sound = {
+	icon = "gfx/interface/icons/state_trait_icons/prince_william_sound.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Washington
+
+state_trait_puget_sound = {
+	icon = "gfx/interface/icons/state_trait_icons/prince_william_sound.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## California
+
+state_trait_san_francisco_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/san_francisco_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.25
+		building_port_throughput_mult = 0.25
+		state_building_port_max_level_add = 3
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Quebec
+
+state_trait_sept_iles = {
+	icon = "gfx/interface/icons/state_trait_icons/sept_iles.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 3
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+## Florida
+
+state_trait_tampa_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/tampa_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Guerrero 
+
+state_trait_zihuatanejo_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/zihuatanejo_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+### Central America
+
+## Cuba
+
+state_trait_guantanamo_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/guantanemo_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## West Indies
+
+state_trait_carribean_harbors = {
+	icon = "gfx/interface/icons/state_trait_icons/carribean_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Puerto Rico
+
+state_trait_san_juan_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/san_juan_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+### South America
+
+## Rio de Janeiro
+
+state_trait_rio_de_janeiro_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/rio_de_janeiro_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Uruguay
+
+state_trait_bay_of_candelaria = {
+	icon = "gfx/interface/icons/state_trait_icons/bay_of_candelaria.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Santiago
+
+state_trait_valparaiso_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/valparaiso_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Bolivar
+
+state_trait_gulf_of_paria = {
+	icon = "gfx/interface/icons/state_trait_icons/gulf_of_paria.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+### North Africa
+
+### Subsaharan Africa
+
+## Senegal
+
+state_trait_dakar_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/dakar_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## South Angola
+
+state_trait_lobito_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/lobito_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Yoruba States
+
+state_trait_lagos_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/lagos_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Kenya
+
+state_trait_kilindini_ria = {
+	icon = "gfx/interface/icons/state_trait_icons/kilindini_ria.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+### Indonesia
+
+## East Borneo
+
+state_trait_balikpapan_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/balikpapan_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## North Summatra
+
+state_trait_tanjung_perak_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/tanjung_perak_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Luzon
+
+state_trait_manila_bay2 = {
+	icon = "gfx/interface/icons/state_trait_icons/manila_bay2.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_subic_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/subic_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Malaya
+
+state_trait_keppel_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/keppel_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Tonga
+
+state_trait_pago_pago_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/pagopago.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+### India
+
+## Ceylon
+
+state_trait_trincomalee_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/trincomalee_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+### East Asia
+
+## Shaozhou
+
+state_trait_hong_kong_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/hong_kong_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.35
+		building_port_throughput_mult = 0.35
+		state_building_port_max_level_add = 3
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+## Kanto
+
+state_trait_yokohama_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/yokohama_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.1
+		building_port_throughput_mult = 0.1
+		state_building_port_max_level_add = 1
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+## Kansai
+
+state_trait_osaka_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/osaka_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+## Chubu
+
+state_trait_nagoya_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/nagoya_bay.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+### Australasia
+
+## New South Wales
+
+state_trait_sydney_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/sydney_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.35
+		building_port_throughput_mult = 0.35
+		state_building_port_max_level_add = 3
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+## North Island
+
+state_trait_waitemata_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/waitemata_harbor.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		building_group_bg_fishing_throughput_mult = 0.15
+		building_port_throughput_mult = 0.15
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}

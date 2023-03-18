@@ -1,0 +1,205 @@
+﻿# If you add religions, and use those tags, do not change them without changing everywhere they are used.
+
+catholic = {
+	texture = "gfx/interface/icons/religion_icons/catholic.dds"
+	traits = {
+		catholic
+		christian
+	}
+	color = { 0.8 0.6 0.4 }
+}
+mormonism = {
+	texture = "gfx/interface/icons/religion_icons/mormonism.dds"
+	traits = {
+		christian
+	}
+	taboos = {  
+		liquor wine coffee tobacco opium
+	}
+	color = { 0.8 0.6 0.4 }
+}
+protestant = {
+	texture = "gfx/interface/icons/religion_icons/protestant.dds"
+	traits = {
+		reformed
+		christian
+	}
+	color = { 0.2 0.3 0.55 }
+}
+
+anabaptist = {
+	texture = "gfx/interface/icons/religion_icons/anabaptist.dds"
+	traits = {
+		reformed
+		christian
+	}
+	color = {77 210 255}
+}
+
+southern_baptist = {
+	texture = "gfx/interface/icons/religion_icons/baptism.dds"
+	traits = {
+		reformed
+		christian
+	}
+	color = {130 22 0}
+}
+presby = {
+	texture = "gfx/interface/icons/religion_icons/presby.dds"
+	traits = {
+		reformed
+		christian
+	}
+	color = {20 0 245 }
+}
+lutheran = {
+	texture = "gfx/interface/icons/religion_icons/reformed.dds"
+	traits = {
+		reformed
+		christian
+	}
+	color = { 59 72 89 }
+}
+dutch_reformed = {
+	texture = "gfx/interface/icons/religion_icons/reformed.dds"
+	traits = {
+		reformed
+		christian
+	}
+	color = {  59 72 89 }
+}
+methodist = {
+	texture = "gfx/interface/icons/religion_icons/methodism.dds"
+	traits = {
+		christian
+	}
+	color = {28 237 161}
+}
+
+anglican = {
+	texture = "gfx/interface/icons/religion_icons/anglican.dds"
+	traits = {
+		reformed
+		christian
+	}
+	
+	color = {177 189 189}
+}
+
+orthodox = {
+	texture = "gfx/interface/icons/religion_icons/orthodox.dds"
+	traits = {
+		christian
+		orthodox
+	}
+	color = { 0.62 0.64 0.6 }
+}
+
+godworshippingsociety = {
+	texture = "gfx/interface/icons/religion_icons/taiping.dds"
+	traits = {
+		christian
+	}
+	taboos = {
+		liquor wine opium tobacco
+	}
+	color = { 0.3 0.4 0.65 }
+}
+
+oriental_orthodox = {
+	texture = "gfx/interface/icons/religion_icons/coptic.dds"
+	traits = {
+		christian
+		orthodox
+	}
+	color = { 0.1 0.5 0.6 }
+}
+
+sunni = {
+	texture = "gfx/interface/icons/religion_icons/sunni.dds"
+	traits = {
+		muslim
+	}
+	color = { 0.1 0.5 0.3 }
+	
+	taboos = {
+		liquor wine
+	} 
+}
+
+shiite = {
+	texture = "gfx/interface/icons/religion_icons/shiite.dds"
+	traits = {
+		muslim
+	}
+	color = { 0.4 0.7 0.3 }
+	
+	taboos = {
+		liquor wine
+	}
+}
+
+mahayana = {
+	texture = "gfx/interface/icons/religion_icons/mahayana.dds"
+	traits = {
+		buddhist
+		eastern
+	}
+	color = { 0.7 0.35 0.1 }
+}
+
+gelugpa = {
+	texture = "gfx/interface/icons/religion_icons/gelugpa.dds"
+	traits = {
+		buddhist
+		eastern
+	}
+	color = { 0.1 0.4 0.9 }
+}
+
+theravada = {
+	texture = "gfx/interface/icons/religion_icons/theravada.dds"
+	traits = {
+		buddhist
+		eastern
+	}
+	color = { 0.7 0.4 0.6 }
+}
+
+hindu = {
+	texture = "gfx/interface/icons/religion_icons/hindu.dds"
+	traits = {
+		eastern
+		indian
+	}
+	color = { 0.7 0.4 0.3 }
+	taboos = {
+		meat
+	}
+}
+
+shinto = {
+	texture = "gfx/interface/icons/religion_icons/shinto.dds"
+	traits = {
+		eastern
+	}
+	color = { 0.4 0.1 0.2 }
+}
+
+sikh = {
+	texture = "gfx/interface/icons/religion_icons/sikh.dds"
+	traits = {
+		eastern
+		indian
+	}
+	color = { 1 1 0.1 }
+}
+
+animist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		animist
+	}
+	color = { 0.6 0.3 0.2 }
+}
+
