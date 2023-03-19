@@ -83,7 +83,9 @@ law_political_bureaucrats = {
 				value = 0.15
 				#multiply = literacy_rate
 			}
-	
+	 }
+	}
+}
 		# Capitalists are politically connected
 		add = {
 			desc = "POP_CAPITALISTS"			
@@ -156,7 +158,7 @@ law_appointed_bureaucrats = {
 			#multiply = literacy_rate
 		}
 }
-
+}
 law_elected_bureaucrats = {
 	group = lawgroup_bureaucracy
 	

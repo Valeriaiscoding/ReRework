@@ -30,124 +30,17 @@ law_trinket_subsidies = {
 			desc = "POP_POVERTY"			
 			if = {
 				limit = { 
-					standard_of_living <= 14
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
+					owner = { NOT = { has_law = law_type:law_trinket_subsidies } }
 				}
-				value = 0.1
+				
+				# SoL 19 gives 0.1 pop support, 18 -> 0.2, 17 -> 0.3, ... 5 -> 1.5
+				value = 20
+				subtract = standard_of_living
+				multiply = 0.1
+				multiply = literacy_rate
+				min = 0
+				max = 0.5
 			}
-			if = {
-				limit = { 
-					standard_of_living <= 13
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 12
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 11
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}				
-			if = {
-				limit = { 
-					standard_of_living <= 10
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}			
-			if = {
-				limit = { 
-					standard_of_living <= 9
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 8
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 7
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 6
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 01
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 5
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}					
 		}
 	}
 }

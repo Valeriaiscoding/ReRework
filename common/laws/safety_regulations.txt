@@ -44,7 +44,7 @@ law_minimal_safety = {
 						pop_employment_building_group = bg_manufacturing
 					}
 					owner = { 
-						NOT = { has_law = law_type:law_worker_protections }
+						NOT = { has_law = law_type:law_minimal_safety }
 					}
 				}
 				add = {
@@ -57,7 +57,7 @@ law_minimal_safety = {
 			desc = "POP_POVERTY"			
 			if = {
 				limit = { 
-					owner = { NOT = { has_law = law_type:law_worker_protections } }
+					owner = { NOT = { has_law = law_type:law_minimal_safety } }
 				}
 				
 				# SoL 19 gives 0.1 pop support, 18 -> 0.2, 17 -> 0.3, ... 5 -> 1.5

@@ -384,6 +384,7 @@ law_cooperative_ownership = {
 	
 	disallowing_laws = {
 		law_serfdom
+		law_one_party_leadership
 	}
 	
 	unlocking_laws = {
@@ -461,7 +462,7 @@ law_cooperative_ownership = {
 		}
 	}
 }
-
+}
 law_command_economy = {
 	group = lawgroup_economic_system
 	

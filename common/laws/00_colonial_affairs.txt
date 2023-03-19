@@ -118,8 +118,7 @@ pop_support = {
 	
 	on_activate = {
 		deactivate_law = law_type:law_multicultural
-	
-	
+	 }
 	pop_support = {
 		value = 0
 		# Officers like colonialism
@@ -147,4 +146,5 @@ pop_support = {
 			navy_size >= 50
 		}
 	}
+}
 }

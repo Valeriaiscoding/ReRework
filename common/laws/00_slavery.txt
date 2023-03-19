@@ -118,7 +118,7 @@ law_debt_slavery = {
 	}
 
 	on_activate = {
-		ig:ig_landowners ?= { 
+		ig:ig_landowners = { 
 			if = {
 				limit = {
 					NOT = { has_ideology = ideology_pro_slavery }
@@ -240,7 +240,7 @@ law_slave_trade = {
 			}			
 		}
 
-		ig:ig_landowners ?= { 
+		ig:ig_landowners = { 
 			if = {
 				limit = {
 					NOT = { has_ideology = ideology_pro_slavery }
@@ -354,7 +354,7 @@ law_legacy_slavery = {
 			}
 		}
 
-		ig:ig_landowners ?= { 
+		ig:ig_landowners = { 
 			if = {
 				limit = {
 					NOT = { has_ideology = ideology_pro_slavery }

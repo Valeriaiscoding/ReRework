@@ -152,7 +152,7 @@ law_restricted_child_labor = {
 			}
 		}
 	}
-}
+
 
 law_compulsory_primary_school = {
 	group = lawgroup_childrens_rights
