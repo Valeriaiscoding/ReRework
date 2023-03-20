@@ -129,6 +129,19 @@ law_free_trade = {
 		country_capitalists_pol_str_mult = 0.1
 	}
 	
+	tariff_modifier_no_priority = {
+		tariff_export_add = 0.1
+		tariff_import_add = 0.1
+	}	
+	
+	tariff_modifier_export_priority = {
+		tariff_import_add = 0.1 # may be increased to 0.15
+	}
+	
+	tariff_modifier_import_priority = {
+		tariff_export_add = 0.1 # may be increased to 0.15
+	}	
+
 	possible_political_movements = {
 		law_protectionism
 	}	

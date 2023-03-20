@@ -25,7 +25,7 @@ TLC = { #The Low Country
 		STATE_FLORIDA
 	}
 	
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -36,7 +36,7 @@ SHL = { #Middle Dixie
 		STATE_ALABAMA
 	}
 	
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -65,9 +65,9 @@ AMG = { #Amish Country
 # MWU = { #Midwestern Union
 # 	states = {
 # 		STATE_OHIO
-# 		STATE_IOWA#
+# 		STATE_IOWA
 # 		STATE_INDIANA
-# 		STATE_MISSOURI#
+# 		STATE_MISSOURI
 # 		STATE_MICHIGAN
 # 		STATE_ILLINOIS
 # 		STATE_WISCONSIN
@@ -103,23 +103,23 @@ AMG = { #Amish Country
 	
 # }
 
-GNY = { #Yankeeland
-	states = { 
-		STATE_NEW_YORK
-		STATE_PENNSYLVANIA
-		STATE_DELAWARE
-		STATE_NEW_JERSEY
-		STATE_MARYLAND
-		STATE_DISTRICT_OF_COLUMBIA
-		STATE_MASSACHUSETTS
-		STATE_NEW_HAMPSHIRE
-		STATE_MAINE
-		STATE_CONNECTICUT
-		STATE_RHODE_ISLAND
-		STATE_VERMONT
-	}
+# GNY = { #Yankeeland
+# 	states = { 
+# 		STATE_NEW_YORK
+# 		STATE_NEW_JERSEY
+# 		STATE_PENNSYLVANIA
+# 		STATE_DELAWARE
+# 		STATE_MARYLAND
+# 		STATE_DISTRICT_OF_COLUMBIA
+# 		STATE_MASSACHUSETTS
+# 		STATE_NEW_HAMPSHIRE
+# 		STATE_MAINE
+# 		STATE_CONNECTICUT
+# 		STATE_RHODE_ISLAND
+# 		STATE_VERMONT
+# 	}
 
-	required_num_states = 6
+# 	required_num_states = 6
 
-	ai_will_do = { always = no }
-}
+# 	ai_will_do = { always = no }
+# }

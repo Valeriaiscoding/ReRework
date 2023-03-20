@@ -1,7 +1,7 @@
 ﻿
 GYL = {
 	states = {
-	STATE_NEW_YORK
+		STATE_NEW_YORK
 		STATE_PENNSYLVANIA
 		STATE_DELAWARE
 		STATE_NEW_JERSEY
@@ -15,7 +15,7 @@ GYL = {
 		STATE_DISTRICT_OF_COLUMBIA
 	}
 	possible = {
-		#has_technology_researched = nationalism
+		has_technology_researched = nationalism
 	}
 		
 

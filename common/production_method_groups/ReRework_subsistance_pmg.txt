@@ -1,11 +1,11 @@
 ﻿pmg_clerical_ownership_subsistance = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
-        pm_no_clerical_ownership
-        pm_limited_clerical_ownership
-        pm_clerical_ownership
-        pm_extensive_clerical_ownership
-		pm_widespread_clerical_ownership
+        pm_no_clerical_ownership_subsistance
+        pm_limited_clerical_ownership_subsistance
+        pm_clerical_ownership_subsistance
+        pm_extensive_clerical_ownership_subsistance
+		pm_widespread_clerical_ownership_subsistance
 	}
 }
 
@@ -26,6 +26,7 @@ pmg_subsitence_mining = {
         pm_subsistance_mining
         pm_no_subsistance_mining
 	}
+	ai_selection = most_profitable
 }
 pmg_subsistance_distilling = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -33,6 +34,7 @@ pmg_subsistance_distilling = {
 		pm_subsistance_distilling
 		pm_no_subsistance_distilling
 	}
+	ai_selection = most_profitable
 }
 
 pmg_home_workshops_building_subsistence_farms = {
@@ -43,6 +45,7 @@ pmg_home_workshops_building_subsistence_farms = {
 		pm_cottage_industry_building_subsistence_farms
 		pm_hunting_building_subsistence
 	}
+	ai_selection = most_profitable
 }
 
 pmg_home_workshops_building_subsistence_intensive = {
@@ -53,6 +56,7 @@ pmg_home_workshops_building_subsistence_intensive = {
 		pm_cottage_industry_building_subsistence_intensive
 		pm_hunting_building_subsistence_intensive
 	}
+	ai_selection = most_profitable
 }
 
 pmg_home_workshops_building_subsistence_east_asia = {
@@ -63,6 +67,7 @@ pmg_home_workshops_building_subsistence_east_asia = {
 		pm_cottage_industry_building_subsistence_farms_east_asia
 		pm_hunting_building_subsistence_intensive
 	}
+	ai_selection = most_profitable
 }
 
 pmg_subsitence_mining_intensive = {
@@ -71,6 +76,7 @@ pmg_subsitence_mining_intensive = {
         pm_subsistance_mining_intensive
         pm_no_subsistance_mining_intensive
 	}
+	ai_selection = most_profitable
 }
 pmg_subsistance_distilling_intensive = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -78,6 +84,7 @@ pmg_subsistance_distilling_intensive = {
 		pm_subsistance_distilling_intensive
 		pm_no_subsistance_distilling_intensive
 	}
+	ai_selection = most_profitable
 }
 
 pmg_clerical_ownership_subsistance_intensive = {
@@ -89,6 +96,7 @@ pmg_clerical_ownership_subsistance_intensive = {
         pm_extensive_clerical_ownership_intensive
 		pm_widespread_clerical_ownership_intensive
 	}
+	ai_selection = most_profitable
 }
 pmg_ownership_building_subsistence_intensive = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
@@ -113,22 +121,13 @@ pmg_ownership_building_subsistence_bureaucratic = {
 	}
 }
 
-pmg_ownership_subsistence_new_world = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
-	production_methods = {
-		 pm_privately_owned_new_world_subsistence
-		 pm_freehold_farmers_new_world_subsistence
-		 pm_land_owning_farmers_new_world_subsistence
-		 pm_worker_cooperative_new_world_subsistence
-	}
-}
-
 pmg_subsistance_vineyards = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_subsistance_vineyards
 		pm_no_subsistance_vineyards
 	}
+	ai_selection = most_profitable
 }
 
 pmg_subsistance_opium = {
@@ -137,6 +136,7 @@ pmg_subsistance_opium = {
 		pm_subsistance_opium
 		pm_no_subsistance_opium
 	}
+	ai_selection = most_profitable
 }
 
 pmg_subsistance_opium_intensive = {
@@ -145,6 +145,7 @@ pmg_subsistance_opium_intensive = {
 		pm_subsistance_opium_intensive
 		pm_no_subsistance_opium_intensive
 	}
+	ai_selection = most_profitable
 }
 
 pmg_subsistance_rare_pelts = {
@@ -153,6 +154,7 @@ pmg_subsistance_rare_pelts = {
 		pm_luxury_pelts_focus
 		pm_normal_pelts_focus
 	}
+	ai_selection = most_profitable
 }
 
 pmg_subsistance_rum = {
@@ -161,6 +163,7 @@ pmg_subsistance_rum = {
 		pm_subsistance_rum
 		pm_no_subsistance_rum
 	}
+	ai_selection = most_profitable
 }
 
 pmg_base_building_subsistence_east_asia = {
@@ -277,7 +280,7 @@ pmg_ownership_building_subsistence_japan = {
 		pm_freeholders_building_subsistence_japan 
 		pm_land_owning_farmers_building_subsistence_japan
 		pm_land_redistributed_building_subsistence_japan
-		pm_worker_cooperative_building_subsistence_japan 
+		pm_worker_cooperative_building_subsistence_intensive 
 	}
 }
 
@@ -290,22 +293,4 @@ pmg_base_building_subsistence_south_east_asia_intensive = {
 	}
 }
 
-pmg_base_building_subsistence_north_america = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		archaism_hearthland_subsistence_north_america
-		eclosed_hearthland_subsistence_north_america
-		homesteading_hearthland_subsistence_north_america
-		collectivized_hearthland_subsistence_north_america
-	}
-}
-pmg_base_building_subsistence_frontier_north_america = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		archaism_frontier_subsistence_north_america
-		eclosed_frontier_subsistence_north_america
-		homesteading_frontier_subsistence_north_america
-		collectivized_frontier_subsistence_north_america
-	}
-}
 

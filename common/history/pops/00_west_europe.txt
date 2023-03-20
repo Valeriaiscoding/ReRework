@@ -707,7 +707,7 @@
 		region_state:NET = {
 			create_pop = {
 				culture = dutch
-				size = 1096204
+				size = 796204
 			}
 			create_pop = {
 				culture = flemish
@@ -1612,11 +1612,11 @@
 		region_state:PRU = {
 			create_pop = {
 				culture = north_german
-				size = 30640
+				size = 90640
 			}
 			create_pop = {
 				culture = wallonian
-				size = 9204
+				size = 27204
 			}
 		}		
 	}
@@ -1640,7 +1640,11 @@
 			}
 			create_pop = {
 				culture = dutch
-				size = 50230
+				size = 151800
+			}
+			create_pop = {
+				culture =  flemish
+				size = 88000
 			}
 		}		
 	}
@@ -1722,8 +1726,19 @@
 			}
 			create_pop = {
 				culture = dutch
-				size = 20345
+				size = 300800
 			}
+			create_pop = {
+				culture = dutch
+				religion = catholic
+				size = 180948
+			}
+
+			create_pop = {
+				culture = dutch
+				size = 300800
+			}
+
 			create_pop = {
 				culture = ashkenazi
 				size = 1023

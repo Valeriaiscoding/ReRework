@@ -9,7 +9,7 @@
 		law_compulsory_primary_school
 	}
 	modifier = {
-		country_aristocrats_pol_str_mult = 0.1
+		country_aristocrats_pol_str_mult = 0.15
 		state_radicals_from_sol_change_mult = -0.05
 	}
 	
@@ -109,7 +109,7 @@ law_private_schools = {
 	institution_modifier = {
 		state_assimilation_mult = 0.075 #was none
 		state_education_access_wealth_add = 0.004 # + base 0.005 = 0.005+0.020 = 0.025 => 100% education at ~40% SoL #Only freaking rich people gets education
-		state_education_access_add = 0.02 # 2/4/6/8/10 some limited education still avalable for the poor 
+		state_education_access_add = 0.025 # 2.5/5/7.5/10/12.5 some limited education still avalable for the poor 
 		interest_group_ig_landowners_pop_attraction_mult = 0.1 #was none
 		interest_group_ig_industrialists_pop_attraction_mult = 0.2 #was none
 		country_academics_pol_str_mult = 0.1
@@ -139,12 +139,12 @@ law_private_schools = {
 	}
 
 	# AI don't take it over public/religious schools
-	ai_will_do = {
-		NOR = {
-			has_law = law_type:law_public_schools
-			has_law = law_type:law_religious_schools
-		}
-	}
+	# ai_will_do = {
+	# 	NOR = {
+	# 		has_law = law_type:law_public_schools
+	# 		has_law = law_type:law_religious_schools
+	# 	}
+	# }
 }
 
 law_public_schools = {
@@ -172,7 +172,8 @@ law_public_schools = {
 		state_assimilation_mult = 0.125
 		state_education_access_wealth_add = 0.001 # + base 0.02  = 0.02 + 0.005 = 0.025 => 50% education (missing) at 20 SoL. Best by design
 		state_education_access_add = 0.1
-		interest_group_ig_intelligentsia_pol_str_mult = 0.15 #was none
+		interest_group_ig_intelligentsia_pol_str_mult = 0.1 #was none
+		interest_group_ig_trade_unions_pol_str_mult = 0.05 #was none
 		state_loyalists_from_sol_change_mult = 0.03
 		state_bureaucracy_population_base_cost_factor_mult = 0.03
 	}

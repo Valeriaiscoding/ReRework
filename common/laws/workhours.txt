@@ -30,130 +30,41 @@ law_14_hours = {
 	
 	pop_support = {
 		value = 0
-		
+		pop_support = {
+			value = 0
+			add = {
+				desc = "POP_CAPITALISTS"
+				if = {
+					limit = {
+						is_pop_type = capitalists
+						owner = { 
+							has_law = law_12_hours
+					}
+					}
+				}
+				value = 0.35
+				#multiply = literacy_rate
+			}
+		}
 		add = {
 			desc = "POP_POVERTY"			
 			if = {
 				limit = { 
-					standard_of_living <= 14
 					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
+						NOT = { 
+							has_law = law_type:law_12_hours 
 						} 
 					}
 				}
-				value = 0.1
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 13
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 12
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 11
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}				
-			if = {
-				limit = { 
-					standard_of_living <= 10
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}			
-			if = {
-				limit = { 
-					standard_of_living <= 9
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 8
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 7
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 6
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 01
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 5
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.1
+				# SoL 14 gives 0.1 pop support, 13 -> 0.2, 12 -> 0.3, ... 5 -> 1.0
+				value = 15
+				subtract = standard_of_living
+				multiply = 0.1
+				multiply = literacy_rate
+				min = 0
+				max = 0.6
 			}					
-		}
+		}		
 	}
 }
 law_12_hours = {
@@ -187,134 +98,45 @@ law_12_hours = {
 	institution_modifier = {
 		state_working_adult_ratio_add = 0.01
 	}
-	
 	pop_support = {
 		value = 0
-		
+		pop_support = {
+			value = 0
+			add = {
+				desc = "POP_CAPITALISTS"
+				if = {
+					limit = {
+						is_pop_type = capitalists
+						owner = { 
+							has_law = law_10_hours
+					}
+					}
+				}
+				value = 0.35
+				#multiply = literacy_rate
+			}
+		}
 		add = {
 			desc = "POP_POVERTY"			
 			if = {
 				limit = { 
-					standard_of_living <= 14
 					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
+						NOT = { 
+							has_law = law_type:law_10_hours 
 						} 
 					}
 				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 13
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 12
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 11
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}				
-			if = {
-				limit = { 
-					standard_of_living <= 10
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}			
-			if = {
-				limit = { 
-					standard_of_living <= 9
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 8
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 7
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 6
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 5
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
+				# SoL 14 gives 0.1 pop support, 13 -> 0.2, 12 -> 0.3, ... 5 -> 1.0
+				value = 15
+				subtract = standard_of_living
+				multiply = 0.1
+				multiply = literacy_rate
+				min = 0
+				max = 0.75
 			}					
-		}
+		}		
 	}
+	
 }
 law_10_hours = {
 	group = lawgroup_workhours
@@ -350,130 +172,41 @@ law_10_hours = {
 	
 	pop_support = {
 		value = 0
-		
+		pop_support = {
+			value = 0
+			add = {
+				desc = "POP_CAPITALISTS"
+				if = {
+					limit = {
+						is_pop_type = capitalists
+						owner = { 
+							has_law = law_8_hours
+					}
+					}
+				}
+				value = 0.35
+				#multiply = literacy_rate
+			}
+		}
 		add = {
 			desc = "POP_POVERTY"			
 			if = {
 				limit = { 
-					standard_of_living <= 14
 					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
+						NOT = { 
+							has_law = law_type:law_8_hours 
 						} 
 					}
 				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 13
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 12
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 11
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}				
-			if = {
-				limit = { 
-					standard_of_living <= 10
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}			
-			if = {
-				limit = { 
-					standard_of_living <= 9
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 8
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 7
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 6
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 5
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
+				# SoL 14 gives 0.1 pop support, 13 -> 0.2, 12 -> 0.3, ... 5 -> 1.0
+				value = 15
+				subtract = standard_of_living
+				multiply = 0.1
+				multiply = literacy_rate
+				min = 0
+				max = 0.85
 			}					
-		}
+		}		
 	}
 }
 law_8_hours = {
@@ -510,129 +243,40 @@ law_8_hours = {
 	
 	pop_support = {
 		value = 0
-		
+		# pop_support = {
+		# 	value = 0
+		# 	add = {
+		# 		desc = "POP_CAPITALISTS"
+		# 		if = {
+		# 			limit = {
+		# 				is_pop_type = capitalists
+		# 				owner = { 
+		# 					has_law = law_8_hours
+		# 			}
+		# 			}
+		# 		}
+		# 		value = 0.35
+		# 		#multiply = literacy_rate
+		# 	}
+		# }
 		add = {
 			desc = "POP_POVERTY"			
 			if = {
 				limit = { 
-					standard_of_living <= 14
 					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
+						NOT = { 
+							has_law = law_type:law_8_hours 
 						} 
 					}
 				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 13
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 12
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 11
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}				
-			if = {
-				limit = { 
-					standard_of_living <= 10
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}			
-			if = {
-				limit = { 
-					standard_of_living <= 9
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 8
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}
-			if = {
-				limit = { 
-					standard_of_living <= 7
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 6
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
-			}	
-			if = {
-				limit = { 
-					standard_of_living <= 5
-					owner = { 
-						NOR = { 
-							has_law = law_type:law_old_age_pension 
-							has_law = law_type:law_wage_subsidies
-						} 
-					}
-				}
-				value = 0.2
+				# SoL 14 gives 0.1 pop support, 13 -> 0.2, 12 -> 0.3, ... 5 -> 1.0
+				value = 15
+				subtract = standard_of_living
+				multiply = 0.1
+				multiply = literacy_rate
+				min = 0
+				max = 1
 			}					
-		}
+		}		
 	}
 }

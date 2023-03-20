@@ -47,7 +47,22 @@ law_poor_laws = {
 	
 	pop_support = {
 		value = 0
-		
+		pop_support = {
+			value = 0
+			add = {
+				desc = "POP_CAPITALISTS"
+				if = {
+					limit = {
+						is_pop_type = capitalists
+						owner = { 
+							has_law = law_wage_subsidies
+					}
+					}
+				}
+				value = 0.25
+				#multiply = literacy_rate
+			}
+		}
 		add = {
 			desc = "POP_POVERTY"			
 			if = {
@@ -65,7 +80,7 @@ law_poor_laws = {
 				multiply = 0.1
 				multiply = literacy_rate
 				min = 0
-				max = 0.5
+				max = 0.6
 			}					
 		}		
 	}
@@ -108,6 +123,20 @@ law_wage_subsidies = {
 	pop_support = {
 		value = 0
 		
+		add = {
+			desc = "POP_CAPITALISTS"
+			if = {
+				limit = {
+					is_pop_type = capitalists
+					owner = { 
+						has_law = law_old_age_pension
+				}
+				}
+			}
+			value = 0.25
+			#multiply = literacy_rate
+		}
+
 		add = {
 			desc = "POP_POVERTY"
 			if = {

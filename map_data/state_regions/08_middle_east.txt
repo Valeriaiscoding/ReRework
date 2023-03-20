@@ -364,7 +364,7 @@ STATE_BAGHDAD = {
 STATE_KARBALA = {
     id = 1208
     subsistence_building = "building_subsistence_middle_eastern"
-    provinces = { "x0748CD" "x0B769F" "x0CA064" "x20D060" "x34A371" "x396DB2" "x4F90CC" "x5F9550" "x679B60" "xAE7D6F" }
+    provinces = {x679B60 x00F060 x1CC9CC x1D7F5E x2050E0 x68C89A x6CBE21 x7CAD29 x807060 x93CB74 x9F9CCA xBE6A23 xDABB9C xDB6370 xF1BF17 x0748CD x0B769F x0CA064 x20D060 x312AA2 x34A371 x396DB2 x41F864 x4F90CC x5F9550 x88ADC8 xAE7D6F xFE18C1 }
     traits = { "state_trait_good_soils" "state_trait_tigris_river" "state_trait_euphrates_river" }
     city = "x20D060"
     farm = "x4F90CC"
@@ -375,6 +375,10 @@ STATE_KARBALA = {
     capped_resources = {
         bg_logging = 2
     }
+    resource = {
+            type = "bg_oil_extraction"
+            undiscovered_amount = 10
+        }
 }
 
 STATE_MOSUL = {
@@ -464,25 +468,6 @@ STATE_BASRA = {
     naval_exit_id = 3046
 }
 
-STATE_NASIRIYA = {
-    id = 1228
-    subsistence_building = "building_subsistence_middle_eastern"
-    provinces = { "x1CC9CC" "x1D7F5E" "x312AA2" "x41F864" "x4FDA9B" "x7CAD29" "x88ADC8" "x9F9CCA" "xBE6A23" "xF1BF17" "xFE18C1" }
-    traits = { "state_trait_good_soils" "state_trait_tigris_river" "state_trait_euphrates_river" }
-    city = "x7CAD29"
-    farm = "x312AA2"
-    mine = "x9F9CCA"
-    wood = "xFE18C1"
-    arable_land = 55
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" }
-    capped_resources = {
-        bg_logging = 2
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 10
-    }
-}
 
 STATE_FARS = {
     id = 414
@@ -607,7 +592,7 @@ STATE_QUHISTAN = {
 STATE_KHUZESTAN = {
     id = 418
     subsistence_building = "building_subsistence_middle_eastern"
-    provinces = { "x00B0DF" "x09F8D1" "x241E05" "x4CA291" "x55D475" "x5D400F" "x80B060" "x80B0E0" "x80E4E1" "x872ACE" "xA18555" "xA99276" "xEB15EE" "xF5BD8F" "xFBA38B" }
+    provinces = { "x4FDA9B" "x00B0DF" "x09F8D1" "x241E05" "x4CA291" "x55D475" "x5D400F" "x80B060" "x80B0E0" "x80E4E1" "x872ACE" "xA18555" "xA99276" "xEB15EE" "xF5BD8F" "xFBA38B" }
     traits = { "state_trait_good_soils" "state_trait_tigris_river" "state_trait_karun_river" }
     city = "x55D475"
     port = "xFBA38B"
@@ -882,7 +867,7 @@ STATE_AYDIN = {
 STATE_KONYA = {
     id = 426
     subsistence_building = "building_subsistence_middle_eastern"
-    provinces = { "x02FE8B" "x0EABBE" "x472F2C" "x4CEBB4" "x547B95" "x65DE76" "x6DB349" "x76099B" "x8F7C3D" "xA4ED5C" "xBB0729" "xBC2D46" "xDE59BB" }
+    provinces = { "x802F12"  "x02FE8B" "x0EABBE" "x472F2C" "x4CEBB4" "x547B95" "x65DE76" "x6DB349" "x76099B" "x8F7C3D" "xA4ED5C" "xBB0729" "xBC2D46" "xDE59BB" }
     city = "x547B95"
     farm = "x8F7C3D"
     mine = "x8F7C3D"
@@ -960,7 +945,7 @@ STATE_DIYARBAKIR = {
 STATE_HARPUT = {
     id = 1171
     subsistence_building = "building_subsistence_middle_eastern"
-    provinces = { "x0FD328" "x39CBF7" "x3CB54F" "x401080" "x4DA0F1" "x5E4B3A" "x7DD48B" "x86D676" "x95EA60" "xC9CF24" "xFB66D7" }
+    provinces = { "x0FD328"  "x3CB54F" "x401080" "x4DA0F1" "x5E4B3A" "x7DD48B" "x86D676" "x95EA60" "xC9CF24" "xFB66D7" }
     traits = { "state_trait_euphrates_river" }
     city = "x86D676"
     farm = "xC9CF24"
@@ -999,7 +984,7 @@ STATE_AINTAB = {
 STATE_ADANA = {
     id = 429
     subsistence_building = "building_subsistence_mediterranean"
-    provinces = { "x2111E0" "x63E9DB" "x802F12" "x909463" "xA09060" "xB0E060" "xE8DCC5" "xEB98F3" "xFA9C84" }
+    provinces = { "x2111E0" "x63E9DB" "x909463" "xA09060" "xB0E060" "xE8DCC5" "xEB98F3" "xFA9C84" }
     traits = { "state_trait_good_soils" "state_trait_natural_harbors" }
     city = "x2111E0"
     port = "xFA9C84"
@@ -1109,7 +1094,7 @@ STATE_ESKISEHIR = {
 STATE_KAYSERI = {
     id = 1207
     subsistence_building = "building_subsistence_middle_eastern"
-    provinces = { "x17B19B" "x3041CC" "x3E9653" "x431F60" "x602629" "x70373E" "x9FFCAB" "xA8674E" "xBACCB8" "xC09000" "xF470A0" }
+    provinces = { "x39CBF7" "x17B19B" "x3041CC" "x3E9653" "x431F60" "x602629" "x70373E" "x9FFCAB" "xA8674E" "xBACCB8" "xC09000" "xF470A0" }
     city = "xA8674E"
     farm = "x70373E"
     mine = "xC09000"

@@ -1,361 +1,362 @@
-﻿###INDIVIDUAL STATES
-# MAI = {
-# 	states = { 
-# 		STATE_MAINE
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NHM = {
-# 	states = { 
-# 		STATE_NEW_HAMPSHIRE
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# VER = {
-# 	states = { 
-# 		STATE_VERMONT
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# MAS = {
-# 	states = { 
-# 		STATE_MASSACHUSETTS
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# RHI = {
-# 	states = { 
-# 		STATE_RHODE_ISLAND
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# CNN = {
-# 	states = { 
-# 		STATE_CONNECTICUT
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NYK = {
-# 	states = { 
-# 		STATE_NEW_YORK
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NJY = {
-# 	states = { 
-# 		STATE_NEW_JERSEY
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# PEN = {
-# 	states = { 
-# 		STATE_PENNSYLVANIA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# DEL = {
-# 	states = { 
-# 		STATE_DELAWARE
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# MAR = {
-# 	states = { 
-# 		STATE_MARYLAND
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# VIR = {
-# 	states = { 
-# 		STATE_VIRGINIA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NCR = {
-# 	states = { 
-# 		STATE_NORTH_CAROLINA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# SCR = {
-# 	states = { 
-# 		STATE_SOUTH_CAROLINA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# GRG = {
-# 	states = { 
-# 		STATE_GEORGIA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# FLR = {
-# 	states = { 
-# 		STATE_FLORIDA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# OHI = {
-# 	states = { 
-# 		STATE_OHIO
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# INA = {
-# 	states = { 
-# 		STATE_INDIANA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# ILL = {
-# 	states = { 
-# 		STATE_ILLINOIS
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# WVA = {
-# 	states = { 
-# 		STATE_WEST_VIRGINIA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# KEN = {
-# 	states = { 
-# 		STATE_KENTUCKY
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# TEN = {
-# 	states = { 
-# 		STATE_TENNESSEE
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# ALA = {
-# 	states = { 
-# 		STATE_ALABAMA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# MIS = {
-# 	states = { 
-# 		STATE_MISSISSIPPI
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# MIN = {
-# 	states = { 
-# 		STATE_MINNESOTA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# WIS = {
-# 	states = { 
-# 		STATE_WISCONSIN
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# IOA = {
-# 	states = { 
-# 		STATE_IOWA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# MSR = {
-# 	states = { 
-# 		STATE_MISSOURI
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# ARK = {
-# 	states = { 
-# 		STATE_ARKANSAS
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NDK = {
-# 	states = { 
-# 		STATE_NORTH_DAKOTA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# SDK = {
-# 	states = { 
-# 		STATE_SOUTH_DAKOTA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NEB = {
-# 	states = { 
-# 		STATE_NEBRASKA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# KAN = {
-# 	states = { 
-# 		STATE_KANSAS
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# OKL = {
-# 	states = { 
-# 		STATE_OKLAHOMA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# MTN = {
-# 	states = { 
-# 		STATE_MONTANA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# WYO = {
-# 	states = { 
-# 		STATE_WYOMING
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# CDO = {
-# 	states = { 
-# 		STATE_COLORADO
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NMX = {
-# 	states = { 
-# 		STATE_NEW_MEXICO
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# IDA = {
-# 	states = { 
-# 		STATE_IDAHO
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# NEV = {
-# 	states = { 
-# 		STATE_NEVADA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# ARI = {
-# 	states = { 
-# 		STATE_ARIZONA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# WSH = {
-# 	states = { 
-# 		STATE_WASHINGTON
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-# ORE = {
-# 	states = { 
-# 		STATE_OREGON
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-
-# AKA = {
-# 	states = { 
-# 		STATE_ALASKA
-# 	}
-
-# 	ai_will_do = { always = no }
-# }
-
-
-
-
-###REGIONAL UNIONS
+﻿##INDIVIDUAL STATES
+MAI = {
+	states = { 
+		STATE_MAINE
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NHM = {
+	states = { 
+		STATE_NEW_HAMPSHIRE
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+VER = {
+	states = { 
+		STATE_VERMONT
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+MAS = {
+	states = { 
+		STATE_MASSACHUSETTS
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+RHI = {
+	states = { 
+		STATE_RHODE_ISLAND
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+CNN = {
+	states = { 
+		STATE_CONNECTICUT
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NYK = {
+	states = { 
+		STATE_NEW_YORK
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NJY = {
+	states = { 
+		STATE_NEW_JERSEY
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+PEN = {
+	states = { 
+		STATE_PENNSYLVANIA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+DEL = {
+	states = { 
+		STATE_DELAWARE
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+MAR = {
+	states = { 
+		STATE_MARYLAND
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+VIR = {
+	states = { 
+		STATE_VIRGINIA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NCR = {
+	states = { 
+		STATE_NORTH_CAROLINA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+SCR = {
+	states = { 
+		STATE_SOUTH_CAROLINA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+GRG = {
+	states = { 
+		STATE_GEORGIA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+FLR = {
+	states = { 
+		STATE_FLORIDA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+OHI = {
+	states = { 
+		STATE_OHIO
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+INA = {
+	states = { 
+		STATE_INDIANA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+ILL = {
+	states = { 
+		STATE_ILLINOIS
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+WVA = {
+	states = { 
+		STATE_WEST_VIRGINIA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+KEN = {
+	states = { 
+		STATE_KENTUCKY
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+TEN = {
+	states = { 
+		STATE_TENNESSEE
+	}	
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+ALA = {
+	states = { 
+		STATE_ALABAMA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+MIS = {
+	states = { 
+		STATE_MISSISSIPPI
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+MIN = {
+	states = { 
+		STATE_MINNESOTA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+WIS = {
+	states = { 
+		STATE_WISCONSIN
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+IOA = {
+	states = { 
+		STATE_IOWA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+MSR = {
+	states = { 
+		STATE_MISSOURI
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+ARK = {
+	states = { 
+		STATE_ARKANSAS
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NDK = {
+	states = { 
+		STATE_NORTH_DAKOTA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+SDK = {
+	states = { 
+		STATE_SOUTH_DAKOTA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NEB = {
+	states = { 
+		STATE_NEBRASKA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+KAN = {
+	states = { 
+		STATE_KANSAS
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+OKL = {
+	states = { 
+		STATE_OKLAHOMA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+MTN = {
+	states = { 
+		STATE_MONTANA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+WYO = {
+	states = { 
+		STATE_WYOMING
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+CDO = {
+	states = { 
+		STATE_COLORADO
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NMX = {
+	states = { 
+		STATE_NEW_MEXICO
+	}	
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+IDA = {
+	states = { 
+		STATE_IDAHO
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+NEV = {
+	states = { 
+		STATE_NEVADA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+ARI = {
+	states = { 
+		STATE_ARIZONA
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+WSH = {
+	states = { 
+		STATE_WASHINGTON
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+ORE = {
+	states = { 
+		STATE_OREGON
+	}
+	possible = { always = no }
+	ai_will_do = { always = no }
+}
+
+
+AKA = {
+	states = { 
+		STATE_ALASKA
+	}
+
+
+	ai_will_do = { always = no }
+}
+
+
+
+
+# ###REGIONAL UNIONS
 
 RVR = {
 	states = {
@@ -389,7 +390,7 @@ GDK = {
 		STATE_MONTANA
 		STATE_WYOMING
 	}
-
+	required_num_states = 2
 	ai_will_do = { always = no }
 }
 
@@ -400,7 +401,7 @@ DIX =  {
 		STATE_ALABAMA
 		STATE_MISSISSIPPI
 	}
-
+	required_num_states = 2	
 	ai_will_do = { always = no }
 }
 
@@ -408,14 +409,14 @@ GLK =  {
 	states = { 
 		STATE_MINNESOTA
 		STATE_MISSOURI
-		STATE_IOWA
 		STATE_OHIO
+		STATE_IOWA
 		STATE_INDIANA
 		STATE_MICHIGAN
 		STATE_ILLINOIS
 		STATE_WISCONSIN
 	}
-
+	required_num_states = 3
 	ai_will_do = { always = no }
 }
 
@@ -428,7 +429,7 @@ MDL =  {
 		STATE_MARYLAND
 		STATE_DISTRICT_OF_COLUMBIA
 	}
-
+	required_num_states = 4
 	ai_will_do = { always = no }
 }
 
@@ -438,8 +439,8 @@ GTX = {
 		STATE_OKLAHOMA
 		STATE_NEW_MEXICO
 		STATE_COLORADO
-	}
-
+	}	
+	required_num_states = 3
 	ai_will_do = { always = no }
 }
 
@@ -451,7 +452,7 @@ RKY = {
 		STATE_ARIZONA
 		STATE_WYOMING
 	}
-
+	required_num_states = 3
 	ai_will_do = { always = no }
 }
 
@@ -462,7 +463,7 @@ ACA = {
 		STATE_UTAH
 		STATE_ARIZONA
 	}
-
+	required_num_states = 3
 	ai_will_do = { always = no }
 }
 
@@ -472,6 +473,6 @@ CSD = {
 		STATE_WASHINGTON
 		STATE_BRITISH_COLUMBIA
 	}
-
+	required_num_states = 2
 	ai_will_do = { always = no }
 }

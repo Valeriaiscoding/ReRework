@@ -203,3 +203,10 @@ animist = {
 	color = { 0.6 0.3 0.2 }
 }
 
+atheism = {
+	texture = "gfx/interface/icons/religion_icons/atheism.dds"
+	traits = {
+		#atheism
+	}
+	color = { 0.0 0.0 0.0 }
+}

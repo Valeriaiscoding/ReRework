@@ -295,6 +295,11 @@ building_subsistence_south_east_asia_intensive = {
 		pmg_ownership_building_subsistence_bureaucratic
 		pmg_clerical_ownership_subsistance_intensive 
 	}
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
 }	
 
 building_subsistence_north_america_frontier = {

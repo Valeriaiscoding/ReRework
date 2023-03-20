@@ -47,30 +47,27 @@ CSA = { # Confederate States of America
 		allow_overlord_canton = yes
 		overlord_canton_scale = { 0.5 @[third*2.005] }
 	}
-	flag_definition = {
-		coa = CSA_dixieland
-		#subject_canton = sub_CSA_canton_stars
-		priority = 24		
-		allow_overlord_canton = yes
-		overlord_canton_scale = { 0.5 @[third*2.005] }
-		trigger = {
-			has_law = law_type:law_slavery_banned
-		}
-	}
-	flag_definition = {
-		coa = CSA_magnolia
-		#subject_canton = sub_CSA_canton_stars
-		priority = 25		
-		allow_overlord_canton = yes
-		overlord_canton_scale = { 0.5 @[third*2.005] }
-		trigger = {
-			has_law = law_type:law_slavery_banned
-			OR = {
-				has_law = law_type:law_cultural_exclusion
-				has_law = law_type:law_multiculturalism
-			}
-		}
-	}
+	# flag_definition = {
+	# 	coa = CSA_dixieland
+	# 	#subject_canton = sub_CSA_canton_stars
+	# 	priority = 24		
+	# 	allow_overlord_canton = yes
+	# 	overlord_canton_scale = { 0.5 @[third*2.005] }
+	# 	trigger = {
+	# 		#coa_no_slavery_trigger = yes
+	# 	}
+	# }
+	# flag_definition = {
+	# 	coa = CSA_magnolia
+	# 	#subject_canton = sub_CSA_canton_stars
+	# 	priority = 25		
+	# 	allow_overlord_canton = yes
+	# 	overlord_canton_scale = { 0.5 @[third*2.005] }
+	# 	trigger = {
+	# 		#coa_no_slavery_trigger = yes
+	# 		#coa_no_racial_segregation_trigger = yes
+	# 	}
+	# }
 	flag_definition = {
 		coa = CSA_stainless
 		subject_canton = sub_CSA_canton_saltire

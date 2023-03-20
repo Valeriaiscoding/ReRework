@@ -34,8 +34,8 @@ pm_freehold_farmers_building_subsistence = {
 	building_modifiers = {
 		level_scaled = {
 			building_employment_aristocrats_add = 150 #900
-			building_employment_farmers_add = 700
-			building_employment_peasants_add = -250
+			building_employment_farmers_add = 500
+			building_employment_peasants_add = -600
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 4
@@ -59,8 +59,8 @@ pm_land_owning_farmers_building_subsistence = {
 	building_modifiers = {
 		level_scaled = {
 			building_employment_aristocrats_add = 125 #900
-			building_employment_farmers_add = 1200
-			building_employment_peasants_add = -500
+			building_employment_farmers_add = 1000
+			building_employment_peasants_add = -1200
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 3
@@ -84,8 +84,8 @@ pm_land_redistributed_building_subsistence = {
 	building_modifiers = {
 		level_scaled = {
 			building_employment_aristocrats_add = 100 #900
-			building_employment_farmers_add = 2000
-			building_employment_peasants_add = -850
+			building_employment_farmers_add = 1500
+			building_employment_peasants_add = -1750
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 2
@@ -104,8 +104,8 @@ pm_worker_cooperative_building_subsistence = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_farmers_add = 2500
-			building_employment_peasants_add = -1000
+			building_employment_farmers_add = 2000
+			building_employment_peasants_add = -2500
 		}
 		unscaled = {
 			building_peasants_shares_add = 1
@@ -114,7 +114,7 @@ pm_worker_cooperative_building_subsistence = {
 	}
 }
 
-pm_no_clerical_ownership = {
+pm_no_clerical_ownership_subsistance = {
 
 	texture = "gfx/interface/icons/production_method_icons/no_ownership_clergy.dds"
 
@@ -122,16 +122,17 @@ pm_no_clerical_ownership = {
 		law_state_atheism
 		law_total_separation
 		law_council_republic
+		law_chiefdom
 	}
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clergymen_add = 75
+			building_employment_clergymen_add = 50
 		}
 	}
 }
 
-pm_limited_clerical_ownership = {
+pm_limited_clerical_ownership_subsistance = {
 
 	texture = "gfx/interface/icons/production_method_icons/limited_ownership_clergy_agro.dds"
 
@@ -142,12 +143,13 @@ pm_limited_clerical_ownership = {
 
 	disallowing_laws = {
 		law_council_republic
+		law_chiefdom
 	}
 
 	building_modifiers = {
 
 		level_scaled = {
-			building_employment_clergymen_add = 125
+			building_employment_clergymen_add = 150
 		}
 
 		unscaled = {
@@ -157,7 +159,7 @@ pm_limited_clerical_ownership = {
 
 }
 
-pm_clerical_ownership = {
+pm_clerical_ownership_subsistance = {
 
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy_agro.dds"
 
@@ -168,13 +170,14 @@ pm_clerical_ownership = {
 
 	disallowing_laws = {
 		law_council_republic
+		law_chiefdom
 		#law_theocracy
 	}
 
 	building_modifiers = {
 
 		level_scaled = {
-			building_employment_clergymen_add = 150
+			building_employment_clergymen_add = 200
 		}
 
 		unscaled = {
@@ -184,7 +187,7 @@ pm_clerical_ownership = {
 
 }
 
-pm_extensive_clerical_ownership = {
+pm_extensive_clerical_ownership_subsistance = {
 
 	texture = "gfx/interface/icons/production_method_icons/extensive_ownership_clergy_agro.dds"
 
@@ -195,11 +198,12 @@ pm_extensive_clerical_ownership = {
 	disallowing_laws = {
 		law_council_republic
 		law_theocracy
+		law_chiefdom
 	}
 	building_modifiers = {
 
 		level_scaled = {
-			building_employment_clergymen_add = 200
+			building_employment_clergymen_add = 300
 		}
 
 		unscaled = {
@@ -208,7 +212,7 @@ pm_extensive_clerical_ownership = {
 	}
 }
 
-pm_widespread_clerical_ownership = {
+pm_widespread_clerical_ownership_subsistance = {
 
 	texture = "gfx/interface/icons/production_method_icons/widespread_ownership_clergy_agro.dds"
 
@@ -240,7 +244,7 @@ pm_privately_owned_building_subsistence_intensive = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 3200
+			building_employment_aristocrats_add = 800
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 8
@@ -262,9 +266,9 @@ pm_freehold_farmers_building_subsistence = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 2400
-			building_employment_farmers_add = 4800
-			building_employment_peasants_add = -3200
+			building_employment_aristocrats_add = 600
+			building_employment_farmers_add = 2000
+			building_employment_peasants_add = -3000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 6
@@ -287,8 +291,8 @@ pm_land_owning_farmers_building_subsistence_intensive = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 1600
-			building_employment_farmers_add = 7200
+			building_employment_aristocrats_add = 500
+			building_employment_farmers_add = 4000
 			building_employment_peasants_add = -5600
 		}
 		unscaled = {
@@ -312,9 +316,9 @@ pm_land_redistributed_building_subsistence_intensive = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 1200
-			building_employment_farmers_add = 9600
-			building_employment_peasants_add = -7200
+			building_employment_aristocrats_add = 400
+			building_employment_farmers_add = 6000
+			building_employment_peasants_add = -8000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 4
@@ -333,8 +337,8 @@ pm_worker_cooperative_building_subsistence_intensive = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_farmers_add = 12000
-			building_employment_peasants_add = -7200
+			building_employment_farmers_add = 8000
+			building_employment_peasants_add = -10000
 		}
 		unscaled = {
 			building_peasants_shares_add = 1
@@ -474,8 +478,8 @@ pm_state_controlled_building_subsistence_bureaucratic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 1200
-			building_employment_bureaucrats_add = 2200
+			building_employment_aristocrats_add = 400
+			building_employment_bureaucrats_add = 800
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 5
@@ -499,10 +503,10 @@ pm_state_controlled_freeholders_building_subsistence_bureaucratic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 800
-			building_employment_bureaucrats_add = 2000
-			building_employment_farmers_add = 4200
-			building_employment_peasants_add = -3200
+			building_employment_aristocrats_add = 300
+			building_employment_bureaucrats_add = 800
+			building_employment_farmers_add = 1500
+			building_employment_peasants_add = -3000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 4
@@ -527,9 +531,9 @@ pm_land_owning_farmers_building_subsistence_bureaucratic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 400
-			building_employment_bureaucrats_add = 1700
-			building_employment_farmers_add = 6600
+			building_employment_aristocrats_add = 200
+			building_employment_bureaucrats_add = 800
+			building_employment_farmers_add = 3000
 			building_employment_peasants_add = -5600
 		}
 		unscaled = {
@@ -555,10 +559,10 @@ pm_land_redistribution_building_subsistence_bureaucratic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 250
-			building_employment_bureaucrats_add = 1800
-			building_employment_farmers_add = 8200
-			building_employment_peasants_add = -7200
+			building_employment_aristocrats_add = 150
+			building_employment_bureaucrats_add = 400
+			building_employment_farmers_add = 6000
+			building_employment_peasants_add = -8000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 3
@@ -583,10 +587,10 @@ pm_privately_owned_building_subsistence_bureaucratic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 500
-			building_employment_capitalists_add = 800
-			building_employment_farmers_add = 7000
-			building_employment_peasants_add = -6000
+			building_employment_aristocrats_add = 300
+			building_employment_capitalists_add = 300
+			building_employment_farmers_add = 1500
+			building_employment_peasants_add = -2000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 2
@@ -606,9 +610,10 @@ pm_worker_cooperative_building_subsistence_bureaucratic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_farmers_add = 9000
-			building_employment_peasants_add = -6000
-			building_employment_bureaucrats_add = 650
+			building_employment_farmers_add = 7250
+			building_employment_peasants_add = -10000
+			building_employment_bureaucrats_add = 750
+
 		}
 		unscaled = {
 			building_peasants_shares_add = 1
@@ -633,8 +638,8 @@ pm_anarchist_cooperative_building_subsistence_bureaucratic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_farmers_add = 12000
-			building_employment_peasants_add = -7200
+			building_employment_farmers_add = 8000
+			building_employment_peasants_add = -10000
 		}
 		unscaled = {
 			building_peasants_shares_add = 1
@@ -659,8 +664,8 @@ pm_privately_owned_building_subsistence_japan = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 1000
-			building_employment_officers_add = 1600 # Samurai
+			building_employment_aristocrats_add = 500
+			building_employment_officers_add = 600 # Samurai
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 5
@@ -681,10 +686,10 @@ pm_freeholders_building_subsistence_japan= {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 800
-			building_employment_officers_add = 1200
-			building_employment_farmers_add = 4200
-			building_employment_peasants_add = -3200
+			building_employment_aristocrats_add = 300
+			building_employment_officers_add = 450 # Samurai
+			building_employment_farmers_add = 2000
+			building_employment_peasants_add = -3000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 4
@@ -710,9 +715,10 @@ pm_land_owning_farmers_building_subsistence_japan = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 600
-			building_employment_farmers_add = 9600
-			building_employment_peasants_add = -7200
+			building_employment_aristocrats_add = 250
+			building_employment_officers_add = 400 # Samurai
+			building_employment_farmers_add = 4000
+			building_employment_peasants_add = -5000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 4
@@ -737,35 +743,15 @@ pm_land_redistributed_building_subsistence_japan = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 600
-			building_employment_officers_add = 600
-			building_employment_farmers_add = 7600
-			building_employment_peasants_add = -5600
+			building_employment_aristocrats_add = 200
+			building_employment_officers_add = 400 # Samurai
+			building_employment_farmers_add = 5000
+			building_employment_peasants_add = -8000
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 4
 			building_farmers_shares_add = 3
 			building_officers_shares_add = 1
-		}
-	}
-}
-
-pm_worker_cooperative_building_subsistence_japan = {
-
-	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
-
-	unlocking_laws = {
-		law_land_collectivized
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_farmers_add = 12000
-			building_employment_peasants_add = -7200
-		}
-		unscaled = {
-			building_peasants_shares_add = 1
-			building_farmers_shares_add = 1
 		}
 	}
 }
