@@ -52,145 +52,14 @@ GLOBAL = {
                 }
         }
         activate_law = law_type:law_agrarianism
-        activate_law = law_type:law_debt_slavery
-        add_modifier = {
-			name = penal_colony_modifier
-			months = very_long_modifier_time
-			#is_decaying = yes
-		}
+        # activate_law = law_type:law_debt_slavery
+        # add_modifier = {
+		# 	name = penal_colony_modifier
+		# 	months = very_long_modifier_time
+		# 	#is_decaying = yes
+		# }
     }
 
-    every_country = {
-            limit = {
-                    OR = {
-                        this = c:NSW
-                        this = c:SAS
-                        this = c:WAS
-                        this = c:TAS
-                    }
-            }
-            activate_law = law_type:law_agrarianism
-            activate_law = law_type:law_debt_slavery
-            add_modifier = {
-                name = penal_colony_modifier
-                months = very_long_modifier_time
-                #is_decaying = yes
-            }
-    }
-    C:JAP = {
-        add_technology_researched = empiricism
-		add_technology_researched = dialectics
-    }
-    every_country = {
-        limit = {
-                OR = {
-                    this = c:TUS
-                    this = c:SER
-                    this = c:PAR
-                    this = c:EGY
-                    this = c:FRA
-                    this = c:LUC 
-                    this = c:MOD 
-                    this = c:MOL
-                    this = c:WAL
-                    this = c:MON 
-                    this = c:SAR
-                    this = c:JAP
-                }
-        }
-        activate_law = law_type:law_religious_schools
-}
-every_country = {
-    limit = {
-            OR = {
-                this = c:TUS
-                this = c:SER
-                this = c:PAR
-                this = c:EGY
-                this = c:LUC 
-                this = c:MOD 
-                this = c:MOL
-                this = c:WAL 
-                this = c:MON  
-            }
-    }
-    set_institution_investment_level = {
-        institution = institution_schools
-        level = 1
-    }
-}
-every_country = {
-    limit = {
-            OR = {
-                this = c:FRA
-                this = c:HOL
-                this = c:SAR
-                this = c:SCH
-            }
-    }
-    set_institution_investment_level = {
-        institution = institution_schools
-        level = 2
-    }
-}
-every_country = {
-    limit = {
-            OR = {
-                this = c:PRU
-                this = c:BEL
-                this = c:JAP
-            }
-    }
-    set_institution_investment_level = {
-        institution = institution_schools
-        level = 3
-    }
-}
-every_country = {
-    limit = {
-            OR = {
-                this = c:POR
-                this = c:SIC
-            }
-    }
-    activate_law = law_type:law_private_schools
-}
-
-every_country = {
-    limit = {
-            OR = {
-                this = c:SAX
-                this = c:ANH
-                this = c:MST
-                this = c:MEC 
-                this = c:WEI 
-                this = c:SCW 
-                this = c:COB 
-                this = c:MEI 
-                this = c:LUB 
-                this = c:SCH 
-                this = c:HOL 
-                this = c:HAM
-                this = c:BRE 
-                this = c:OLD 
-                this = c:HAN 
-                this = c:BRA 
-                this = c:SCM 
-                this = c:LIP 
-                this = c:HEK 
-                this = c:HES 
-                this = c:WLD 
-                this = c:NAS 
-                this = c:HOH
-                this = c:BAD 
-                this = c:WUR 
-                this = c:BAV 
-                this = c:SWI 
-                this = c:LUX
-            }
-    }
-    activate_law = law_type:law_public_schools
-}
 every_country = {
     limit = {
         OR = {
@@ -208,23 +77,13 @@ every_country = {
             has_subject_relation_with = c:CHI
         }
     }
-    add_technology_researched = empiricism #to allow for total separation, remove if unnecesary.
+    add_technology_researched = empiricism #to allow total separation, remove if unnecesary.
     activate_law = law_type:law_total_separation
 }
 c:KOR = {
-    add_technology_researched = empiricism #to allow for state atheism, remove if unnecesary.
+    add_technology_researched = empiricism #to allow state atheism, remove if unnecesary.
     activate_law = law_type:law_state_atheism #Choson dynasty crackdown on buddhism
 }
-
-# every_country = {
-#     limit = {
-#         is_subject = yes
-#     }
-#     set_variable = {
-#         name = autonomy_level
-#         value = 500
-#     }
-# }
 
 }
 

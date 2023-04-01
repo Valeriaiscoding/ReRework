@@ -762,6 +762,7 @@ pm_home_workshops_no_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
 	unlocking_laws = {
 		law_command_economy
+		law_chiefdom
 	}
 
 	building_modifiers = { # 71
@@ -819,6 +820,7 @@ pm_hunting_building_subsistence = {
 	unlocking_laws = {
 		law_national_militia
 		law_mass_conscription
+		law_chiefdom
 	}
 	building_modifiers = {
 		workforce_scaled = { # 51
@@ -891,6 +893,7 @@ pm_hunting_building_subsistence_intensive = {
 	unlocking_laws = {
 		law_national_militia
 		law_mass_conscription
+		law_chiefdom
 	}
 	building_modifiers = {
 		workforce_scaled = { #
@@ -911,6 +914,7 @@ pm_home_workshops_no_building_subsistence_east_asia = {
 	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
 	unlocking_laws = {
 		law_command_economy
+		law_chiefdom
 	}
 
 	building_modifiers = { 
@@ -964,7 +968,7 @@ pm_cottage_industry_building_subsistence_farms_east_asia = {
 }
 
 # Mining
-pm_subsistance_mining = { #14 total
+pm_subsistance_mining = { #18 total
 
 	texture = "gfx/interface/icons/production_method_icons/unused/simple_mining.dds"
 
@@ -975,8 +979,8 @@ pm_subsistance_mining = { #14 total
 	building_modifiers = {
 
 		level_scaled = {
-			building_output_iron_add = 0.2
-			building_output_coal_add = 0.2
+			building_output_iron_add = 0.3 #12
+			building_output_coal_add = 0.2 #6
 		}
 	}
 }
@@ -987,6 +991,7 @@ pm_no_subsistance_mining = { # 20 total
 
 	unlocking_laws = {
 		law_command_economy
+		law_chiefdom
 	}
 
 	building_modifiers = {
@@ -1010,7 +1015,7 @@ pm_subsistance_mining_intensive = { #128 total
 	building_modifiers = {
 
 		level_scaled = {
-			building_output_iron_add = 1.6
+			building_output_iron_add = 2.4
 			building_output_coal_add = 1.6
 		}
 	}
@@ -1022,6 +1027,7 @@ pm_no_subsistance_mining_intensive = { # 160 total
 
 	unlocking_laws = {
 		law_command_economy
+		law_chiefdom
 	}
 
 	building_modifiers = {

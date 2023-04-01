@@ -1,49 +1,51 @@
-﻿on_monthly_pulse_country = {
-	effect = {
-		if = {
-			limit = { 
-				is_ai = yes
-				any_state = {
-					ia_rp_on_river = yes
-					OR = {
-						any_scope_building = {
-							is_building_type = "building_ia_river_port"
-							is_buildable = yes
-						}
-						NOT = { has_building = "building_ia_river_port" }
-					}
-				}
-			 }
-			 ai_build_river_port = yes
-			}
-			if = {
-				limit = { 
-					#is_ai = yes
-					has_technology_researched = army_reserves
-					any_state = {
-						NOT = { 
-								has_building = building_local_stuff_headquarters 
-							}
-							has_building = building_barracks
-					}
-				}
-				ai_build_local_stuff = yes
-			}		
-		}
-}
-on_election_campaign_start = {
-		effect = {
-			debug_log = "Election Campaign Started"
-			every_interest_group = {
-				limit = { is_insurrectionary = no }
-				add_modifier = {
-					name = honeymoon_period
-					months = 8
-				}
-				add_modifier = {
-					name = campaign_season
-					months = 6
-				}
-			}
-		}
-}
+﻿# on_monthly_pulse_country = {
+# 	effect = {
+# 		if = {
+# 			limit = { 
+# 				is_ai = yes
+# 				any_state = {
+# 					ia_rp_on_river = yes
+# 					OR = {
+# 						any_scope_building = {
+# 							is_building_type = "building_ia_river_port"
+# 							is_buildable = yes
+# 						}
+# 						NOT = { has_building = "building_ia_river_port" }
+# 					}
+# 				}
+# 			 }
+# 			 ai_build_river_port = yes
+# 			}
+# 			if = {
+# 				limit = { 
+# 					#is_ai = yes
+# 					has_technology_researched = army_reserves
+# 					any_state = {
+# 						NOT = { 
+# 								has_building = building_local_stuff_headquarters 
+# 							}
+# 							has_building = building_barracks
+# 					}
+# 				}
+# 				ai_build_local_stuff = yes
+# 			}		
+# 		}
+# }
+# on_election_campaign_start = {
+# 		effect = {
+# 			debug_log = "Election Campaign Started"
+# 			every_interest_group = {
+# 				limit = { is_insurrectionary = no }
+# 				add_modifier = {
+# 					name = honeymoon_period
+# 					months = 8
+# 				}
+# 				add_modifier = {
+# 					name = campaign_season
+# 					months = 6
+# 				}
+# 			}
+# 		}
+# }
+
+# Root = Building

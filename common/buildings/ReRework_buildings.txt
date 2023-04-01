@@ -13,7 +13,7 @@ building_power_plant = {
 		pmg_base_building_power_plant
 		pm_transmission_method
 		pmg_ownership_capital_building_power_plant
-		pmg_securities_backed
+		#pmg_securities_backed
 	}
 	
 	required_construction = construction_cost_very_high
@@ -34,7 +34,7 @@ building_hydroelectric_power_plant = {
 		pmg_base_building_hydroelectric_power_plant
 		pm_transmission_method
 		pmg_ownership_capital_building_power_plant
-		pmg_securities_backed
+		#pmg_securities_backed
 	}
 	
 	required_construction = construction_cost_very_high
@@ -48,47 +48,6 @@ building_hydroelectric_power_plant = {
 
 }
 
-
-building_gold_mine = {
-	building_group = bg_gold_mining
-	texture = "gfx/interface/icons/building_icons/gold_mine.dds"
-	city_type = mine
-	levels_per_mesh = 5
-	required_construction = construction_cost_medium
-	terrain_manipulator = mining
-	
-	unlocking_technologies = {
-		prospecting
-	}
-
-	production_method_groups = {
-		pmg_mining_equipment_building_gold_mine
-		pmg_explosives_building_gold_mine
-		pmg_steam_automation_building_gold_mine
-		pmg_train_automation_building_gold_mine
-		pmg_ownership_capital_building_gold_mine
-		pmg_banknotes_production_building_gold_mine
-	}
-}
-
-building_gold_fields = {
-	building_group = bg_gold_fields
-	texture = "gfx/interface/icons/building_icons/gold_fields.dds"
-	city_type = mine
-	levels_per_mesh = 5
-	buildable = no
-	expandable = no
-	terrain_manipulator = mining
-	
-	unlocking_technologies = {
-		prospecting
-	}
-
-	production_method_groups = {
-		pmg_base_building_gold_fields
-		pmg_banknotes_production_gold_fields
-	}
-}
 
 building_trade_center = {
 	building_group = bg_trade
@@ -111,7 +70,7 @@ building_trade_center = {
 }
 
 building_ia_river_port = {
-	building_group = bg_ia_river_port
+	building_group = bg_private_infrastructure
 	texture = "gfx/interface/icons/building_icons/building_port.dds"
 
 	has_max_level = yes

@@ -1,53 +1,35 @@
-﻿penal_colony_modifier = {
-	icon = gfx/interface/icons/timed_modifier_icons/slavery_neutral.dds
-	state_migration_pull_add = 10
-    state_poor_standard_of_living_add = -2.5
-    state_migration_push_mult = -0.5
-    state_political_strength_from_wealth_mult = 0.25
-    building_group_bg_plantations_throughput_mult = 0.1
-    building_group_bg_agriculture_throughput_mult = 0.1
-    building_group_bg_ranching_throughput_mult = 0.1
-    building_group_bg_mining_throughput_mult = 0.1
-} 
+﻿# penal_colony_modifier = {
+# 	icon = gfx/interface/icons/timed_modifier_icons/slavery_neutral.dds
+# 	state_migration_pull_add = 10
+#     state_poor_standard_of_living_add = -2.5
+#     state_migration_push_mult = -0.5
+#     state_political_strength_from_wealth_mult = 0.25
+#     building_group_bg_plantations_throughput_mult = 0.1
+#     building_group_bg_agriculture_throughput_mult = 0.1
+#     building_group_bg_ranching_throughput_mult = 0.1
+#     building_group_bg_mining_throughput_mult = 0.1
+# } 
 
-parliament_of_canada = {
+# honeymoon_period = {
+# 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+# 	interest_group_approval_add = 10
+# }
+# campaign_season = {
+# 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+# 	interest_group_approval_add = -10
+# }
 
-}
 
-honeymoon_period = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	interest_group_approval_add = 10
-}
-campaign_season = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	interest_group_approval_add = -10
-}
-
-Joudikis_popularity = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	character_popularity_add = 50
-}
-
-baltic_unifier_prestige = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_prestige_mult = 0.1
-}
-
-baltic_unifiers_ig = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	interest_group_pop_attraction_mult = 0.1
-}
-
-recession_modifier = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_loan_interest_rate_add = 0.1
-	country_minting_mult = -0.1
-	state_capitalists_investment_pool_contribution_mult = -0.3
-	state_aristocrats_investment_pool_contribution_add = -0.2
-	state_clergymen_investment_pool_contribution_add = -0.3
-	state_farmers_investment_pool_contribution_add = -0.4
-	state_shopkeepers_investment_pool_contribution_add = -0.4
-	state_bureaucrats_investment_pool_contribution_add = -0.2
-	country_prestige_mult = -0.05
-	state_radicals_from_sol_change_mult = 0.25
-}
+# recession_modifier = {
+# 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+# 	country_loan_interest_rate_add = 0.1
+# 	country_minting_mult = -0.1
+# 	state_capitalists_investment_pool_contribution_mult = -0.3
+# 	state_aristocrats_investment_pool_contribution_add = -0.2
+# 	state_clergymen_investment_pool_contribution_add = -0.3
+# 	state_farmers_investment_pool_contribution_add = -0.4
+# 	state_shopkeepers_investment_pool_contribution_add = -0.4
+# 	state_bureaucrats_investment_pool_contribution_add = -0.2
+# 	country_prestige_mult = -0.05
+# 	state_radicals_from_sol_change_mult = 0.25
+# }

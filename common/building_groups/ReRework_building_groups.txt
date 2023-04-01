@@ -6,13 +6,13 @@
 	can_use_slaves = yes
 }
 
-bg_ia_river_port = {
-	parent_group = bg_infrastructure
+# bg_ia_river_port = {
+# 	parent_group = bg_infrastructure
 	
-	is_government_funded = yes
+# 	is_government_funded = yes
 	
-	urbanization = 2
-}
+# 	urbanization = 2
+# }
 
 bg_vineyard = {
 	parent_group = bg_agriculture
@@ -23,7 +23,7 @@ bg_vineyard = {
 }
 
 bg_trade = {
-	parent_group = bg_urban_facilities
+	parent_group =  bg_urban_facilities
 	
 	category = urban
 	
@@ -56,14 +56,19 @@ bg_trade = {
 	}
 }
 
-bg_finance = {
-	parent_group = bg_service
-	cash_reserves_max = 100000
-}
+
 
 bg_logistics = {
-	parent_group = bg_service
 	
+
+	category = development
+	
+	land_usage = urban
+
+	always_possible = yes	
+	
+	auto_place_buildings = yes
+
 	economy_of_scale = no
 	
 	default_building = building_teamster_office

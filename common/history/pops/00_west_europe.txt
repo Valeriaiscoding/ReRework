@@ -15,6 +15,72 @@
 			}
 		}
 	}
+	s:STATE_LIECHTENSTEIN = {
+		region_state:LIE = {
+			create_pop = {
+				culture = south_german
+				size = 7048
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1023
+			}
+			create_pop = {
+				culture = swiss
+				size = 13048
+			}
+		}		
+	}
+	s:STATE_MONACO = {
+		region_state:MNQ = {
+			create_pop = {
+				culture = occitan
+				size = 17048
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 2023
+			}
+			create_pop = {
+				culture = north_italian
+				size = 10048
+			}
+		}		
+	}
+	
+	s:STATE_SAN_MARINO = {
+		region_state:SMR = {
+			create_pop = {
+				culture = north_italian
+				size = 22048
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1023
+			}
+		}		
+	}
+	
+	s:STATE_ANDORRA = {
+		region_state:ANO = {
+			create_pop = {
+				culture = catalan
+				size = 12038
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 384
+			}
+			create_pop = {
+				culture = spanish
+				size = 5038
+			}
+			create_pop = {
+				culture = occitan
+				size = 604
+			}
+		}		
+	}
 	s:STATE_GOTALAND = {
 		region_state:SWE = {
 			create_pop = {
@@ -157,6 +223,7 @@
 			}
 		}
 	}
+	# Finland Changed
 	s:STATE_SOUTHERN_FINLAND = {
 		region_state:FIN = {
 			create_pop = {
@@ -165,7 +232,7 @@
 			}
 			create_pop = {
 				culture = finnish
-				size = 520000
+				size = 690000
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -177,19 +244,11 @@
 			}
 		}
 	}
-	s:STATE_SAVOLAX = {
-		region_state:FIN = {
-			create_pop = {
-				culture = finnish
-				size = 242000
-			}
-		}
-	}
 	s:STATE_WEST_KARELIA = {
 		region_state:FIN = {
 			create_pop = {
 				culture = finnish
-				size = 107000
+				size = 177000
 			}
 			create_pop = {
 				culture = finnish
@@ -198,11 +257,11 @@
 			}
 			create_pop = {
 				culture = swedish
-				size = 21200
+				size = 1200
 			}
 			create_pop = {
 				culture = russian
-				size = 80700
+				size = 700
 			}
 		}
 	}
@@ -406,7 +465,12 @@
 			create_pop = {
 				culture = irish  # Presbyterians and Methodists
 				religion = presby
-				size = 101485
+				size = 61485
+			}
+			create_pop = {
+				culture = irish  # Presbyterians and Methodists
+				religion = methodist
+				size = 40000
 			}
 		}
 	}
@@ -422,17 +486,16 @@
 			}
 			create_pop = {
 				culture = irish # Anglicans
-				religion = anglican
+				religion = protestant
 				size = 47904
 			}
 			create_pop = {
 				culture = british  # Presbyterians and Methodists
-				religion = methodist
 				size = 10049
 			}
 			create_pop = {
 				culture = irish  # Presbyterians and Methodists
-				religion = presby
+				religion = protestant
 				size = 4040
 			}
 		}
@@ -504,7 +567,7 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1306800
+				size = 1506800
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -522,7 +585,7 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1362200
+				size = 1862200
 			}
 		}
 	}
@@ -530,7 +593,15 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 2550396
+				size = 2050396
+			}
+		}
+	}
+	s:STATE_FRENCH_MAINE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 550396
 			}
 		}
 	}
@@ -546,15 +617,53 @@
 			}
 		}
 	}
+	
+	s:STATE_GASCOGNE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = occitan
+				size = 817200
+			}
+			create_pop = {
+				culture = basque
+				size = 411800
+			}
+		}
+	}
+	
+	s:STATE_ARMAGNAC = {
+		region_state:FRA = {
+			create_pop = {
+				culture = occitan
+				size = 1317200
+			}
+		}
+	}
 	s:STATE_RHONE = {
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1753794
+				size = 1000000
 			}
 			create_pop = {
 				culture = occitan
-				size = 584598
+				size = 384598
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 10000
+			}
+		}
+	}
+	s:STATE_DAUPHINE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 753794
+			}
+			create_pop = {
+				culture = occitan
+				size = 284598
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -574,11 +683,23 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 2238408
+				size = 1238408
 			}
 			create_pop = {
 				culture = flemish
-				size = 71200
+				size = 20000
+			}
+		}
+	}
+	s:STATE_ARTOIS = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 1000000
+			}
+			create_pop = {
+				culture = flemish
+				size = 51200
 			}
 		}
 	}
@@ -598,7 +719,7 @@
 			}
 			create_pop = {
 				culture = south_german
-				religion = lutheran
+				religion = protestant
 				size = 418004
 			}
 		}
@@ -611,11 +732,11 @@
 			}
 		}
 	}
-	s:STATE_ARMAGNAC = {
+	s:STATE_BERRI = {
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1564400
+				size = 1264400
 			}
 		}
 	}
@@ -655,15 +776,33 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1717200
+				size = 1894008
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 3996
 			}
 		}
 	}
+	
+	s:STATE_LORRAINE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 1094008
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 3996
+			}
+		}
+	}
+	
 	s:STATE_FRANCHE_COMTE = {
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1394008
+				size = 1017200
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -703,67 +842,121 @@
 			}
 		}
 	}
+	# Zuidholland, Noordholland, Zeeland, and Utrecht
 	s:STATE_HOLLAND = {
 		region_state:NET = {
 			create_pop = {
 				culture = dutch
-				size = 796204
+				size = 842331
+			}
+			create_pop = {
+				culture = dutch
+				religion = catholic
+				size = 327009
 			}
 			create_pop = {
 				culture = flemish
-				size = 21400
+				size = 26531
+			}
+			create_pop = {
+				culture = wallonian # French or Walloon Reformed
+				religion = dutch_reformed
+				size = 6542
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 34004
+				size = 34143
+			}
+			create_pop = {
+				culture = sephardic # "Portuguese" Jews
+				size = 2908
 			}
 		}
 	}
-	s:STATE_FRIESLAND = {
+	# Friesland, Overijssel, Groningen, and Drenthe
+	s:STATE_FRIESLAND = { 
 		region_state:NET = {
 			create_pop = {
 				culture = dutch
-				size = 672400
+				size = 528678
 			}
 			create_pop = {
-				culture = north_german
-				size = 12800
+				culture = dutch
+				religion = catholic
+				size = 134022
+			}
+			create_pop = {
+				culture = wallonian # French or Walloon Reformed
+				religion = dutch_reformed
+				size = 425
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 1000
+				size = 10947
 			}
 		}
 	}
+	# Noordbrabant, Gelderland, and Limburg
 	s:STATE_GELRE = {
 		region_state:NET = {
 			create_pop = {
 				culture = dutch
-				size = 503800
+				size = 192091
+			}
+			create_pop = {
+				culture = dutch
+				religion = catholic
+				size = 673889
+			}
+			create_pop = {
+				culture = wallonian # French or Walloon Reformed
+				religion = protestant
+				size = 774
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 3000
-			}
-			create_pop = {
-				culture = flemish
-				size = 17200
+				size = 6705
 			}
 			create_pop = {
 				culture = north_german
-				size = 14000
+				religion = catholic
+				size = 19201
 			}
 		}
 	}
+	s:STATE_LUXEMBOURG = {
+		region_state:LUX = {
+			create_pop = {
+				culture = wallonian
+				size = 103992
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 71996
+			}
+		}
+		region_state:BEL = {
+			create_pop = {
+				culture = wallonian
+				size = 112000
+			}
+			create_pop = {
+				culture = north_german
+				size = 24000
+			}
+		}
+	}
+		
 	s:STATE_WALLONIA = {
 		region_state:BEL = {
 			create_pop = {
 				culture = wallonian
-				size = 1462000
+				size = 1352000
 			}
 			create_pop = {
 				culture = north_german
-				size = 36000
+				size = 12000
 			}
 			create_pop = {
 				culture = flemish
@@ -772,19 +965,6 @@
 			create_pop = {
 				culture = dutch
 				size = 16000
-			}
-		}
-	}
-	s:STATE_LUXEMBOURG = {
-		region_state:LUX = {
-			create_pop = {
-				culture = wallonian
-				size = 83992
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 121996
 			}
 		}
 	}
@@ -833,25 +1013,42 @@
 	s:STATE_BOHEMIA = {
 		region_state:AUS = {
 			create_pop = {
-				culture = german_bohemians
-				size = 203697
+				culture = south_german
+				size = 499608
 			}
 			create_pop = {
 				culture = czech
 				religion = catholic
-				size = 2374808
+				size = 2000000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 55996
+				size = 50000
+			}
+		}
+	}
+	s:STATE_SUDETENLAND = {
+		region_state:AUS = {
+			create_pop = {
+				culture = south_german
+				size = 1000000
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				size = 574808
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 25996
 			}
 		}
 	}
 	s:STATE_MORAVIA = {
 		region_state:AUS = {
 			create_pop = {
-				culture = german_bohemians
-				size = 73501
+				culture = south_german
+				size = 480408
 			}
 			create_pop = {
 				culture = czech
@@ -860,82 +1057,11 @@
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 18000
+				size = 28000
 			}
 			create_pop = {
 				culture = polish
-				size = 36004
-			}
-		}
-	}
-	s:STATE_EASTSUDETEN = {
-		region_state:AUS = {
-			create_pop = {
-				culture = south_german
-				size = 251791
-			}
-			create_pop = {
-				culture = german_bohemians
-				size = 100000
-			}
-			create_pop = {
-				culture = czech
-				religion = catholic
-				size = 18673
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 5671
-			}
-			create_pop = {
-				culture = polish
-				size = 20923
-			}
-		}
-	}
-	# s:STATE_SOUTHSUDETEN = {
-	# 	region_state:AUS = {
-	# 		create_pop = {
-	# 			culture = south_german
-	# 			size = 153112
-	# 		}
-	# 		create_pop = {
-	# 			culture = czech
-	# 			religion = catholic
-	# 			size = 20496
-	# 		}
-	# 		create_pop = {
-	# 			culture = ashkenazi
-	# 			size = 1236
-	# 		}
-	# 		create_pop = {
-	# 			culture = polish
-	# 			size = 506
-	# 		}
-	# 	}
-	# }
-	s:STATE_SUDETEN = {
-		region_state:AUS = {
-			create_pop = {
-				culture = south_german
-				size = 1000023
-			}
-			create_pop = {
-				culture = german_bohemians
-				size = 354000
-			}
-			create_pop = {
-				culture = czech
-				religion = catholic
-				size = 82600
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 21398
-			}
-			create_pop = {
-				culture = polish
-				size = 2462
+				size = 56004
 			}
 		}
 	}
@@ -975,25 +1101,12 @@
 		region_state:PRU = {
 			create_pop = {
 				culture = north_german
-				size = 305640
+				size = 1018800
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 31200
-			}
-		}
-	}
-	s:STATE_EASTERN_POMERANIA = {
-		region_state:PRU = {
-			create_pop = {
-				culture = north_german
-				size = 713160
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 72800
+				size = 104000
 			}
 			create_pop = {
 				culture = polish
@@ -1065,7 +1178,7 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 741111
+				size = 723525
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -1073,18 +1186,7 @@
 			}
 			create_pop = {
 				culture = north_german
-				size = 476715
-			}
-		}
-		region_state:WLD = {
-			create_pop = {
-				culture = north_german
-				size = 27436
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 28011
+				size = 451301
 			}
 		}
 		region_state:LIP = {
@@ -1114,31 +1216,16 @@
 		region_state:PRU = {
 			create_pop = {
 				culture = north_german
-				size = 1106400
+				size = 1196400
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 163996
+				size = 183996
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 1923
-			}
-		}
-		region_state:SAX = {
-			create_pop = {
-				culture = north_german
-				size = 96400
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 20996
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 1996
+				size = 2996
 			}
 		}
 		region_state:ANH = {
@@ -1150,6 +1237,49 @@
 				culture = north_german
 				religion = catholic
 				size = 16000
+			}
+		}
+	} #Changed
+	s:STATE_NORTH_RHINE = {
+		region_state:PRU = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 771600
+			}
+			create_pop = {
+				culture = north_german
+				size = 232004
+			}
+			create_pop = {
+				culture = wallonian
+				size = 4000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 3004
+			}
+		}
+	}
+	
+	s:STATE_COLOGNE = {
+		region_state:PRU = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 461670
+			}
+			create_pop = {
+				culture = north_german
+				size = 530738
+			}
+			create_pop = {
+				culture = wallonian
+				size = 4000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 3004
 			}
 		}
 	}
@@ -1169,6 +1299,21 @@
 				size = 323992
 			}
 		}
+		region_state:HOM = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 11400
+			}
+		}
+		region_state:OLD = {
+			create_pop = {
+				culture = north_german
+				size = 24000
+			}
+		}
+	}
+	s:STATE_PALATINATE = {
 		region_state:BAV = {
 			create_pop = {
 				culture = south_german
@@ -1184,28 +1329,22 @@
 				size = 303996
 			}
 		}
-	}
-	s:STATE_NORTH_RHINE = {
-		region_state:PRU = {
+		region_state:HES = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 583008
-			}
-			create_pop = {
-				culture = north_german
-				size = 332004
-			}
-			create_pop = {
-				culture = wallonian
-				size = 4000
+				size = 39026
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 3004
+				size = 2000
+			}
+			create_pop = {
+				culture = north_german
+				size = 201434
 			}
 		}
-	}
+	} 
 	s:STATE_BRANDENBURG = {
 		region_state:PRU = {
 			create_pop = {
@@ -1266,6 +1405,12 @@
 			create_pop = {
 				culture = danish
 				size = 136404
+			}
+		}
+		region_state:OLD = {
+			create_pop = {
+				culture = north_german
+				size = 29000
 			}
 		}
 	}
@@ -1341,6 +1486,24 @@
 				size = 4004
 			}
 		}
+		region_state:BRA = {
+			create_pop = {
+				culture = north_german
+				size = 19000
+			}
+		}
+		region_state:HEK = {
+			create_pop = {
+				culture = north_german
+				size = 28000
+			}
+		}
+		region_state:WLD = {
+			create_pop = {
+				culture = north_german
+				size = 15000
+			}
+		}
 	}
 	s:STATE_BRUNSWICK = {
 		region_state:HAN = {
@@ -1407,52 +1570,28 @@
 		}
 	}
 	s:STATE_SAXONY = {
-		region_state:PRU = {
-			create_pop = {
-				culture = north_german
-				size = 313212
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 2004
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 1072
-			}
-			create_pop = { # rough estimate of 200k Sorbs in 1836
-				culture = sorb
-				size = 40106
-			}
-			create_pop = {
-				culture = sorb
-				religion = protestant
-				size = 10106
-			}
-		}
 		region_state:SAX = {
 			create_pop = {
 				culture = north_german
-				size = 1153212
+				size = 1453212
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 11004
+				size = 13004
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 4072
+				size = 5072
 			}
 			create_pop = { # rough estimate of 200k Sorbs in 1836
 				culture = sorb
-				size = 110106
+				size = 150106
 			}
 			create_pop = {
 				culture = sorb
 				religion = protestant
-				size = 40106
+				size = 50106
 			}
 		}
 		region_state:MEI = {
@@ -1515,6 +1654,78 @@
 				size = 293
 			}
 		}		
+		region_state:SDH = {
+			create_pop = {
+				culture = north_german
+				size = 83785
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 1190
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 255
+			}
+		}
+		region_state:RGZ = {
+			create_pop = {
+				culture = north_german
+				size = 70970
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 1008
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 216
+			}
+		}
+		region_state:RGA = {
+			create_pop = {
+				culture = north_german
+				size = 142927
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 2030
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 435
+			}
+		}
+		region_state:SXA = {
+			create_pop = {
+				culture = north_german
+				size = 204040
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 2898
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 624
+			}
+		}
+		region_state:HEK = {
+			create_pop = {
+				culture = north_german
+				size = 30000
+			}
+		}
+		region_state:PRU = {
+			create_pop = {
+				culture = north_german
+				size = 15000
+			}
+		}
 	}
 	s:STATE_HESSE = {
 		region_state:FRM = {
@@ -1535,16 +1746,16 @@
 		region_state:HES = {
 			create_pop = {
 				culture = north_german
-				size = 583308
+				size = 383308
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 140800
+				size = 101774
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 5000
+				size = 3000
 			}
 		}
 		region_state:HEK = {
@@ -1577,17 +1788,24 @@
 				size = 208000
 			}
 		}
-		region_state:PRU = {
+		region_state:WLD = {
 			create_pop = {
 				culture = north_german
-				size = 22369
+				size = 27436
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 21010
+				size = 28011
 			}
-		}		
+		}
+		region_state:HOM = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 11400
+			}
+		}
 	}
 	s:STATE_MECKLENBURG = {
 		region_state:MEC = {
@@ -1603,305 +1821,7 @@
 		region_state:MST = {
 			create_pop = {
 				culture = north_german
-				size = 85002
-			}
-		}		
-	}
-	############
-	s:STATE_MALMEDY = {
-		region_state:PRU = {
-			create_pop = {
-				culture = north_german
-				size = 90640
-			}
-			create_pop = {
-				culture = wallonian
-				size = 27204
-			}
-		}		
-	}
-	s:STATE_BURGENLAND = {
-		region_state:AUS = {
-			create_pop = {
-				culture = south_german
-				size = 49076
-			}
-			create_pop = {
-				culture = hungarian
-				size = 25072
-			}
-		}		
-	}
-	s:STATE_LIMBURG = {
-		region_state:NET = {
-			create_pop = {
-				culture = north_german
-				size = 9405
-			}
-			create_pop = {
-				culture = dutch
-				size = 151800
-			}
-			create_pop = {
-				culture =  flemish
-				size = 88000
-			}
-		}		
-	}
-	s:STATE_PALATINATE = {
-		region_state:BAV = {
-			create_pop = {
-				culture = north_german
-				size = 10239
-			}
-			create_pop = {
-				culture = south_german
-				size = 555029
-			}
-			create_pop = {
-				culture = french
-				size = 1203
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 1920
-			}
-		}
-		region_state:HES = {
-			create_pop = {
-				culture = north_german
-				size = 20304
-			}
-			create_pop = {
-				culture = south_german
-				size = 3045
-			}
-			create_pop = {
-				culture = french
-				size = 705
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 3045
-			}
-		}		
-	}
-	s:STATE_COLOGNE = {
-		region_state:PRU = {
-			create_pop = {
-				culture = north_german
-				size = 80496
-			}
-			create_pop = {
-				culture = french
-				size = 304
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 4056
-			}
-		}		
-	}
-	s:STATE_BRABANT = {
-		region_state:NET = {
-			create_pop = {
-				culture = north_german
-				size = 6034
-			}
-			create_pop = {
-				culture = dutch
-				size = 450674
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 2034
-			}
-		}		
-	}
-	s:STATE_ZEELAND = {
-		region_state:NET = {
-			create_pop = {
-				culture = north_german
-				size = 834
-			}
-			create_pop = {
-				culture = dutch
-				size = 300800
-			}
-			create_pop = {
-				culture = dutch
-				religion = catholic
-				size = 180948
-			}
-
-			create_pop = {
-				culture = dutch
-				size = 300800
-			}
-
-			create_pop = {
-				culture = ashkenazi
-				size = 1023
-			}
-		}		
-	}
-	s:STATE_SAARLAND = {
-		region_state:PRU = {
-			create_pop = {
-				culture = north_german
-				size = 102345
-			}
-			create_pop = {
-				culture = french
-				size = 30456
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 4056
-			}
-		}		
-	}
-	s:STATE_ROMANDY = {
-		region_state:SWI = {
-			create_pop = {
-				culture = french
-				size = 40386
-			}
-			create_pop = {
-				culture = swiss
-				size = 10384
-			}
-		}		
-	}
-	s:STATE_LUGANO = {
-		region_state:SWI = {
-			create_pop = {
-				culture = north_italian
-				size = 13318
-			}
-			create_pop = {
-				culture = swiss
-				size = 15722
-			}
-			create_pop = {
-				culture = romansh
-				size = 16488
-			}
-		}		
-	}
-	s:STATE_BASTOGNE = {
-		region_state:BEL = {
-			create_pop = {
-				culture = wallonian
-				size = 12034
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 950
-			}
-		}		
-	}
-	s:STATE_NANCY = {
-		region_state:FRA = {
-			create_pop = {
-				culture = french
-				size = 50697
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 2034
-			}
-		}		
-	}
-	s:STATE_ANNECY = {
-		region_state:SAR = {
-			create_pop = {
-				culture = french
-				size = 20506
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 4056
-			}
-			create_pop = {
-				culture = north_italian
-				size = 10024
-			}
-			create_pop = {
-				culture = french
-				size = 20139
-			}
-			create_pop = {
-				culture = french
-				size = 6046
-			}
-		}		
-	}
-	s:STATE_LIECHTENSTEIN = {
-		region_state:LIE = {
-			create_pop = {
-				culture = south_german
-				size = 7048
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 1023
-			}
-			create_pop = {
-				culture = swiss
-				size = 13048
-			}
-		}		
-	}
-	s:STATE_ANDORRA = {
-		region_state:ANO = {
-			create_pop = {
-				culture = catalan
-				size = 12038
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 384
-			}
-			create_pop = {
-				culture = spanish
-				size = 5038
-			}
-			create_pop = {
-				culture = french
-				size = 604
-			}
-		}		
-	}
-	s:STATE_CHAMPAGNE_TWO = {
-		region_state:FRA = {
-			create_pop = {
-				culture = north_german
-				size = 1029
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 3849
-			}
-			create_pop = {
-				culture = french
-				size = 600385
-			}
-		}		
-	}
-	s:STATE_CHANNEL_ISLANDS = {
-		region_state:GBR = {
-			create_pop = {
-				culture = british
-				size = 15024
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 1023
-			}
-			create_pop = {
-				culture = french
-				size = 2034
+				size = 100002
 			}
 		}		
 	}

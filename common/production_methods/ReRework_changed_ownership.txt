@@ -1,26 +1,5 @@
 ﻿# industry
-pm_merchant_guilds_building_food_industry = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 
-	unlocking_production_methods = {
-		pm_bakery
-		pm_sweeteners
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
-		}
-	}
-}
 
 pm_privately_owned_building_food_industry = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
@@ -104,51 +83,6 @@ pm_government_run_building_food_industry = {
 	}
 }
 
-pm_worker_cooperative_building_food_industry = {
-	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
-
-	unlocking_production_methods = {
-		pm_baking_powder
-	}
-
-	unlocking_laws = {
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_laborers_add = 100
-			building_employment_machinists_add = 100
-		}
-		unscaled = {
-			building_laborers_shares_add = 1
-			building_machinists_shares_add = 1
-		}
-	}
-}
-
-pm_merchant_guilds_building_textile_mills = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
-
-	unlocking_production_methods = {
-		pm_handsewn_clothes
-		pm_dye_workshops
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500 #unchanged, total wage weight 1000
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
-		}
-	}
-}
 
 pm_privately_owned_building_textile_mills = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
@@ -230,29 +164,6 @@ pm_government_run_building_textile_mills = {
 		unscaled = {
 			building_bureaucrats_shares_add = 2
  building_government_shares_add  = 8
-		}
-	}
-}
-
-pm_merchant_guilds_building_furniture_manufacturies = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
-
-	unlocking_production_methods = {
-		pm_handcrafted_furniture
-		pm_lathe
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
 		}
 	}
 }
@@ -443,29 +354,6 @@ pm_government_run_building_glassworks = {
 	}
 }
 
-pm_merchant_guilds_building_tooling_workshops = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
-
-	unlocking_production_methods = {
-		pm_crude_tools
-		pm_pig_iron
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
-		}
-	}
-}
-
 pm_privately_owned_building_tooling_workshops = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 
@@ -548,27 +436,6 @@ pm_government_run_building_tooling_workshops = {
 	}
 }
 
-pm_merchant_guilds_building_paper_mills = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
-
-	unlocking_production_methods = {
-		pm_pulp_pressing
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
-		}
-	}
-}
 
 pm_privately_owned_building_paper_mills = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
@@ -690,27 +557,7 @@ pm_government_run_industry = {
 	}
 }
 
-pm_merchant_guilds_building_shipyards = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 
-	unlocking_production_methods = {
-		pm_basic_shipbuilding
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
-		}
-	}
-}		
 
 pm_privately_owned_building_shipyards = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
@@ -790,29 +637,6 @@ pm_government_run_building_shipyards = {
 		}
 	}
 }
-
-pm_merchant_guilds_building_arms_industry = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
-
-	unlocking_production_methods = {
-		pm_muskets
-		pm_rifles
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
-		}
-	}
-}		
 
 pm_privately_owned_building_arms_industry = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
@@ -2343,23 +2167,6 @@ pm_government_run_building_railway = {
 }
 
 
-pm_trade_center_merchant_guilds = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
-	
-	unlocking_laws = {
-		law_mercantilism
-	}
-	
-	building_modifiers = { 
-		level_scaled = {
-			building_employment_shopkeepers_add = 150 
-			
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 5
-		}
-	}
-}
 
 pm_trade_center_privately_owned = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
@@ -2419,27 +2226,6 @@ pm_trade_center_government_run = {
 		unscaled = {		
 			building_bureaucrats_shares_add = 2
  building_government_shares_add  = 8
-		}
-	}
-}
-
-pm_trade_center_worker_cooperative = {
-	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
-
-	unlocking_laws = {
-		law_council_republic
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_clerks_add = 150 
-			building_employment_engineers_add = 100
-		}
-		unscaled = {
-			building_laborers_shares_add = 1
-			building_machinists_shares_add = 2
-			building_clerks_shares_add = 2
-			building_engineers_shares_add = 2
 		}
 	}
 }

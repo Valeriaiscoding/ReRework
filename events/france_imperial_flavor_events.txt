@@ -1,0 +1,816 @@
+namespace = france_mex
+namespace = france_ngf
+namespace = france_ben
+namespace = france_ger
+namespace = france_emp
+namespace = benelux
+
+france_emp.1 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = france_emp.1.t
+	desc = france_emp.1.d
+	flavor = france_emp.1.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		#Called by Napoleon III's death
+	}
+
+	immediate = {
+		c:FRA = {
+			save_scope_as = france_scope
+		}
+
+	}
+
+	option = { #Napoléon IV is of age
+		name = france_emp.1.a
+		default_option = yes
+		trigger = {
+			year >= 1874
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { #Napoléon IV is not of age (Eugénie regency)
+		name = france_emp.1.b
+		default_option = yes
+		trigger = {
+			year >= 1856
+			year <= 1874
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { #Napoléon-Jérôme Bonaparte
+		name = france_emp.1.c
+		trigger = {
+			year >= 1853
+		}
+		create_character = {
+			first_name = Napoleon-Jerome
+			last_name = Bonapart
+			culture = cu:french
+			ruler = yes		
+			interest_group = ig_intelligentsia
+			female = no
+			birth_date = 1822.9.9
+			dna = dna_jerome_bonaparte
+			ideology = ideology_reformer 
+			traits = {
+				persistent 
+				ambitious 
+				innovative 
+			}
+			on_created = {
+				set_variable = is_jerome_bonapart
+				set_variable = is_bonapartist
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { #House Murat
+		name = france_emp.1.c
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { #Proclaim the Republic
+		name = france_emp.1.e
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+france_emp.2 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = france_emp.2.t
+	desc = france_emp.2.d
+	flavor = france_emp.2.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		c:FRA = {
+			has_variable = french_empire_created
+		}
+		c:SIC = {
+			is_subject_of = c:FRA
+		}
+		#Called by decision
+	}
+
+	immediate = {
+		c:SIC = {
+			save_scope_as = mexico_scope
+		}
+		c:FRA = {
+			save_scope_as = france_scope
+		}
+	}
+
+	option = {
+		name = france_emp.2.a
+		default_option = yes
+		c:SIC = {
+			set_variable = sic_napoleonic_kingdom
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = france_emp.2.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+france_mex.1 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = france_mex.1.t
+	desc = france_mex.1.d
+	flavor = france_mex.1.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		#Called by decision
+	}
+
+	immediate = {
+		c:MEX = {
+			save_scope_as = mexico_scope
+		}
+	}
+
+	option = {
+		name = france_mex.1.a
+		default_option = yes
+		create_diplomatic_play = {
+			name = mexican_american_war_war_name
+			target_country = c:MEX
+			war = no
+			type = dp_make_dominion_usa_ottomans
+			
+			add_war_goal = {
+				holder = c:MEX
+				type = war_reparations
+				target_country = c:FRA
+			}
+		}
+		c:FRA = {
+			change_infamy = 25
+			set_variable = france_mexico_war
+			add_journal_entry = {
+				type = je_france_mexican_expedition_war
+			}
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = france_mex.1.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+france_mex.2 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = france_mex.2.t
+	desc = france_mex.2.d
+	flavor = france_mex.2.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		c:FRA = {
+			has_variable = france_mexico_war
+		}
+		c:MEX = {
+			is_subject_of = c:FRA
+		}
+	}
+
+	immediate = {
+		c:MEX = {
+			save_scope_as = mexico_scope
+		}
+	}
+
+	option = {
+		name = france_mex.2.a
+		default_option = yes
+		c:FRA = {
+			remove_diplomatic_pact = {
+				country = c:MEX
+				type = dominion
+			}
+			create_diplomatic_pact = {
+				country = c:MEX
+				type = protectorate 
+			}
+		}
+		c:MEX = {
+			activate_law = law_type:law_monarchy
+			hidden_effect = {
+				trigger_event = { id = france_mex.3 days = 1 }
+			}
+		}
+		c:FRA = {
+			add_modifier = {
+				name = mexican_war_win
+			}
+			remove_variable = france_mexico_war
+		}
+	}
+}
+
+france_mex.3 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+			create_character = {
+				first_name = Maximilien
+				last_name = von_Habsburg
+				culture = cu:south_german
+				ruler = yes		
+				interest_group = ig_intelligentsia 
+				female = no
+				birth_date = 1832.7.6
+				dna = dna_maximilien_habsburg
+				ideology = ideology_reformer 
+				traits = {
+					persistent 
+					ambitious 
+					innovative 
+				}
+				on_created = {
+					set_variable = is_bonapartist
+				}
+			}
+	}
+}
+
+france_mex.4 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = france_mex.4.t
+	desc = france_mex.4.d
+	flavor = france_mex.4.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		c:FRA = {
+			AND = {
+				has_variable = france_mexico_war
+				is_at_war = no
+				is_diplomatic_play_committed_participant = no
+			}
+		}
+		c:MEX = {
+			NOT = {is_subject_of = c:FRA}
+		}
+	}
+
+	immediate = {
+		c:MEX = {
+			save_scope_as = mexico_scope
+		}
+	}
+
+	option = {
+		name = france_mex.4.a
+		default_option = yes
+		c:FRA = {
+			add_modifier = {
+				name = mexican_war_defeat
+			}
+			remove_variable = france_mexico_war
+		}
+	}
+}
+
+
+####################
+# Franco-German War
+####################
+
+france_ngf.1 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	title = france_ngf.1.t
+	desc = france_ngf.1.d
+	flavor = france_ngf.1.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		#Called by decision
+	}
+
+	immediate = {
+		c:FRA = {
+			save_scope_as = france_scope
+		}
+		c:NGF = {
+			save_scope_as = ngf_scope
+			ruler = {
+				save_scope_as = ngf_ruler_scope
+			}
+		}
+	}
+
+	option = {
+		name = france_ngf.1.a #Go to war, normal
+		c:FRA = {
+			set_variable = france_ngf_war
+		}
+		create_diplomatic_play = {
+			name = dp_revoke_claim
+			target_country = c:NGF
+			add_target_backers = { c:BAV c:WUR c:BAD c:HON }
+			type = dp_humiliation
+			war = yes
+
+			add_war_goal = {
+				holder = c:FRA
+				type = revoke_claim
+				target_country = c:NGF
+				target_state = s:STATE_ALSACE_LORRAINE.region_state:FRA
+			}
+			# we have natural borders at home
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_RHINELAND.region_state:NGF
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_PALATINATE.region_state:BAV
+			}
+
+			add_war_goal = {
+				holder = c:NGF
+				type = return_state
+				target_state = s:STATE_ALSACE_LORRAINE.region_state:FRA
+			}
+		}
+		add_journal_entry = {
+			type = je_france_ngf_war
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = france_ngf.1.b #go to war, for Rhine
+		trigger = {
+			c:FRA = {
+				has_variable = claimed_rhine
+				has_variable = french_empire_created
+			}
+		}
+		c:FRA = {
+			set_variable = france_ngf_war_rhine
+		}
+		create_diplomatic_play = {
+			name = dp_return_state
+			type = dp_return_state
+			target_country = c:NGF
+			add_target_backers = { c:BAV c:WUR c:BAD c:HON }
+			war = yes
+			
+			target_state = s:STATE_NORTH_RHINE.region_state:NGF
+			
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_RHINELAND.region_state:NGF
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_PALATINATE.region_state:BAV
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = STATE_NORTH_RHINE.region_state:BAV
+			}
+			add_war_goal = {
+				holder = c:NGF
+				type = return_state
+				target_state = s:STATE_ALSACE_LORRAINE.region_state:FRA
+			}
+			add_war_goal = {
+				holder = c:NGF
+				type = revoke_claim
+				target_state = s:STATE_RHINELAND.region_state:NGF
+			}
+			add_war_goal = {
+				holder = c:NGF
+				type = revoke_claim
+				target_state = s:STATE_NORTH_RHINE.region_state:NGF
+			}
+			add_war_goal = {
+				holder = c:NGF
+				type = revoke_claim
+				target_state = s:STATE_PALATINATE.region_state:NGF
+			}
+			add_war_goal = {
+				holder = c:FRA
+				target_country = c:NGF
+				type = revoke_claim
+				target_state = s:STATE_ALSACE_LORRAINE.region_state:FRA
+			}
+		}
+		add_journal_entry = {
+			type = je_france_ngf_war
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = france_ngf.1.c #do not go to war
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+france_ngf.2 = { #Defeat in Franco Prussian War
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	title = france_ngf.2.t
+	desc = france_ngf.2.d
+	flavor = france_ngf.2.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		#Called by journal
+	}
+
+	immediate = {
+		c:FRA = {
+			save_scope_as = france_scope
+		}
+		c:NGF = {
+			save_scope_as = ngf_scope
+			ruler = {
+				save_scope_as = ngf_ruler_scope
+			}
+		}
+	}
+
+	option = {
+		name = france_ngf.2.a 
+		default_option = yes
+		add_modifier = {
+			name = prussian_war_defeat
+		}
+		hidden_effect = {
+			c:NGF = {
+				trigger_event = great_rework.64 
+			}
+		}
+	}
+}
+
+france_ngf.3 = { #Victory in Franco Prussian War
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = france_ngf.3.t
+	desc = {
+		
+		first_valid = {
+			triggered_desc = { #No Rhine
+				trigger = {
+					c:FRA = {
+						has_variable = france_ngf_war
+					}
+				}
+				desc = france_ngf.3.d.1
+			}
+			triggered_desc = { #War for Rhine
+				trigger = {
+					c:FRA = {
+						has_variable = france_ngf_war_rhine
+					}
+				}
+				desc = france_ngf.3.d.2
+			}
+
+		}
+
+	}
+	flavor = france_ngf.3.f
+
+	duration = 40
+
+	trigger = {
+		exists = c:FRA
+		this = c:FRA
+		#Called by journal
+	}
+
+	immediate = {
+		c:FRA = {
+			save_scope_as = france_scope
+		}
+		c:NGF = {
+			save_scope_as = ngf_scope
+			ruler = {
+				save_scope_as = ngf_ruler_scope
+			}
+		}
+	}
+
+	option = {
+		name = france_ngf.3.a 
+		trigger = {
+			c:FRA = {
+				has_variable = france_ngf_war
+			}
+		}
+		add_modifier = {
+			name = prussian_war_victory
+		}
+		}
+
+	option = {
+		name = france_ngf.3.b 
+		trigger = {
+			c:FRA = {
+				has_variable = france_ngf_war_rhine
+			}
+		}
+		add_modifier = {
+			name = prussian_war_victory
+		}
+		hidden_effect = {
+			c:AUS = {
+				trigger_event = austrian_germany.1
+			}
+		}
+		# s:STATE_NORTH_RHINE = {
+		# 	set_owner_of_provinces = {
+		# 		country = c:NGF
+		# 		provinces = { x2101E0 xD08021 x5101A0 }
+		# 	}
+		# }
+	}
+}
+
+france_ben.1 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = france_ben.1.t
+	desc = france_ben.1.d
+	flavor = france_ben.1.f
+
+	duration = 40
+
+	trigger = {
+		#Called by decision
+	}
+
+	immediate = {
+		c:NET = {
+			save_scope_as = holland_scope
+		}
+		c:FRA = {
+			save_scope_as = france_scope
+		}
+	}
+
+	option = {
+		name = france_ben.1.a
+		default_option = yes
+		c:NET = {
+			add_treasury = 5000000
+			change_relations = {
+				country = c:FRA
+				value = 10
+			}
+			remove_diplomatic_pact = {
+				country = c:LUX
+				type = personal_union
+			}
+		}
+		c:FRA = {
+			add_treasury = -5000000
+			change_relations = {
+				country = c:NET
+				value = 10
+			}
+			create_diplomatic_pact = {
+				country = c:LUX
+				type = personal_union
+			}
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+	option = {
+		name = france_ben.1.b
+		default_option = yes
+		c:NET = {
+			change_relations = {
+				country = c:FRA
+				value = -10
+			}
+		}
+		c:FRA = {
+			change_relations = {
+				country = c:NET
+				value = -20
+			}
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+}
+
+
+
+benelux.1 = {
+	type = country_event
+	hidden = yes
+	trigger = {
+		exists = c:BEL
+		this = c:BEL
+		OR = {
+			AND = {
+				exists = s:STATE_WALLONIA.region_state:BEL
+				NOT = {
+					exists = s:STATE_FLANDERS.region_state:BEL
+					exists = s:STATE_LUXEMBOURG.region_state:BEL
+				}
+			}
+			
+			AND = {
+				exists = s:STATE_FLANDERS.region_state:BEL
+				NOT = {
+					exists = s:STATE_WALLONIA.region_state:BEL
+				}
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				exists = s:STATE_WALLONIA.region_state:BEL
+				NOT = {
+					exists = s:STATE_FLANDERS.region_state:BEL
+					exists = s:STATE_LUXEMBOURG.region_state:BEL
+				}
+			}
+			change_tag = WAL
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_FLANDERS.region_state:BEL
+				NOT = {
+					exists = s:STATE_WALLONIA.region_state:BEL
+				}
+			}
+			change_tag = WAL
+		}
+	}
+}

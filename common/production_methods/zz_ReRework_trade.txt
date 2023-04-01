@@ -9,13 +9,10 @@
 
 	building_modifiers = {
 		workforce_scaled = {
-			# input goods
-			building_input_grain_add = 3				#x20 = 80
-			building_input_wood_add = 1					
-		}												#total = 160
+		}											
 
 		level_scaled = {
-			building_employment_laborers_add = 500			#x
+			building_employment_laborers_add = 400			#x500
 		}
 	}
 }
@@ -31,13 +28,11 @@ pm_trade_center_specialized_logistics = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_grain_add = 2				#x20 = 40
-			building_input_wood_add = 2					#x20 = 40
-			building_input_transportation_add = 2		#x30 = 60
-		}												#total = 140
+			building_input_transportation_add = 4		#x30 = 120
+		}												#total = 120
 
 		level_scaled = {
-			building_employment_laborers_add = 300			
+			building_employment_laborers_add = 200			
 			building_employment_machinists_add = 100		
 		}
 	}
@@ -60,14 +55,14 @@ pm_trade_center_local_loading_automobiles = {
 		workforce_scaled = {
 			# input goods
 			building_input_transportation_add = 2		#x30 = 60
-			building_input_automobiles_add = 0.7		#x100 = 70
+			building_input_automobiles_add = 1			#x100 = 70
 														#total = 130
 
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 200			
-			building_employment_machinists_add = 150		
+			building_employment_laborers_add = 150			
+			building_employment_machinists_add = 75		
 		}
 	}
 }
@@ -78,7 +73,7 @@ pm_trade_center_scribes = {
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clergymen_add = 200  # choice of clergymen is kinda arbitrary, but this is made for illiterate and backward nations, and should be switched to better ones asap.
+			building_employment_clerks_add = 200 
 		}
 	}
 	ai_value = 100000
@@ -95,7 +90,7 @@ pm_trade_center_contact_mails = {
 
 		}
 		level_scaled = {
-			building_employment_clerks_add = 200 #525
+			building_employment_clerks_add = 150 
 		}
 	}
 	ai_value = 200000
@@ -118,7 +113,7 @@ pm_trade_center_contact_telegram = {
 			building_input_electricity_add = 1.5		#x30 = 45
 		}
 		level_scaled = {
-			building_employment_clerks_add = 150
+			building_employment_clerks_add = 125
 		}
 	}
 	ai_value = 300000

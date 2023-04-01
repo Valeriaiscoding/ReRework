@@ -16,7 +16,6 @@ building_construction_sector = {
 		pmg_base_building_construction_sector
 		pmg_automation_building_construction_sector
 		pmg_ownership_capital_building_construction_sector
-		pmg_securities_backed_construction
 	}
 	
 	ai_value = 2000 # Construction sector should generally be preferred over other equal-priority spending items

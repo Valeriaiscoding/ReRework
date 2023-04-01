@@ -1,0 +1,159 @@
+﻿french_rhine = {
+
+	is_shown = {
+		exists = c:FRA
+		root = c:FRA
+		NOT = { has_variable = claimed_rhine }
+		has_variable = french_empire_created
+	}
+	
+	possible = {
+		has_technology_researched = nationalism
+	}
+		
+	when_taken = {
+		trigger_event = { 
+			id = great_rework.39 
+			popup = yes
+		}
+		if = {
+			limit = {
+				exists = c:PRU
+			}
+			create_incident = {
+				country = c:PRU
+				value = 30
+			}
+		}	
+		# Add Claims
+		s:STATE_RHINELAND = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_NORTH_RHINE = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MALMEDY= {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_PALATINATE= {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		set_variable = claimed_rhine
+	}
+
+	ai_chance = {
+		base = 10
+	}
+}
+aig_france_ben = {
+	is_shown = {
+		    exists = c:FRA
+		    root = c:FRA
+			has_variable = french_empire_created
+			NOT = {
+				has_variable = france_ben
+			}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = france_empire_tt
+			c:FRA = {
+				has_variable = french_empire_created
+			}
+		}
+	}
+
+	when_taken = {
+		c:FRA = {
+			set_variable = france_ben
+		}
+
+		s:STATE_WALLONIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+
+		s:STATE_FLANDERS= { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_FLANDERS= { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+		modifier = {
+			trigger = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
+			}
+			add = -1000
+		}
+	}
+}

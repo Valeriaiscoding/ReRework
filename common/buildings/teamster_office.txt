@@ -2,6 +2,10 @@ building_teamster_office = {
 	building_group = bg_logistics	
 	texture = "gfx/interface/icons/building_icons/building_teamster_office.dds"
 	
+	city_type = city
+
+	residence_points_per_level = 0
+
 	unlocking_technologies = {
 		urbanization
 	}
@@ -13,6 +17,10 @@ building_teamster_office = {
 		pmg_teamster_rickshaw_and_taxi
 		pmg_ownership_teamster_office
 	}
+
+	buildable = no
+	expandable = no
+	downsizeable = no
 
 	#required_construction = construction_cost_low
 	

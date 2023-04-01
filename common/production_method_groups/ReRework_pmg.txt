@@ -205,7 +205,7 @@ pmg_base_building_livestock_ranch = {
 
 pmg_base_building_trade_center_local_loading = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
+	ai_selection = most_profitable
 
 	production_methods = {
 		pm_trade_center_local_loading_horse_carriages
@@ -216,7 +216,7 @@ pmg_base_building_trade_center_local_loading = {
 
 pmg_base_building_trade_contact = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
+	ai_selection = most_profitable
 
 	production_methods = {
 		pm_trade_center_scribes
@@ -228,7 +228,7 @@ pmg_base_building_trade_contact = {
 
 pmg_ownership_building_trade_center = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
-	ai_selection = most_productive
+	ai_selection = most_profitable
 
 	production_methods = {
 		pm_trade_center_merchant_guilds

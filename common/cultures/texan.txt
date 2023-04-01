@@ -1,7 +1,7 @@
 ﻿texan={
     color=rgb{ 4  144  178 } # same as state
     religion = southern_baptist
-    traits = { anglophone hispanophone european_heritage } # Maybe also hispanophone in the future?, Future has come :).
+    traits = { anglophone  european_heritage } # Maybe also hispanophone in the future.
 
     obsessions = {
         meat
