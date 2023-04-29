@@ -182,8 +182,8 @@ pm_pigs_breeding = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -10 #-200
-			building_output_meat_add = 5 #150 
+			building_output_grain_add = -5 #-100
+			building_output_meat_add = 2.5 #75
 		}
 	}
 }
@@ -200,7 +200,7 @@ pm_chicken_breed = {
 
 	building_modifiers = {
 		workforce_scaled = { 
-			building_output_meat_add = 1.5 #45
+			building_output_meat_add = 1 #30
 		}
 	}
 }
@@ -220,7 +220,7 @@ pm_cow_breed = {
 		workforce_scaled = {
 			building_output_grain_add = -5 #-100
 			building_output_meat_add = 3 # 90
-			building_output_fabric_add = 3 #60
+			building_output_fabric_add = 2 #40
 		}
 	}
 }
@@ -239,7 +239,7 @@ pm_sheep_breed = {
 		workforce_scaled = {
 			building_output_grain_add = -5 #-100
 			building_output_meat_add = 1   # 30
-			building_output_fabric_add = 6 #120
+			building_output_fabric_add = 5 #100
 		}
 	}
 }

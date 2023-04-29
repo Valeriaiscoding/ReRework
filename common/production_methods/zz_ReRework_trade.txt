@@ -12,7 +12,7 @@
 		}											
 
 		level_scaled = {
-			building_employment_laborers_add = 400			#x500
+			building_employment_laborers_add = 400			#x400
 		}
 	}
 }
@@ -32,7 +32,7 @@ pm_trade_center_specialized_logistics = {
 		}												#total = 120
 
 		level_scaled = {
-			building_employment_laborers_add = 200			
+			building_employment_laborers_add = 150			
 			building_employment_machinists_add = 100		
 		}
 	}
@@ -55,13 +55,13 @@ pm_trade_center_local_loading_automobiles = {
 		workforce_scaled = {
 			# input goods
 			building_input_transportation_add = 2		#x30 = 60
-			building_input_automobiles_add = 1			#x100 = 70
-														#total = 130
+			building_input_automobiles_add = 1.25		#x100 = 125
+														#total = 185
 
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 150			
+			building_employment_laborers_add = 125			
 			building_employment_machinists_add = 75		
 		}
 	}
@@ -73,7 +73,7 @@ pm_trade_center_scribes = {
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clerks_add = 200 
+			building_employment_clerks_add = 200 # x1.5
 		}
 	}
 	ai_value = 100000
@@ -86,11 +86,11 @@ pm_trade_center_contact_mails = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_services_add = 2				#x30 = 60
+			building_input_services_add = 4				#x30 = 120
 
 		}
 		level_scaled = {
-			building_employment_clerks_add = 150 
+			building_employment_clerks_add = 150  # x1.5
 		}
 	}
 	ai_value = 200000
@@ -109,11 +109,11 @@ pm_trade_center_contact_telegram = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_services_add = 1				#x30 = 30
-			building_input_electricity_add = 1.5		#x30 = 45
+			building_input_services_add = 2				#x30 = 60
+			building_input_electricity_add = 3			#x30 = 90
 		}
 		level_scaled = {
-			building_employment_clerks_add = 125
+			building_employment_clerks_add = 125 # x1.5
 		}
 	}
 	ai_value = 300000
@@ -132,12 +132,12 @@ pm_trade_center_contact_telephones = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_services_add = 0.5			#x30 = 15
-			building_input_electricity_add = 1			#x30 = 30
+			building_input_services_add = 1				#x30 = 30
+			building_input_electricity_add = 3			#x30 = 90
 			building_input_telephones_add = 1			#x70 = 70
 		}
 		level_scaled = {
-			building_employment_clerks_add = 100 
+			building_employment_clerks_add = 100 # x1.5
 		}
 	}
 	ai_value = 400000

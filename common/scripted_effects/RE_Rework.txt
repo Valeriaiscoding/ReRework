@@ -1,0 +1,4437 @@
+﻿
+update_buildings_profitability = {
+	every_scope_state = {
+		set_tgr_buildings_profitability_variables = yes
+		every_scope_building = {
+			if = {
+				limit = {
+					is_building_type = building_tooling_workshops
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_tooling_workshops = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_tooling_workshops
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_tooling_workshops > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_tooling_workshops
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_tooling_workshops = 20
+						}
+						deactivate_building = {
+							building = building_tooling_workshops
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.1 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_arms_industry
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_arms_industry = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_arms_industry
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_arms_industry > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_arms_industry
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_arms_industry = 20
+						}
+						deactivate_building = {
+							building = building_arms_industry
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.4 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_arts_academy
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_arts_academy = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_arts_academy
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_arts_academy > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_arts_academy
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_arts_academy = 20
+						}
+						deactivate_building = {
+							building = building_arts_academy
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.17 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_banana_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_banana_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_banana_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_banana_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_banana_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_banana_plantation = 20
+						}
+						deactivate_building = {
+							building = building_banana_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.36 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_bank
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_bank = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_bank
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_bank > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_bank
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_bank = 20
+						}
+						deactivate_building = {
+							building = building_bank
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.6 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_chemical_plants
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_chemical_plants = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_chemical_plants
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_chemical_plants > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_chemical_plants
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_chemical_plants = 20
+						}
+						deactivate_building = {
+							building = building_chemical_plants
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.1 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_coal_mine
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_coal_mine = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_coal_mine
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_coal_mine > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_coal_mine
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_coal_mine = 20
+						}
+						deactivate_building = {
+							building = building_coal_mine
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.21 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_coffee_plants
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_coffee_plants = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_coffee_plants
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_coffee_plants > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_coffee_plants
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_coffee_plants = 20
+						}
+						deactivate_building = {
+							building = building_coffee_plants
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.33 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_cotton_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_cotton_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_cotton_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_cotton_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_cotton_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_cotton_plantation = 20
+						}
+						deactivate_building = {
+							building = building_cotton_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.32 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_dye_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_dye_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_dye_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_dye_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_dye_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_dye_plantation = 20
+						}
+						deactivate_building = {
+							building = building_dye_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.28 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_electrics_industry
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_electrics_industry = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_electrics_industry
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_electrics_industry > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_electrics_industry
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_electrics_industry = 20
+						}
+						deactivate_building = {
+							building = building_electrics_industry
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.13 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_fishing_wharf
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_fishing_wharf = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_fishing_wharf
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_fishing_wharf > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_fishing_wharf
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_fishing_wharf = 20
+						}
+						deactivate_building = {
+							building = building_fishing_wharf
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.26 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_food_industry
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_food_industry = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_food_industry
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_food_industry > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_food_industry
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_food_industry = 20
+						}
+						deactivate_building = {
+							building = building_food_industry
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.5 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_furniture_manufacturies
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_furniture_manufacturies = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_furniture_manufacturies
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_furniture_manufacturies > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_furniture_manufacturies
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_furniture_manufacturies = 20
+						}
+						deactivate_building = {
+							building = building_furniture_manufacturies
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.7 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_glassworks
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_glassworks = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_glassworks
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_glassworks > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_glassworks
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_glassworks = 20
+						}
+						deactivate_building = {
+							building = building_glassworks
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.8 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_iron_mine
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_iron_mine = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_iron_mine
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_iron_mine > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_iron_mine
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_iron_mine = 20
+						}
+						deactivate_building = {
+							building = building_iron_mine
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.20 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_lead_mine
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_lead_mine = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_lead_mine
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_lead_mine > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_lead_mine
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_lead_mine = 20
+						}
+						deactivate_building = {
+							building = building_lead_mine
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.22 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_livestock_ranch
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_livestock_ranch = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_livestock_ranch
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_livestock_ranch > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_livestock_ranch
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_livestock_ranch = 20
+						}
+						deactivate_building = {
+							building = building_livestock_ranch
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.42 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_logging_camp
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_logging_camp = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_logging_camp
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_logging_camp > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_logging_camp
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_logging_camp = 20
+						}
+						deactivate_building = {
+							building = building_logging_camp
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.19 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_maize_farm
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_maize_farm = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_maize_farm
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_maize_farm > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_maize_farm
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_maize_farm = 20
+						}
+						deactivate_building = {
+							building = building_maize_farm
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.41 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_millet_farm
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_millet_farm = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_millet_farm
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_millet_farm > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_millet_farm
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_millet_farm = 20
+						}
+						deactivate_building = {
+							building = building_millet_farm
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.40 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_motor_industry
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_motor_industry = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_motor_industry
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_motor_industry > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_motor_industry
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_motor_industry = 20
+						}
+						deactivate_building = {
+							building = building_motor_industry
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.2 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_munition_plants
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_munition_plants = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_munition_plants
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_munition_plants > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_munition_plants
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_munition_plants = 20
+						}
+						deactivate_building = {
+							building = building_munition_plants
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.14 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_oil_rig
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_oil_rig = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_oil_rig
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_oil_rig > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_oil_rig
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_oil_rig = 20
+						}
+						deactivate_building = {
+							building = building_oil_rig
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.24 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_opium_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_opium_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_opium_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_opium_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_opium_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_opium_plantation = 20
+						}
+						deactivate_building = {
+							building = building_opium_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.29 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_paper_mills
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_paper_mills = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_paper_mills
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_paper_mills > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_paper_mills
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_paper_mills = 20
+						}
+						deactivate_building = {
+							building = building_paper_mills
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.9 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_pbi_publishing_industry
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_pbi_publishing_industry = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_pbi_publishing_industry
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_pbi_publishing_industry > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_pbi_publishing_industry
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_pbi_publishing_industry = 20
+						}
+						deactivate_building = {
+							building = building_pbi_publishing_industry
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.12 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_power_plant
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_power_plant = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_power_plant
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_power_plant > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_power_plant
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_power_plant = 20
+						}
+						deactivate_building = {
+							building = building_power_plant
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.43 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_rice_farm
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_rice_farm = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_rice_farm
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_rice_farm > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_rice_farm
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_rice_farm = 20
+						}
+						deactivate_building = {
+							building = building_rice_farm
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.39 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_rubber_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_rubber_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_rubber_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_rubber_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_rubber_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_rubber_plantation = 20
+						}
+						deactivate_building = {
+							building = building_rubber_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.27 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_rye_farm
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_rye_farm = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_rye_farm
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_rye_farm > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_rye_farm
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_rye_farm = 20
+						}
+						deactivate_building = {
+							building = building_rye_farm
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.37 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_shipyards
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_shipyards = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_shipyards
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_shipyards > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_shipyards
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_shipyards = 20
+						}
+						deactivate_building = {
+							building = building_shipyards
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.10 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_silk_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_silk_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_silk_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_silk_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_silk_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_silk_plantation = 20
+						}
+						deactivate_building = {
+							building = building_silk_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.31 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_steel_mills
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_steel_mills = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_steel_mills
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_steel_mills > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_steel_mills
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_steel_mills = 20
+						}
+						deactivate_building = {
+							building = building_steel_mills
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.3 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_stock_exchange
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_stock_exchange = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_stock_exchange
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_stock_exchange > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_stock_exchange
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_stock_exchange = 20
+						}
+						deactivate_building = {
+							building = building_stock_exchange
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.18 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_sugar_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_sugar_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_sugar_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_sugar_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_sugar_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_sugar_plantation = 20
+						}
+						deactivate_building = {
+							building = building_sugar_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.30 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_sulfur_mine
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_sulfur_mine = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_sulfur_mine
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_sulfur_mine > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_sulfur_mine
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_sulfur_mine = 20
+						}
+						deactivate_building = {
+							building = building_sulfur_mine
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.23 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_synthetics_plants
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_synthetics_plants = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_synthetics_plants
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_synthetics_plants > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_synthetics_plants
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_synthetics_plants = 20
+						}
+						deactivate_building = {
+							building = building_synthetics_plants
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.16 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_tea_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_tea_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_tea_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_tea_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_tea_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_tea_plantation = 20
+						}
+						deactivate_building = {
+							building = building_tea_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.34 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_textile_mills
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_textile_mills = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_textile_mills
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_textile_mills > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_textile_mills
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_textile_mills = 20
+						}
+						deactivate_building = {
+							building = building_textile_mills
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.11 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_tobacco_plantation
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_tobacco_plantation = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_tobacco_plantation
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_tobacco_plantation > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_tobacco_plantation
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_tobacco_plantation = 20
+						}
+						deactivate_building = {
+							building = building_tobacco_plantation
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.35 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_war_machine_industry
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_war_machine_industry = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_war_machine_industry
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_war_machine_industry > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_war_machine_industry
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_war_machine_industry = 20
+						}
+						deactivate_building = {
+							building = building_war_machine_industry
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.15 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_whaling_station
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_whaling_station = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_whaling_station
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_whaling_station > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_whaling_station
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_whaling_station = 20
+						}
+						deactivate_building = {
+							building = building_whaling_station
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.25 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_wheat_farm
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_wheat_farm = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_wheat_farm
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_wheat_farm > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_wheat_farm
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_wheat_farm = 20
+						}
+						deactivate_building = {
+							building = building_wheat_farm
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.38 days = 730 }
+					}
+				}
+			}
+			##### ReRework
+			if = {
+				limit = {
+					is_building_type = building_vineyard
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_vineyard = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_vineyard
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_vineyard > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_vineyard
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_vineyard = 20
+						}
+						deactivate_building = {
+							building = building_vineyard
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.39 days = 730 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_building_type = building_hydroelectric_power_plant
+				}
+				if = {
+					limit = {
+						weekly_profit < 200
+						cash_reserves_available < 1000
+						is_subsidized = no
+						level >= 1
+						NOT = {
+							prev = {
+								var:tgr_building_losses_count_building_hydroelectric_power_plant = 20
+							}
+						}
+					}
+					prev = {
+						change_variable = {
+							name = tgr_building_losses_count_building_hydroelectric_power_plant
+							add = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							weekly_profit > 200
+							is_subsidized = yes
+						}
+					}
+					prev = {
+						if = {
+							limit = {
+								var:tgr_building_losses_count_building_hydroelectric_power_plant > 0
+							}
+							change_variable = {
+								name = tgr_building_losses_count_building_hydroelectric_power_plant
+								subtract = 1
+							}
+						}
+					}
+				}
+				prev = {
+					if = {
+						limit = {
+							var:tgr_building_losses_count_building_hydroelectric_power_plant = 20
+						}
+						deactivate_building = {
+							building = building_hydroelectric_power_plant
+						}
+						save_scope_as = scope_state
+						trigger_event = { id = tgr_economic_system.34 days = 730 }
+					}
+				}
+			}
+		}
+	}
+}
+set_tgr_buildings_profitability_variables = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_tooling_workshops
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_tooling_workshops
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_arms_industry
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_arms_industry
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_arts_academy
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_arts_academy
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_banana_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_banana_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_bank
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_bank
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_chemical_plants
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_chemical_plants
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_coal_mine
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_coal_mine
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_coffee_plants
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_coffee_plants
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_cotton_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_cotton_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_dye_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_dye_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_electrics_industry
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_electrics_industry
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_fishing_wharf
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_fishing_wharf
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_food_industry
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_food_industry
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_furniture_manufacturies
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_furniture_manufacturies
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_glassworks
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_glassworks
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_iron_mine
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_iron_mine
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_lead_mine
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_lead_mine
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_livestock_ranch
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_livestock_ranch
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_logging_camp
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_logging_camp
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_maize_farm
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_maize_farm
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_millet_farm
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_millet_farm
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_motor_industry
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_motor_industry
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_munition_plants
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_munition_plants
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_oil_rig
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_oil_rig
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_opium_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_opium_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_paper_mills
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_paper_mills
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_pbi_publishing_industry
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_pbi_publishing_industry
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_power_plant
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_power_plant
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_rice_farm
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_rice_farm
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_rubber_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_rubber_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_rye_farm
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_rye_farm
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_shipyards
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_shipyards
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_silk_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_silk_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_steel_mills
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_steel_mills
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_stock_exchange
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_stock_exchange
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_sugar_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_sugar_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_sulfur_mine
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_sulfur_mine
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_synthetics_plants
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_synthetics_plants
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_tea_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_tea_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_textile_mills
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_textile_mills
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_tobacco_plantation
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_tobacco_plantation
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_war_machine_industry
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_war_machine_industry
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_whaling_station
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_whaling_station
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_wheat_farm
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_wheat_farm
+			value = 0
+		}
+	}
+	######## ReRework
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_hydroelectric_power_plant
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_hydroelectric_power_plant
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = tgr_building_losses_count_building_vineyard
+			}
+		}
+		set_variable = {
+			name = tgr_building_losses_count_building_vineyard
+			value = 0
+		}
+	}
+}
+
+update_ai_private_construction_controls = {
+
+	set_variable = building_tooling_workshops_pc_disallowed_national
+	set_variable = building_arms_industry_pc_disallowed_national
+	set_variable = building_arts_academy_pc_disallowed_national
+	set_variable = building_banana_plantation_pc_disallowed_national
+	set_variable = building_bank_pc_disallowed_national
+	set_variable = building_chemical_plants_pc_disallowed_national
+	set_variable = building_coal_mine_pc_disallowed_national
+	set_variable = building_coffee_plants_pc_disallowed_national
+	set_variable = building_cotton_plantation_pc_disallowed_national
+	set_variable = building_dye_plantation_pc_disallowed_national
+	set_variable = building_electrics_industry_pc_disallowed_national
+	set_variable = building_fishing_wharf_pc_disallowed_national
+	set_variable = building_food_industry_pc_disallowed_national
+	set_variable = building_furniture_manufacturies_pc_disallowed_national
+	set_variable = building_glassworks_pc_disallowed_national
+	set_variable = building_iron_mine_pc_disallowed_national
+	set_variable = building_lead_mine_pc_disallowed_national
+	set_variable = building_livestock_ranch_pc_disallowed_national
+	set_variable = building_logging_camp_pc_disallowed_national
+	set_variable = building_maize_farm_pc_disallowed_national
+	set_variable = building_millet_farm_pc_disallowed_national
+	set_variable = building_motor_industry_pc_disallowed_national
+	set_variable = building_munition_plants_pc_disallowed_national
+	set_variable = building_opium_plantation_pc_disallowed_national
+	set_variable = building_paper_mills_pc_disallowed_national
+	set_variable = building_pbi_publishing_industry_pc_disallowed_national
+	set_variable = building_power_plants_pc_disallowed_national
+	set_variable = building_rice_farm_pc_disallowed_national
+	set_variable = building_rubber_plantation_pc_disallowed_national
+	set_variable = building_rye_farm_pc_disallowed_national
+	set_variable = building_shipyards_pc_disallowed_national
+	set_variable = building_silk_plantation_pc_disallowed_national
+	set_variable = building_steel_mills_pc_disallowed_national
+	set_variable = building_stock_exchange_pc_disallowed_national
+	set_variable = building_sugar_plantation_pc_disallowed_national
+	set_variable = building_sulfur_mine_pc_disallowed_national
+	set_variable = building_synthetics_plants_pc_disallowed_national
+	set_variable = building_tea_plantation_pc_disallowed_national
+	set_variable = building_textile_mills_pc_disallowed_national
+	set_variable = building_tobacco_plantation_pc_disallowed_national
+	set_variable = building_war_machine_industry_pc_disallowed_national
+	set_variable = building_whaling_station_pc_disallowed_national
+	set_variable = building_wheat_farm_pc_disallowed_national
+	set_variable = building_hospital_pc_disallowed_national
+	set_variable = building_university_pc_disallowed_national
+	set_variable = building_port_pc_disallowed_national
+	set_variable = building_school_pc_disallowed_national
+	set_variable = building_railway_pc_disallowed_national
+	set_variable = building_opera_houses_pc_disallowed_national
+	remove_variable = building_gold_mine_pc_disallowed_national
+	remove_variable = building_oil_rig_pc_disallowed_national
+	######## ReRework
+	set_variable = building_hydroelectric_power_plant_pc_disallowed_national
+	remove_variable = building_ia_river_port_pc_disallowed_national
+	remove_variable = building_ia_silver_mine_pc_disallowed_national
+	if = {
+		limit = {
+			market = {
+				mg:wood = {
+					OR = {
+						market_goods_has_goods_shortage = yes
+						market_goods_pricier > 0.2
+					}
+				}
+			}
+		}
+		remove_variable = building_logging_camp_pc_disallowed_national
+	}
+	if = {
+		limit = {
+			any_scope_state = {
+				state_population >= 300000
+				state_unemployment_rate >= 0.05
+				market_access < 1
+				OR = {
+					NOT = { 
+							on_river = yes 
+					}
+					NOT = {
+						has_building = building_ia_river_port
+					}
+					any_scope_building = {
+						is_building_type = building_ia_river_port
+						can_queue_building_levels = 1
+					}
+				}
+			}
+			has_technology_researched = railways
+		}
+		remove_variable = building_railway_pc_disallowed_national
+	}
+	if = {
+		limit = {
+			market = {
+				mg:iron = {
+					OR = {
+						market_goods_has_goods_shortage = yes
+						market_goods_pricier > 0.2
+					}
+				}
+			}
+		}
+		remove_variable = building_iron_mine_pc_disallowed_national
+	}
+	if = {
+		limit = {
+			market = {
+				mg:tools = {
+					OR = {
+						market_goods_has_goods_shortage = yes
+						market_goods_pricier > 0.2
+					}
+				}
+			}
+		}
+		remove_variable = building_tooling_workshops_pc_disallowed_national
+	}
+	if = {
+		limit = {
+			market = {
+				mg:paper = {
+					OR = {
+						market_goods_has_goods_shortage = yes
+						market_goods_pricier > 0.2
+					}
+				}
+			}
+		}
+		remove_variable = building_paper_mills_pc_disallowed_national
+	}
+	# changed
+	if = {
+		limit = {
+			market = {
+				mg:electricity = {
+					OR = {
+						market_goods_has_goods_shortage = yes
+						market_goods_pricier > 0.2
+					}
+				}
+			}
+		}
+		remove_variable = building_power_plants_pc_disallowed_national
+		remove_variable = building_hydroelectric_power_plant_pc_disallowed_national
+	}
+	}
+	if = {
+		limit = {
+			market = {
+				mg:fabric = {
+					OR = {
+						market_goods_has_goods_shortage = yes
+						market_goods_pricier > 0.2
+					}
+				}
+			}
+		}
+		remove_variable = building_cotton_plantation_pc_disallowed_national
+	}
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					any_scope_state = {
+						has_potential_resource = bg_coal_mining
+					}
+					market = {
+						mg:coal = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+					}
+				}
+				AND = {
+					any_scope_state = {
+						has_potential_resource = bg_sulfur_mining
+					}
+					market = {
+						mg:sulfur = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+					}
+				}
+				AND = {
+					any_scope_state = {
+						has_potential_resource = bg_lead_mining
+					}
+					market = {
+						mg:lead = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				market = {
+					mg:tools = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+					mg:iron = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+					mg:paper = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+					mg:wood = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				market = {
+					mg:coal = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+				any_scope_state = {
+					has_potential_resource = bg_coal_mining
+				}
+			}
+			remove_variable = building_coal_mine_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:lead = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+				any_scope_state = {
+					has_potential_resource = bg_lead_mining
+				}
+			}
+			remove_variable = building_lead_mine_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:sulfur = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+				any_scope_state = {
+					has_potential_resource = bg_sulfur_mining
+				}
+			}
+			remove_variable = building_sulfur_mine_pc_disallowed_national
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				market = {
+					mg:tools = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+					mg:iron = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+					mg:paper = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+					mg:wood = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+				AND = {
+					any_scope_state = {
+						state_population >= 300000
+						state_unemployment_rate >= 0.05
+						market_access < 1
+					}
+					has_technology_researched = railways
+				}
+				OR = {
+					AND = {
+						any_scope_state = {
+							has_potential_resource = bg_coal_mining
+						}
+						market = {
+							mg:coal = {
+								OR = {
+									market_goods_has_goods_shortage = yes
+									market_goods_pricier > 0.2
+								}
+							}
+						}
+					}
+					AND = {
+						has_technology_researched = electrical_generation
+						market = {
+							mg:electricity = {
+								OR = {
+									market_goods_has_goods_shortage = yes
+									market_goods_pricier > 0.2
+								}
+								market_goods_buy_orders >= 50
+							}
+						}
+					}
+					AND = {
+						any_scope_state = {
+							has_potential_resource = bg_sulfur_mining
+						}
+						market = {
+							mg:sulfur = {
+								OR = {
+									market_goods_has_goods_shortage = yes
+									market_goods_pricier > 0.2
+								}
+							}
+						}
+					}
+					AND = {
+						any_scope_state = {
+							has_potential_resource = bg_lead_mining
+						}
+						market = {
+							mg:lead = {
+								OR = {
+									market_goods_has_goods_shortage = yes
+									market_goods_pricier > 0.2
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				market = {
+					mg:paper = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_paper_mills_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:wood = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_logging_camp_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:iron = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_iron_mine_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:tools = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_tooling_workshops_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:fabric = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_cotton_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:steel = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_steel_mills_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:ammunition = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_munition_plants_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:fish = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_fishing_wharf_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:coffee = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_coffee_plants_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:dye = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_synthetics_plants_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:fruit = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_banana_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:dye = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_dye_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:fine_art = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.3
+						}
+					}
+				}
+			}
+			remove_variable = building_arts_academy_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:grain = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_rice_farm_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:opium = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_opium_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:tea = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_tea_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:tobacco = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_tobacco_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:silk = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_silk_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:silk = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.2
+						}
+					}
+				}
+			}
+			remove_variable = building_silk_plantation_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:securities = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_bank_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					mg:elgar_music = {
+						OR = {
+							market_goods_has_goods_shortage = yes
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+			}
+			remove_variable = building_opera_houses_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:radios = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+						mg:telephones = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_electrics_industry_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+						mg:grain = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+				}
+			}
+			remove_variable = building_wheat_farm_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+						mg:wine = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+				}
+			}
+			remove_variable = building_vineyard_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:grain = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+						mg:liquor = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_rye_farm_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:meat = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+						mg:fabric = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.2
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_livestock_ranch_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:public_equity = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:company_stock = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_cheaper > 0.1
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_stock_exchange_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:clothes = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:luxury_clothes = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_textile_mills_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:glass = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:porcelain = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_glassworks_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:small_arms = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:artillery = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						prev = {
+							is_at_war = yes
+						}
+					}
+				}
+			}
+			remove_variable = building_arms_industry_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:engines = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:automobiles = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_motor_industry_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:clippers = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:manowars = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:ironclads = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_shipyards_military_pc_disallowed_national
+		}
+		if = {
+			limit = {
+				market = {
+					OR = {
+						mg:explosives = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:fertilizer = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+						mg:pharmaceuticals = {
+							OR = {
+								market_goods_has_goods_shortage = yes
+								market_goods_pricier > 0.1
+							}
+						}
+					}
+				}
+			}
+			remove_variable = building_chemical_plants_pc_disallowed_national
+		}
+	}
+	set_variable = {
+		name = urbanstatestempvar
+		value = 0
+	}
+	every_scope_state = {
+		enable_all_buildings_in_state = yes
+	}
+	every_scope_state = {
+		limit = {
+			NOT = {
+				has_variable = national_focus_state
+			}
+		}
+		disable_urban_buildings_in_state = yes
+	}
+	every_scope_state = {
+		limit = {
+			AND = {
+				state_unemployment_rate < 0.01
+				any_scope_pop = {
+					is_pop_type = peasants
+					count < 1
+				}
+			}
+		}
+		disable_all_buildings_in_state = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_variable = national_focus_states_set
+			}
+		}
+		set_variable = {
+			name = national_focus_states_set
+			days = 365
+		}
+		every_scope_state = {
+			disable_urban_buildings_in_state = yes
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_population >= 1500000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+					count >= 2
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_population >= 1500000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { owner = { var:urbanstatestempvar = 3 } }
+					}
+					enable_urban_buildings_in_state = yes
+					owner = {
+						change_variable = {
+							name = urbanstatestempvar
+							add = 1
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_scope_state = {
+					state_population >= 1000000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+					count >= 2
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_population >= 1000000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { owner = { var:urbanstatestempvar = 3 } }
+					}
+					enable_urban_buildings_in_state = yes
+					owner = {
+						change_variable = {
+							name = urbanstatestempvar
+							add = 1
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_scope_state = {
+					state_population >= 800000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+					count >= 2
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_population >= 800000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { owner = { var:urbanstatestempvar = 3 } }
+					}
+					enable_urban_buildings_in_state = yes
+					owner = {
+						change_variable = {
+							name = urbanstatestempvar
+							add = 1
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_scope_state = {
+					state_population >= 500000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+					count >= 2
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_population >= 500000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { owner = { var:urbanstatestempvar = 3 } }
+					}
+					enable_urban_buildings_in_state = yes
+					owner = {
+						change_variable = {
+							name = urbanstatestempvar
+							add = 1
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_scope_state = {
+					state_population >= 200000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+					count >= 2
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_population >= 200000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { owner = { var:urbanstatestempvar = 3 } }
+					}
+					enable_urban_buildings_in_state = yes
+					owner = {
+						change_variable = {
+							name = urbanstatestempvar
+							add = 1
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_scope_state = {
+					state_population >= 100000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+					count >= 2
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_population >= 100000
+					is_incorporated = yes
+					OR = {
+						state_unemployment_rate >= 0.05
+						any_scope_pop = {
+							is_pop_type = peasants
+							count >= 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { owner = { var:urbanstatestempvar = 3 } }
+					}
+					enable_urban_buildings_in_state = yes
+					owner = {
+						change_variable = {
+							name = urbanstatestempvar
+							add = 1
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					any_scope_state = {
+						state_population >= 100000
+						is_incorporated = yes
+						OR = {
+							state_unemployment_rate >= 0.05
+							any_scope_pop = {
+								is_pop_type = peasants
+								count >= 1
+							}
+						}
+						count >= 2
+					}
+				}
+			}
+			every_scope_state = {
+				enable_urban_buildings_in_state = yes
+			}
+		}
+	}
+
+
+
+
+
+
+	enable_urban_buildings_in_state = {
+	set_variable = national_focus_state
+	remove_variable = building_tooling_workshops_pc_disallowed
+	remove_variable = building_arms_industry_pc_disallowed
+	remove_variable = building_arts_academy_pc_disallowed
+	remove_variable = building_bank_pc_disallowed
+	remove_variable = building_chemical_plants_pc_disallowed
+	remove_variable = building_electrics_industry_pc_disallowed
+	remove_variable = building_food_industry_pc_disallowed
+	remove_variable = building_furniture_manufacturies_pc_disallowed
+	remove_variable = building_glassworks_pc_disallowed
+	remove_variable = building_motor_industry_pc_disallowed
+	remove_variable = building_munition_plants_pc_disallowed
+	remove_variable = building_paper_mills_pc_disallowed
+	remove_variable = building_pbi_publishing_industry_pc_disallowed
+	remove_variable = building_power_plants_pc_disallowed
+	remove_variable = building_steel_mills_pc_disallowed
+	remove_variable = building_stock_exchange_pc_disallowed
+	remove_variable = building_synthetics_plants_pc_disallowed
+	remove_variable = building_textile_mills_pc_disallowed
+	remove_variable = building_war_machine_industry_pc_disallowed
+	remove_variable = building_opera_house_pc_disallowed
+	remove_variable = building_hospital_pc_disallowed
+	remove_variable = building_university_pc_disallowed
+	remove_variable = building_school_pc_disallowed
+
+	####### ReRework
+	remove_variable = building_hydroelectric_power_plant_pc_disallowed
+}
+disable_urban_buildings_in_state = {
+	remove_variable = national_focus_state
+	set_variable = building_tooling_workshops_pc_disallowed
+	set_variable = building_arms_industry_pc_disallowed
+	set_variable = building_arts_academy_pc_disallowed
+	set_variable = building_bank_pc_disallowed
+	set_variable = building_chemical_plants_pc_disallowed
+	set_variable = building_electrics_industry_pc_disallowed
+	set_variable = building_food_industry_pc_disallowed
+	set_variable = building_furniture_manufacturies_pc_disallowed
+	set_variable = building_glassworks_pc_disallowed
+	set_variable = building_motor_industry_pc_disallowed
+	set_variable = building_munition_plants_pc_disallowed
+	set_variable = building_paper_mills_pc_disallowed
+	set_variable = building_pbi_publishing_industry_pc_disallowed
+	set_variable = building_power_plants_pc_disallowed
+	set_variable = building_steel_mills_pc_disallowed
+	set_variable = building_stock_exchange_pc_disallowed
+	set_variable = building_synthetics_plants_pc_disallowed
+	set_variable = building_textile_mills_pc_disallowed
+	set_variable = building_war_machine_industry_pc_disallowed
+	set_variable = building_opera_house_pc_disallowed
+	set_variable = building_hospital_pc_disallowed
+	set_variable = building_university_pc_disallowed
+	set_variable = building_school_pc_disallowed
+
+	########## ReRework
+	set_variable = building_hydroelectric_power_plant_pc_disallowed
+}
+
+disable_all_buildings_in_state = {
+	set_variable = building_tooling_workshops_pc_disallowed
+	set_variable = building_arms_industry_pc_disallowed
+	set_variable = building_arts_academy_pc_disallowed
+	set_variable = building_banana_plantation_pc_disallowed
+	set_variable = building_bank_pc_disallowed
+	set_variable = building_chemical_plants_pc_disallowed
+	set_variable = building_coal_mine_pc_disallowed
+	set_variable = building_coffee_plants_pc_disallowed
+	set_variable = building_cotton_plantation_pc_disallowed
+	set_variable = building_dye_plantation_pc_disallowed
+	set_variable = building_electrics_industry_pc_disallowed
+	set_variable = building_fishing_wharf_pc_disallowed
+	set_variable = building_food_industry_pc_disallowed
+	set_variable = building_furniture_manufacturies_pc_disallowed
+	set_variable = building_glassworks_pc_disallowed
+	set_variable = building_iron_mine_pc_disallowed
+	set_variable = building_lead_mine_pc_disallowed
+	set_variable = building_livestock_ranch_pc_disallowed
+	set_variable = building_logging_camp_pc_disallowed
+	set_variable = building_maize_farm_pc_disallowed
+	set_variable = building_millet_farm_pc_disallowed
+	set_variable = building_motor_industry_pc_disallowed
+	set_variable = building_munition_plants_pc_disallowed
+	set_variable = building_oil_rig_pc_disallowed
+	set_variable = building_opium_plantation_pc_disallowed
+	set_variable = building_paper_mills_pc_disallowed
+	set_variable = building_pbi_publishing_industry_pc_disallowed
+	set_variable = building_power_plants_pc_disallowed
+	set_variable = building_rice_farm_pc_disallowed
+	set_variable = building_rubber_plantation_pc_disallowed
+	set_variable = building_rye_farm_pc_disallowed
+	set_variable = building_shipyards_pc_disallowed
+	set_variable = building_silk_plantation_pc_disallowed
+	set_variable = building_steel_mills_pc_disallowed
+	set_variable = building_stock_exchange_pc_disallowed
+	set_variable = building_sugar_plantation_pc_disallowed
+	set_variable = building_sulfur_mine_pc_disallowed
+	set_variable = building_synthetics_plants_pc_disallowed
+	set_variable = building_tea_plantation_pc_disallowed
+	set_variable = building_textile_mills_pc_disallowed
+	set_variable = building_tobacco_plantation_pc_disallowed
+	set_variable = building_war_machine_industry_pc_disallowed
+	set_variable = building_whaling_station_pc_disallowed
+	set_variable = building_wheat_farm_pc_disallowed
+	set_variable = building_opera_house_pc_disallowed
+	set_variable = building_hospital_pc_disallowed
+	set_variable = building_university_pc_disallowed
+	set_variable = building_port_pc_disallowed
+	set_variable = building_school_pc_disallowed
+	set_variable = building_railway_pc_disallowed
+	set_variable = building_gold_mine_pc_disallowed
+	##### ReRework
+	set_variable = building_hydroelectric_power_plant_pc_disallowed
+	set_variable = building_ia_river_port_pc_disallowed
+	set_variable = building_ia_silver_mine_pc_disallowed
+	set_variable = building_vineyard_pc_disallowed
+}
+enable_all_buildings_in_state = { 
+	remove_variable = building_tooling_workshops_pc_disallowed
+	remove_variable = building_arms_industry_pc_disallowed
+	remove_variable = building_arts_academy_pc_disallowed
+	remove_variable = building_banana_plantation_pc_disallowed
+	remove_variable = building_bank_pc_disallowed
+	remove_variable = building_chemical_plants_pc_disallowed
+	remove_variable = building_coal_mine_pc_disallowed
+	remove_variable = building_coffee_plants_pc_disallowed
+	remove_variable = building_cotton_plantation_pc_disallowed
+	remove_variable = building_dye_plantation_pc_disallowed
+	remove_variable = building_electrics_industry_pc_disallowed
+	remove_variable = building_fishing_wharf_pc_disallowed
+	remove_variable = building_food_industry_pc_disallowed
+	remove_variable = building_furniture_manufacturies_pc_disallowed
+	remove_variable = building_glassworks_pc_disallowed
+	remove_variable = building_iron_mine_pc_disallowed
+	remove_variable = building_lead_mine_pc_disallowed
+	remove_variable = building_livestock_ranch_pc_disallowed
+	remove_variable = building_logging_camp_pc_disallowed
+	remove_variable = building_maize_farm_pc_disallowed
+	remove_variable = building_millet_farm_pc_disallowed
+	remove_variable = building_motor_industry_pc_disallowed
+	remove_variable = building_munition_plants_pc_disallowed
+	remove_variable = building_oil_rig_pc_disallowed
+	remove_variable = building_opium_plantation_pc_disallowed
+	remove_variable = building_paper_mills_pc_disallowed
+	remove_variable = building_pbi_publishing_industry_pc_disallowed
+	remove_variable = building_power_plants_pc_disallowed
+	remove_variable = building_rice_farm_pc_disallowed
+	remove_variable = building_rubber_plantation_pc_disallowed
+	remove_variable = building_rye_farm_pc_disallowed
+	remove_variable = building_shipyards_pc_disallowed
+	remove_variable = building_silk_plantation_pc_disallowed
+	remove_variable = building_steel_mills_pc_disallowed
+	remove_variable = building_stock_exchange_pc_disallowed
+	remove_variable = building_sugar_plantation_pc_disallowed
+	remove_variable = building_sulfur_mine_pc_disallowed
+	remove_variable = building_synthetics_plants_pc_disallowed
+	remove_variable = building_tea_plantation_pc_disallowed
+	remove_variable = building_textile_mills_pc_disallowed
+	remove_variable = building_tobacco_plantation_pc_disallowed
+	remove_variable = building_war_machine_industry_pc_disallowed
+	remove_variable = building_whaling_station_pc_disallowed
+	remove_variable = building_wheat_farm_pc_disallowed
+	remove_variable = building_opera_house_pc_disallowed
+	remove_variable = building_hospital_pc_disallowed
+	remove_variable = building_university_pc_disallowed
+	remove_variable = building_port_pc_disallowed
+	remove_variable = building_school_pc_disallowed
+	remove_variable = building_railway_pc_disallowed
+	remove_variable = building_gold_mine_pc_disallowed
+	##### ReRework
+	remove_variable = building_hydroelectric_power_plant_pc_disallowed
+	remove_variable = building_ia_river_port_pc_disallowed
+	remove_variable = building_ia_silver_mine_pc_disallowed
+	remove_variable = building_vineyard_pc_disallowed
+}

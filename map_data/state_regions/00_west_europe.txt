@@ -828,6 +828,22 @@ STATE_FRIESLAND = {
 }
 
 
+STATE_GELRE = {
+    id = 48
+    subsistence_building = building_subsistence_farms
+    provinces = { x0000DF x41C0A0 x4C4894 xAF3A54 xC0C0A0 }
+    traits = { state_trait_rhine_river }
+    city = xC0C0A0
+    farm = xAF3A54
+    mine = x0000DF
+    wood = x41C0A0
+    arable_land = 40
+    arable_resources = { bg_rye_farms bg_livestock_ranches }
+    capped_resources = {
+        bg_coal_mining = 80
+        bg_logging = 18
+    }
+}
 
 STATE_WALLONIA = {
     id = 49

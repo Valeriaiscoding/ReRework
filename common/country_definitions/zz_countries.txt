@@ -10,3 +10,11 @@ NEW = {
 	capital = STATE_NEWFOUNDLAND
 	is_named_from_capital = yes
 }
+BNT = { 
+	color = { 139 207 177 }
+	country_type = recognized
+	tier = principality
+	cultures = {danube_swabians transylvanian_saxons hungarian}
+	is_named_from_capital = yes
+	capital = STATE_BANAT
+}

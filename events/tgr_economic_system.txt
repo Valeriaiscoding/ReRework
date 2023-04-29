@@ -1,0 +1,784 @@
+namespace = tgr_economic_system
+
+tgr_economic_system.1 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_tooling_workshops
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_tooling_workshops
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.4 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_arms_industry
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_arms_industry
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.17 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_arts_academy
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_arts_academy
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.36 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_banana_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_banana_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.6 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_bank
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_bank
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.44 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_chemical_plants
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_chemical_plants
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.21 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_coal_mine
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_coal_mine
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.33 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_coffee_plants
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_coffee_plants
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.32 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_cotton_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_cotton_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.28 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_dye_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_dye_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.13 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_electrics_industry
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_electrics_industry
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.26 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_fishing_wharf
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_fishing_wharf
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.5 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_food_industry
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_food_industry
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.7 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_furniture_manufacturies
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_furniture_manufacturies
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.8 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_glassworks
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_glassworks
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.20 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_iron_mine
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_iron_mine
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.22 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_lead_mine
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_lead_mine
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.42 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_livestock_ranch
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_livestock_ranch
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.19 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_logging_camp
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_logging_camp
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.41 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_maize_farm
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_maize_farm
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.40 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_millet_farm
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_millet_farm
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.2 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_motor_industry
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_motor_industry
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.14 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_munition_plants
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_munition_plants
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.24 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_oil_rig
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_oil_rig
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.29 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_opium_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_opium_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.9 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_paper_mills
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_paper_mills
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.12 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_pbi_publishing_industry
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_pbi_publishing_industry
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.43 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_power_plant
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_power_plant
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.39 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_rice_farm
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_rice_farm
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.27 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_rubber_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_rubber_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.37 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_rye_farm
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_rye_farm
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.10 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_shipyards
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_shipyards
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.31 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_silk_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_silk_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.3 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_steel_mills
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_steel_mills
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.18 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_stock_exchange
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_stock_exchange
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.30 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_sugar_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_sugar_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.23 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_sulfur_mine
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_sulfur_mine
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.16 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_synthetics_plants
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_synthetics_plants
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.34 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_tea_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_tea_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.11 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_textile_mills
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_textile_mills
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.35 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_tobacco_plantation
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_tobacco_plantation
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.15 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_war_machine_industry
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_war_machine_industry
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.25 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_whaling_station
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_whaling_station
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.38 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_wheat_farm
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_wheat_farm
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.39 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_vineyard
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_vineyard
+				value = 0
+			}
+		}
+	}
+}
+tgr_economic_system.40 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_hydroelectric_power_plant
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_hydroelectric_power_plant
+				value = 0
+			}
+		}
+	}
+}

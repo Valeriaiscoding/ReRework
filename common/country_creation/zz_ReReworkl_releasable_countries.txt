@@ -1,0 +1,7 @@
+﻿BKV = {
+	STATES = {
+		STATE_BUKOVINA
+	}
+
+	ai_will_do = { always = no }
+}

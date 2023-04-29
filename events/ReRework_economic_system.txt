@@ -1,0 +1,34 @@
+﻿rerework_economic_system.1 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_tooling_workshops
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_tooling_workshops
+				value = 0
+			}
+		}
+	}
+}
+rerework_economic_system.2 = {
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		scope:scope_state ?= {
+			activate_building = {
+				building = building_arms_industry
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_arms_industry
+				value = 0
+			}
+		}
+	}
+}

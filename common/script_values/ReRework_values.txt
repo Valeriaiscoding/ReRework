@@ -1,0 +1,64 @@
+﻿state_river_port_max_level = {
+	value = 6
+	if = {
+		limit = {
+			OR = {
+				has_state_trait = state_trait_murray_River
+				has_state_trait = state_trait_yenisei_river
+				has_state_trait = state_trait_lena_river
+				has_state_trait = state_trait_irtysh_river
+				has_state_trait = state_trait_mackenzie_river
+				has_state_trait = state_trait_amur_river
+				has_state_trait = state_trait_mississippi_river
+				has_state_trait = state_trait_ohio_river
+				has_state_trait = state_trait_columbia_river
+				has_state_trait = state_trait_great_lakes
+				has_state_trait = state_trait_orinoco_river
+				has_state_trait = state_trait_uruguay_river
+				has_state_trait = state_trait_parana_river
+				has_state_trait = state_trait_paraguay_river
+				has_state_trait = state_trait_rhine_river
+				has_state_trait = state_trait_danube_river
+				has_state_trait = state_trait_volga_river
+				has_state_trait = state_trait_nile_river
+				has_state_trait = state_trait_lake_victoria
+				has_state_trait = state_trait_tigris_river
+				has_state_trait = state_trait_euphrates_river
+				has_state_trait = state_trait_indus_river
+				has_state_trait = state_trait_ganges_river
+				has_state_trait = state_trait_brahmaputra_river
+				has_state_trait = state_trait_mekong_river
+				has_state_trait = state_trait_yangtze_river
+
+			}
+		}
+		add = 2
+	}
+}
+max_hydro_power_level = {
+	value = 0
+	if = {
+		limit = {
+			has_technology_researched = electrical_generation
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_technology_researched = reinforced_concrete
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_technology_researched = pneumatic_tools
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_technology_researched = arc_welding
+		}
+		add = 5
+	}
+}

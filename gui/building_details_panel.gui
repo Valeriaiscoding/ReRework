@@ -1,0 +1,4459 @@
+# COPY-PASTED FOR NOW
+@panel_width_minus_10 = 530			# used to be 450
+@panel_width = 540  				# used to be 460
+@panel_width_half = 270				# used to be 230
+@panel_width_plus_10 = 550  		# used to be 470
+@panel_width_plus_14 = 554			# used to be 474
+@panel_width_plus_14_half = 277		# used to be 237
+@panel_width_plus_20 = 560			# used to be 480
+@panel_width_plus_30 = 570			# used to be 490
+@panel_width_plus_70 = 610			# used to be 530
+
+types building_panels
+{
+	type building_details_panel = default_block_window_two_lines {
+		name = "building_details_panel"
+		datacontext = "[BuildingDetailsPanel.AccessBuilding]"
+
+		blockoverride "window_header_name"
+		{
+			text = "[Building.GetName]"
+		}
+
+		blockoverride "window_header_name_line_two"
+		{
+			text = "BUILDING_DETAILS_LINE_TWO"
+		}
+
+		blockoverride "goto_button" {
+			button_icon_goto = {
+				datacontext = "[Building.GetState]"
+				size = { 30 30 }
+				onclick = "[InformationPanelBar.OpenStatePanel(Building.AccessState)]"
+				tooltip = "GO_TO_BUTTON_STATE"
+			}
+		}
+
+		blockoverride "fixed_top"
+		{
+			tab_buttons = {
+				# Overview
+				blockoverride "first_button" {
+					text = "BUILDING_DETAILS_PANEL_INFORMATION_TAB"
+				}
+				blockoverride "first_button_tooltip" {
+					tooltip = "BUILDING_DETAILS_PANEL_INFORMATION_TAB"
+				}
+				blockoverride "first_button_click" {
+					onclick = "[InformationPanel.SelectTab('default')]"
+				}
+				blockoverride "first_button_visibility" {
+					visible = "[InformationPanel.IsTabSelected('default')]"
+				}
+				blockoverride "first_button_visibility_checked" {
+					visible = "[Not( InformationPanel.IsTabSelected('default') )]"
+				}
+				blockoverride "first_button_selected" {
+					text = "BUILDING_DETAILS_PANEL_INFORMATION_TAB_SELECTED"
+				}
+				blockoverride "first_button_name" {
+					name = "tutorial_highlight_information_tab"
+				}
+
+				# Workforce
+				blockoverride "second_button" {
+					text = "WORKFORCE"
+				}
+				blockoverride "second_button_tooltip" {
+					tooltip = "WORKFORCE"
+				}
+				blockoverride "second_button_click" {
+					onclick = "[InformationPanel.SelectTab('workforce')]"
+				}
+				blockoverride "second_button_visibility" {
+					visible = "[InformationPanel.IsTabSelected('workforce')]"
+				}
+				blockoverride "second_button_visibility_checked" {
+					visible = "[Not( InformationPanel.IsTabSelected('workforce') )]"
+				}
+				blockoverride "second_button_selected" {
+					text = "WORKFORCE"
+				}
+				blockoverride "second_button_name" {
+					name = "tutorial_highlight_workforce_tab"
+				}
+
+				# Modifiers
+				blockoverride "third_button" {
+					text = "BUILDING_DETAILS_PANEL_MODIFIERS_TAB"
+				}
+				blockoverride "third_button_tooltip" {
+					tooltip = "BUILDING_DETAILS_PANEL_MODIFIERS_TAB"
+				}
+				blockoverride "third_button_click" {
+					onclick = "[InformationPanel.SelectTab('modifiers')]"
+				}
+				blockoverride "third_button_visibility" {
+					visible = "[InformationPanel.IsTabSelected('modifiers')]"
+				}
+				blockoverride "third_button_visibility_checked" {
+					visible = "[Not( InformationPanel.IsTabSelected('modifiers') )]"
+				}
+				blockoverride "third_button_selected" {
+					text = "BUILDING_DETAILS_PANEL_MODIFIERS_TAB_SELECTED"
+				}
+			}
+		}
+
+		blockoverride "scrollarea_content"
+		{
+			container = {
+				parentanchor = hcenter
+
+				building_details_panel_overview_content = {
+					visible = "[InformationPanel.IsTabSelected('default')]"
+					using = default_content_fade
+				}
+
+				building_details_panel_workforce_content = {
+					visible = "[InformationPanel.IsTabSelected('workforce')]"
+					using = default_content_fade
+				}
+
+				modifier_list = {
+					visible = "[InformationPanel.IsTabSelected('modifiers')]"
+					using = default_content_fade
+				}
+			}
+		}
+
+		blockoverride "goto_visibility" {
+			visible = yes
+		}
+
+		blockoverride "goto_properties" {
+			onclick = "[Building.AccessState.ZoomToCapital]"
+			tooltip = "ZOOM_TO_BUILDING_STATE"
+		}
+	}
+
+	type building_details_panel_overview_content = flowcontainer {
+		direction = vertical
+		using = default_list_position
+		margin_top = 5
+		margin_bottom = 10
+
+		### TOP INFO
+		flowcontainer = {
+			minimumsize = { @panel_width -1 }
+			parentanchor = hcenter
+			spacing = 10
+			margin_top = 10
+			margin_bottom = 10
+
+			flowcontainer = {
+				direction = vertical
+				spacing = 5
+				### BUILDING
+				widget = {
+					size = { 180 205 }
+
+					tooltipwidget = {
+						FancyTooltip_Building = {}
+					}
+
+					button = {
+						onrightclick = "[RightClickMenuManager.ShowForBuilding(Building.AccessSelf)]"
+						parentanchor = hcenter
+						position = { 0 5 }
+						size = { 152 152 }
+
+						icon = {
+							alpha = "[TransparentIfFalse(Building.IsActive)]"
+							texture = "[Building.GetTexture]"
+							size = { 100% 100% }
+						}
+
+						icon = {
+							visible = "[And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive ))]"
+							size = { 100% 100% }
+							texture = "gfx/interface/icons/generic_icons/inactive_building.dds"
+						}
+					}
+
+					### BUILD PROGRESS
+					default_progressbar_horizontal = {
+						visible = "[Building.HasConstructionQueued]"
+						tooltip = "BUILDING_PROGRESS_TOOLTIP"
+						size = { 115 18 }
+						parentanchor = bottom|hcenter
+						position = { 0 -60 }
+
+						blockoverride "values" {
+							value = "[Building.GetConstructionProgressPercentage]"
+							min = 0
+							max = 1
+						}
+
+						state = {
+							name = _show
+							next = 2
+							alpha = 0
+							duration = 0
+							size = { 50 18 }
+						}
+						state = {
+							name = 2
+							alpha = 1
+							duration = 0.15
+							size = { 115 18 }
+						}
+						state = {
+							name = _hide
+							alpha = 0
+							duration = 0.3
+							size = { 50 18 }
+						}
+
+						textbox = {
+							name = text
+							text = "[Building.GetConstructionRemainingWeeksDesc]"
+							parentanchor = center
+							autoresize = yes
+							align = hcenter|nobaseline
+						}
+					}
+
+					### DOWNSIZE / EXPAND
+					flowcontainer = {
+						position = { 0 -1 }
+						parentanchor = bottom|hcenter
+						spacing = 10
+
+						### DOWNSIZE
+						button_icon_minus_action = {
+							name = "tutorial_highlight_downsize"
+							size = { 35 35 }
+							parentanchor = vcenter
+							tooltip = "[Building.GetDownsizeTooltip]"
+							visible = "[And( IsValid( Building.Downsize ), Not( ShouldAskConfirmation( Building.Downsize ) ) )]"
+							onclick = "[Execute( Building.Downsize )]"
+							enabled = "[IsValid( Building.Downsize )]"
+							using = tooltip_below
+						}
+
+						### DOWNSIZE FOR CONSTRUCTION SECTORS
+						button_icon_minus_action = {
+							size = { 35 35 }
+							parentanchor = vcenter
+							tooltip = "CONSTRUCTION_SECTOR_BUILDING_DOWNSIZE_TOOLTIP"
+							visible = "[And(Not(IsValid( Building.CancelConstruction )), Building.IsBuildingType('building_construction_sector'))]"
+							onclick = "[GetScriptedGui('downsize_construction_sector').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End )]"
+							using = tooltip_below
+						}
+
+						### DOWNSIZE WITH CONFIRMATION
+						button_icon_minus_action = {
+							size = { 35 35 }
+							parentanchor = vcenter
+							tooltip = "[Building.GetDownsizeTooltip]"
+							visible = "[And( IsValid( Building.Downsize ), ShouldAskConfirmation( Building.Downsize ) )]"
+							onclick = "[PopupManager.AskConfirmation( Building.Downsize )]"
+							enabled = "[IsValid( Building.Downsize )]"
+							using = tooltip_below
+						}
+
+						### CANCEL CONSTRUCTION
+						button_icon_minus_action = {
+							size = { 35 35 }
+							parentanchor = vcenter
+							tooltip = "[Building.GetCancelConstructionTooltip]"
+							visible = "[IsValid( Building.CancelConstruction )]"
+							onclick = "[Execute( Building.CancelConstruction )]"
+							using = tooltip_below
+						}
+
+						### LEVEL
+						container = {
+							parentanchor = vcenter
+							background = {
+								using = entry_bg
+								margin = { 10 -2 }
+							}
+
+							textbox = {
+								name = "tutorial_higlight_expansion_level"
+								text = "[Building.GetExpansionLevelDesc]"
+								align = hcenter|nobaseline
+								using = fontsize_large
+								size = { 88 35 }
+								elide = right
+							}
+						}
+
+						### EXPAND
+						button_icon_plus_action = {
+							name = "tutorial_highlight_expand"
+							size = { 35 35 }
+							parentanchor = vcenter
+							tooltip = "[Building.GetQueueConstructionTooltip]"
+							onclick = "[Execute( Building.QueueConstruction )]"
+							enabled = "[IsValid( Building.QueueConstruction )]"
+							visible = "[And(Building.GetOwner.IsLocalPlayer, Building.IsExpandable)]"
+						}
+					}
+				}
+
+				button = {
+					visible = "[And( IsPotential( Building.ToggleAutoExpand ), Building.GetOwner.IsLocalPlayer)]"
+					size = { 180 40 }
+					using = default_button
+					onclick = "[Execute( Building.ToggleAutoExpand )]"
+
+					icon = {
+						using = highlighted_square_selection
+						visible = "[Building.IsAutoExpanding]"
+						alwaystransparent = yes
+					}
+
+					textbox = {
+						text = "CANCEL_AUTO_EXPAND"
+						visible = "[Building.IsAutoExpanding]"
+						tooltip = [Building.GetAutoExpandTooltip]
+						size = { 100% 100% }
+						align = nobaseline|hcenter
+						parentanchor = center
+					}
+
+					textbox = {
+						text = "AUTO_EXPAND"
+						visible = "[Not(Building.IsAutoExpanding)]"
+						tooltip = [Building.GetAutoExpandTooltip]
+						size = { 100% 100% }
+						align = nobaseline|hcenter
+						parentanchor = center
+					}
+				}
+			}
+
+			### RIGHT INFO
+			flowcontainer = {
+				direction = vertical
+				margin_top = 7
+
+				flowcontainer = {
+					direction = vertical
+					enabled = "[Building.IsActive]"
+
+					flowcontainer = {
+						direction = vertical
+						visible = "[And(Not(Building.IsGovernmentFunded), Not(Building.IsSubsistenceBuilding))]"
+						maximumsize = { 340 -1 }
+						minimumsize = { 340 -1 }
+						margin = { 10 10 }
+						spacing = 12
+
+						background = {
+							using = entry_bg_simple
+						}
+
+						textbox = {
+							text = "[concept_productivity]"
+							align = left|nobaseline
+							autoresize = yes
+							maximumsize = { 290 -1 }
+							multiline = yes
+						}
+
+						flowcontainer = {
+							spacing = 10
+
+							textbox = {
+								name = "tutorial_highlight_productivity_value"
+								using = productivity_tooltip_with_graph
+								text = "[GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')][Building.GetAverageAnnualEarningsPerEmployeeFormatted|+]"
+								align = hcenter|nobaseline
+								autoresize = yes
+								maximumsize = { 120 -1 }
+								minimumsize = { 120 -1 }
+								margin_top = 10
+								margin_bottom = 10
+								multiline = yes
+								using = fontsize_mega
+								parentanchor = vcenter
+
+								background = {
+									using = entry_bg_simple
+								}
+							}
+
+							flowcontainer = {
+								visible = "[Not(Building.GetBuildingType.IsUnique)]"
+								name = "tutorial_highlight_productivity_gear_icons"
+								parentanchor = vcenter
+
+								direction = vertical
+								textbox = {
+									using = building_profitability_tooltip_with_graph
+									text = "BUILDING_RANK"
+									align = left|nobaseline
+									autoresize = yes
+									maximumsize = { 195 -1 }
+									elide = right
+								}
+
+								textbox = {
+									using = building_world_profitability_tooltip_with_graph
+									text = "BUILDING_RANK_WORLD"
+									align = left|nobaseline
+									autoresize = yes
+									maximumsize = { 195 -1 }
+									elide = right
+								}
+							}
+						}
+
+						textbox = {
+							text = "BUILDING_AVERAGE_WAGE"
+							tooltip = TOOLTIP_BUILDING_AVERAGE_WAGE
+							visible = "[Building.IsActive]"
+
+							align = left|nobaseline
+							autoresize = yes
+							elide = right
+						}
+					}
+
+					widget = {
+						size = { 330 25 }
+						visible = "[Building.IsMilitaryBuilding]"
+						hbox = {
+							spacing = 5
+							textbox = {
+								text = "BUILDING_STATUS"
+								align = left|nobaseline
+								autoresize = yes
+								elide = right
+							}
+							textbox = {
+								visible = "[Building.IsActive]"
+								text = "BUILDING_ACTIVE"
+								align = nobaseline
+								layoutpolicy_horizontal = expanding
+								size = { 0 25 }
+							}
+							textbox = {
+								visible = "[And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive ))]"
+								text = "BUILDING_INACTIVE"
+								align = left|nobaseline
+								layoutpolicy_horizontal = expanding
+								size = { 0 25 }
+							}
+						}
+					}
+
+					widget = {
+						size = { 3 3 }
+					}
+
+					widget = {
+						size = { 330 40 }
+						parentanchor = hcenter
+						default_progressbar_horizontal = {
+							tooltip = "TOOLTIP_BUILDING_EMPLOYMENT"
+							size = { 100% 34 }
+							parentanchor = vcenter
+
+							blockoverride "values" {
+								value = "[FixedPointToFloat(Building.GetEmploymentPercentage)]"
+								min = 0
+								max = 1
+							}
+						}
+
+						flowcontainer = {
+							parentanchor = vcenter
+							textbox = {
+								text = EMPLOYMENT_BAR
+								margin_left = 10
+								margin_bottom = 5
+								margin_top = 5
+								align = hcenter|nobaseline
+								autoresize = yes
+								parentanchor = vcenter
+								widgetanchor = vcenter
+							}
+
+							textbox = {
+								visible = "[LessThan_int32(Building.GetNoOfEmployed, Building.GetEmployeeCap)]"
+								text = "/ #maximum [Building.GetEmployeeCap|1*]#!"
+								margin_left = 7
+								align = hcenter|nobaseline
+								autoresize = yes
+								parentanchor = vcenter
+								widgetanchor = vcenter
+							}
+						}
+
+						icon = {
+							visible = "[And(Not(Building.IsSubsistenceBuilding), Building.HasFailedHires)]"
+							size = { 30 30 }
+							texture = "gfx/interface/icons/generic_icons/employment_not_full.dds"
+							parentanchor = right|vcenter
+							tooltip = "NOT_FULLY_EMPLOYED"
+							position = { -7 0 }
+						}
+
+						icon = {
+							visible = "[And(And(And(Not(Building.IsGovernmentFunded), Not(GreaterThan_CFixedPoint(Building.GetAverageAnnualEarningsPerEmployee, '(CFixedPoint)0'))) , Not(Building.IsSubsidized)), EqualTo_CFixedPoint(Building.GetCurrentCashReserves, '(CFixedPoint)0'))]"
+							size = { 30 30 }
+							texture = "gfx/interface/icons/generic_icons/employment_not_full.dds"
+							parentanchor = right|vcenter
+							tooltip = "NOT_HIRING"
+							position = { -7 0 }
+						}
+
+						icon = {
+							visible = "[And(And(And(And(Not(Building.IsSubsistenceBuilding), Not(Building.HasFailedHires)), Building.IsActive), LessThan_int32(Building.GetNoOfEmployed, Building.GetEmployeeCap)), GreaterThan_CFixedPoint(Building.GetAverageAnnualEarningsPerEmployee, '(CFixedPoint)0'))]"
+							size = { 30 30 }
+							parentanchor = right|vcenter
+							texture = "gfx/interface/icons/generic_icons/employment_not_full_hiring.dds"
+							tooltip = "TOOLTIP_BUILDING_HIRING"
+							position = { -7 0 }
+						}
+					}
+
+					widget = {
+						size = { 3 8 }
+					}
+
+					widget = {
+						alpha = "[TransparentIfFalse(Building.IsActive)]"
+						visible = "[And(GreaterThan_CFixedPoint(Building.GetMaxCashReserves, '(CFixedPoint)0'), Building.IsActive)]"
+						size = { 330 34 }
+						parentanchor = hcenter
+						using = cash_reserves_tooltip_with_graph
+
+						gold_progressbar_horizontal = {
+							size = { 100% 100% }
+							alpha = "[TransparentIfFalse(Building.IsActive)]"
+							visible = "[And(GreaterThan_CFixedPoint(Building.GetMaxCashReserves, '(CFixedPoint)0'), Building.IsActive)]"
+
+							blockoverride "glow_size" {
+								size = { 40 100% }
+							}
+
+							parentanchor = vcenter
+							blockoverride "values" {
+								min = 0
+								max = "[FixedPointToFloat(Building.GetMaxCashReserves)]"
+								value = "[FixedPointToFloat(Building.GetCurrentCashReserves)]"
+							}
+
+							progressbar_highlight = {
+								visible = "[GreaterThanOrEqualTo_CFixedPoint(Building.GetCurrentCashReserves, Building.GetMaxCashReserves)]"
+							}
+						}
+
+						changed_value_decreased_progressbar_horizontal = {
+							size = { 100% 100% }
+							visible = "[GreaterThan_CFixedPoint(GetPrevTrendValue(Building.GetCashReservesTrend), GetTrendValue(Building.GetCashReservesTrend))]"
+
+							blockoverride "second_progressbar" {}
+
+							blockoverride "values" {
+								min = 0
+								max = "[FixedPointToFloat(Building.GetMaxCashReserves)]"
+								value = "[FixedPointToFloat(Building.GetCurrentCashReserves)]"
+							}
+							blockoverride "glow_size" {
+								size = { 40 100% }
+							}
+							blockoverride "arrow_texture_density" {
+								texture_density = 4 #use to match height of progressbar
+							}
+						}
+
+						changed_value_increased_progressbar_horizontal = {
+							size = { 100% 100% }
+							visible = "[GreaterThan_CFixedPoint(GetTrendValue(Building.GetCashReservesTrend), GetPrevTrendValue(Building.GetCashReservesTrend))]"
+
+							blockoverride "second_progressbar" {}
+
+							blockoverride "values" {
+								min = 0
+								max = "[FixedPointToFloat(Building.GetMaxCashReserves)]"
+								value = "[FixedPointToFloat(Building.GetCurrentCashReserves)]"
+							}
+							blockoverride "glow_size" {
+								size = { 40 100% }
+							}
+							blockoverride "arrow_texture_density" {
+								texture_density = 4 #use to match height of progressbar
+							}
+						}
+
+						flowcontainer = {
+							parentanchor = vcenter
+							textbox = {
+								text = BUILDING_CASH_RESERVES
+								margin_left = 10
+								align = hcenter|nobaseline
+								autoresize = yes
+								parentanchor = vcenter
+							}
+
+							textbox = {
+								text = " / #maximum [Building.GetMaxCashReserves|k]#!"
+								visible = "[LessThan_CFixedPoint(Building.GetCurrentCashReserves, Building.GetMaxCashReserves)]"
+								align = hcenter|nobaseline
+								autoresize = yes
+								parentanchor = vcenter
+							}
+						}
+					}
+
+					widget = {
+						visible = "[Not(EqualTo_CFixedPoint(Building.GetGovernmentExpenses, '(CFixedPoint)0'))]"
+						size = { 10 10 }
+					}
+
+					### TIMED MODIFIERS
+					flowcontainer = {
+						parentanchor = left
+
+						datamodel = "[Building.GetTimedModifiers]"
+						spacing = 5
+
+						using = clickthrough_blocker
+
+						item = {
+							icon = {
+								tooltip = "[TimedModifier.GetTooltip]"
+								texture = "[TimedModifier.GetIcon]"
+								size = { 30 30 }
+							}
+						}
+					}
+
+					widget = {
+						size = { 11 11 }
+						visible = "[And(Not(Building.IsGovernmentFunded), Not(Building.IsSubsistenceBuilding))]"
+					}
+
+					### battalions mobilized
+					widget = {
+						visible = "[Building.GetHQ.IsLandHQ]"
+
+						size = { 330 25 }
+						tooltip = "BUILDING_MOBILIZED_BATTALIONS_TOOLTIP"
+						hbox = {
+							textbox = {
+								text = "BUILDING_BATTALIONS_MOBILIZED"
+								align = left|nobaseline
+								layoutpolicy_horizontal = expanding
+								size = { 0 25 }
+								elide = right
+							}
+							textbox = {
+								text = "@battalions! #v [Building.GetNumberOfFullyMobilizedBattalions]#! / [Building.GetNumberOfCombatUnits] (#v [Building.GetMobilizationRatio|%]#!)"
+								align = nobaseline
+								autoresize = yes
+							}
+					 	}
+					}
+
+					widget = {
+						size = { 10 10 }
+						visible = "[Building.IsBuildingType('building_trade_center')]"
+					}
+
+					### MARKET
+					flowcontainer = {
+						margin_top = 10
+						parentanchor = hcenter
+						visible = "[Building.IsBuildingType('building_trade_center')]"
+
+						button = {
+							using = default_button
+							onclick = "[InformationPanelBar.OpenMarketPanel(Building.AccessState.AccessMarket)]"
+
+							textbox = {
+								resizeparent = yes
+								text = "[Building.GetState.GetMarket.GetName]"
+								align = center|nobaseline
+								autoresize = yes
+								maximumsize = { 250 -1 }
+								minimumsize = { 250 -1 }
+								margin = { 10 10 }
+								multiline = yes
+								parentanchor = center
+							}
+						}
+					}
+				}
+			}
+		}
+
+		### SUBSISTENCE INFO
+		textbox = {
+			using = default_list_position
+			text = "SUBSISTENCE_CONCEPT_CLEAN"
+			visible = "[Building.IsSubsistenceBuilding]"
+			autoresize = yes
+			multiline = yes
+			maximumsize = { @panel_width -1 }
+			margin_top = 10
+			margin_bottom = 20
+		}
+
+		### URBAN INFO
+		textbox = {
+			using = default_list_position
+			text = "URBAN_CENTER_EXPLANATION"
+			visible = "[Building.IsUrbanCenter]"
+			autoresize = yes
+			multiline = yes
+			maximumsize = { @panel_width -1 }
+			margin_top = 10
+			margin_bottom = 20
+		}
+
+		### PRODUCTION METHODS
+		flowcontainer = {
+			visible = "[Building.IsBuildingType('building_national_stockpile')]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "NATIONAL_STOCKPILE"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				ignoreinvisible = yes
+				allow_outside = yes
+				container = {
+					ignoreinvisible = yes
+					allow_outside = yes
+
+					flowcontainer = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						textbox = {
+							size = { 260 40 }
+							text = "NATIONAL_STOCKPILE_BUILDING_TEXT"
+							#default_format = "#title"
+							fontsize = 20
+							align = center
+							elide = center
+							ignoreinvisible = yes
+							allow_outside = yes
+							parentanchor = center
+							margin_top = -5
+							button_icon_goto = {
+								parentanchor = right
+								size = { 25 25 }
+								position = { 117 10 }
+								onclick = "[GetVariableSystem.SetOrToggle('national_stockpiles_window', GetVariableSystem.Get('visible'))]"
+								tooltip = "GO_TO_BUTTON_STOCKPILE"
+								block "goto_visibility" {}
+							}
+						}
+					}
+				}
+			}
+		}
+		### BUSINESS HEALTH
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_tooling_workshops'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_tooling_workshops').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_TOOLING_WORKSHOPS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_tooling_workshops').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_tooling_workshops"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_tooling_workshops').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_arms_industry'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_arms_industry').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_ARMS_INDUSTRY"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_arms_industry').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_arms_industry"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_arms_industry').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_arts_academy'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_arts_academy').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_ARTS_ACADEMY"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_arts_academy').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_arts_academy"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_arts_academy').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_banana_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_banana_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_BANANA_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_banana_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_banana_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_banana_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_bank'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_bank').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_BANK"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_bank').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_bank"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_bank').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_chemical_plants'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_chemical_plants').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_CHEMICAL_PLANTS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_chemical_plants').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_chemical_plants"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_chemical_plants').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_coal_mine'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_coal_mine').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_COAL_MINE"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_coal_mine').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_coal_mine"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_coal_mine').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_coffee_plants'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_coffee_plants').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_COFFEE_PLANTS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_coffee_plants').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_coffee_plants"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_coffee_plants').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_cotton_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_cotton_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_COTTON_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_cotton_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_cotton_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_cotton_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_dye_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_dye_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_DYE_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_dye_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_dye_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_dye_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_electrics_industry'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_electrics_industry').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_ELECTRICS_INDUSTRY"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_electrics_industry').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_electrics_industry"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_electrics_industry').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_fishing_wharf'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_fishing_wharf').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_FISHING_WHARF"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_fishing_wharf').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_fishing_wharf"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_fishing_wharf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_food_industry'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_food_industry').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_FOOD_INDUSTRY"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_food_industry').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_food_industry"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_food_industry').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_furniture_manufacturies'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_furniture_manufacturies').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_FURNITURE_MANUFACTURIES"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_furniture_manufacturies').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_furniture_manufacturies"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_furniture_manufacturies').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_glassworks'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_glassworks').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_GLASSWORKS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_glassworks').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_glassworks"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_glassworks').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_iron_mine'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_iron_mine').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_IRON_MINE"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_iron_mine').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_iron_mine"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_iron_mine').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_lead_mine'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_lead_mine').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_LEAD_MINE"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_lead_mine').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_lead_mine"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_lead_mine').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_livestock_ranch'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_livestock_ranch').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_LIVESTOCK_RANCH"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_livestock_ranch').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_livestock_ranch"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_livestock_ranch').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_logging_camp'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_logging_camp').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_LOGGING_CAMP"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_logging_camp').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_logging_camp"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_logging_camp').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_maize_farm'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_maize_farm').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_MAIZE_FARM"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_maize_farm').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_maize_farm"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_maize_farm').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_millet_farm'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_millet_farm').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_MILLET_FARM"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_millet_farm').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_millet_farm"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_millet_farm').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_motor_industry'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_motor_industry').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_MOTOR_INDUSTRY"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_motor_industry').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_motor_industry"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_motor_industry').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_munition_plants'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_munition_plants').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_MUNITION_PLANTS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_munition_plants').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_munition_plants"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_munition_plants').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_oil_rig'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_oil_rig').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_OIL_RIG"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_oil_rig').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_oil_rig"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_oil_rig').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_opium_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_opium_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_OPIUM_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_opium_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_opium_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_opium_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_paper_mills'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_paper_mills').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_PAPER_MILLS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_paper_mills').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_paper_mills"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_paper_mills').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_pbi_publishing_industry'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_pbi_publishing_industry').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_PBI_PUBLISHING_INDUSTRY"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_pbi_publishing_industry').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_pbi_publishing_industry"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_pbi_publishing_industry').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_power_plant'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_power_plant').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_POWER_PLANT"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_power_plant').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_power_plant"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_power_plant').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_rice_farm'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_rice_farm').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_RICE_FARM"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_rice_farm').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_rice_farm"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_rice_farm').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_rubber_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_rubber_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_RUBBER_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_rubber_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_rubber_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_rubber_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_rye_farm'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_rye_farm').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_RYE_FARM"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_rye_farm').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_rye_farm"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_rye_farm').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_shipyards'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_shipyards').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_SHIPYARDS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_shipyards').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_shipyards"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_shipyards').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_silk_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_silk_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_SILK_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_silk_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_silk_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_silk_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_steel_mills'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_steel_mills').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_STEEL_MILLS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_steel_mills').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_steel_mills"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_steel_mills').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_stock_exchange'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_stock_exchange').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_STOCK_EXCHANGE"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_stock_exchange').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_stock_exchange"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_stock_exchange').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_sugar_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_sugar_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_SUGAR_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_sugar_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_sugar_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_sugar_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_sulfur_mine'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_sulfur_mine').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_SULFUR_MINE"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_sulfur_mine').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_sulfur_mine"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_sulfur_mine').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_synthetics_plants'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_synthetics_plants').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_SYNTHETICS_PLANTS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_synthetics_plants').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_synthetics_plants"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_synthetics_plants').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_tea_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_tea_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_TEA_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_tea_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_tea_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_tea_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_textile_mills'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_textile_mills').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_TEXTILE_MILLS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_textile_mills').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_textile_mills"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_textile_mills').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_tobacco_plantation'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_tobacco_plantation').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_TOBACCO_PLANTATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_tobacco_plantation').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_tobacco_plantation"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_tobacco_plantation').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_war_machine_industry'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_war_machine_industry').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_WAR_MACHINE_INDUSTRY"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_war_machine_industry').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_war_machine_industry"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_war_machine_industry').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_whaling_station'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_whaling_station').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_WHALING_STATION"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_whaling_station').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_whaling_station"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_whaling_station').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_wheat_farm'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_wheat_farm').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_WHEAT_FARM"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_wheat_farm').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_wheat_farm"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_wheat_farm').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		## ReRework
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_hydroelectric_power_plant'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_hydroelectric_power_plant').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_HYDROELECTRIC_POWER_PLANT"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_hydroelectric_power_plant').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_wheat_farm"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_hydroelectric_power_plant').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		flowcontainer = {
+			visible = "[And(Building.IsBuildingType('building_vineyard'),Building.GetState.MakeScope.Var('tgr_building_losses_count_building_vineyard').IsSet)]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "BUSINESS_HEALTH" tooltip = "BUSINESS_HEALTH_INFO_TOOLTIP"
+				}
+				blockoverride "text2" {
+					text = "BUSINESS_HEALTH_STATUS_BUILDING_VINEYARD"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				widget = {
+					position = { 0 6 }
+					bad_progressbar_horizontal = {
+						ignoreinvisible = yes
+						allow_outside = yes
+						size = { 440 65 }
+
+						blockoverride "values" {
+							value = "[Building.GetState.MakeScope.Var('tgr_building_losses_count_building_vineyard').GetValue]"
+							min = 0
+							max = 10
+						}
+						
+						textbox = {
+							name = text
+							text = "textboxinsideprogressbar_bushealth_building_wheat_farm"
+							parentanchor = center
+							autoresize = yes
+							fontsize = 25
+							align = hcenter|nobaseline
+						}
+					}
+				}
+
+				### Reopen Business
+				button = {
+					parentanchor = top|right
+					tooltip = REOPENBUSINESSTOOLTIP
+					enabled = "[And(GetScriptedGui('this_is_relevant_nation_state_and_doesnt_have_laissez_faire').IsValid( GuiScope.SetRoot( GetMetaPlayer.GetPlayedOrObservedCountry.MakeScope ).AddScope('state', Building.GetState.MakeScope).End),And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive )))]"
+					onclick = "[GetScriptedGui('bailout_building_vineyard').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('state', Building.GetState.MakeScope).End)]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/reopen_business.dds"
+						size = { 60 60 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+		
+
+		### PRODUCTION METHODS
+		flowcontainer = {
+			visible = "[And(Not(Building.IsBuildingType('building_national_stockpile')),Not(Building.IsMilitaryBuilding))]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 10
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "PRODUCTION_METHODS"
+				}
+			}
+
+			container = {
+				parentanchor = hcenter
+				minimumsize = { @panel_width -1 }
+				container = {
+					name = "tutorial_highlight_production_methods"
+
+					flowcontainer = {
+						datamodel = "[Building.AccessProductionMethodGroups]"
+						spacing = 5
+
+						item = {
+							widget = {
+								size = { 75 75 }
+								datacontext = "[Building.AccessProductionMethod(ProductionMethodGroup.Self)]"
+								datacontext = "[ProductionMethod]"
+								datacontext = "[Building]"
+								datacontext = "[ProductionMethodGroup]"
+								using = tooltip_above
+
+								tooltip = "CHANGE_FROM_CURRENT_PRODUCTION_METHOD_TOOLTIP"
+
+								button = {
+									visible = "[NotEqualTo_int32( GetDataModelSize( ProductionMethodGroup.AccessBuildingProductionMethods( Building.Self ) ), '(int32)1' )]"
+									using = expand_button_bg_no_fade
+									size = { 75 75 }
+									enabled = "[Building.IsOwner( GetPlayer.Self )]"
+									onclick = "[RightClickMenuManager.ToggleSwitchProductionMethodMenu(Building.AccessSelf, ProductionMethodGroup.AccessSelf, PdxGuiWidget.AccessSelf)]"
+								}
+
+								icon = {
+									size = { 60 60 }
+									parentanchor = center
+									texture = "[ProductionMethod.GetTexture]"
+								}
+
+								### new pm
+								has_new_pm_icon	= {
+									blockoverride "visible" {
+										visible = "[And(Building.IsOwner( GetPlayer.Self ), GetPlayer.HasNewProductionMethodInSameGroup( Building.GetBuildingType.Self, ProductionMethod.Self ))]"
+									}
+									position = { 0 0 }
+									tooltip = "TOOLTIP_NEW_PRODUCTION_METHOD"
+									parentanchor = bottom
+								}
+
+								textbox = {
+									text = "#P #bold [ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf)]#!#!"
+									parentanchor = top|right
+									position = { -7 2 }
+									autoresize = yes
+									align = right|nobaseline
+									visible = "[NotEqualTo_int32( ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf), '(int32)1')]"
+									tooltip = "PRODUCTION_METHOD_OPTIONS"
+									using = tooltip_above
+									using = fontsize_small
+
+									background = {
+										using = default_background
+										margin = { 8 4 }
+									}
+								}
+							}
+						}
+					}
+				}
+
+				### subsidize
+				button = {
+					name = "tutorial_highlight_subsidize"
+					using = default_button
+					parentanchor = top|right
+					visible = "[And(Building.GetBuildingType.CanBeSubsidized, Building.IsSubsidized)]"
+					tooltip = SUBSIDIZED_YES
+					enabled = "[IsValid( Building.ToggleSubsidies )]"
+					onclick = "[Execute( Building.ToggleSubsidies )]"
+					size = { 75 75 }
+					margin_bottom = 15
+
+					button = {
+						texture = "gfx/interface/production_methods/subsidized.dds"
+						size = { 32 32 }
+						position = { 0 -2 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+
+					textbox = {
+						text = "#N #bold -[Building.GetSubsidies|D]#!"
+						autoresize = yes
+						parentanchor = hcenter|bottom
+						margin_bottom = 8
+					}
+
+					icon = {
+						using = highlighted_square_selection
+						visible = "[And(Building.GetBuildingType.CanBeSubsidized, Building.IsSubsidized)]"
+						alwaystransparent = yes
+					}
+				}
+
+
+				button = {
+					name = "tutorial_highlight_subsidize_button_building_details"
+					parentanchor = top|right
+					visible = "[And(Building.GetBuildingType.CanBeSubsidized, Not(Building.IsSubsidized))]"
+					tooltip = SUBSIDIZED_NO
+					enabled = "[IsValid( Building.ToggleSubsidies )]"
+					onclick = "[Execute( Building.ToggleSubsidies )]"
+					using = default_button
+					size = { 75 75 }
+
+					button = {
+						texture = "gfx/interface/production_methods/subsidized_not.dds"
+						size = { 32 32 }
+						position = { 0 -2 }
+						alwaystransparent = yes
+						parentanchor = center
+					}
+				}
+			}
+		}
+
+		### PRODUCTION METHODS MILITARY BUILDINGS (BATTALIONS)
+		flowcontainer = {
+			visible = "[Building.IsMilitaryBuilding]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+			margin = { 0 10 }
+			spacing = 12
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "COMBAT_UNITS_BUILDING_HEADER"
+				}
+			}
+
+			flowcontainer = {
+				margin = { 5 -5 }
+				minimumsize = { 310 150 }
+				spacing = 5
+
+				# Troop image on the left
+				widget = {
+					size = { 175 180 }
+					visible = "[GreaterThan_int32(Building.GetNumberOfCombatUnits, '(int32)0')]"
+
+					background = {
+						texture = "[Building.GetCombatUnitTexture]"
+						modify_texture = {
+							using = simple_frame_mask
+						}
+					}
+					icon = {
+						using = simple_frame
+						size = { 100% 100% }
+					}
+				}
+
+				# Building info on the right
+				vbox = {
+					layoutstretchfactor_horizontal = 3
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = preferred
+					spacing = 5
+					
+					default_header_clean_faded = {
+						layoutpolicy_horizontal = preferred
+						size = { 0 38 }
+						blockoverride "text" {
+							text = "PRODUCTION_METHODS"
+						}
+					}
+
+					### Production methods (copy from buildings panel)
+					dynamicgridbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						datamodel = "[Building.AccessProductionMethodGroups]"
+						flipdirection = yes
+						datamodel_wrap = 5
+							
+						item = {
+							widget = {
+								size = { 62 62 }
+								datacontext = "[Building.AccessProductionMethod(ProductionMethodGroup.Self)]"
+								datacontext = "[ProductionMethod]"
+								datacontext = "[Building]"
+								datacontext = "[ProductionMethodGroup]"
+								using = tooltip_above
+								tooltip = "CHANGE_FROM_CURRENT_PRODUCTION_METHOD_TOOLTIP"
+
+								button = {
+									visible = "[NotEqualTo_int32( GetDataModelSize( ProductionMethodGroup.AccessBuildingProductionMethods( Building.Self ) ), '(int32)1' )]"
+									using = expand_button_bg_no_fade
+									enabled = "[Building.IsOwner( GetPlayer.Self )]"
+									size = { 100% 100% }
+									onclick = "[RightClickMenuManager.ToggleSwitchProductionMethodMenu(Building.AccessSelf, ProductionMethodGroup.AccessSelf, PdxGuiWidget.AccessSelf)]"
+								}
+
+								icon = {
+									size = { 47 47 }
+									parentanchor = center
+									texture = "[ProductionMethod.GetTexture]"
+								}
+
+								### new pm
+								has_new_pm_icon = {
+									position = { -2 2 }
+									parentanchor = bottom|left
+									blockoverride "visible" {
+										visible = "[And(Building.IsOwner( GetPlayer.Self ), GetPlayer.HasNewProductionMethodInSameGroup( Building.GetBuildingType.Self, ProductionMethod.Self ))]"
+									}
+								}
+
+								### nr available
+								textbox = {
+									text = "#P #bold [ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf)]#!#!"
+									parentanchor = top|right
+									position = { -5 0 }
+									autoresize = yes
+									align = right|nobaseline
+									visible = "[NotEqualTo_int32( ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf), '(int32)1')]"
+									tooltip = "PRODUCTION_METHOD_OPTIONS"
+									using = tooltip_above
+									using = fontsize_small
+
+									background = {
+										using = default_background
+										margin = { 8 4 }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			### Building commanders list
+			flowcontainer = {
+				parentanchor = hcenter
+				direction = vertical
+				spacing = 10
+				datamodel = "[Building.GetCombatUnitCommanders]"
+
+				item = {
+					commander_entry_building = {}
+				}
+
+			}
+
+			### Reserve units list
+			buildings_reserves_hq_item = { }
+
+		}
+
+		flowcontainer = {
+			visible = "[Building.HasTradeRouteRevenue]"
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "TRADE_ROUTES"
+				}
+			}
+
+			widget = { size = { 10 10 }}
+
+			dynamicgridbox = {
+				datamodel = "[Building.AccessPlayerTradeRoutes]"
+				ignoreinvisible = yes
+
+				item = {
+					trade_route_list_item = {
+						datacontext = "[Building.GetState.GetOwner]"
+						datacontext = "[Building.GetState.GetMarket]"
+					}
+				}
+			}
+			dynamicgridbox = {
+				datamodel = "[Building.AccessNonPlayerTradeRoutes]"
+				parentanchor = hcenter
+
+				item = {
+					trade_route_list_item = {
+						datacontext = "[Building.GetState.GetOwner]"
+						datacontext = "[Building.GetState.GetMarket]"						
+					}
+				}
+			}
+		}
+
+		### PROCESS
+		flowcontainer = {
+			using = default_list_position
+			direction = vertical
+			minimumsize = { @panel_width -1 }
+
+			default_header_2texts = {
+				blockoverride "text1" {
+					text = "PROCESS"
+				}
+				blockoverride "right" {
+					flowcontainer = {
+						parentanchor = right|vcenter
+						margin_right = 10
+						spacing = 10
+
+						textbox = {
+							text = "PROCESS_BALANCE"
+							autoresize = yes
+							multiline = yes
+							maximumsize = { 200 -1 }
+							parentanchor = vcenter
+							align = left|nobaseline
+						}
+
+						textbox = {
+							name = "tutorial_highlight_weekly_balance_building"
+							text = "[GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')]#v [Building.GetBalance|D+=]#!"
+							tooltip = "[Building.GetBalanceDesc]"
+							autoresize = yes
+							multiline = yes
+							maximumsize = { 200 -1 }
+							parentanchor = vcenter
+							align = left|nobaseline
+							using = fontsize_large
+						}
+					}
+				}
+			}
+
+			widget = { size = { 10 10 }}
+
+			### list
+			container = {
+				minimumsize = { @panel_width -1 }
+				parentanchor = hcenter
+
+				### left
+				textbox = {
+					parentanchor = vcenter
+					margin_left = 20
+					align =  nobaseline
+					using = empty_state_text_properties
+					visible = "[And( GreaterThan_int32( Building.GetExpansionLevel, '(int32)0'), Not( Building.IsActive ))]"
+					text = "BUILDING_INACTIVE_CONSUMPTION_EMPTY_STATE"
+					multiline = yes
+					max_width = 250
+					min_width = 250
+					autoresize = yes
+				}
+
+				flowcontainer = {
+					name = "tutorial_highlight_expenses"
+					direction = vertical
+					spacing = 5
+					parentanchor = left|vcenter
+					minimumsize = { 250 -1 }
+					ignoreinvisible = yes
+					visible = "[Building.IsActive]"
+
+					### goods
+					flowcontainer = {
+						parentanchor = hcenter
+						direction = vertical
+						datamodel = "[Building.AccessConsumedGoods]"
+
+						item = {
+							widget = {
+								size = { 250 50 }
+								name = "tutorial_highlight_goods"
+								tooltipwidget = {
+									FancyTooltip_Goods = {}
+								}
+
+								button = {
+									size = { 100% 40 }
+									parentanchor = vcenter
+									using = default_button
+									onclick = "[InformationPanelBar.OpenGoodsStatePanel(Building.GetState, Goods.Self)]"
+									onrightclick = "[RightClickMenuManager.ShowForGoods(Goods.AccessSelf)]"
+								}
+
+
+								icon = {
+									size = { 50 50 }
+									texture = "[Goods.GetTexture]"
+									position = { 3 0 }
+									parentanchor = left|vcenter
+								}
+
+								icon = {
+									size = { 25 25 }
+									visible = "[And(Not(Building.HasMaximumInputShortage(Goods.Self)),Building.HasInputShortage(Goods.Self))]"
+									texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+									tooltip = "GOODS_INPUT_SHORTAGE_TOOLTIP"
+									parentanchor = bottom
+								}
+
+								icon = {
+									size = { 25 25 }
+									visible = "[Building.HasMaximumInputShortage(Goods.Self)]"
+									texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+									tooltip = "GOODS_INPUT_SHORTAGE_MAX_TOOLTIP"
+									parentanchor = bottom
+								}
+
+								textbox = {
+									text = "#bold [FixedPointToInt(Building.GetConsumption(Goods.Self))|D]#!"
+									visible = "[Not(Building.HasInputShortage(Goods.Self))]"
+									position = { 55 0 }
+									autoresize = yes
+									parentanchor = left|vcenter
+									widgetanchor = left|vcenter
+									align = left|nobaseline
+									tooltip = "TOOLTIP_BUILDING_USES_UNITS_INFO"
+								}
+
+								textbox = {
+									text = "#bold #n [FixedPointToInt(Building.GetConsumption(Goods.Self))|D]#!#!"
+									visible = "[Building.HasInputShortage(Goods.Self)]"
+									position = { 55 0 }
+									autoresize = yes
+									parentanchor = left|vcenter
+									widgetanchor = left|vcenter
+									align = left|nobaseline
+									tooltip = "TOOLTIP_BUILDING_USES_UNITS_INFO"
+								}
+
+								textbox = {
+									text = "#BOLD [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')][FixedPointToInt(Building.GetConsumptionValue(Goods.Self))|1*]#! ([Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetStatePrice )])"
+									position = { -10 0 }
+									autoresize = yes
+									align = right|nobaseline
+									parentanchor = right|vcenter
+									widgetanchor = right|vcenter
+									### This tooltip blocks going to the locked tooltip of the good, therefore it is commented out
+									#tooltip = "TOOLTIP_BUILDING_USES_VALUE_INFO"
+								}
+							}
+						}
+					}
+
+					### wages
+					building_process_entry = {
+						blockoverride "visible" {
+							visible = "[GreaterThan_CFixedPoint(Building.GetLastWagesExpenses, '(CFixedPoint)0')]"
+						}
+						blockoverride "text" {
+							text = "WAGES"
+						}
+						blockoverride "text_right" {
+							text = "#variable [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')][Building.GetLastWagesExpenses|K]#!"
+							tooltip = "[Building.GetLastWagesExpensesDesc]"
+						}
+					}
+
+					### slave upkeep
+					building_process_entry = {
+						blockoverride "visible" {
+							visible = "[Or( Building.HasSlaves, GreaterThan_CFixedPoint(Building.GetLastSlaveUpkeep, '(CFixedPoint)0') )]"
+						}
+						blockoverride "text" {
+							text = "SLAVE_UPKEEP"
+							tooltip = "[Building.GetLastSlaveUpkeepDesc]"
+						}
+						blockoverride "text_right" {
+							text = "#variable [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')][Building.GetLastSlaveUpkeep|K]#!"
+							tooltip = "[Building.GetLastSlaveUpkeepDesc]"
+						}
+					}
+
+					### tariffs
+					building_process_entry = {
+						blockoverride "visible" {
+							visible = "[GreaterThan_CFixedPoint(Building.GetTariffsPaid, '(CFixedPoint)0')]"
+						}
+						blockoverride "text" {
+							text = "[concept_tariffs]"
+						}
+						blockoverride "text_right" {
+							text = "#variable [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')][Building.GetTariffsPaid|K]#!"
+						}
+					}
+
+					### infrastructure
+					building_process_entry = {
+						blockoverride "visible" {
+							visible = "[Building.UsesInfrastructure]"
+						}
+						blockoverride "text" {
+							tooltip = BUILDING_INFRA_USAGE_TOOLTIP
+							text = "BUILDING_INFRA_USAGE"
+						}
+					}
+				}
+
+				### center arrow
+				icon = {
+					size = { 30 30 }
+					texture = "gfx/interface/icons/generic_icons/turns_into.dds"
+					parentanchor = center
+					alpha = "[TransparentIfFalse(Building.IsActive)]"
+				}
+
+				### right
+				flowcontainer = {
+					name = "tutorial_highlight_revenues"
+					direction = vertical
+					spacing = 5
+					minimumsize = { 250 -1 }
+					parentanchor = right|vcenter
+					ignoreinvisible = yes
+					alpha = "[TransparentIfFalse(Building.IsActive)]"
+
+					### goods
+					flowcontainer = {
+						parentanchor = hcenter
+						direction = vertical
+						datamodel = "[Building.AccessProducedGoods]"
+
+						item = {
+							widget = {
+								size = { 250 50 }
+								tooltipwidget = {
+									FancyTooltip_Goods = {}
+								}
+
+								button = {
+									size = { 100% 40 }
+									parentanchor = vcenter
+									using = default_button
+									onclick = "[InformationPanelBar.OpenGoodsStatePanel(Building.GetState, Goods.Self)]"
+									onrightclick = "[RightClickMenuManager.ShowForGoods(Goods.AccessSelf)]"
+								}
+
+								icon = {
+									size = { 50 50 }
+									texture = "[Goods.GetTexture]"
+									position = { 3 0 }
+									parentanchor = left|vcenter
+								}
+
+								icon = {
+									size = { 25 25 }
+									visible = "[And(Building.HasAnyInputShortage,GreaterThan_CFixedPoint(Building.GetInputShortagePenalty, '(CFixedPoint)0'))]"
+									texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+									tooltip = "GOODS_OUTPUT_PENALTY_TOOLTIP"
+									parentanchor = bottom
+								}
+
+								icon = {
+									size = { 25 25 }
+									visible = "[And(Not(Building.HasAnyInputShortage),GreaterThan_CFixedPoint(Building.GetInputShortagePenalty, '(CFixedPoint)0'))]"
+									texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+									tooltip = "GOODS_OUTPUT_PENALTY_LINGERING_TOOLTIP"
+									parentanchor = bottom
+								}
+
+								textbox = {
+									text = "#bold [FixedPointToInt(Building.GetProduction(Goods.Self))|D]#!"
+									visible = "[Not(GreaterThan_CFixedPoint(Building.GetInputShortagePenalty, '(CFixedPoint)0'))]"
+									position = { 55 0 }
+									parentanchor = left|vcenter
+									autoresize = yes
+									align = left|nobaseline
+									tooltip = "TOOLTIP_BUILDING_PRODUCES_UNITS_INFO"
+								}
+
+								textbox = {
+									text = "#bold #n [FixedPointToInt(Building.GetProduction(Goods.Self))|D]#!#!"
+									visible = "[GreaterThan_CFixedPoint(Building.GetInputShortagePenalty, '(CFixedPoint)0')]"
+									position = { 55 0 }
+									parentanchor = left|vcenter
+									autoresize = yes
+									align = left|nobaseline
+									tooltip = "TOOLTIP_BUILDING_PRODUCES_UNITS_INFO"
+								}
+
+								textbox = {
+									text = "#BOLD [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')][FixedPointToInt(Building.GetProductionValue(Goods.Self))|*1]#! ([Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetStatePrice ) ])"
+									position = { -10 0 }
+									autoresize = yes
+									align = right|nobaseline
+									parentanchor = right|vcenter
+									### This tooltip blocks going to the locked tooltip of the good, therefore it is commented out
+									#tooltip = "TOOLTIP_BUILDING_PRODUCES_VALUE_INFO"
+								}
+							}
+						}
+					}
+
+					### military production
+					building_process_entry = {
+						blockoverride "visible" {
+							visible = "[Building.IsMilitaryBuilding]"
+						}
+						blockoverride "text" {
+							text = "[Building.GetCombatUnitProduction]"
+							tooltip = "MILITARY_UNITS_PRODUCTION"
+						}
+					}
+
+					### modifiers
+					flowcontainer = {
+						parentanchor = hcenter
+						direction = vertical
+						spacing = 5
+						datamodel = "[Building.GetProducedModifiers.GetEntries]"
+						visible = "[Not(IsDataModelEmpty(Building.GetProducedModifiers.GetEntries))]"
+						item = {
+							flowcontainer = {
+								spacing = 5
+								maximumsize = { 250 -1 }
+								minimumsize = { 250 -1 }
+								margin = { 10 8 }
+								
+								icon = {
+									size = { 25 25 }
+									visible = "[And(Building.CanBeAffectedByInputShortage(ModifierEntry.Self),And(Building.HasAnyInputShortage,GreaterThan_CFixedPoint(Building.GetInputShortagePenalty, '(CFixedPoint)0')))]"
+									texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+									tooltip = "GOODS_OUTPUT_PENALTY_TOOLTIP"
+									position = { -8 -10 }
+									parentanchor = left|vcenter
+									parentanchor = vcenter
+								}
+
+								icon = {
+									size = { 25 25 }
+									visible = "[And(Building.CanBeAffectedByInputShortage(ModifierEntry.Self),And(Not(Building.HasAnyInputShortage),GreaterThan_CFixedPoint(Building.GetInputShortagePenalty, '(CFixedPoint)0')))]"
+									texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+									tooltip = "GOODS_OUTPUT_PENALTY_LINGERING_TOOLTIP"
+									parentanchor = vcenter
+								}
+
+								background = {
+									using = entry_bg_simple
+								}
+
+								textbox = {
+									text = "[ModifierEntry.GetFormattedValue] [ModifierEntry.GetName]"
+									tooltip = "BUILDING_DETAILS_PRODUCED_MODIFIER_TOOLTIP"
+									autoresize = yes
+									multiline = yes
+									align = left|nobaseline
+									parentanchor = vcenter
+									maximumsize = { 220 -1 }
+								}
+							}
+						}
+					}
+
+					### trade revenue
+					building_process_entry = {
+						blockoverride "visible" {
+							visible = "[Building.HasTradeRouteRevenue]"
+						}
+						blockoverride "text" {
+							text = "[concept_trade_revenue]"
+						}
+						blockoverride "text_right" {
+							text = "#variable [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('moneycustomtgr')][Building.GetTradeRouteRevenue|K]#!"
+						}
+					}
+
+					building_process_entry = {
+						blockoverride "visible" {
+							visible = "[Building.ProvidesUrbanization]"
+						}
+						blockoverride "text" {
+							tooltip = BUILDING_URBANIZATION_TOOLTIP
+							text = "#variable [Building.CalcUrbanizationProvided|+=]#! [concept_urbanization]"
+						}
+					}
+				}
+			}
+		}
+
+		widget = { size = { 10 20 }}
+
+		divider_clean = {}
+
+		widget = {
+			size = { @panel_width 45 }
+			parentanchor = hcenter
+			visible = "[Or(Not( StringIsEmpty( Building.GetInputMultDesc )), Not(And( StringIsEmpty(Building.GetThroughputDesc), EqualTo_CFixedPoint(Building.GetThroughputBonusCurrent, Building.GetThroughputBonusTarget) )))]"
+
+			### consumption factor
+			textbox = {
+				margin_left = 10
+				visible = "[Not( StringIsEmpty( Building.GetInputMultDesc ))]"
+				text = "INPUT_MULT"
+				tooltip = "INPUT_MULT_TOOLTIP"
+				autoresize = yes
+				default_format = "#title"
+				using = fontsize_large
+				parentanchor = left|vcenter
+				align = left|nobaseline
+			}
+
+			### throughput
+			textbox = {
+				margin_right = 10
+				visible = "[Not(And( StringIsEmpty(Building.GetThroughputDesc), EqualTo_CFixedPoint(Building.GetThroughputBonusCurrent, Building.GetThroughputBonusTarget) ))]"
+				text = "THROUGHPUT"
+				tooltip = "THROUGHPUT_TOOLTIP"
+				autoresize = yes
+				default_format = "#title"
+				using = fontsize_large
+				parentanchor = right|vcenter
+				align = right|nobaseline
+			}
+		}
+
+		### VACANCIES
+		default_header_2texts = {
+			blockoverride "text1" {
+				text = "VACANCIES"
+			}
+		}
+		empty_state = {
+			blockoverride "visible" {
+				visible = "[And(Not(NotEqualTo_int32( Building.GetNoOfEmployed, Building.GetEmployeeCap )), Building.IsActive)]"
+			}
+			blockoverride "text" {
+				text = "NO_VACANCIES"
+			}
+		}
+
+		flowcontainer = {
+			datacontext = "[Building.AccessPopsList]"
+			datacontext = "[Building]"
+			datamodel = "[PopList.AccessPopList]"
+			direction = vertical
+			using = default_list_position
+			spacing = 10
+			margin_bottom = 20
+			margin_top = 10
+			visible = "[And(Building.IsActive, Not(IsDataModelEmpty(PopList.AccessPopList)))]"
+
+			item = {
+				flowcontainer = {
+					tooltip = "[PopListItem.GetPopTypeEmploymentDesc]"
+					spacing = 10
+					visible = "[NotEqualTo_int32( PopListItem.GetMaxPopSize, PopListItem.GetWorkingAdultsPopSize )]"
+
+					default_progressbar_horizontal = {
+						size = { @panel_width_minus_10 40 }
+						visible = "[GreaterThan_int32(PopListItem.GetMaxPopSize,'(int32)0')]"
+						blockoverride "values" {
+							min = 0
+							max = "[IntToFloat(PopListItem.GetMaxPopSize)]"
+							value = "[IntToFloat(PopListItem.GetWorkingAdultsPopSize)]"
+						}
+						parentanchor = vcenter
+
+						flowcontainer = {
+							icon = {
+								size = { 40 40 }
+								texture = "[PopListItem.GetPopType.GetTexture]"
+								parentanchor = vcenter
+								tooltipwidget = {
+									FancyTooltip_PopType = {
+										datacontext = "[PopListItem.GetPopType]"
+									}
+								}
+							}
+							textbox = {
+								text = "#bold [PopListItem.GetWorkingAdultsPopSize|K]#! / #maximum [PopListItem.GetMaxPopSize|K]#!"
+								autoresize = yes
+								align = left|nobaseline
+								parentanchor = vcenter
+								margin_left = 10
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	type building_process_entry = widget {
+		parentanchor = hcenter
+		block "visible" {}
+
+		background = {
+			using = entry_bg_simple
+		}
+
+		textbox = {
+			block "text" {
+				text = "INSERT_TEXT"
+			}
+			autoresize = yes
+			multiline = yes
+			resizeparent = yes
+			maximumsize = { 250 -1 }
+			minimumsize = { 250 -1 }
+			align = left|nobaseline
+			margin = { 10 8 }
+		}
+
+		textbox = {
+			block "text_right" {}
+			autoresize = yes
+			multiline = yes
+			maximumsize = { 250 -1 }
+			minimumsize = { 250 -1 }
+			align = right|nobaseline
+			margin = { 10 8 }
+		}
+	}
+}

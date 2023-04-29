@@ -1,0 +1,680 @@
+﻿# swiss cultures
+swiss={
+	color= rgb{ 130 100 80 }
+	religion = dutch_reformed
+	traits = { german_speaking swiss_identity european_heritage }
+	male_common_first_names={
+		Adolf
+		Alexander
+		Antoine
+		Augusto
+		Bernhard
+		Charles
+		Eduard
+		Emmanuel
+		Enrico
+		Ernst
+		Flavio
+		Franz
+		Giuseppe
+		Guillaume
+		Gustave
+		Hans
+		Henri
+		Hugo
+		Johann
+		Josef
+		Konstantin
+		Louis
+		Marc
+		Martin
+		Melchior
+		Paul
+		Robert
+		Rudolf
+		Ulrich
+		Vincenzo
+		Wilhelm
+	}
+	female_common_first_names = {
+		Anna
+		Barbara
+		Emilie
+		Gertrud
+		Germaine
+		Henriette
+		Isabelle
+		Johanna
+		Julie
+		Lydia
+		Maria
+		Rosalie
+	}	
+	noble_last_names = { # mostly patrician families of Bern
+		Effinger
+		de_Gingins
+		de_Goumoeens
+		de_Prangins
+		Lentulus
+		Lombach
+		May
+		von_Bonstetten
+		von_Donatz
+		von_Erlach
+		von_Graffenried
+		von_Ligerz
+		von_Muelinen
+		von_Muralt
+		von_Salis-Soglio
+		von_Steiger
+		von_Tavel
+		von_Wattenwyl
+		Zehender
+	}
+	common_last_names={
+		Ador
+		Brenner
+		Calonder
+		Celio
+		Chaudet
+		Comtesse
+		Cotti
+		Deucher
+		Dufour
+		Fogliardi
+		Fornerod
+		Funk
+		Guisan
+		Haab
+		Herzog
+		Knusel
+		Motta
+		Munzinger
+		Naff
+		Ruchet
+		Ruchonnet
+		Schneider
+		Siegwart-Muller
+		Wille
+		Zeni
+		de_Staeel
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+italo_swiss={
+	color= rgb{ 150 220 170 }
+	religion = catholic
+	traits = { swiss_identity italophone european_heritage }
+	male_common_first_names={
+		Adolf
+		Alexander
+		Antoine
+		Augusto
+		Bernhard
+		Charles
+		Eduard
+		Emmanuel
+		Enrico
+		Ernst
+		Flavio
+		Franz
+		Giuseppe
+		Guillaume
+		Gustave
+		Hans
+		Henri
+		Hugo
+		Johann
+		Josef
+		Konstantin
+		Louis
+		Marc
+		Martin
+		Melchior
+		Paul
+		Robert
+		Rudolf
+		Ulrich
+		Vincenzo
+		Wilhelm
+	}
+	female_common_first_names = {
+		Anna
+		Barbara
+		Emilie
+		Gertrud
+		Germaine
+		Henriette
+		Isabelle
+		Johanna
+		Julie
+		Lydia
+		Maria
+		Rosalie
+	}	
+	noble_last_names = { 
+		Effinger
+		de_Gingins
+		de_Goumoeens
+		de_Prangins
+		Lentulus
+		Lombach
+		May
+		von_Bonstetten
+		von_Donatz
+		von_Erlach
+		von_Graffenried
+		von_Ligerz
+		von_Muelinen
+		von_Muralt
+		von_Salis-Soglio
+		von_Steiger
+		von_Tavel
+		von_Wattenwyl
+		Zehender
+	}
+	common_last_names={
+		Ador
+		Brenner
+		Calonder
+		Celio
+		Chaudet
+		Comtesse
+		Cotti
+		Deucher
+		Dufour
+		Fogliardi
+		Fornerod
+		Funk
+		Guisan
+		Haab
+		Herzog
+		Knusel
+		Motta
+		Munzinger
+		Naff
+		Ruchet
+		Ruchonnet
+		Schneider
+		Siegwart-Muller
+		Wille
+		Zeni
+		de_Staeel
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+franco_swiss={
+	color= rgb{ 159 143 234 }
+	religion = catholic
+	traits = {  francophone swiss_identity european_heritage }
+	male_common_first_names={
+		Adolf
+		Alexander
+		Antoine
+		Augusto
+		Bernhard
+		Charles
+		Eduard
+		Emmanuel
+		Enrico
+		Ernst
+		Flavio
+		Franz
+		Giuseppe
+		Guillaume
+		Gustave
+		Hans
+		Henri
+		Hugo
+		Johann
+		Josef
+		Konstantin
+		Louis
+		Marc
+		Martin
+		Melchior
+		Paul
+		Robert
+		Rudolf
+		Ulrich
+		Vincenzo
+		Wilhelm
+	}
+	female_common_first_names = {
+		Anna
+		Barbara
+		Emilie
+		Gertrud
+		Germaine
+		Henriette
+		Isabelle
+		Johanna
+		Julie
+		Lydia
+		Maria
+		Rosalie
+	}	
+	noble_last_names = { 
+		Effinger
+		de_Gingins
+		de_Goumoeens
+		de_Prangins
+		Lentulus
+		Lombach
+		May
+		von_Bonstetten
+		von_Donatz
+		von_Erlach
+		von_Graffenried
+		von_Ligerz
+		von_Muelinen
+		von_Muralt
+		von_Salis-Soglio
+		von_Steiger
+		von_Tavel
+		von_Wattenwyl
+		Zehender
+	}
+	common_last_names={
+		Ador
+		Brenner
+		Calonder
+		Celio
+		Chaudet
+		Comtesse
+		Cotti
+		Deucher
+		Dufour
+		Fogliardi
+		Fornerod
+		Funk
+		Guisan
+		Haab
+		Herzog
+		Knusel
+		Motta
+		Munzinger
+		Naff
+		Ruchet
+		Ruchonnet
+		Schneider
+		Siegwart-Muller
+		Wille
+		Zeni
+		de_Staeel
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+# rhaetro romance cultures
+romansh={
+	color= rgb{ 120 140 110 }
+	religion = catholic
+	traits = {  rhaeto_romansh european_heritage }
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
+        Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico  Ferdinando
+        Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+        Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+        Raffaele Roberto Ruggiero Silvio Tancredi Ugo Umberto Vincenzo Vittorio
+	}
+	female_common_first_names = {		
+		Adelina
+		Aita
+		Allegra
+		Analia
+		Andrina
+		Angiola
+		Angioletta
+		Angiolina
+		Anna Maria
+		Anna Staschia
+		Annina
+		Annotta
+		Antonia
+		Assunta
+		Aurelia
+		Barbla
+		Barla
+		Basilissa
+		Beata
+		Benedicta
+		Bertilla
+		Bietta
+		Blandina
+		Braida
+		Brida
+		Catarina
+		Chatrina
+		Claritta
+		Corina
+		Cornelia
+		Dorina
+		Dumengia
+		Dumina
+		Elisabetta
+		Emma
+		Erica
+		Flura
+		Flurina
+		Frena
+		Geletta
+		Gelgia
+		Greata
+		Gretta
+		Grettina
+		Guida
+		Hilaria
+		Iulscha
+		Jacobea
+		Jacobina
+		Juditta
+		Ladina
+		Lidia
+		Lisabetta
+		Ludivica
+		Luisia
+		Luzia
+		Maclaina
+		Madina
+		Madlaina
+		Madlena
+		Maria
+		Memma
+		Mengia
+		Mia
+		Mina
+		Monica
+		Morena
+		Neisa
+		Nesa
+		Nescha
+		Nesina
+		Nona
+		Ramuna
+		Rita
+		Romea
+		Sabina
+		Salomea
+		Sarina
+		Seraina
+		Sereina
+		Serina
+		Silvana
+		Staschia
+		Stasia
+		Susanna
+		Tonia
+		Ulrica
+		Urschla
+		Ursetta
+		Ursina
+		Varena
+	}	
+	noble_last_names = { 
+		d'Absburgo-Toscana d'Austria-Este Dezza "di Borbone di Parma" "di Robilant" "di Savoia"
+		"di Savoia-Aosta" "Pellion di Persano" "Thaon di Revel" "Pacoret de Saint Bon" "La Màrmora"
+
+	}
+	common_last_names={
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+        Caviglia Ceccherini Cialdini Cusani 
+         Emo Fanti Fara Filomarino Garibaldi Giardino Govone  Mambretti
+        Menabrea Orengo  Pallavicino Pecori-Giraldi Pelloux Perruchetti Pianelli Porro
+        Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari  Vaccari Zupelli
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+ladin={
+	color= rgb{ 120 200 110 }
+	religion = catholic
+	traits = {  rhaeto_romansh european_heritage }
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
+        Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico  Ferdinando
+        Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+        Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+        Raffaele Roberto Ruggiero Silvio Tancredi Ugo Umberto Vincenzo Vittorio
+	}
+	female_common_first_names = {		
+		Adelina
+		Aita
+		Allegra
+		Analia
+		Andrina
+		Angiola
+		Angioletta
+		Angiolina
+		Anna Maria
+		Anna Staschia
+		Annina
+		Annotta
+		Antonia
+		Assunta
+		Aurelia
+		Barbla
+		Barla
+		Basilissa
+		Beata
+		Benedicta
+		Bertilla
+		Bietta
+		Blandina
+		Braida
+		Brida
+		Catarina
+		Chatrina
+		Claritta
+		Corina
+		Cornelia
+		Dorina
+		Dumengia
+		Dumina
+		Elisabetta
+		Emma
+		Erica
+		Flura
+		Flurina
+		Frena
+		Geletta
+		Gelgia
+		Greata
+		Gretta
+		Grettina
+		Guida
+		Hilaria
+		Iulscha
+		Jacobea
+		Jacobina
+		Juditta
+		Ladina
+		Lidia
+		Lisabetta
+		Ludivica
+		Luisia
+		Luzia
+		Maclaina
+		Madina
+		Madlaina
+		Madlena
+		Maria
+		Memma
+		Mengia
+		Mia
+		Mina
+		Monica
+		Morena
+		Neisa
+		Nesa
+		Nescha
+		Nesina
+		Nona
+		Ramuna
+		Rita
+		Romea
+		Sabina
+		Salomea
+		Sarina
+		Seraina
+		Sereina
+		Serina
+		Silvana
+		Staschia
+		Stasia
+		Susanna
+		Tonia
+		Ulrica
+		Urschla
+		Ursetta
+		Ursina
+		Varena
+	}	
+	noble_last_names = { 
+		d'Absburgo-Toscana d'Austria-Este Dezza "di Borbone di Parma" "di Robilant" "di Savoia"
+		"di Savoia-Aosta" "Pellion di Persano" "Thaon di Revel" "Pacoret de Saint Bon" "La Màrmora"
+
+	}
+	common_last_names={
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+        Caviglia Ceccherini Cialdini Cusani 
+         Emo Fanti Fara Filomarino Garibaldi Giardino Govone  Mambretti
+        Menabrea Orengo  Pallavicino Pecori-Giraldi Pelloux Perruchetti Pianelli Porro
+        Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari  Vaccari Zupelli
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+friulian={
+	color= rgb{ 120 140 200 }
+	religion = catholic
+	traits = {  rhaeto_romansh european_heritage }
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
+        Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico  Ferdinando
+        Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+        Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+        Raffaele Roberto Ruggiero Silvio Tancredi Ugo Umberto Vincenzo Vittorio
+	}
+	female_common_first_names = {		
+		Adelina
+		Aita
+		Allegra
+		Analia
+		Andrina
+		Angiola
+		Angioletta
+		Angiolina
+		Anna Maria
+		Anna Staschia
+		Annina
+		Annotta
+		Antonia
+		Assunta
+		Aurelia
+		Barbla
+		Barla
+		Basilissa
+		Beata
+		Benedicta
+		Bertilla
+		Bietta
+		Blandina
+		Braida
+		Brida
+		Catarina
+		Chatrina
+		Claritta
+		Corina
+		Cornelia
+		Dorina
+		Dumengia
+		Dumina
+		Elisabetta
+		Emma
+		Erica
+		Flura
+		Flurina
+		Frena
+		Geletta
+		Gelgia
+		Greata
+		Gretta
+		Grettina
+		Guida
+		Hilaria
+		Iulscha
+		Jacobea
+		Jacobina
+		Juditta
+		Ladina
+		Lidia
+		Lisabetta
+		Ludivica
+		Luisia
+		Luzia
+		Maclaina
+		Madina
+		Madlaina
+		Madlena
+		Maria
+		Memma
+		Mengia
+		Mia
+		Mina
+		Monica
+		Morena
+		Neisa
+		Nesa
+		Nescha
+		Nesina
+		Nona
+		Ramuna
+		Rita
+		Romea
+		Sabina
+		Salomea
+		Sarina
+		Seraina
+		Sereina
+		Serina
+		Silvana
+		Staschia
+		Stasia
+		Susanna
+		Tonia
+		Ulrica
+		Urschla
+		Ursetta
+		Ursina
+		Varena
+	}	
+	noble_last_names = { 
+		d'Absburgo-Toscana d'Austria-Este Dezza "di Borbone di Parma" "di Robilant" "di Savoia"
+		"di Savoia-Aosta" "Pellion di Persano" "Thaon di Revel" "Pacoret de Saint Bon" "La Màrmora"
+
+	}
+	common_last_names={
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+        Caviglia Ceccherini Cialdini Cusani 
+         Emo Fanti Fara Filomarino Garibaldi Giardino Govone  Mambretti
+        Menabrea Orengo  Pallavicino Pecori-Giraldi Pelloux Perruchetti Pianelli Porro
+        Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari  Vaccari Zupelli
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

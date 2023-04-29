@@ -22,6 +22,24 @@ building_rye_farm = {
 		pmg_medicinal_plants_wheat_farm
 	}
 
+	can_build_government = {
+		owner = {
+			NOT = {
+				has_law = law_type:law_laissez_faire
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_rye_farm_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_rye_farm_pc_disallowed
+		}
+	}
+
 	required_construction = construction_cost_low
 	
 	terrain_manipulator = farmland_rye
@@ -47,6 +65,24 @@ building_wheat_farm = {
 		pmg_ownership_land_building_wheat_farm
 		pmg_clerical_ownership_subsistance
 		pmg_medicinal_plants_wheat_farm
+	}
+
+	can_build_government = {
+		owner = {
+			NOT = {
+				has_law = law_type:law_laissez_faire
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_wheat_farm_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_wheat_farm_pc_disallowed
+		}
 	}
 
 	required_construction = construction_cost_low
@@ -76,6 +112,24 @@ building_rice_farm = {
 		pmg_medicinal_plants_wheat_farm
 	}
 
+	can_build_government = {
+		owner = {
+			NOT = {
+				has_law = law_type:law_laissez_faire
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_rice_farm_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_rice_farm_pc_disallowed
+		}
+	}
+
 	required_construction = construction_cost_low
 	
 	terrain_manipulator = farmland_rice
@@ -103,6 +157,24 @@ building_maize_farm = {
 		pmg_medicinal_plants_wheat_farm
 	}
 
+	can_build_government = {
+		owner = {
+			NOT = {
+				has_law = law_type:law_laissez_faire
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_maize_farm_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_maize_farm_pc_disallowed
+		}
+	}
+	
 	required_construction = construction_cost_low
 	
 	terrain_manipulator = farmland_maize
@@ -130,6 +202,24 @@ building_millet_farm = {
 		pmg_medicinal_plants_wheat_farm
 	}
 
+	can_build_government = {
+		owner = {
+			NOT = {
+				has_law = law_type:law_laissez_faire
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_millet_farm_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_millet_farm_pc_disallowed
+		}
+	}
+
 	required_construction = construction_cost_low
 	
 	terrain_manipulator = farmland_millet
@@ -155,6 +245,24 @@ building_livestock_ranch = {
 		pmg_refrigeration_building_livestock_ranch
 		pmg_ownership_land_building_livestock_ranch
 		pmg_clerical_ownership_subsistance
+	}
+
+	can_build_government = {
+		owner = {
+			NOT = {
+				has_law = law_type:law_laissez_faire
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_livestock_ranch_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_livestock_ranch_pc_disallowed
+		}
 	}
 
 	required_construction = construction_cost_low

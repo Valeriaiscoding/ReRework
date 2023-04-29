@@ -1,0 +1,1580 @@
+﻿bailout_building_vineyard = {
+	scope = country
+
+	saved_scopes = { state }
+	
+    effect = {
+		scope:state = {
+			activate_building = {
+				building = building_vineyard
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_vineyard
+				value = 0
+			}
+		}
+		add_treasury = -75000
+    }
+}
+bailout_building_hydroelectric_power_plant = {
+	scope = country
+
+	saved_scopes = { state }
+	
+    effect = {
+		scope:state = {
+			activate_building = {
+				building = building_hydroelectric_power_plant
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_hydroelectric_power_plant
+				value = 0
+			}
+		}
+		add_treasury = -75000
+    }
+}
+can_start_building_vineyard = {
+	scope = country
+	
+    is_valid = {
+		has_technology_researched = enclosure
+		var:state_to_invest_in = {
+			has_building = building_vineyard
+			free_arable_land > 0
+			owner = {
+				has_technology_researched = enclosure
+			}
+		}
+    }
+}
+
+can_start_building_ia_river_port = {
+	scope = country
+	
+    is_valid = {
+		has_technology_researched = navigation
+		var:state_to_invest_in = {
+			ia_rp_on_river = yes
+			OR = {
+				NOT = {
+					has_building = building_ia_river_port
+				}
+				any_scope_building = {
+					is_building_type = building_ia_river_port
+					level < state.state_river_port_max_level
+				}
+			}
+			owner = {
+				has_technology_researched = navigation
+			}
+		}
+    }
+}
+can_start_building_hydroelectric_power_plant = {
+	scope = country
+	
+    is_valid = {
+		has_technology_researched = electrical_generation
+		
+		var:state_to_invest_in = {
+			on_river=yes
+			OR = {
+				NOT = {
+					has_building = building_hydroelectric_power_plant
+				}
+				any_scope_building = {
+					is_building_type = building_hydroelectric_power_plant
+					level < country.max_hydro_power_level
+					}
+				}
+			}
+			owner = {
+				has_technology_researched = electrical_generation
+			}
+		}
+    }
+	
+start_building_hydroelectric_power_plant = {
+	scope = country
+	
+    effect = {
+		save_scope_as = scope_rootxxx
+		var:state_to_invest_in = {
+			save_scope_as = economic_investment_chosen_state
+			owner = {
+				save_scope_as = target_country
+				trigger_event = { id = rerework_investment.101 }
+			}
+		}
+		remove_investing_state_scope_effect = yes
+    }
+}
+start_building_vineyard = {
+	scope = country
+	
+    effect = {
+		save_scope_as = scope_rootxxx
+		var:state_to_invest_in = {
+			save_scope_as = economic_investment_chosen_state
+			owner = {
+				save_scope_as = target_country
+				trigger_event = { id = rerework_investment.102 }
+			}
+		}
+		remove_investing_state_scope_effect = yes
+    }
+}
+start_building_ia_river_port = {
+	scope = country
+	
+    effect = {
+		save_scope_as = scope_rootxxx
+		var:state_to_invest_in = {
+			save_scope_as = economic_investment_chosen_state
+			owner = {
+				save_scope_as = target_country
+				trigger_event = { id = rerework_investment.103 }
+			}
+		}
+		remove_investing_state_scope_effect = yes
+    }
+}
+has_any_bankrupt_building_vineyard = {
+	scope = country
+
+	is_valid = {
+		any_scope_state = {
+			var:tgr_building_losses_count_building_vineyard >= 10
+		}
+	}
+}
+bailout_all_building_vineyard = {
+	scope = country
+
+	effect = {
+		every_scope_state = {
+			limit = {
+				var:tgr_building_losses_count_building_vineyard >= 10
+			}
+			activate_building = {
+				building = building_vineyard
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_vineyard
+				value = 0
+			}
+			owner = {
+				add_treasury = -75000
+			}
+		}
+    }
+}
+has_any_bankrupt_building_hydroelectric_power_plant = {
+	scope = country
+
+	is_valid = {
+		any_scope_state = {
+			var:tgr_building_losses_count_building_hydroelectric_power_plant >= 10
+		}
+	}
+}
+bailout_all_building_hydroelectric_power_plant = {
+	scope = country
+
+	effect = {
+		every_scope_state = {
+			limit = {
+				var:tgr_building_losses_count_building_hydroelectric_power_plant >= 10
+			}
+			activate_building = {
+				building = building_hydroelectric_power_plant
+			}
+			set_variable = {
+				name = tgr_building_losses_count_building_hydroelectric_power_plant
+				value = 0
+			}
+			owner = {
+				add_treasury = -75000
+			}
+		}
+    }
+}
+bailout_all_businesses_countrywide = {
+	scope = country
+
+	effect = {
+		every_scope_state = {
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_tooling_workshops >= 10
+				}
+				activate_building = {
+					building = building_tooling_workshops
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_tooling_workshops
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_arms_industry >= 10
+				}
+				activate_building = {
+					building = building_arms_industry
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_arms_industry
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_arts_academy >= 10
+				}
+				activate_building = {
+					building = building_arts_academy
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_arts_academy
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_banana_plantation >= 10
+				}
+				activate_building = {
+					building = building_banana_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_banana_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_bank >= 10
+				}
+				activate_building = {
+					building = building_bank
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_bank
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_chemical_plants >= 10
+				}
+				activate_building = {
+					building = building_chemical_plants
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_chemical_plants
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_coal_mine >= 10
+				}
+				activate_building = {
+					building = building_coal_mine
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_coal_mine
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_coffee_plants >= 10
+				}
+				activate_building = {
+					building = building_coffee_plants
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_coffee_plants
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_cotton_plantation >= 10
+				}
+				activate_building = {
+					building = building_cotton_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_cotton_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_dye_plantation >= 10
+				}
+				activate_building = {
+					building = building_dye_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_dye_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_electrics_industry >= 10
+				}
+				activate_building = {
+					building = building_electrics_industry
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_electrics_industry
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_fishing_wharf >= 10
+				}
+				activate_building = {
+					building = building_fishing_wharf
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_fishing_wharf
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_food_industry >= 10
+				}
+				activate_building = {
+					building = building_food_industry
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_food_industry
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_furniture_manufacturies >= 10
+				}
+				activate_building = {
+					building = building_furniture_manufacturies
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_furniture_manufacturies
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_glassworks >= 10
+				}
+				activate_building = {
+					building = building_glassworks
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_glassworks
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_iron_mine >= 10
+				}
+				activate_building = {
+					building = building_iron_mine
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_iron_mine
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_lead_mine >= 10
+				}
+				activate_building = {
+					building = building_lead_mine
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_lead_mine
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_livestock_ranch >= 10
+				}
+				activate_building = {
+					building = building_livestock_ranch
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_livestock_ranch
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_logging_camp >= 10
+				}
+				activate_building = {
+					building = building_logging_camp
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_logging_camp
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_maize_farm >= 10
+				}
+				activate_building = {
+					building = building_maize_farm
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_maize_farm
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_millet_farm >= 10
+				}
+				activate_building = {
+					building = building_millet_farm
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_millet_farm
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_motor_industry >= 10
+				}
+				activate_building = {
+					building = building_motor_industry
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_motor_industry
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_munition_plants >= 10
+				}
+				activate_building = {
+					building = building_munition_plants
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_munition_plants
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_oil_rig >= 10
+				}
+				activate_building = {
+					building = building_oil_rig
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_oil_rig
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_opium_plantation >= 10
+				}
+				activate_building = {
+					building = building_opium_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_opium_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_paper_mills >= 10
+				}
+				activate_building = {
+					building = building_paper_mills
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_paper_mills
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_pbi_publishing_industry >= 10
+				}
+				activate_building = {
+					building = building_pbi_publishing_industry
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_pbi_publishing_industry
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_power_plant >= 10
+				}
+				activate_building = {
+					building = building_power_plant
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_power_plant
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_rice_farm >= 10
+				}
+				activate_building = {
+					building = building_rice_farm
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_rice_farm
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_rubber_plantation >= 10
+				}
+				activate_building = {
+					building = building_rubber_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_rubber_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_rye_farm >= 10
+				}
+				activate_building = {
+					building = building_rye_farm
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_rye_farm
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_shipyards >= 10
+				}
+				activate_building = {
+					building = building_shipyards
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_shipyards
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_silk_plantation >= 10
+				}
+				activate_building = {
+					building = building_silk_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_silk_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_steel_mills >= 10
+				}
+				activate_building = {
+					building = building_steel_mills
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_steel_mills
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_stock_exchange >= 10
+				}
+				activate_building = {
+					building = building_stock_exchange
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_stock_exchange
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_sugar_plantation >= 10
+				}
+				activate_building = {
+					building = building_sugar_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_sugar_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_sulfur_mine >= 10
+				}
+				activate_building = {
+					building = building_sulfur_mine
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_sulfur_mine
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_synthetics_plants >= 10
+				}
+				activate_building = {
+					building = building_synthetics_plants
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_synthetics_plants
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_tea_plantation >= 10
+				}
+				activate_building = {
+					building = building_tea_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_tea_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_textile_mills >= 10
+				}
+				activate_building = {
+					building = building_textile_mills
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_textile_mills
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_tobacco_plantation >= 10
+				}
+				activate_building = {
+					building = building_tobacco_plantation
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_tobacco_plantation
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_war_machine_industry >= 10
+				}
+				activate_building = {
+					building = building_war_machine_industry
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_war_machine_industry
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_whaling_station >= 10
+				}
+				activate_building = {
+					building = building_whaling_station
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_whaling_station
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_wheat_farm >= 10
+				}
+				activate_building = {
+					building = building_wheat_farm
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_wheat_farm
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			############
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_hydroelectric_power_plant >= 10
+				}
+				activate_building = {
+					building = building_hydroelectric_power_plant
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_hydroelectric_power_plant
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+			if = {
+				limit = {
+					var:tgr_building_losses_count_building_vineyard >= 10
+				}
+				activate_building = {
+					building = building_vineyard
+				}
+				set_variable = {
+					name = tgr_building_losses_count_building_vineyard
+					value = 0
+				}
+				owner = {
+					add_treasury = -75000
+				}
+			}
+		}
+	}
+}
+start_building_vineyard_buildings_grid = {
+    scope = country
+
+    saved_scopes = { state_to_invest_in }
+    
+    effect = {
+        save_scope_as = scope_rootxxx
+        scope:state_to_invest_in = {
+            save_scope_as = economic_investment_chosen_state
+            owner = {
+				save_scope_as = target_country
+				trigger_event = { id = rerework_investment.101 }
+			}
+        }
+		remove_investing_state_scope_effect = yes
+    }
+}
+start_building_hydroelectrical_power_plant_buildings_grid = {
+    scope = country
+
+    saved_scopes = { state_to_invest_in }
+    
+    effect = {
+        save_scope_as = scope_rootxxx
+        scope:state_to_invest_in = {
+            save_scope_as = economic_investment_chosen_state
+            owner = {
+				save_scope_as = target_country
+				trigger_event = { id = rerework_investment.102 }
+			}
+        }
+		remove_investing_state_scope_effect = yes
+    }
+}
+start_building_ia_river_port_buildings_grid = {
+    scope = country
+
+    saved_scopes = { state_to_invest_in }
+    
+    effect = {
+        save_scope_as = scope_rootxxx
+        scope:state_to_invest_in = {
+            save_scope_as = economic_investment_chosen_state
+            owner = {
+				save_scope_as = target_country
+				trigger_event = { id = rerework_investment.103 }
+			}
+        }
+		remove_investing_state_scope_effect = yes
+    }
+}
+allowdisallow_building_vineyard_pc_national = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_vineyard_pc_disallowed_national
+				}
+			}
+			set_variable = building_vineyard_pc_disallowed_national
+		}
+		else = {
+			remove_variable = building_vineyard_pc_disallowed_national
+		}
+    }
+}
+allowdisallow_building_hydroelectric_power_plant_pc_national = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_hydroelectric_power_plant_pc_disallowed_national
+				}
+			}
+			set_variable = building_hydroelectric_power_plant_pc_disallowed_national
+		}
+		else = {
+			remove_variable = building_hydroelectric_power_plant_pc_disallowed_national
+		}
+    }
+}
+allowdisallow_building_ia_silver_mine_pc_national = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_ia_silver_mine_pc_disallowed_national
+				}
+			}
+			set_variable = building_ia_silver_mine_pc_disallowed_national
+		}
+		else = {
+			remove_variable = building_ia_silver_mine_pc_disallowed_national
+		}
+    }
+}
+allowdisallow_building_building_ia_river_port_pc_national = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_ia_river_port_pc_disallowed_national
+				}
+			}
+			set_variable = building_ia_river_port_pc_disallowed_national
+		}
+		else = {
+			remove_variable = building_ia_river_port_pc_disallowed_national
+		}
+    }
+}
+reset_all_buildings_pc = {
+	scope = country
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = disabled_all_buildings_state_view
+				}
+			}
+			every_scope_state = {
+				set_variable = building_tooling_workshops_pc_disallowed
+				set_variable = building_arms_industry_pc_disallowed
+				set_variable = building_arts_academy_pc_disallowed
+				set_variable = building_banana_plantation_pc_disallowed
+				set_variable = building_bank_pc_disallowed
+				set_variable = building_chemical_plants_pc_disallowed
+				set_variable = building_coal_mine_pc_disallowed
+				set_variable = building_coffee_plants_pc_disallowed
+				set_variable = building_cotton_plantation_pc_disallowed
+				set_variable = building_dye_plantation_pc_disallowed
+				set_variable = building_electrics_industry_pc_disallowed
+				set_variable = building_fishing_wharf_pc_disallowed
+				set_variable = building_food_industry_pc_disallowed
+				set_variable = building_furniture_manufacturies_pc_disallowed
+				set_variable = building_glassworks_pc_disallowed
+				set_variable = building_iron_mine_pc_disallowed
+				set_variable = building_lead_mine_pc_disallowed
+				set_variable = building_livestock_ranch_pc_disallowed
+				set_variable = building_logging_camp_pc_disallowed
+				set_variable = building_maize_farm_pc_disallowed
+				set_variable = building_millet_farm_pc_disallowed
+				set_variable = building_motor_industry_pc_disallowed
+				set_variable = building_munition_plants_pc_disallowed
+				set_variable = building_oil_rig_pc_disallowed
+				set_variable = building_opium_plantation_pc_disallowed
+				set_variable = building_paper_mills_pc_disallowed
+				set_variable = building_pbi_publishing_industry_pc_disallowed
+				set_variable = building_power_plants_pc_disallowed
+				set_variable = building_rice_farm_pc_disallowed
+				set_variable = building_rubber_plantation_pc_disallowed
+				set_variable = building_rye_farm_pc_disallowed
+				set_variable = building_shipyards_pc_disallowed
+				set_variable = building_silk_plantation_pc_disallowed
+				set_variable = building_steel_mills_pc_disallowed
+				set_variable = building_stock_exchange_pc_disallowed
+				set_variable = building_sugar_plantation_pc_disallowed
+				set_variable = building_sulfur_mine_pc_disallowed
+				set_variable = building_synthetics_plants_pc_disallowed
+				set_variable = building_tea_plantation_pc_disallowed
+				set_variable = building_textile_mills_pc_disallowed
+				set_variable = building_tobacco_plantation_pc_disallowed
+				set_variable = building_war_machine_industry_pc_disallowed
+				set_variable = building_whaling_station_pc_disallowed
+				set_variable = building_wheat_farm_pc_disallowed
+				set_variable = building_opera_house_pc_disallowed
+				set_variable = building_hospital_pc_disallowed
+				set_variable = building_university_pc_disallowed
+				set_variable = building_port_pc_disallowed
+				set_variable = building_school_pc_disallowed
+				set_variable = building_railway_pc_disallowed
+				set_variable = building_gold_mine_pc_disallowed
+				set_variable = disallowedconstructionvarr
+				# ReRework 
+				set_variable = building_ia_river_port_pc_disallowed
+				set_variable = building_ia_silver_mine_pc_disallowed
+				set_variable = building_hydroelectric_power_plant_pc_disallowed
+				set_variable = building_vineyard_pc_disallowed
+			}
+			set_variable = disabled_all_buildings_state_view
+		}
+		else = {
+			every_scope_state = {
+				remove_variable = building_tooling_workshops_pc_disallowed
+				remove_variable = building_arms_industry_pc_disallowed
+				remove_variable = building_arts_academy_pc_disallowed
+				remove_variable = building_banana_plantation_pc_disallowed
+				remove_variable = building_bank_pc_disallowed
+				remove_variable = building_chemical_plants_pc_disallowed
+				remove_variable = building_coal_mine_pc_disallowed
+				remove_variable = building_coffee_plants_pc_disallowed
+				remove_variable = building_cotton_plantation_pc_disallowed
+				remove_variable = building_dye_plantation_pc_disallowed
+				remove_variable = building_electrics_industry_pc_disallowed
+				remove_variable = building_fishing_wharf_pc_disallowed
+				remove_variable = building_food_industry_pc_disallowed
+				remove_variable = building_furniture_manufacturies_pc_disallowed
+				remove_variable = building_glassworks_pc_disallowed
+				remove_variable = building_iron_mine_pc_disallowed
+				remove_variable = building_lead_mine_pc_disallowed
+				remove_variable = building_livestock_ranch_pc_disallowed
+				remove_variable = building_logging_camp_pc_disallowed
+				remove_variable = building_maize_farm_pc_disallowed
+				remove_variable = building_millet_farm_pc_disallowed
+				remove_variable = building_motor_industry_pc_disallowed
+				remove_variable = building_munition_plants_pc_disallowed
+				remove_variable = building_oil_rig_pc_disallowed
+				remove_variable = building_opium_plantation_pc_disallowed
+				remove_variable = building_paper_mills_pc_disallowed
+				remove_variable = building_pbi_publishing_industry_pc_disallowed
+				remove_variable = building_power_plants_pc_disallowed
+				remove_variable = building_rice_farm_pc_disallowed
+				remove_variable = building_rubber_plantation_pc_disallowed
+				remove_variable = building_rye_farm_pc_disallowed
+				remove_variable = building_shipyards_pc_disallowed
+				remove_variable = building_silk_plantation_pc_disallowed
+				remove_variable = building_steel_mills_pc_disallowed
+				remove_variable = building_stock_exchange_pc_disallowed
+				remove_variable = building_sugar_plantation_pc_disallowed
+				remove_variable = building_sulfur_mine_pc_disallowed
+				remove_variable = building_synthetics_plants_pc_disallowed
+				remove_variable = building_tea_plantation_pc_disallowed
+				remove_variable = building_textile_mills_pc_disallowed
+				remove_variable = building_tobacco_plantation_pc_disallowed
+				remove_variable = building_war_machine_industry_pc_disallowed
+				remove_variable = building_whaling_station_pc_disallowed
+				remove_variable = building_wheat_farm_pc_disallowed
+				remove_variable = building_opera_house_pc_disallowed
+				remove_variable = building_hospital_pc_disallowed
+				remove_variable = building_university_pc_disallowed
+				remove_variable = building_port_pc_disallowed
+				remove_variable = building_school_pc_disallowed
+				remove_variable = building_railway_pc_disallowed
+				remove_variable = building_gold_mine_pc_disallowed
+				remove_variable = disallowedconstructionvarr
+				# ReRework 
+				remove_variable = building_ia_river_port_pc_disallowed
+				remove_variable = building_ia_silver_mine_pc_disallowed
+				remove_variable = building_hydroelectric_power_plant_pc_disallowed
+				remove_variable = building_vineyard_pc_disallowed
+			}
+			remove_variable = disabled_all_buildings_state_view
+		}
+	}
+}
+allowdisallow_all_building_vineyard_pc = {
+	scope = country
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = disallowed_building_vineyard_constructionvarr
+				}
+			}
+			every_scope_state = {
+				set_variable = building_vineyard_pc_disallowed
+			}
+			set_variable = disallowed_vineyard_constructionvarr
+		}
+		else = {
+			every_scope_state = {
+				remove_variable = building_vineyard_pc_disallowed
+			}
+			remove_variable = disallowed_building_vineyard_constructionvarr
+		}
+	}
+}
+allowdisallow_all_building_hydroelectric_power_plant_pc = {
+	scope = country
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = disallowed_building_hydroelectric_power_plant_constructionvarr
+				}
+			}
+			every_scope_state = {
+				set_variable = building_hydroelectric_power_plant_pc_disallowed
+			}
+			set_variable = disallowed_building_hydroelectric_power_plant_constructionvarr
+		}
+		else = {
+			every_scope_state = {
+				remove_variable = building_hydroelectric_power_plant_pc_disallowed
+			}
+			remove_variable = disallowed_building_hydroelectric_power_plant_constructionvarr
+		}
+	}
+}
+allowdisallow_all_building_building_ia_river_port_pc = {
+	scope = country
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = disallowed_building_building_ia_river_port_constructionvarr
+				}
+			}
+			every_scope_state = {
+				set_variable = building_building_ia_river_port_pc_disallowed
+			}
+			set_variable = disallowed_building_building_ia_river_port_constructionvarr
+		}
+		else = {
+			every_scope_state = {
+				remove_variable = building_building_ia_river_port_pc_disallowed
+			}
+			remove_variable = disallowed_building_building_ia_river_port_constructionvarr
+		}
+	}
+}
+allowdisallow_all_building_building_ia_silver_mine_pc = {
+	scope = country
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = disallowed_building_building_ia_silver_mine_constructionvarr
+				}
+			}
+			every_scope_state = {
+				set_variable = building_building_ia_silver_mine_pc_disallowed
+			}
+			set_variable = disallowed_building_building_ia_silver_mine_constructionvarr
+		}
+		else = {
+			every_scope_state = {
+				remove_variable = building_building_ia_silver_mine_pc_disallowed
+			}
+			remove_variable = disallowed_building_building_ia_silver_mine_constructionvarr
+		}
+	}
+}
+reset_all_buildings_pc_national = {
+	scope = country
+
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = disallowedconstructionnationallyvarr
+				}
+			}
+			set_variable = building_tooling_workshops_pc_disallowed_national
+			set_variable = building_arms_industry_pc_disallowed_national
+			set_variable = building_arts_academy_pc_disallowed_national
+			set_variable = building_banana_plantation_pc_disallowed_national
+			set_variable = building_bank_pc_disallowed_national
+			set_variable = building_chemical_plants_pc_disallowed_national
+			set_variable = building_coal_mine_pc_disallowed_national
+			set_variable = building_coffee_plants_pc_disallowed_national
+			set_variable = building_cotton_plantation_pc_disallowed_national
+			set_variable = building_dye_plantation_pc_disallowed_national
+			set_variable = building_electrics_industry_pc_disallowed_national
+			set_variable = building_fishing_wharf_pc_disallowed_national
+			set_variable = building_food_industry_pc_disallowed_national
+			set_variable = building_furniture_manufacturies_pc_disallowed_national
+			set_variable = building_glassworks_pc_disallowed_national
+			set_variable = building_iron_mine_pc_disallowed_national
+			set_variable = building_lead_mine_pc_disallowed_national
+			set_variable = building_livestock_ranch_pc_disallowed_national
+			set_variable = building_logging_camp_pc_disallowed_national
+			set_variable = building_maize_farm_pc_disallowed_national
+			set_variable = building_millet_farm_pc_disallowed_national
+			set_variable = building_motor_industry_pc_disallowed_national
+			set_variable = building_munition_plants_pc_disallowed_national
+			set_variable = building_oil_rig_pc_disallowed_national
+			set_variable = building_opium_plantation_pc_disallowed_national
+			set_variable = building_paper_mills_pc_disallowed_national
+			set_variable = building_pbi_publishing_industry_pc_disallowed_national
+			set_variable = building_power_plants_pc_disallowed_national
+			set_variable = building_rice_farm_pc_disallowed_national
+			set_variable = building_rubber_plantation_pc_disallowed_national
+			set_variable = building_rye_farm_pc_disallowed_national
+			set_variable = building_shipyards_pc_disallowed_national
+			set_variable = building_silk_plantation_pc_disallowed_national
+			set_variable = building_steel_mills_pc_disallowed_national
+			set_variable = building_stock_exchange_pc_disallowed_national
+			set_variable = building_sugar_plantation_pc_disallowed_national
+			set_variable = building_sulfur_mine_pc_disallowed_national
+			set_variable = building_synthetics_plants_pc_disallowed_national
+			set_variable = building_tea_plantation_pc_disallowed_national
+			set_variable = building_textile_mills_pc_disallowed_national
+			set_variable = building_tobacco_plantation_pc_disallowed_national
+			set_variable = building_war_machine_industry_pc_disallowed_national
+			set_variable = building_whaling_station_pc_disallowed_national
+			set_variable = building_wheat_farm_pc_disallowed_national
+			set_variable = building_hospital_pc_disallowed_national
+			set_variable = building_university_pc_disallowed_national
+			set_variable = building_port_pc_disallowed_national
+			set_variable = building_school_pc_disallowed_national
+			set_variable = building_railway_pc_disallowed_national
+			set_variable = building_gold_mine_pc_disallowed_national
+			set_variable = building_opera_houses_pc_disallowed_national
+			set_variable = disallowedconstructionnationallyvarr
+			###### ReRework
+			set_variable = building_ia_river_port_pc_disallowed_national
+			set_variable = building_ia_silver_mine_pc_disallowed_national
+			set_variable = building_hydroelectric_power_plant_pc_disallowed_national
+			set_variable = building_vineyard_pc_disallowed_national
+
+		}
+		else = {
+			remove_variable = building_tooling_workshops_pc_disallowed_national
+			remove_variable = building_arms_industry_pc_disallowed_national
+			remove_variable = building_arts_academy_pc_disallowed_national
+			remove_variable = building_banana_plantation_pc_disallowed_national
+			remove_variable = building_bank_pc_disallowed_national
+			remove_variable = building_chemical_plants_pc_disallowed_national
+			remove_variable = building_coal_mine_pc_disallowed_national
+			remove_variable = building_coffee_plants_pc_disallowed_national
+			remove_variable = building_cotton_plantation_pc_disallowed_national
+			remove_variable = building_dye_plantation_pc_disallowed_national
+			remove_variable = building_electrics_industry_pc_disallowed_national
+			remove_variable = building_fishing_wharf_pc_disallowed_national
+			remove_variable = building_food_industry_pc_disallowed_national
+			remove_variable = building_furniture_manufacturies_pc_disallowed_national
+			remove_variable = building_glassworks_pc_disallowed_national
+			remove_variable = building_iron_mine_pc_disallowed_national
+			remove_variable = building_lead_mine_pc_disallowed_national
+			remove_variable = building_livestock_ranch_pc_disallowed_national
+			remove_variable = building_logging_camp_pc_disallowed_national
+			remove_variable = building_maize_farm_pc_disallowed_national
+			remove_variable = building_millet_farm_pc_disallowed_national
+			remove_variable = building_motor_industry_pc_disallowed_national
+			remove_variable = building_munition_plants_pc_disallowed_national
+			remove_variable = building_oil_rig_pc_disallowed_national
+			remove_variable = building_opium_plantation_pc_disallowed_national
+			remove_variable = building_paper_mills_pc_disallowed_national
+			remove_variable = building_pbi_publishing_industry_pc_disallowed_national
+			remove_variable = building_power_plants_pc_disallowed_national
+			remove_variable = building_rice_farm_pc_disallowed_national
+			remove_variable = building_rubber_plantation_pc_disallowed_national
+			remove_variable = building_rye_farm_pc_disallowed_national
+			remove_variable = building_shipyards_pc_disallowed_national
+			remove_variable = building_silk_plantation_pc_disallowed_national
+			remove_variable = building_steel_mills_pc_disallowed_national
+			remove_variable = building_stock_exchange_pc_disallowed_national
+			remove_variable = building_sugar_plantation_pc_disallowed_national
+			remove_variable = building_sulfur_mine_pc_disallowed_national
+			remove_variable = building_synthetics_plants_pc_disallowed_national
+			remove_variable = building_tea_plantation_pc_disallowed_national
+			remove_variable = building_textile_mills_pc_disallowed_national
+			remove_variable = building_tobacco_plantation_pc_disallowed_national
+			remove_variable = building_war_machine_industry_pc_disallowed_national
+			remove_variable = building_whaling_station_pc_disallowed_national
+			remove_variable = building_wheat_farm_pc_disallowed_national
+			remove_variable = building_hospital_pc_disallowed_national
+			remove_variable = building_university_pc_disallowed_national
+			remove_variable = building_port_pc_disallowed_national
+			remove_variable = building_school_pc_disallowed_national
+			remove_variable = building_railway_pc_disallowed_national
+			remove_variable = building_gold_mine_pc_disallowed_national
+			remove_variable = building_opera_houses_pc_disallowed_national
+			remove_variable = disallowedconstructionnationallyvarr
+			###### ReRework
+			remove_variable = building_ia_river_port_pc_disallowed_national
+			remove_variable = building_ia_silver_mine_pc_disallowed_national
+			remove_variable = building_hydroelectric_power_plant_pc_disallowed_national
+			remove_variable = building_vineyard_pc_disallowed_national
+		}
+	}
+}
+
+allowdisallow_all_buildings_pc = {
+    scope = country
+
+    saved_scopes = { state }
+    
+    effect = {
+        scope:state = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = disallowedconstructionvarr
+					}
+				}
+				set_variable = building_tooling_workshops_pc_disallowed
+				set_variable = building_arms_industry_pc_disallowed
+				set_variable = building_arts_academy_pc_disallowed
+				set_variable = building_banana_plantation_pc_disallowed
+				set_variable = building_bank_pc_disallowed
+				set_variable = building_chemical_plants_pc_disallowed
+				set_variable = building_coal_mine_pc_disallowed
+				set_variable = building_coffee_plants_pc_disallowed
+				set_variable = building_cotton_plantation_pc_disallowed
+				set_variable = building_dye_plantation_pc_disallowed
+				set_variable = building_electrics_industry_pc_disallowed
+				set_variable = building_fishing_wharf_pc_disallowed
+				set_variable = building_food_industry_pc_disallowed
+				set_variable = building_furniture_manufacturies_pc_disallowed
+				set_variable = building_glassworks_pc_disallowed
+				set_variable = building_iron_mine_pc_disallowed
+				set_variable = building_lead_mine_pc_disallowed
+				set_variable = building_livestock_ranch_pc_disallowed
+				set_variable = building_logging_camp_pc_disallowed
+				set_variable = building_maize_farm_pc_disallowed
+				set_variable = building_millet_farm_pc_disallowed
+				set_variable = building_motor_industry_pc_disallowed
+				set_variable = building_munition_plants_pc_disallowed
+				set_variable = building_oil_rig_pc_disallowed
+				set_variable = building_opium_plantation_pc_disallowed
+				set_variable = building_paper_mills_pc_disallowed
+				set_variable = building_pbi_publishing_industry_pc_disallowed
+				set_variable = building_power_plants_pc_disallowed
+				set_variable = building_rice_farm_pc_disallowed
+				set_variable = building_rubber_plantation_pc_disallowed
+				set_variable = building_rye_farm_pc_disallowed
+				set_variable = building_shipyards_pc_disallowed
+				set_variable = building_silk_plantation_pc_disallowed
+				set_variable = building_steel_mills_pc_disallowed
+				set_variable = building_stock_exchange_pc_disallowed
+				set_variable = building_sugar_plantation_pc_disallowed
+				set_variable = building_sulfur_mine_pc_disallowed
+				set_variable = building_synthetics_plants_pc_disallowed
+				set_variable = building_tea_plantation_pc_disallowed
+				set_variable = building_textile_mills_pc_disallowed
+				set_variable = building_tobacco_plantation_pc_disallowed
+				set_variable = building_war_machine_industry_pc_disallowed
+				set_variable = building_whaling_station_pc_disallowed
+				set_variable = building_wheat_farm_pc_disallowed
+				set_variable = building_opera_house_pc_disallowed
+				set_variable = building_hospital_pc_disallowed
+				set_variable = building_university_pc_disallowed
+				set_variable = building_port_pc_disallowed
+				set_variable = building_school_pc_disallowed
+				set_variable = building_railway_pc_disallowed
+				set_variable = building_gold_mine_pc_disallowed
+				set_variable = disallowedconstructionvarr
+
+				# ReRework 
+				set_variable = building_hydroelectric_power_plant_pc_disallowed
+				set_variable = building_ia_river_port_pc_disallowed
+				set_variable = building_ia_silver_mine_pc_disallowed
+				set_variable = building_vineyard_pc_disallowed
+			}
+			else = {
+				remove_variable = building_tooling_workshops_pc_disallowed
+				remove_variable = building_arms_industry_pc_disallowed
+				remove_variable = building_arts_academy_pc_disallowed
+				remove_variable = building_banana_plantation_pc_disallowed
+				remove_variable = building_bank_pc_disallowed
+				remove_variable = building_chemical_plants_pc_disallowed
+				remove_variable = building_coal_mine_pc_disallowed
+				remove_variable = building_coffee_plants_pc_disallowed
+				remove_variable = building_cotton_plantation_pc_disallowed
+				remove_variable = building_dye_plantation_pc_disallowed
+				remove_variable = building_electrics_industry_pc_disallowed
+				remove_variable = building_fishing_wharf_pc_disallowed
+				remove_variable = building_food_industry_pc_disallowed
+				remove_variable = building_furniture_manufacturies_pc_disallowed
+				remove_variable = building_glassworks_pc_disallowed
+				remove_variable = building_iron_mine_pc_disallowed
+				remove_variable = building_lead_mine_pc_disallowed
+				remove_variable = building_livestock_ranch_pc_disallowed
+				remove_variable = building_logging_camp_pc_disallowed
+				remove_variable = building_maize_farm_pc_disallowed
+				remove_variable = building_millet_farm_pc_disallowed
+				remove_variable = building_motor_industry_pc_disallowed
+				remove_variable = building_munition_plants_pc_disallowed
+				remove_variable = building_oil_rig_pc_disallowed
+				remove_variable = building_opium_plantation_pc_disallowed
+				remove_variable = building_paper_mills_pc_disallowed
+				remove_variable = building_pbi_publishing_industry_pc_disallowed
+				remove_variable = building_power_plants_pc_disallowed
+				remove_variable = building_rice_farm_pc_disallowed
+				remove_variable = building_rubber_plantation_pc_disallowed
+				remove_variable = building_rye_farm_pc_disallowed
+				remove_variable = building_shipyards_pc_disallowed
+				remove_variable = building_silk_plantation_pc_disallowed
+				remove_variable = building_steel_mills_pc_disallowed
+				remove_variable = building_stock_exchange_pc_disallowed
+				remove_variable = building_sugar_plantation_pc_disallowed
+				remove_variable = building_sulfur_mine_pc_disallowed
+				remove_variable = building_synthetics_plants_pc_disallowed
+				remove_variable = building_tea_plantation_pc_disallowed
+				remove_variable = building_textile_mills_pc_disallowed
+				remove_variable = building_tobacco_plantation_pc_disallowed
+				remove_variable = building_war_machine_industry_pc_disallowed
+				remove_variable = building_whaling_station_pc_disallowed
+				remove_variable = building_wheat_farm_pc_disallowed
+				remove_variable = building_opera_house_pc_disallowed
+				remove_variable = building_hospital_pc_disallowed
+				remove_variable = building_university_pc_disallowed
+				remove_variable = building_port_pc_disallowed
+				remove_variable = building_school_pc_disallowed
+				remove_variable = building_railway_pc_disallowed
+				remove_variable = building_gold_mine_pc_disallowed
+				remove_variable = disallowedconstructionvarr
+				# ReRework 
+				remove_variable = building_hydroelectric_power_plant_pc_disallowed
+				remove_variable = building_ia_river_port_pc_disallowed
+				remove_variable = building_ia_silver_mine_pc_disallowed
+				remove_variable = building_vineyard_pc_disallowed
+			}
+		}
+    }
+}
+allowdisallow_building_vineyard_pc = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_vineyard_pc_disallowed
+				}
+			}
+			set_variable = building_vineyard_pc_disallowed
+		}
+		else = {
+			remove_variable = building_vineyard_pc_disallowed
+		}
+    }
+}
+allowdisallow_building_hydroelectric_power_plant_pc = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_hydroelectric_power_plant_pc_disallowed
+				}
+			}
+			set_variable = building_hydroelectric_power_plant_pc_disallowed
+		}
+		else = {
+			remove_variable = building_hydroelectric_power_plant_pc_disallowed
+		}
+    }
+}
+allowdisallow_building_ia_silver_mine_pc = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_ia_silver_mine_pc_disallowed
+				}
+			}
+			set_variable = building_ia_silver_mine_pc_disallowed
+		}
+		else = {
+			remove_variable = building_ia_silver_mine_pc_disallowed
+		}
+    }
+}
+allowdisallow_building_building_ia_river_port_pc = {
+	scope = country
+    
+    effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = building_ia_river_port_pc_disallowed
+				}
+			}
+			set_variable = building_ia_river_port_pc_disallowed
+		}
+		else = {
+			remove_variable = building_ia_river_port_pc_disallowed
+		}
+    }
+}
