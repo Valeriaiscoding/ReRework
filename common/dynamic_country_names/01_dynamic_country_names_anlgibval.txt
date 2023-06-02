@@ -1,0 +1,218 @@
+﻿VAL = { # Valencia
+	dynamic_country_name = {
+		name = dyn_c_pais_valencia
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_valencia
+		
+		is_main_tag_only = yes
+		priority = 2
+		
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_reino_valencia
+		adjective = dyn_c_reino_valencia_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_valencian_commune
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+
+	dynamic_country_name = {
+		name = dyn_c_orden_montesa
+		adjective = dyn_c_orden_montesa_adj
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_VAL_anarchy
+		
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+ANL = { # Andalusia
+	dynamic_country_name = {
+		name = dyn_c_andalusia
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	
+	dynamic_country_name = { # monarquia o monarqui absoluta
+		name = dyn_c_andalusian_kingdom
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				OR = {
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+					}
+				}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_baetic_state
+		adjective = dyn_c_baetic_state_adj
+		
+		is_main_tag_only = yes
+		priority = 2
+		
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+		
+		
+		
+	 dynamic_country_name = {      #Reino de Sevilla (los "Sevilla" solo funcionan si SOLO tienen Sevilla)
+		name = dyn_c_kingdom_of_seville
+		adjective = dyn_c_kingdom_of_seville_adj
+		priority = 2
+		
+		trigger = {
+			exists = c:ANL
+			c:ANL = {
+				owns_entire_state_region = STATE_ANDALUSIA
+				NOT = { owns_entire_state_region = STATE_GRANADA }
+			}
+			AND = { coa_def_monarchy_flag_trigger = yes }
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_republic_of_seville
+		adjective = dyn_c_republic_of_seville_adj
+		priority = 2
+		
+		trigger = {
+			exists = c:ANL
+			c:ANL = {
+				owns_entire_state_region = STATE_ANDALUSIA
+				NOT = { owns_entire_state_region = STATE_GRANADA }
+			}
+			AND = { coa_def_republic_flag_trigger = yes }
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_commune_of_seville
+		adjective = dyn_c_commune_of_seville_adj
+		priority = 1500
+		
+		trigger = {
+			exists = c:ANL
+			c:ANL = {
+				owns_entire_state_region = STATE_ANDALUSIA
+				NOT = { owns_entire_state_region = STATE_GRANADA }
+			}
+			AND = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_bishopric_of_seville
+		adjective = dyn_c_commune_of_seville_adj
+		priority = 1500
+		
+		trigger = {
+			exists = c:ANL
+			c:ANL = {
+				owns_entire_state_region = STATE_ANDALUSIA
+				NOT = { owns_entire_state_region = STATE_GRANADA }
+			}
+			AND = { coa_def_theocracy_flag_trigger = yes }
+		}
+	}
+
+
+	dynamic_country_name = {
+		name = dyn_c_andalusian_commune
+		
+		is_main_tag_only = yes
+		priority = 2
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+
+	dynamic_country_name = {
+		name = dyn_c_archbishopric_of_andalusia
+		
+		is_main_tag_only = yes
+		priority = 2
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_anl_anarchy
+		
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+}

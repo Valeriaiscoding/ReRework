@@ -307,30 +307,56 @@
 	s:STATE_ANDALUSIA = {
 		region_state:SPA = {
 			create_pop = {
-				culture = spanish
+				culture = andalusian
 				size = 1057592
+			}
+			create_pop = {
+				culture = spanish
+				size = 19036
 			}
 		}
 	}
 	s:STATE_GRANADA = {
 		region_state:SPA = {
 			create_pop = {
-				culture = spanish
+				culture = andalusian
 				size = 1218404
 			}
-		}
-		region_state:GBR = {
 			create_pop = {
 				culture = spanish
-				size = 49024
+				size = 11574
+			}
+		}
+	}
+	s:STATE_GIBRALTAR = {
+		region_state:GBR = {
+			create_pop = {
+				culture = north_italian
+				size = 4924
+			}
+			create_pop = {
+				culture = spanish
+				size = 420
+			}
+			create_pop = {
+				culture = andalusian
+				size = 2765
+			}
+			create_pop = {
+				culture = portuguese
+				size = 3364
 			}
 			create_pop = {
 				culture = british
-				size = 12336
+				size = 2586
 			}
 			create_pop = {
 				culture = sephardic
-				size = 3200
+				size = 2389
+			}
+			create_pop = {
+				culture = catalan
+				size = 690
 			}
 		}
 	}
@@ -340,17 +366,37 @@
 				culture = spanish
 				size = 579992
 			}
+			create_pop = {
+				culture = andalusian
+				size = 24632
+			}
 		}
-	}
+		}
 	s:STATE_VALENCIA = {
 		region_state:SPA = {
 			create_pop = {
+				culture = valencian
+				size = 605671
+			}
+			create_pop = {
 				culture = spanish
-				size = 989604
+				size = 370441
 			}
 			create_pop = {
 				culture = catalan
-				size = 490392
+				size = 30189
+			}
+		}
+	}
+	s:STATE_MURCIA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 470969
+			}
+			create_pop = {
+				culture = valencian
+				size = 6392
 			}
 		}
 	}
@@ -926,4 +972,4 @@
 			}
 		}
 	}
-}
+ }

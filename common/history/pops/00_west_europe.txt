@@ -325,7 +325,17 @@
 		region_state:GBR = {
 			create_pop = {
 				culture = british
-				size = 2657596
+				size = 2057000
+			}
+			create_pop = {
+				culture = british
+				religion = methodist
+				size = 200596
+			}
+			create_pop = {
+				culture = british
+				religion = protestant
+				size = 400000
 			}
 			create_pop = {
 				culture = british
@@ -347,7 +357,17 @@
 		region_state:GBR = {
 			create_pop = {
 				culture = british
-				size = 1986404
+				size = 1606400
+			}
+			create_pop = {
+				culture = british
+				religion = methodist
+				size = 200004
+			}
+			create_pop = {
+				culture = british
+				religion = protestant
+				size = 180004
 			}
 			create_pop = {
 				culture = british
@@ -368,7 +388,12 @@
 			}
 			create_pop = {
 				culture = british
-				size = 194639
+				size = 160039
+			}
+			create_pop = {
+				culture = british
+				religion = presby
+				size = 34600
 			}
 		}
 	}
@@ -376,11 +401,21 @@
 		region_state:GBR = {
 			create_pop = {
 				culture = british
-				size = 1300592
+				size = 1420002
+			}
+			create_pop = {
+				culture = british
+				religion = methodist
+				size = 156590
+			}
+			create_pop = {
+				culture = british
+				religion = protestant
+				size = 450000
 			}
 			create_pop = {
 				culture = irish
-				size = 10000
+				size = 16000
 			}
 			create_pop = {
 				culture = british
@@ -410,7 +445,12 @@
 		region_state:GBR = {
 			create_pop = {
 				culture = scottish
-				size = 672396
+				size = 622390
+			}
+			create_pop = {
+				culture = scottish
+				religion = anglican
+				size = 50006
 			}
 			create_pop = {
 				culture = scottish
@@ -440,7 +480,7 @@
 			}
 			create_pop = {
 				culture = british
-				religion = catholic
+				religion = 	
 				size = 24400
 			}
 			create_pop = {
@@ -483,7 +523,12 @@
 		region_state:GBR = {
 			create_pop = {
 				culture = scottish
-				size = 757200
+				size = 560000
+			}
+			create_pop = {
+				culture = scottish
+				religion = anglican
+				size = 197200
 			}
 			create_pop = {
 				culture = scottish
@@ -496,7 +541,12 @@
 		region_state:GBR = {
 			create_pop = {
 				culture = scottish
-				size = 700000
+				size = 500000
+			}
+			create_pop = {
+				culture = scottish
+				religion = anglican
+				size = 200000
 			}
 			create_pop = {
 				culture = scottish
@@ -642,6 +692,11 @@
 				size = 1506800
 			}
 			create_pop = {
+				culture = french
+				religion = dutch_reformed
+				size = 20393
+			}
+			create_pop = {
 				culture = ashkenazi
 				size = 26000
 			}
@@ -651,13 +706,30 @@
 		region_state:SAR = {
 			create_pop = {
 				culture = north_italian
-				size = 171200
+				size = 131100
+			}
+			create_pop = {
+				culture = occitan
+				size = 41100
 			}
 		}
 		region_state:FRA = {
 			create_pop = {
 				culture = occitan
-				size = 1862200
+				size = 1038678
+			}
+			create_pop = {
+				culture = occitan
+				religion = dutch_reformed
+				size = 12115
+			}
+			create_pop = {
+				culture = french
+				size = 37612
+			}
+			create_pop = {
+				culture = sephardic # Avignonese Jews, closer to Sephardi than Ashkenazi
+				size = 2440
 			}
 		}
 	}
@@ -778,21 +850,30 @@
 	s:STATE_ALSACE_LORRAINE = {
 		region_state:FRA = {
 			create_pop = {
-				culture = french
-				size = 510008
+				culture = alemannic
+				size = 719210
 			}
 			create_pop = {
-				culture = ashkenazi
-				size = 16396
+				culture = alemannic
+				religion = lutheran
+				size = 220778
 			}
 			create_pop = {
 				culture = south_german
-				size = 415992
+				size = 236987
 			}
 			create_pop = {
 				culture = south_german
 				religion = lutheran
-				size = 418004
+				size = 4571
+			}
+			create_pop = {
+				culture = french
+				size = 215063
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 39519
 			}
 		}
 	}
@@ -1175,7 +1256,13 @@
 		region_state:AUS = {
 			create_pop = {
 				culture = south_german
-				size = 559304
+				size = 429286
+			}
+			# Voralberg. Arbitrarily pinning this at 23% of the total population of Voralburg + Tyrol + Salzburg
+			create_pop = {
+				culture = alemannic
+				religion = catholic
+				size = 130018
 			}
 		}
 	}
@@ -1558,18 +1645,22 @@
 		region_state:WUR = {
 			create_pop = {
 				culture = south_german
-				religion = lutheran
-				size = 1115682
+				religion = protestant
+				size = 926509
 			}
 			create_pop = {
 				culture = south_german
 				size = 604068
 			}
+			create_pop = {
+				culture = alemannic
+				size = 189173
+			}
 		}
 		region_state:HOH = {
 			create_pop = {
 				culture = south_german
-				religion = lutheran
+				religion = protestant
 				size = 40310
 			}
 			create_pop = {
@@ -1582,7 +1673,7 @@
 		region_state:BAD = {
 			create_pop = {
 				culture = south_german
-				size = 1048400
+				size = 905246
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -1592,6 +1683,11 @@
 				culture = south_german
 				religion = lutheran
 				size = 251000
+			}
+
+			create_pop = {
+				culture = alemannic
+				size = 143154
 			}
 		}
 	}

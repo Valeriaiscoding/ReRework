@@ -1,0 +1,63 @@
+﻿building_pbi_publishing_industry = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/publishing_house.dds"
+	city_type = city
+	levels_per_mesh = 10
+
+	unlocking_technologies = {
+		mass_communication
+	}
+
+	production_method_groups = {
+		pbi_pmg_base_building_publishing_industry #基礎
+		pbi_pmg_communication #通信
+		pbi_pmg_building_publishing_industry_automation #印刷
+		pbi_pmg_appeal #宣伝
+		pbi_pmg_ownership_capital_building_publishing_industry #所有者
+	}
+	
+	can_build_government = {
+		owner = {
+			NOR = {
+				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
+			}
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				market = {
+					mg:paper = {
+						market_goods_has_goods_shortage = no
+					}
+				}
+			}
+		}
+	}
+	
+	can_build_private = {
+		owner = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				market = {
+					mg:paper = {
+						market_goods_has_goods_shortage = no
+					}
+				}
+			}
+		}
+		owner = {
+			NOT = {
+				has_variable = building_pbi_publishing_industry_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_pbi_publishing_industry_pc_disallowed
+		}
+	}
+	
+	required_construction = construction_cost_medium
+	ai_value = 50
+}

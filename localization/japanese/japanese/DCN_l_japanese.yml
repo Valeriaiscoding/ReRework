@@ -1,0 +1,383 @@
+﻿l_japanese:
+### DEFAULT Country Names #####
+# Monarchies
+#gov_absolute_kingdom:0 "絶対君主制"
+#gov_kingdom:0 "君主制"
+ DCN_dcn_TAG_Kingdom:0 "[COUNTRY.GetDefinition.GetName]王国"
+#gov_feudal_kingdom:0 "封建君主制"
+#gov_constitutional_kingdom:0 "立憲君主制"
+ DCN_dcn_Kingdom_of_TAG:0 "[COUNTRY.GetDefinition.GetName]王国"
+#gov_absolute_empire:0 "絶対帝国制"
+#gov_empire:0 "帝国"
+ DCN_dcn_TAG_Empire:0 "[COUNTRY.GetDefinition.GetName]帝国"
+#gov_feudal_empire:0 "封建帝国制"
+#gov_constitutional_empire:0 "立憲帝国制"
+ DCN_dcn_Empire_of_TAG:0 "[COUNTRY.GetDefinition.GetName]帝国"
+#gov_absolute_principality:0 "絶対公国制"
+#gov_principality:0 "公国"
+ DCN_dcn_TAG_Principality:0 "[COUNTRY.GetDefinition.GetName]公国"
+#gov_constitutional_principality:0 "立憲公国制"
+ DCN_dcn_Principality_of_TAG:0 "[COUNTRY.GetDefinition.GetName]公国"
+#gov_absolute_grand_principality:0 "絶対大公国制"
+#gov_grand_principality:0 "大公国"
+ DCN_dcn_TAG_Grand_Principality:0 "[COUNTRY.GetDefinition.GetName]大公国"
+#gov_constitutional_grand_principality:0 "立憲大公国制"
+ DCN_dcn_Grand_Principality_of_TAG:0 "[COUNTRY.GetDefinition.GetName]大公国"
+#gov_chiefdom:0 "首長国"
+ DCN_dcn_TAG_Indigenous:0 "[COUNTRY.GetDefinition.GetName]先住民"
+#gov_duchy:0 "公国"
+ DCN_dcn_TAG_Duchy:0 "[COUNTRY.GetDefinition.GetName]公国"
+#gov_constitutional_duchy:0 "立憲公国制"
+ DCN_dcn_Duchy_of_TAG:0 "[COUNTRY.GetDefinition.GetName]公国"
+#gov_absolute_duchy:0 "絶対公国制" ### DCN_dcn_TAG_Duchy
+#gov_county:0 "伯国"
+ DCN_dcn_TAG_County:0 "[COUNTRY.GetDefinition.GetName]伯国"
+#gov_constitutional_county:0 "立憲伯国制"
+ DCN_dcn_County_of_TAG:0 "[COUNTRY.GetDefinition.GetName]伯国"
+#gov_absolute_county:0 "絶対伯国制" ### DCN_dcn_TAG_County
+#gov_tsardom:0 "ツァーリ国"
+ DCN_dcn_Tsardom_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・ツァーリ国"
+#gov_sultanate:0 "スルタン国"
+ DCN_dcn_Sultanate_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・スルタン国"
+#gov_khedive:0 "へディーヴ国" ### なぜひらがなの「へ」なのか？
+ DCN_dcn_Khedivate_of_TAG:0 "[COUNTRY.GetDefinition.GetName]副王国"
+#gov_maharaja:0 "カールサー国" ### シク王国の政体
+ DCN_dcn_Khalsa_State_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・カールサー国" ### バニラDCNで「シク王国」に固定されているのでこの国号が現れるか不明
+#gov_vilayet:0 "ヴィライェト"
+ DCN_dcn_Vilayet_of_TAG:0 "[COUNTRY.GetDefinition.GetName]州"
+#gov_shah:0 "シャー国"
+ DCN_dcn_Shahdom_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・シャー国"
+#gov_hawaiian_monarchy:0 "アリイ・キエキエ" ### DCN_dcn_Kingdom_of_TAG
+#gov_hawaiian_monarchy_recognised:0 "アウプニ・モーイー" ### DCN_dcn_TAG_Kingdom
+#gov_prince:0 "大公国" # DCN_dcn_Principality_of_TAG セルビア、ワラキア、モルドバの三公国の政体
+#gov_bey:0 "君侯国"
+ DCN_dcn_Beylik_of_TAG:0 "[COUNTRY.GetDefinition.GetName]君侯国"
+#gov_caliphate:0 "カリフ国"
+ DCN_dcn_TAG_Caliphate:0 "[COUNTRY.GetDefinition.GetName]・カリフ国"
+#gov_sharif:0 "シャリーフ国"
+ DCN_dcn_Sharifate_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・シャリーフ国"
+#gov_kaiser:0 "カイザーライヒ"
+ DCN_dcn_TAG_Kaiserreich:0 "[COUNTRY.GetDefinition.GetName]・カイザーライヒ"
+#gov_decentralized_sultanate:0 "スルタン国" ### DCN_dcn_Sultanate_of_TAG
+#gov_balinese_monarchy:0 "バリ君主制" ### DCN_dcn_TAG_Kingdom
+#gov_sunanate:0 "ススフナン国" ### スナン制では？
+ DCN_dcn_Sunanate_of_TAG:0 "[COUNTRY.GetDefinition.GetName]侯国" ### Surakarta SunanateとSunanate of Surakartaのどちらにするか？
+#gov_circassian_federation:0 "チェルケシア連合"
+ DCN_dcn_TAG_Confederation:0 "[COUNTRY.GetDefinition.GetName]連合"
+#gov_hakimate:0 "ハキーム国"
+ DCN_dcn_Hakimate_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・ハキーム国"
+#gov_sheikhdom:0 "首長国" ### 休戦オマーンは国号が付かない設定にしているので無し
+#gov_kongolese_kingdom:0 "ントティラ" ### DCN_dcn_Kingdom_of_TAG コンゴ王国
+#gov_sikkimese_monarchy:0 "チョゲル君主制" ### DCN_dcn_Kingdom_of_TAG シッキム王国
+#gov_bhutanese_monarchy:0 "龍王国"
+ DCN_dcn_Thunder_Dragon_Empire:0 "雷龍帝国"
+#gov_mughal_empire:0 "ムガル帝国" ### DCN_dcn_TAG_Empire
+#gov_shogunate:0 "幕府"
+ DCN_dcn_TAG_Shogunate:0 "[COUNTRY.GetDefinition.GetName]幕府"
+#gov_hm_gov:0 "女王陛下の政府" ### 大英帝国？
+ DCN_dcn_United_Kingdom_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連合王国"
+#gov_absolute_grand_duchy:0 "絶対大公国制"
+#gov_grand_duchy:0 "大公国"
+#gov_constitutional_grand_duchy:0 "立憲大公国制"
+ DCN_dcn_Grand_Duchy_of_TAG:0 "[COUNTRY.GetDefinition.GetName]大公領"
+#gov_constitutional_monarchy:0 "立憲君主制" ### DCN_dcn_Kingdom_of_TAG フランス王国
+#gov_princely_state_hindu:0 "藩王国"
+ DCN_dcn_Princely_State_of_TAG:0 "[COUNTRY.GetDefinition.GetName]藩王国"
+#gov_princely_state_muslim:0 "藩王国"
+ DCN_dcn_Princely_State_of_Muslim_TAG:0 "[COUNTRY.GetDefinition.GetName]・イスラム藩王国" ### DCN_dcn_Princely_State_of_TAGにしたほうがいいかも
+#gov_khanate:0 "汗国"
+ DCN_dcn_TAG_Khanate:0 "[COUNTRY.GetDefinition.GetName]汗国" ### ・ハン国
+#gov_absolute_principality_muslim:0 "首長国"
+ DCN_dcn_Emirate_of_TAG:0 "[COUNTRY.GetDefinition.GetName]首長国"
+#gov_decentralized_realm:0 "分権型領土" ### マップ上で見たこと無いんだが...
+#gov_zhuz:0 "ジュズ" ### カザフスタンの部族連合体のことだが国号はなくていいと思う
+# Theocracies
+#gov_theocracy:0 "神権制"
+#gov_theocratic_dictatorship:0 "神権的独裁制"
+#gov_theocratic_oligarchy:0 "神権的寡頭制"
+#gov_theocratic_democracy:0 "神権的民主制"
+#gov_catholic_theocracy:0 "カトリック神権制"
+#gov_protestant_theocracy:0 "プロテスタント神権制"
+#gov_oriental_orthodox_theocracy:1 "東方諸教会神権制"
+ DCN_dcn_Theocratic_TAG:0 "[COUNTRY.GetDefinition.GetName]神聖領"
+#gov_sunni_theocracy:0 "イマーム国"
+ DCN_dcn_Imamate_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・イマーム国"
+#gov_papacy:0 "教皇国" ### 教皇領の政体なので無し
+#gov_jewish_theocracy:0 "ラビ国家"
+ DCN_dcn_Rabbinical_State_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・ラビ国" ### ・アブラハム国
+#gov_prince_bishopric:0 "司教国" ### モンテネグロの政体
+ DCN_dcn_Prince_Bishopric_of_TAG:0 "[COUNTRY.GetDefinition.GetName]主教領"
+#gov_zaidi_imamate:0 "ザイド派イマーム国" ### DCN_dcn_Imamate_of_TAG
+#gov_shiite_theocracy:0 "シーア派神権制"
+ DCN_dcn_Islamic_State_of_TAG:0 "[COUNTRY.GetDefinition.GetName]・イスラム国"
+#gov_bhutanese_dual_system_dharma:0 "ブータン二頭政" ### DCN_dcn_Kingdom_of_TAG
+#gov_dalai_lama:0 "宗教王国" ### DCN_dcn_Kingdom_of_TAG
+#gov_heavenly_kingdom_theocracy:0 "太平天国"
+ DCN_dcn_TAG_Heavenly_Kingdom:0 "[COUNTRY.GetDefinition.GetName]天国"
+# Presidential Republics
+#gov_presidential_dictatorship:0 "大統領独裁制" ### 大統領共和制 専制政治 陸軍モデルが農民召集兵か国民民兵
+#gov_presidential_oligarchy:0 "大統領寡頭制" ### 大統領共和制 選挙が無効
+ DCN_dcn_TAG_Republic:0 "[COUNTRY.GetDefinition.GetName]共和国"
+#gov_presidential_democracy:0 "共和国" ### 大統領共和制 選挙が許可
+#gov_banana_republic:0 "バナナ共和国" ### 大統領共和制 選挙が無効 フルーツを輸出している？
+ DCN_dcn_Republic_of_TAG:0 "[COUNTRY.GetDefinition.GetName]共和国"
+#gov_military_dictatorship:0 "軍事独裁制" ### 大統領共和制 専制政治 陸軍モデルが大規模徴兵か職業軍人
+ DCN_dcn_TAG_State:0 "[COUNTRY.GetDefinition.GetName]国"
+#gov_bhutanese_dual_system_temporal:0 "ブータン二頭政" ### DCN_dcn_Kingdom_of_TAG
+#gov_junta:0 "軍事政権" ### 大統領共和制 選挙が無効 陸軍モデルが大規模徴兵か職業軍人
+ DCN_dcn_State_of_TAG:0 "[COUNTRY.GetDefinition.GetName]国"
+#gov_warlord_state:0 "軍閥国家"
+ DCN_dcn_TAG_Clique:0 "[COUNTRY.GetDefinition.GetName]軍閥"
+#gov_crown_colony:0 "直轄植民地" ### イギリス植民地の政体
+ DCN_dcn_TAG_Colony:0 "[COUNTRY.GetDefinition.GetName]植民地"
+#gov_fascist_state:0 "ファシズム国家"
+ DCN_dcn_National_State_of_TAG:0 "[COUNTRY.GetDefinition.GetName]民族国"
+#gov_chartered_company:0 "勅許会社" ### ハドソン湾会社や東インド会社が重複するため無し
+#gov_colonial_administration:0 "植民地統治" ### オランダ領東インドとスペイン植民地の政体
+#オランダ領東インドを東インドに改名し、この政府でオランダ領TAGとか付けようと思ったが、スペインがどう動くか分からないので無し
+# Parliamentary Republics
+#gov_parliamentary_dictatorship:0 "選挙独裁制" ### DCN_dcn_TAG_Republic 議会共和制 専制政治 
+#gov_parliamentary_oligarchy:0 "寡頭制" ### DCN_dcn_TAG_Republic 議会共和制 選挙が無効
+#gov_parliamentary_democracy:0 "民主共和制" ### DCN_dcn_TAG_Republic 議会共和制 選挙が許可
+#gov_free_city:0 "自由都市" ### 議会共和制 選挙が許可 自国がいくつかのドイツ諸邦がステート数1以下 史実で国号として扱われていないが日本語のみ実装
+ DCN_dcn_Free_City_of_TAG:0 "自由都市[COUNTRY.GetDefinition.GetName]"
+#Council Republics
+#gov_council_dictatorship:1 "前衛国家"
+ DCN_dcn_Peoples_Republic_of_TAG:0 "[COUNTRY.GetDefinition.GetName]人民共和国" ### 評議会共和制 専制政治
+#gov_council_republic:0 "評議会共和制"
+ DCN_dcn_Socialist_Republic_of_TAG:0 "[COUNTRY.GetDefinition.GetName]社会主義共和国" ### 評議会共和制 選挙が許可
+#gov_anarchist_commune:0 "無政府主義共同体"
+ DCN_dcn_TAG_Commune:0 "[COUNTRY.GetDefinition.GetName]共同体" ### 評議会共和制 無政府
+#gov_soviet_dictatorship:0 "ソビエト独裁制"
+ DCN_dcn_TAG_Soviet_Socialist_Republic:0 "[COUNTRY.GetDefinition.GetName]・ソヴィエト社会主義共和国" ### 評議会共和制 専制政治 首都がロシアかドニエプル
+#gov_soviet_republic:0 "ソビエト共和国"
+ DCN_dcn_TAG_Soviet_Federal_Republic:0 "[COUNTRY.GetDefinition.GetName]・ソヴィエト連邦共和国" ### 評議会共和制 選挙が許可 首都がロシアかドニエプル
+#gov_papal_commune:0 "教皇主義コミューン"
+ DCN_dcn_TAG_Papist_Commune:0 "[COUNTRY.GetDefinition.GetName]神聖共同体" ### 評議会共和制 国教 ローマである
+##### Decisions #####
+ DCN_decision:0 "DEFAULT Country Names"
+ DCN_decision_desc:0 ""
+ DCN_event.1.t:0 "DEFAULT Country Names"
+ DCN_event.1.d:0 ""
+ DCN_event.1.f:0 ""
+ DCN_event.1.o1:0 "Historical Country Names" ### event.2
+ DCN_event.1.o2:0 "Special Country Names" ### event.3
+ DCN_event.1.o3:0 "Changeable Country Names" ### event.4
+ DCN_event.1.o4:0 "もどる"
+ DCN_event.2.t:0 "Historical Country Names"
+ DCN_event.2.d:0 "DEFAULT Country Namesで自動変更した後に、1836年時点で史実と大幅に異なる国号を修正"
+ DCN_event.2.f:0 "ドイツ・カイザーライヒ→ドイツ帝国\nオーストリア・カイザーライヒ→オーストリア帝国\nロシア・ツァーリ国→ロシア帝国\nスイス共和国→スイス連邦\nイオニア諸島共和国→イオニア諸島合衆国\nメキシコ国→メキシコ共和国\n中央アメリカ共和国→中央アメリカ連邦共和国\nハイチ国→ハイチ共和国\nペルー国→ペルー共和国\nボリビア国→ボリビア共和国\nチリ国→チリ共和国\nアルゼンチン共和国→アルゼンチン連合\nパラグアイ国→パラグアイ共和国\nウルグアイ共和国→ウルグアイ東方共和国\nピラティニ共和国→ピラティニ共和国"
+ DCN_event.2.o1:0 "全ての国家で有効"
+ DCN_event.2.o2:0 "全ての国家で無効"
+ DCN_event.2.o3:0 "自分の国家で有効"
+ DCN_event.2.o4:0 "自分の国家で無効"
+ DCN_event.2.o5:0 "もどる"
+ DCN_HCN_dcn_TAG_Renpou_Confederation:0 "[COUNTRY.GetDefinition.GetName]連邦"
+ DCN_HCN_dcn_United_States_of_TAG:0 "[COUNTRY.GetDefinition.GetName]合衆国"
+ DCN_HCN_dcn_Oriental_Republic_of_TAG:0 "[COUNTRY.GetDefinition.GetName]東方共和国"
+ DCN_event.3.t:0 "Special Country Names"
+ DCN_event.3.d:0 "DEFAULT Country NamesとHistorical Country Namesで変更した後に、特殊な国号に自動変更"
+ DCN_event.3.f:0 "変更する国号は、Changeable Country Names→Special Country Namesからトリガーを確認できます。"
+ DCN_event.3.o1:0 "全ての国家で有効"
+ DCN_event.3.o2:0 "全ての国家で無効"
+ DCN_event.3.o3:0 "自分の国家で有効"
+ DCN_event.3.o4:0 "自分の国家で無効"
+ DCN_event.3.o5:0 "もどる"
+ DCN_event.4.t:0 "Changeable Country Names"
+ DCN_event.4.d:0 "自国の国号を手動変更"
+ DCN_event.4.f:0 "変更した国号は、もう一度このイベントを開くことで戻すことができます。"
+ DCN_event.4.o1:0 "DCN：君主制" ### event.5
+ DCN_event.4.o2:0 "DCN：共和制" ### event.6
+ DCN_event.4.o3:0 "DCN：神権制" ### event.7
+ DCN_event.4.o4:0 "DCN：評議会共和制" ### event.8
+ DCN_event.4.o5:0 "Special Country Names（汎用）" ### event.9
+ DCN_event.4.o6:0 "Special Country Names（特殊）" ### event.10
+ DCN_event.4.o7:0 "もどる"
+ DCN_event.5.t:0 "Changeable Country Names"
+ DCN_event.5.d:0 "DCN：君主制"
+ DCN_event.5.f:0 "一部の国号は除外されています"
+ DCN_event.5.o1:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]王国" ### [ROOT.GetCountry.GetDefinition.GetAdjective]でもOK
+ DCN_event.5.o2:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]王国"
+ DCN_event.5.o3:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]帝国"
+ DCN_event.5.o4:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]帝国"
+ DCN_event.5.o5:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・ツァーリ国"
+ DCN_event.5.o6:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・スルタン国"
+ DCN_event.5.o7:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・カリフ国"
+ DCN_event.5.o8:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・カイザーライヒ"
+ DCN_event.5.o9:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合"
+ DCN_event.5.o10:0 "雷龍帝国"
+ DCN_event.5.o11:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]幕府"
+ DCN_event.5.o12:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]汗国"
+ DCN_event.5.o13:0 "もどる"
+ DCN_event.6.t:0 "Changeable Country Names"
+ DCN_event.6.d:0 "DCN：共和制"
+ DCN_event.6.f:0 "一部の国号は除外されています"
+ DCN_event.6.o1:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]共和国"
+ DCN_event.6.o2:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]共和国"
+ DCN_event.6.o3:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]国"
+ DCN_event.6.o4:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]国"
+ DCN_event.6.o5:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]民族国"
+ DCN_event.6.o6:0 "もどる"
+ DCN_event.7.t:0 "Changeable Country Names"
+ DCN_event.7.d:0 "DCN：神権制"
+ DCN_event.7.f:0 "一部の国号は除外されています"
+ DCN_event.7.o1:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]神聖領"
+ DCN_event.7.o2:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・ラビ国"
+ DCN_event.7.o3:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・イスラム国"
+ DCN_event.7.o4:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]天国"
+ DCN_event.7.o5:0 "もどる"
+ DCN_event.8.t:0 "Changeable Country Names"
+ DCN_event.8.d:0 "DCN：評議会共和制"
+ DCN_event.8.f:0 ""
+ DCN_event.8.o1:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]人民共和国"
+ DCN_event.8.o2:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]社会主義共和国"
+ DCN_event.8.o3:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]共同体"
+ DCN_event.8.o4:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・ソヴィエト社会主義共和国"
+ DCN_event.8.o5:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・ソヴィエト連邦共和国"
+ DCN_event.8.o6:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]神聖共同体"
+ DCN_event.8.o7:0 "もどる"
+ DCN_event.9.t:0 "Changeable Country Names"
+ DCN_event.9.d:0 "Special Country Names（汎用）"
+ DCN_event.9.f:0 ""
+ DCN_event.9.o1:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]皇国\n君主制、国家ランク１位"
+ DCN_SCN_dcn_Imperial_TAG:0 "[COUNTRY.GetDefinition.GetName]皇国"
+ DCN_event.9.o2:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合帝国\n帝国、国家ランク大国以上、市民権が文化的排斥"
+ DCN_SCN_dcn_United_Empire_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連合帝国"
+ DCN_event.9.o3:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連邦帝国\n帝国、国家ランク大国以上、市民権が多文化主義"
+ DCN_SCN_dcn_Federal_Empire_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連邦帝国"
+ DCN_event.9.o4:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合王国\n王国、国家ランク大国以上、市民権が文化的排斥"
+ DCN_SCN_dcn_United_Kingdom_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連合王国" ### 政府の女王陛下の政府と被っているの。
+ DCN_event.9.o5:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連邦王国\n王国、国家ランク大国以上、市民権が多文化主義"
+ DCN_SCN_dcn_Federal_Kingdom_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連邦王国"
+ DCN_event.9.o6:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連邦\n共和制、国家ランク１位"
+ DCN_SCN_dcn_TAG_Federation:0 "[COUNTRY.GetDefinition.GetName]連邦"
+ DCN_event.9.o7:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合共和国\n大統領共和制、国家ランク大国以上、市民権が文化的排斥"
+ DCN_SCN_dcn_United_Republic_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連合共和国"
+ DCN_event.9.o8:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連邦共和国\n大統領共和制、国家ランク大国以上、市民権が多文化主義"
+ DCN_SCN_dcn_Federal_Republic_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連邦共和国"
+ DCN_event.9.o9:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合\n議会共和制、国家ランク大国以上、市民権が文化的排斥"
+ DCN_SCN_dcn_Union_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連合"
+ DCN_event.9.o10:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連邦\n議会共和制、国家ランク大国以上、市民権が多文化主義"
+ DCN_SCN_dcn_Commonwealth_of_TAG:0 "[COUNTRY.GetDefinition.GetName]連邦"
+ DCN_event.9.o11:0 "神聖[ROOT.GetCountry.GetAdjectiveNoFormatting]帝国\n神権制、国家ランク列強"
+ DCN_SCN_dcn_Holy_TAG_Empire:0 "神聖[COUNTRY.GetDefinition.GetName]帝国"
+ DCN_event.9.o12:0 "騎士団領[ROOT.GetCountry.GetAdjectiveNoFormatting]\n神権制、国家ランク大国"
+ DCN_SCN_dcn_Order_State_of_TAG:0 "騎士団領[COUNTRY.GetDefinition.GetName]" ### Order-State of TAG
+ DCN_event.9.o13:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]騎士団\n神権制、国家ランク非主要国"
+ DCN_SCN_dcn_TAG_Order:0 "[COUNTRY.GetDefinition.GetName]騎士団"
+ DCN_event.9.o14:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]社会主義連邦共和国\n前衛国家か評議会共和制、国家ランク大国以上、市民権が文化的排斥"
+ DCN_SCN_dcn_Socialist_Federal_Republic_of_TAG:0 "[COUNTRY.GetDefinition.GetName]社会主義連邦共和国"
+ DCN_event.9.o15:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]社会主義共和国連邦\n前衛国家か評議会共和制、国家ランク大国以上、市民権が多文化主義"
+ DCN_SCN_dcn_Union_of_TAG_Socialist_Republics:0 "[COUNTRY.GetDefinition.GetName]社会主義共和国連邦"
+ DCN_event.9.o16:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]評議会共和国\n前衛国家、国家ランク非主要国"
+ DCN_SCN_dcn_TAG_Council_Republic:0 "[COUNTRY.GetDefinition.GetName]評議会共和国"
+ DCN_event.9.o17:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]民主共和国\n評議会共和制、国家ランク非主要国"
+ DCN_SCN_dcn_TAG_Democratic_Republic:0 "[COUNTRY.GetDefinition.GetName]民主共和国"
+ DCN_event.9.o18:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]革命共和国\n前衛国家、国家ランク小国"
+ DCN_SCN_dcn_TAG_Revolutionary_Republic:0 "[COUNTRY.GetDefinition.GetName]革命共和国"
+ DCN_event.9.o19:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]労働者共和国\n評議会共和制、国家ランク小国" ### TAG Workers' Republic
+ DCN_SCN_dcn_TAG_Workers_Republic:0 "[COUNTRY.GetDefinition.GetName]労働者共和国"
+ DCN_event.9.o20:0 "もどる"
+ DCN_event.10.t:0 "Changeable Country Names"
+ DCN_event.10.d:0 "Special Country Names（特殊）"
+ DCN_event.10.f:0 ""
+ DCN_event.10.o1:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]合藩国\n日本、幕府、権力の配分が土地所有者投票か富裕者投票"
+ DCN_SCN_dcn_United_States_of_Japan:0 "[COUNTRY.GetDefinition.GetName]合藩国"
+ DCN_event.10.o2:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]聯邦\n日本、幕府、権力の配分が制限選挙か普通選挙"
+ DCN_SCN_dcn_Commonwealth_of_Japan:0 "[COUNTRY.GetDefinition.GetName]聯邦"
+ DCN_event.10.o3:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]合衆国\nアメリカ、共和国、市民権が国民至上か人種隔離か文化的排斥"
+ DCN_SCN_dcn_United_States_of_America:0 "[COUNTRY.GetDefinition.GetName]合衆国"
+ DCN_event.10.o4:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]合州国\nアメリカ、民主共和制、市民権が国民至上か人種隔離か文化的排斥"
+ DCN_SCN_dcn_United_Commonwealth_of_America:0 "[COUNTRY.GetDefinition.GetName]合州国"
+ DCN_event.10.o5:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合国\nアメリカ、共和国、市民権が民族国家"
+ DCN_SCN_dcn_Confederate_States_of_America:0 "[COUNTRY.GetDefinition.GetName]連合国"
+ DCN_event.10.o6:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合州\nアメリカ、民主共和制、市民権が民族国家"
+ DCN_SCN_dcn_Confederate_Commonwealth_of_America:0 "[COUNTRY.GetDefinition.GetName]連合州"
+ DCN_event.10.o7:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連邦国\nアメリカ、共和国、市民権が多文化主義"
+ DCN_SCN_dcn_Federal_States_of_America:0 "[COUNTRY.GetDefinition.GetName]連邦国"
+ DCN_event.10.o8:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連邦州\nアメリカ、民主共和制、市民権が多文化主義"
+ DCN_SCN_dcn_Federal_Commonwealth_of_America:0 "[COUNTRY.GetDefinition.GetName]連邦州"
+ DCN_event.10.o9:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]民国\n中華か朝鮮、共和国"
+ DCN_SCN_dcn_Republic_of_China:0 "[COUNTRY.GetDefinition.GetName]民国"
+ DCN_event.10.o10:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]合省国\n中華、民主共和制"
+ DCN_SCN_dcn_United_Province_of_China:0 "[COUNTRY.GetDefinition.GetName]合省国"
+ DCN_event.10.o11:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・レーテ\nドイツ、前衛国家"
+ DCN_SCN_dcn_Deutsches_Rate:0 "[COUNTRY.GetDefinition.GetName]・レーテ"
+ DCN_event.10.o12:0 "レーテ社会主義共和国\nドイツ、評議会共和制"
+ DCN_SCN_dcn_Rate_Socialist_Republic:0 "レーテ社会主義共和国"
+ DCN_event.10.o13:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・コミューン\nフランス、前衛国家"
+ DCN_SCN_dcn_France_Commune:0 "[COUNTRY.GetDefinition.GetName]・コミューン"
+ DCN_event.10.o14:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]共同共和国\nフランス、評議会共和制"
+ DCN_SCN_dcn_France_Common_Republic:0 "[COUNTRY.GetDefinition.GetName]共同共和国"
+ DCN_event.10.o15:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]連合\nイギリス、前衛国家"
+ DCN_SCN_dcn_Union_of_Britain:0 "[COUNTRY.GetDefinition.GetName]連合" ### DCN_SCN_dcn_Union_of_TAGと被っているがKaiserreich版共産イギリス用に実装
+ DCN_event.10.o16:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]諸島連邦\nイギリス、評議会共和制"
+ DCN_SCN_dcn_Commonwealth_of_the_British_Isles:0 "[COUNTRY.GetDefinition.GetName]諸島連邦"
+ DCN_event.10.o17:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]民主主義人民共和国\nアメリカ、前衛国家"
+ DCN_SCN_dcn_Democratic_Peoples_Republic_of_America:0 "[COUNTRY.GetDefinition.GetName]民主主義人民共和国"
+ DCN_event.10.o18:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]社会主義諸州連邦\nアメリカ、評議会共和制"
+ DCN_SCN_dcn_United_Socialist_States_of_America:0 "[COUNTRY.GetDefinition.GetName]社会主義諸州連邦"
+ DCN_event.10.o19:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]人共和国\n日本、前衛国家"
+ DCN_SCN_dcn_Japanese_Republic:0 "[COUNTRY.GetDefinition.GetName]人共和国"
+ DCN_event.10.o20:0 "ソビエト幕府\n日本、評議会共和制"
+ DCN_SCN_dcn_Soviet_Shogunate:0 "ソビエト幕府"
+ DCN_event.10.o21:0 "もどる"
+##### VANILLA Country Names #####
+ CHI:0 "中華" ### 中国 なかぐに
+ CHI_ADJ:0 "中華" ### 中国
+ DEN:0 "デンマーク" ### 登 はぁ？
+ DEN_ADJ:0 "デンマーク"
+ HAU:0 "ダマガラム" ### 厚 ころすぞ
+ HAU_ADJ:0 "ダマガラム"
+ KZH:0 "小ジュズ"
+ KZH_ADJ:0 "小ジュズ" ### 小 小て
+ LUO:0 "ルオ" ### 羅 どこだよ
+ LUO_ADJ:0 "ルオ"
+ OZH:0 "中ジュズ"
+ OZH_ADJ:0 "中ジュズ" ### 中 中て
+ PAN:0 "パンジャーブ" ### 潘 朝はパン！
+ PAN_ADJ:0 "パンジャーブ"
+ SHI:0 "シムラー" ### 石 つよそう
+ SHI_ADJ:0 "シムラー"
+ SIC:0 "両シチリア"
+ SIC_ADJ:0 "両シチリア" ### シチリア 島だけじゃねえし、英語版に差し障るんだよ
+ TPG:0 "太平" ### 太平天国 太平社会主義共和国連邦ってな
+ TPG_ADJ:0 "太平"
+ UBD:0 "バルト" ### バルト連合州 前は連合公国じゃなかった？
+ UBD_ADJ:0 "バルト"
+ UZH:0 "大ジュズ"
+ UZH_ADJ:0 "大ジュズ" ### 大 大て
+ GAO:0 "ガオ" ### 高 がお～
+ GAO_ADJ:0 "ガオ"
+ YUN:0 "雲南" ### 尹 ゆん
+ YUN_ADJ:0 "雲南"
+ NCA:0 "山岳" ### 山岳共和国 山岳社会主義共和国連邦ってな
+ NCA_ADJ:0 "北コーカサス"
+ DON:0 "ドン＝クバン" ### ドン・コサック軍 旧カイザーライヒかな？
+ DON_ADJ:0 "ドン・コサック"
+ EOT:0 "トランスヨルダン" ### トランスヨルダン首長国 首長国（帝国）
+ EOT_ADJ:0 "トランスヨルダン"
+ dyn_c_upper_canada:0 "アッパー・カナダ州" ### アッパー・カナダ
+ dyn_c_upper_canada_adj:0 "アッパー・カナダ"
+ dyn_c_lower_canada:0 "ローワー・カナダ州" ### ローワー・カナダ
+ dyn_c_lower_canada_adj:0 "ローワー・カナダ"
+ dyn_c_new_granada:0 "ヌエバ・グラナダ共和国"
+ dyn_c_new_granada_adj:0 "ヌエバ・グラナダ共和国"
+ dyn_c_soviet_union:0 "ソビエト社会主義共和国連邦" ### ソビエト連邦
+ dyn_c_soviet_union_adj:0 "ソビエト"
+ dyn_c_great_qing:0 "大清帝国" ### 大清 なんでオスマン帝国は付いててこっちは付いてないん？
+ dyn_c_great_qing_adj:0 "清"
+#dyn_c_van_diemans_land:0 "ヴァン・ディーメンズ・ランド"
+#dyn_c_van_diemans_land_adj:0 "ヴァン・ディーメンズ・ランド"
+ dyn_c_hanover:0 "ハノーファー王国" ### ハノーファー
+ dyn_c_hanover_adj:0 "ハノーファー"
+#dyn_c_austria-hungary:0 "オーストリア＝ハンガリー"
+#dyn_c_austria-hungary_adj:0 "オーストリア＝ハンガリー"
+ dyn_c_korea_joseon:0 "李氏朝鮮" ### 朝鮮 元国名と同じじゃねえか
+ dyn_c_korea_joseon_adj:0 "朝鮮"
+ dyn_c_kazakh_alash_autonomy:0 "アラシュ自治国" ### アラシ自治国
+ dyn_c_kazakh_alash_autonomy_adj:0 "カザフ"
+ dyn_c_japan_shogunate:0 "徳川幕府" ### 日本幕府
+ dyn_c_japan_shogunate_adj:0 "日本"
+ dyn_c_spanish_philippines:0 "スペイン領東インド" ### スペイン領フィリピン
+ dyn_c_spanish_philippines_adj:0 "スペイン領東インド" ### スペイン領フィリピン

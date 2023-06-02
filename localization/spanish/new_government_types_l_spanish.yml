@@ -1,0 +1,19 @@
+﻿l_spanish:
+
+# Monarchies
+ gov_kingdom_anl:0 "Monarquía andaluza"
+ gov_kingdom_anl_desc:2 "El [concept_government_type|l] de Andalucía; nacido de la unión de los Reinos de Sevilla, Córdoba, Jaén y Granada. En él, el [Concept('concept_ruler','$RULER_TITLE_KING$')|l] (o [Concept('concept_ruler','$RULER_TITLE_QUEEN$')|l]) ostenta la jefatura de Estado. \n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_absolute_anl:0 "Corona andaluza"
+ gov_absolute_anl_desc:2 "En este [concept_government_type|l], el [Concept('concept_ruler','$RULER_TITLE_KING$')|l] o [Concept('concept_ruler','$RULER_TITLE_QUEEN$')|l] de Sevilla, Córdoba, Jaén y Granada gobierna con total poder los Reinos Andaluces.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ gov_val_catholic_theocracy:0 "Orden monástica"
+ gov_val_catholic_theocracy_desc:2 "En este [concept_government_type|l], la administración está en manos de una orden religiosa. El [Concept('concept_ruler','$RULER_GRAN_MESTRE$')] asume el papel de [concept_head_of_state|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ RULER_GRAN_MESTRE:0 "Gran Maestre"
+ 
+ gov_gib_absolute_county:0 "Principado absoluto"
+ gov_gib_absolute_county_desc:2 "En este [concept_government_type|l], el poder recae por completo sobre un [Concept('concept_ruler','$RULER_TITLE_PRINCE$')|l] o una [Concept('concept_ruler','$RULER_TITLE_PRINCESS$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_gib_county:0 "Principado"
+ gov_gib_county_desc:2 "En este [concept_government_type|l], el poder recae principalmente sobre un [Concept('concept_ruler','$RULER_TITLE_PRINCE$')|l] o una [Concept('concept_ruler','$RULER_TITLE_PRINCESS$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_gib_constitutional_county:0 "Principado constitucional"
+ gov_gib_constitutional_county_desc:2 "En este [concept_government_type|l], un [Concept('concept_ruler','$RULER_TITLE_PRINCE$')|l] o una [Concept('concept_ruler','$RULER_TITLE_PRINCESS$')|l] ejerce de [concept_head_of_state|l], pero las [Concept('concept_law','leyes')] vienen dictaminadas por la constitución y el [Concept('concept_votes','sufragio')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 

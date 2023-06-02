@@ -1,0 +1,11 @@
+ has_generic_name = {
+	NOR = {
+		AND = { exists = c:ABU this = c:ABU } AND = { exists = c:AGJ this = c:AGJ } AND = { exists = c:BIC this = c:BIC }
+		AND = { exists = c:CSA this = c:CSA } AND = { exists = c:DAK this = c:DAK } AND = { exists = c:DFT this = c:DFT }
+		AND = { exists = c:FSA this = c:FSA } AND = { exists = c:FTJ this = c:FTJ } AND = { exists = c:FTR this = c:FTR }
+		AND = { exists = c:IRC this = c:IRC } AND = { exists = c:NGF this = c:NGF } AND = { exists = c:SEQ this = c:SEQ }
+		AND = { exists = c:SGF this = c:SGF } AND = { exists = c:HBC this = c:HBC } AND = { exists = c:UNT this = c:UNT }
+		AND = { exists = c:AFS this = c:AFS } AND = { exists = c:CTF this = c:CTF } AND = { exists = c:PRA this = c:PRA }
+		AND = { exists = c:USA this = c:USA } AND = { exists = c:FRA this = c:FRA }
+	}
+ }

@@ -270,25 +270,3 @@ pm_arc_welded_buildings = {
 	}
 }
 
-pm_no_securities_construction = {
-	texture = "gfx/interface/icons/production_method_icons/no_central_policy.dds"
-}
-
-pm_with_securities_construction = {
-	texture = "gfx/interface/icons/production_method_icons/with_securities.dds"
-
-	unlocking_technologies = {
-		banking
-	}
-
-	building_modifiers = {
-		workforce_scaled = {
-			building_input_securities_add = 0.3 
-			building_output_banknotes_add = 0.3
-		}
-		unscaled = {
-			building_input_mult = -0.1
-			state_construction_mult = 0.15
-		}
-	}
-}

@@ -1,0 +1,288 @@
+ANL = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color1
+	}
+	
+	#textured_emblem = {
+	#	texture = "te_crown.dds"
+	#	instance = { scale = { 0.4 0.4 } position = { 0.3 0.31 } }
+	#}		
+    #textured_emblem = {
+	#	texture = "te_coa_anl.dds"
+	#	instance = { scale = { 0.45 0.45 } position = { 0.3 0.56 } }
+	#}	
+}
+ANL_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "green"
+
+	textured_emblem = {
+		texture = "te_coa_absolute_anl.dds"
+		instance = { position = { 0.5 0.5 }scale = { 0.9 0.9 } } 
+	}
+}
+SEV_absolute_monarchy = {
+	pattern = "pattern_border_seville.dds"
+	color1 = "seville_red"
+	color2 = "white"
+	color3 = seville_red
+
+	textured_emblem = {
+		texture = "te_kingdom_seville.dds"
+		instance = { position = { 0.5 0.5 }scale = { 1 1 } } 
+	}
+}
+SEV_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "seville_red"
+	color2 = "seville_red"
+
+	colored_emblem = {
+		texture = "ce_nodo_1.dds"
+		instance = { position = { 0.5 0.47 }scale = { 1.5 1.5 } } 
+		color1 = "yellow"
+	}
+}
+ANL_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color1
+	}
+	textured_emblem = {
+		texture = "te_coa_andalusian_republic.dds"
+		instance = { position = { 0.5 0.48 }scale = { 0.55 0.55 } } 
+	}
+}
+SEV_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "seville_red"
+	color2 = "yellow"
+	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_seville.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+ANL_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "black"
+
+	
+	colored_emblem = {
+		texture = "ce_coa_baetic_state.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 1 } position = { 0.5 0.5 } }
+	}			
+}
+SEV_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "seville_red"
+	color2 = "white"
+	color3 = "black"
+
+	
+	colored_emblem = {
+		texture = "ce_coa_baetic_state.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 1 } position = { 0.5 0.5 } }
+	}		
+	
+}
+ANL_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color1
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color3
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.52 } }
+	}
+}
+SEV_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "seville_red"
+	color2 = "yellow"
+	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_seville.dds"
+		color1 = color2
+		color2 = color3
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_frame_hammer_sickle.dds"
+		color1 = "yellow"
+		color2 = "seville_red"
+		instance = { position = { 0.5 0.46 } scale = { 1 1 } } 
+	}
+}
+ANL_anarchy = {
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "red"
+	color2 = "black"
+	color3 = "white"
+	
+	textured_emblem = {
+		texture = "te_coa_anl_anarchy.dds"
+		instance = { position = { 0.5 0.5 }scale = { 0.65 0.65 } } 
+	}
+	
+	colored_emblem = {
+		texture = "ce_cnt_cca.dds"
+		color1 = color3
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}	
+}
+SEV_anarchy = {
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "seville_red"
+	color2 = "black"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_anarchist_nodo.dds"
+		color1 = "white"
+		color2 = "yellow"
+	}
+}
+ANL_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "green"
+
+	colored_emblem = {
+		texture = "ce_per_cross.dds"
+		color1 = "green"
+		color2 = "green"
+	}
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "white"
+		color2 = "white"
+	}	
+	textured_emblem = {
+		texture = "te_coa_arzobispado_de_andalucia.dds"
+		instance = { position = { 0.5 0.45 }scale = { 0.45 0.65 } } 
+	}		
+}
+SEV_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "seville_red"
+	color2 = "seville_red"
+
+	colored_emblem = {
+		texture = "ce_per_cross.dds"
+		color1 = "seville_red"
+		color2 = "seville_red"
+	}
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "white"
+		color2 = "white"
+	}	
+	textured_emblem = {
+		texture = "te_coa_arzobispado_de_sevilla_1.dds"
+		instance = { position = { 0.5 0.45 }scale = { 0.45 0.65 } } 
+	}		
+}
+
+ANL_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_ovalo_anl.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+		color1 = white
+	}
+	
+	textured_emblem = {
+		texture = "te_subject_anl.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+	}
+}
+
+ANL_subject_GBR = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_ovalo_anl.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+		color1 = white
+	}
+	
+	textured_emblem = {
+		texture = "te_subject_anl.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+	}
+}
+
+ANL_subject_SPA = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_ovalo_anl.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+		color1 = white
+	}
+	
+	textured_emblem = {
+		texture = "te_subject_anl.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+	}
+}
+
+#ANL_dictatorship = { ANTIGUA DICTATORSHIP
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "black"
+
+	
+	colored_emblem = {
+		texture = "ce_anl_star.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}		
+	colored_emblem = {
+		texture = "ce_anl_star.dds"
+		color1 = "black"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}		
+	
+}

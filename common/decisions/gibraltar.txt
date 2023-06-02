@@ -1,0 +1,21 @@
+﻿gibraltarian_identity_decision = {
+	is_shown = {
+		exists = c:GIB
+		this = c:GIB
+		NOT = { has_variable = gibraltarian_identity_decision_taken }
+	}
+
+	possible = {
+		exists = c:GIB
+		is_subject = no
+		is_at_war = no
+	}
+	
+	when_taken = {
+		set_variable = {
+			name = gibraltarian_identity_decision_taken
+			value = yes
+		}
+		trigger_event = { id = gibraltar.1 popup = yes }
+	}
+}

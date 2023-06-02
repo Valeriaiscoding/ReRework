@@ -1,0 +1,41 @@
+﻿state_trait_guadalquivir = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.1
+		state_infrastructure_mult = 0.1
+	}
+}
+
+state_trait_riotinto = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_sulfur_mine_throughput_mult = 0.15
+	}
+}
+
+state_trait_linares = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_mult = 0.1
+	}
+}
+
+state_trait_albufera = {
+    icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_rice_farm_throughput_mult = 0.15
+	}
+}
+
+state_trait_gibraltar = {
+	icon = "gfx/interface/icons/state_trait_icons/gibraltar_strait.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 3
+		state_building_naval_base_max_level_add = 15	
+	}
+}

@@ -30,3 +30,61 @@ muslim = {
 	#heritage = yes
 }
 
+# New Faith Traits
+
+new_world_native = {
+	
+}
+
+mesomerican = {
+	heritage = yes
+}
+
+austronesian = {
+	heritage = yes
+}
+
+african_faith = {
+}
+
+west_african_faith = {
+	heritage = yes
+}
+
+vedic = {
+	heritage = yes
+}
+
+shamanist = {
+}
+
+philosophical = {
+}
+
+steppe = {
+	heritage = yes
+}
+
+circumpolar = {
+	heritage = yes
+}
+
+taoic = {
+	heritage = yes
+}
+
+australasian = {
+}
+
+central_african_faith = {
+	heritage = yes
+}
+
+east_african_faith = {
+	heritage = yes
+}
+
+east_pagan = {
+	heritage = yes
+}
+

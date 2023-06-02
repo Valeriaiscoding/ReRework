@@ -117,17 +117,7 @@ pmg_ownership_building_subsistence_bureaucratic = {
 		pm_land_redistribution_building_subsistence_bureaucratic
 		pm_privately_owned_building_subsistence_bureaucratic 
 		pm_worker_cooperative_building_subsistence_bureaucratic 
-		pm_anarchist_cooperative_building_subsistence_bureaucratic
 	}
-}
-
-pmg_subsistance_vineyards = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
-	production_methods = {
-		pm_subsistance_vineyards
-		pm_no_subsistance_vineyards
-	}
-	ai_selection = most_profitable
 }
 
 pmg_subsistance_opium = {
@@ -148,15 +138,6 @@ pmg_subsistance_opium_intensive = {
 	ai_selection = most_profitable
 }
 
-pmg_subsistance_rare_pelts = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_luxury_pelts_focus
-		pm_normal_pelts_focus
-	}
-	ai_selection = most_profitable
-}
-
 pmg_subsistance_rum = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
@@ -170,7 +151,6 @@ pmg_base_building_subsistence_east_asia = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_east_asia
-		manoralism_building_subsistence_east_asia
 		tennant_farming_building_subsistence_east_asia
 	}
 }
@@ -179,7 +159,6 @@ pmg_base_building_subsistence_south_east_asia = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_south_east_asia
-		manoralism_building_subsistence_south_east_asia
 		tennant_farming_building_subsistence_south_east_asia
 	}
 }
@@ -188,7 +167,6 @@ pmg_base_building_subsistence_india = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_india
-		manoralism_building_subsistence_india
 		tennant_farming_building_subsistence_india
 	}
 }
@@ -197,7 +175,6 @@ pmg_base_building_subsistence_central_asia = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_pastoral_nomadism_building_subsistence_central_asia
-		pm_ranching_building_subsistence_central_asia 
 		pm_tennant_ranching_building_subsistence_central_asia
 	}
 }
@@ -206,7 +183,6 @@ pmg_base_building_subsistence_middle_eastern = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_middle_eastern
-		manoralism_building_subsistence_middle_eastern
 		tennant_farming_building_subsistence_middle_eastern
 	}
 }
@@ -215,7 +191,6 @@ pmg_base_building_subsistence_mediterranean = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_subsistence_mediterranean
-		manoralism_building_subsistence_mediterranean
 		tennant_farming_building_subsistence_mediterranean
 	}
 }
@@ -224,7 +199,6 @@ pmg_base_building_subsistence_tropical = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_tropical
-		manoralism_building_subsistence_tropical
 		tennant_farming_building_subsistence_tropical
 	}
 }
@@ -233,7 +207,6 @@ pmg_base_building_subsistence_arctic = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_arctic
-		manoralism_building_subsistence_arctic
 		tennant_farming_building_subsistence_arctic
 	}
 }
@@ -242,7 +215,6 @@ pmg_base_building_subsistence_dry = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_dry
-		manoralism_building_subsistence_dry
 		tennant_farming_building_subsistence_dry
 	}
 }
@@ -251,7 +223,6 @@ pmg_base_building_subsistence_european = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_european
-		manoralism_building_subsistence_european
 		tennant_farming_building_subsistence_european
 	}
 }
@@ -260,7 +231,6 @@ pmg_base_building_subsistence_russia = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_russia
-		manoralism_building_subsistence_russia
 		tennant_farming_building_subsistence_russia
 	}
 }
@@ -269,7 +239,6 @@ pmg_base_building_subsistence_china = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_china
-		manoralism_building_subsistence_china
 		tennant_farming_building_subsistence_china
 	}
 }
@@ -288,9 +257,14 @@ pmg_base_building_subsistence_south_east_asia_intensive = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		shifting_cultivation_building_subsistence_south_east_asia_intensive 
-		manoralism_building_subsistence_south_east_asia_intensive
 		tennant_farming_building_subsistence_south_east_asia_intensive
 	}
 }
 
-
+pmg_base_building_subsistence_north_america  = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		shifting_cultivation_subsistence_north_america 
+		tennant_farming_subsistence_north_america
+	}
+}

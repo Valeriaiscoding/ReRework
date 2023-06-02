@@ -1,0 +1,174 @@
+﻿andalusian={
+	color= hsv{ 0.34 0.48 0.71 }
+	religion = catholic
+	traits = { iberian_culture_group hispanophone european_heritage }
+	male_common_first_names={
+		Juan_Luis
+		Enrique
+		Jesus
+		Luciano
+		Alvar
+		Juan_Ramon
+		Adrian
+		Gustavo_Adolfo
+		Blas
+		Agustin
+		Alberto
+		Alejandro
+		Alfonso
+		Antonio
+		Antonio_Maria
+		Baldomero
+		Benito
+		Bernardino
+		Bernardo
+		Carlos
+		Celestino
+		Claudio
+		Cristobal
+		Diego
+		Eduardo
+		Emilio
+		Federico
+		Felipe
+		Fernando
+		Francisco
+		Francisco_Javier
+		Gabriel
+		Gaspar
+		Genaro
+		Gonzalo
+		Ignacio
+		Isidro
+		Jacobo
+		Jaime
+		Joaquin
+		Jose
+		Jose_Antonio
+		Jose_Manuel
+		Jose_Maria
+		Juan
+		Juan_Bautista
+		Julio
+		Jorge
+		Lorenzo
+		Luis
+		Manuel
+		Marcelo
+		Mariano
+		Mateo
+		Miguel
+		Nicolas_2
+		Pablo
+		Pascual
+		Pedro
+		Rafael_2
+		Raimundo
+		Ramon
+		Ricardo
+		Santiago
+		Sebastian
+		Valeriano
+		Vicente
+		Alvaro
+	}
+	female_common_first_names = {
+		Maria_del_Carmen
+		Maria_Carmen
+		Maria_del_Pilar
+		Maria_Rosario
+		Pilar
+		Rosario
+		Remedios
+		Maria_de_los_Reyes
+		Macarena
+		Esperanza
+		Triana
+		Valme
+		Angustias
+		Victoria
+		Mar
+		Cinta
+		Laura
+		Antonia
+		Concepcion
+		Dolores
+		Emilia
+		Enriqueta
+		Francisca
+		Joaquina
+		Manuela
+		Maria_2
+		Rosa
+		Teresa
+	}	
+	noble_last_names = {
+		Aguilar_Priego AlcalA_ Andazola Arcos Ariza Moguer Ayamonte AzO_car Benavides Cabra Celis Cabrera del_Carpio del_Cenete Cervantes de_los_ChacO_n
+		de_la_Chica Comares Cuadros Federighi de_los_Flores de_los_MaN_as GO_mez_de_AndU_jar FernA_ndez_de_CO_rdoba Medina_Sidonia de_los_Moya Illescas SA_nchez_de_Valenzuela
+		Olivares Cruz_Stuart Quesada SanlU_car_la_Mayor Sessa Torres Villanueva_del_RI_o Villanueva Villavicencio Niebla
+		Osuna Estepa Gibraleon Baza del_Infantado Analvargonzalez Nazari
+	}
+	common_last_names={
+		Acuna Aguirre Alcala-Zamora Alonso  Alvarez  
+		Barradas BotI_n Bonilla Blanco
+		Cano Cervera Corsi Cuadrada
+		Barragan Lorca Guisado Reposo Quintero Prieto
+		Ramos Reyes Jimenez Becquer Zambrano Infante Seneca Cabeza_de_Vaca
+		Nerva Sagasta Falla Ruiz Marchena Cruz Banderas Rascon Moreno Perianes
+		Sundheim Galvez
+		Diaz_2 DomI_nguez
+		Espartero Escoda EguiazA_bal
+		Fernandez Franco Fajardo
+		Garcia Gonzalez Gil Galatas
+		Heredia Hernandez Herrera Hevia
+		Linares Lopez LarraN_aga
+		Maroto Martinez-Campos Maura Menendez Miaja Mina Mola Munoz Marquez MelE_ndez Moreira Mandiola
+		Narvaez
+		Ortega Otero Onsalo OrdO_N_ez Olaso Ozores
+		Pavia Perez PajarO_n Pagaza Pattullo Pena
+		Queipo_de_Llano Quintana Quirante
+		Rodriguez Rojo Ruiz Reparez Ruete
+		Sanjurjo Serrano Silvestre Samitier Serrano Saprissa
+		Topete Tuduri Terradas Torralba
+		Valdes Varela Villapol Villar Vela Villota Vilalta Vallana VA_zquez
+		Zamora
+	}
+	male_regal_first_names={
+		Sebastian_1
+		Jose_Sebastian
+		Servando
+		Cecilio
+		Bernabe
+		Bernardo
+		Fernando
+		Isidro
+		
+		
+	}
+	female_regal_first_names={
+		Carmen 
+		MarI_a_Teresa
+		Maria_del_Carmen
+		Maria_del_Pilar
+		Maria_de_los_Reyes
+		Victoria
+		Ana
+		Justa
+		Maria_de_los_Angeles
+		
+		
+	}
+	regal_last_names = {
+		de_Medina_Sidonia
+		de_Olivares
+		de_Sevilla_y_Granada
+		Tellez_Giron
+		Osorio
+		Cordoba
+		Borbon
+	}	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

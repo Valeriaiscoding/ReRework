@@ -77,8 +77,8 @@ pm_government_run_building_food_industry = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ 			building_government_shares_add  = 4
 		}
 	}
 }
@@ -162,8 +162,8 @@ pm_government_run_building_textile_mills = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -244,8 +244,8 @@ pm_government_run_building_furniture_manufacturies = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -430,8 +430,8 @@ pm_government_run_building_tooling_workshops = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -513,8 +513,8 @@ pm_government_run_building_paper_mills = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -551,8 +551,8 @@ pm_government_run_industry = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -632,8 +632,8 @@ pm_government_run_building_shipyards = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -716,8 +716,8 @@ pm_government_run_building_arms_industry = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -972,8 +972,8 @@ pm_government_run = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -1640,8 +1640,8 @@ pm_government_run_building_coal_mine = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -1664,8 +1664,8 @@ pm_government_run_building_iron_mine = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -1688,8 +1688,8 @@ pm_government_run_building_lead_mine = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -1712,8 +1712,8 @@ pm_government_run_building_sulfur_mine = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -1736,8 +1736,8 @@ pm_government_run_building_gold_mine = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -2030,8 +2030,8 @@ pm_government_run_building_logging_camp = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -2052,8 +2052,8 @@ pm_government_run_building_fishing_wharf = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -2074,8 +2074,8 @@ pm_government_run_building_whaling_station = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -2160,8 +2160,8 @@ pm_government_run_building_railway = {
 			building_employment_bureaucrats_add = 400
 		}
 		unscaled = {
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }
@@ -2224,8 +2224,8 @@ pm_trade_center_government_run = {
 			building_employment_bureaucrats_add = 150 
 		}
 		unscaled = {		
-			building_bureaucrats_shares_add = 2
- building_government_shares_add  = 8
+			building_bureaucrats_shares_add = 1
+ building_government_shares_add  = 4
 		}
 	}
 }

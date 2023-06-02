@@ -1,0 +1,4 @@
+colors = {	
+	montesa_white = rgb {	0.98	0.96	0.94	}		
+	seville_red = rgb {	95 0 27 }
+} 

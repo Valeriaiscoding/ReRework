@@ -1,6 +1,6 @@
 ﻿midwestern={
 	color= rgb{ 62 77 100 }
-	religion = lutheran
+	religion = protestant
 	traits = { german_speaking anglophone european_heritage }
 	male_common_first_names={
 		Adelbert

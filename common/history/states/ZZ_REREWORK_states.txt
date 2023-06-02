@@ -43,10 +43,10 @@ STATES = {
 		}
 		add_homeland = south_german
 	}
-	s:STATE_COLOGNE = {
+	s:STATE_RUHR= {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x2101E0 x5101A0 xD08021 x418021 }
+			owned_provinces = { "x0180E0" "x2101E0" "x5101A0" xD08021 }
 		}
 		
 		add_homeland = north_german
@@ -84,7 +84,7 @@ STATES = {
 	s:STATE_WESTPHALIA = {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x0180E0 x1DD141 xA08061 x218061  x910095 x165E05 x99BAEE }
+			owned_provinces = { x0180E0 x1DD141 xA08061 x218061  x910095 x165E05 x99BAEE x418021 }
 		}
 		create_state = {
 			country = c:LIP
@@ -1321,6 +1321,7 @@ STATES = {
 			owned_provinces = { x134657 x25DD5C x626878 x71158B x721583 x8FDF80 x99E5CE xA03040 xB03776 xCAC27C xD06040 xDFEF80 xE0BED4 }
 		}
 		add_homeland = catalan
+		add_homeland = valencian
 		add_homeland = spanish
 	}
 	s:STATE_TOLEDO = {
@@ -1352,16 +1353,20 @@ STATES = {
 			country = c:SPA
 			owned_provinces = { x94BF9E x099199 xA0B040 x27E575 x2030C0 xEE7F54 x20B040 x0010A0 x0362A1 x203DB5 xF50658 xEB9217 x07E82B }
 		}
-		
+		add_homeland = spanish
+		add_homeland = andalusian
+	}
+	s:STATE_GIBRALTAR = {
 		create_state = {
 			country = c:GBR
 			owned_provinces = { xBC6ED3 }
 			state_type = unincorporated
-		}		
-		
+		}	
 		add_homeland = spanish
+		add_homeland = andalusian
+		add_claim = c:SPA
+		add_claim = c:ANL	
 	}
-
 	s:STATE_EQUATORIA = {		
 		create_state = {
 			country = c:DNK

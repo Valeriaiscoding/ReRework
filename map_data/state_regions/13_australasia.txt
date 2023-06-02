@@ -11,7 +11,7 @@
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_banana_plantations" "bg_vineyard" }
     capped_resources = {
-        g_coal_mining = 100
+        bg_coal_mining = 100
         bg_iron_mining = 50
         bg_logging = 18
         bg_whaling = 8

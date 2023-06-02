@@ -1,0 +1,285 @@
+﻿### Try to keep tags in alphabetical order if it's not too far gone, please.
+
+################################################################
+## DEFAULT COUNTRY NAMES EXAMPLE CAN BE USED WITH ANY COUNTRY ##
+################################################################
+
+# Uncomment when need a dynamic_country_name for any country
+DEFAULT = {
+##### DCN：君主制 #####
+	dynamic_country_name = { name = DCN_dcn_Tsardom_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_tsardom
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Sultanate_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_government_type = gov_sultanate
+					has_government_type = gov_decentralized_sultanate
+				}
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Khedivate_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { 
+			exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_khedive
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Khalsa_State_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_maharaja
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Vilayet_of_TAG #
+		priority = 3
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_vilayet
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Beylik_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_bey
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_TAG_Caliphate #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_caliphate
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Sharifate_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_sharif
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Sunanate_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_sunanate
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Hakimate_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_hakimate
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Thunder_Dragon_Empire #
+		priority = 15
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_bhutanese_monarchy
+				has_generic_name = yes
+			}
+		}
+	}
+	
+	dynamic_country_name = { name = DCN_dcn_Grand_Duchy_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_government_type = gov_absolute_grand_duchy
+					has_government_type = gov_grand_duchy
+					has_government_type = gov_constitutional_grand_duchy
+				}
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Princely_State_of_TAG #
+		priority = 20
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_government_type = gov_princely_state_hindu
+					has_government_type = gov_princely_state_muslim
+				}
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_TAG_Khanate #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_khanate
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Emirate_of_TAG #
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_absolute_principality_muslim
+				has_generic_name = yes
+			}
+		}
+	}
+##### DCN：神権制 #####
+	dynamic_country_name = { name = DCN_dcn_Imamate_of_TAG
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_government_type = gov_sunni_theocracy
+					has_government_type = gov_zaidi_imamate
+				}
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Prince_Bishopric_of_TAG
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_prince_bishopric
+				has_generic_name = yes
+			}
+		}
+	}
+##### DCN：評議会共和制 #####
+	dynamic_country_name = { name = DCN_dcn_Peoples_Republic_of_TAG
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {# 自国が前衛主義でSCNモードの場合、大国、非主要国、小国のいずれかである場合、人民共和国
+				has_government_type = gov_council_dictatorship
+				has_generic_name = yes
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_Socialist_Republic_of_TAG
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				
+				has_government_type = gov_council_republic
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_TAG_Commune
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_anarchist_commune
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_TAG_Soviet_Socialist_Republic
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_soviet_dictatorship
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_TAG_Soviet_Federal_Republic
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_soviet_republic
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_dcn_TAG_Papist_Commune
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_papal_commune
+				has_generic_name = yes
+			}
+		}
+	}
+##### Historical Country Names #####
+	dynamic_country_name = { name = DCN_HCN_dcn_United_States_of_TAG
+		priority = 0
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				exists = c:ION this = c:ION has_government_type = gov_presidential_democracy
+				has_generic_name = yes
+			}
+		}
+	}
+	dynamic_country_name = { name = DCN_HCN_dcn_Oriental_Republic_of_TAG
+		priority = 20
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_variable = DCN_Historical_Country_Names_var
+				exists = c:URU this = c:URU 
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+					#has_law = law_type:law_council_republic
+				}
+				has_generic_name = yes
+			}
+		}
+	}
+} 
+}

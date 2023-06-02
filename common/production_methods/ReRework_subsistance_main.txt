@@ -1,118 +1,7 @@
-﻿	# India
-
-shifting_cultivation_building_subsistence_india = {
-	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
-	
-	unlocking_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { #800
-			building_output_grain_add = 16
-			building_output_fabric_add = 3.2
-			building_output_wood_add = 3.2
-			building_output_fish_add = 3.2
-			building_output_hardwood_add = 0.8
-			building_output_fruit_add = 4.2
-			building_output_services_add = 1.6
-			building_output_dye_add = 0.8
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 24000
-		}
-		
-		unscaled = {
-			building_throughput_mult = -0.1
-		}
-	}
-	state_modifier = {
-		unscaled = {
-			building_group_bg_agriculture_throughput_mult = 0.1
-			building_group_bg_plantations_throughput_mult = 0.1
-			building_group_bg_ranching_throughput_mult = 0.1
-		}
-	}
-}
-
-manoralism_building_subsistence_india = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming"
-	
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { #960
-			building_output_grain_add = 16
-			building_output_fabric_add = 4
-			building_output_wood_add = 3.2
-			building_output_fish_add = 4
-			building_output_hardwood_add = 0.8
-			building_output_fruit_add = 5
-			building_output_services_add = 2.4
-			building_output_dye_add = 1.6
-			building_output_silk_add = 1.6
-		}
-
-		unscaled = {
-			building_throughput_mult = -0.15
-		}
-	}
-	state_modifier = {
-		unscaled = {
-			building_group_bg_agriculture_throughput_mult = 0.15
-			building_group_bg_plantations_throughput_mult = 0.15
-			building_group_bg_ranching_throughput_mult = 0.15
-		}
-	}
-}
-
-tennant_farming_building_subsistence_india = {
-	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming"
-	
-	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
-	}
-
-	building_modifiers = {
-		workforce_scaled = { #960 
-			building_output_grain_add = 16
-			building_output_fabric_add = 4
-			building_output_wood_add = 3.2
-			building_output_fish_add = 4
-			building_output_hardwood_add = 0.8
-			building_output_fruit_add = 5
-			building_output_services_add = 2.4
-			building_output_dye_add = 1.6
-			building_output_silk_add = 1.6
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 16000
-		}
-		
-		unscaled = {
-			building_throughput_mult = -0.2
-		}
-	}
-	state_modifier = {
-		unscaled = {
-			building_group_bg_agriculture_throughput_mult = 0.2
-			building_group_bg_plantations_throughput_mult = 0.2
-			building_group_bg_ranching_throughput_mult = 0.2
-		}
-	}
-}
+﻿
 
 # Cental asian
-pm_pastoral_nomadism_building_subsistence_central_asia = {
+pm_pastoral_nomadism_building_subsistence_central_asia = { 
 	texture = "gfx/interface/icons/production_method_icons/unused/subsistence_pastures.dds"
 	
 	unlocking_laws = {
@@ -121,48 +10,24 @@ pm_pastoral_nomadism_building_subsistence_central_asia = {
 
 	building_modifiers = {
 		workforce_scaled = { 
-			building_output_grain_add = 2 
-			building_output_fabric_add = 1.2
-			building_output_wood_add = 0.4
-			building_output_meat_add = 3
-			building_output_opium_add = 0.2
+			building_output_grain_add = 2.4
+			building_output_fabric_add = 1.1 
+			building_output_wood_add = 0.6 
+			building_output_meat_add = 2.9
+			building_output_fish_add = 0.1
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 6000
+			
 		}
 		
 		unscaled = {
-		}
-	}
-}
-
-pm_ranching_building_subsistence_central_asia = {
-	texture = "gfx/interface/icons/production_method_icons/intensive_grazing.dds"
-	
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 2 
-			building_output_fabric_add = 2 
-			building_output_wood_add = 0.4
-			building_output_fruit_add = 0.2
-			building_output_meat_add = 3
-			building_output_opium_add = 0.4
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
-		}
-		
-		unscaled = {
+			building_employment_farmers_mult = -0.25
+			building_employment_peasants_mult = -0.25
+			building_employment_clergymen_mult = -0.25
+			building_employment_aristocrats_mult = -0.25
+			building_aristocrats_shares_add = -1
+			building_capitalists_shares_add = -1
 		}
 	}
 }
@@ -171,25 +36,29 @@ pm_tennant_ranching_building_subsistence_central_asia = {
 	texture = "gfx/interface/icons/production_method_icons/simple_ranching.dds"
 	
 	disallowing_laws = {
-		law_serfdom
-		law_traditionalism
-	}
+		law_traditionalism	}
+	
 
 	building_modifiers = {
 		workforce_scaled = { 
-			building_output_grain_add = 2 
-			building_output_fabric_add = 2 
-			building_output_wood_add = 0.4
-			building_output_fruit_add = 0.2
-			building_output_meat_add = 3
-			building_output_opium_add = 0.4
+			building_output_grain_add = 2.4
+			building_output_fabric_add = 1.4
+			building_output_wood_add = 0.6
+			building_output_fish_add = 0.2
+			building_output_meat_add = 3.5
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4000
+
 		}
 		
 		unscaled = {
+			building_employment_farmers_mult = -0.25
+			building_employment_peasants_mult = -0.25
+			building_employment_clergymen_mult = -0.25
+			building_employment_aristocrats_mult = -0.25
+			building_aristocrats_shares_add = -1
+			building_capitalists_shares_add = -1
 		}
 	}
 }
@@ -204,18 +73,17 @@ shifting_cultivation_building_subsistence_middle_eastern = {
 	}
 
 	building_modifiers = {
-		workforce_scaled = { #100
-			building_output_grain_add = 2 
-			building_output_fabric_add = 2 
+		workforce_scaled = { 
+			building_output_grain_add = 2.6
+			building_output_fabric_add = 1.3
 			building_output_wood_add = 0.6
 			building_output_fish_add = 0.8
-			building_output_meat_add = 1.1
-			building_output_fruit_add = 0.9
+			building_output_meat_add = 0.9
+			building_output_fruit_add = 0.8
 			building_output_tobacco_add = 0.2
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 6000
 		}
 		
 			unscaled = {
@@ -223,49 +91,17 @@ shifting_cultivation_building_subsistence_middle_eastern = {
 	}
 }
 
-manoralism_building_subsistence_middle_eastern = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { #120
-			building_output_grain_add = 2 
-			building_output_fabric_add = 2 
-			building_output_wood_add = 0.6
-			building_output_fish_add = 0.8
-			building_output_meat_add = 1.1
-			building_output_fruit_add = 1.3
-			building_output_tobacco_add = 0.4
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
-		}
-		
-			unscaled = {
-		}
-	}
-}
 
 tennant_farming_building_subsistence_middle_eastern = {
 	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
 	
 	disallowing_laws = {
-		law_serfdom
-		law_traditionalism
-	}
+		law_traditionalism	}
 
 	building_modifiers = {
 		workforce_scaled = { #120
-			building_output_grain_add = 2 
-			building_output_fabric_add = 2 
+			building_output_grain_add = 2.6
+			building_output_fabric_add = 1.4
 			building_output_wood_add = 0.6
 			building_output_fish_add = 0.8
 			building_output_meat_add = 1.1
@@ -274,7 +110,7 @@ tennant_farming_building_subsistence_middle_eastern = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4000
+			
 		}
 		
 			unscaled = {
@@ -282,7 +118,7 @@ tennant_farming_building_subsistence_middle_eastern = {
 	}
 }
 
-# Arctic
+# Arctic +
 shifting_cultivation_building_subsistence_arctic = {
 	texture = "gfx/interface/icons/production_method_icons/unused/subsistence_pastures.dds"
 	
@@ -291,75 +127,52 @@ shifting_cultivation_building_subsistence_arctic = {
 	}
 
 	building_modifiers = {
-		workforce_scaled = { #100
-			building_output_wood_add = 0.5
-			building_output_fish_add = 1.9
-			building_output_meat_add = 1
-			building_output_services_add = 0.1
+		workforce_scaled = { #
+			building_output_wood_add = 2
+			building_output_fish_add = 1.8
+			building_output_meat_add = 2.4
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 6000
+			
 		}
 		
 		unscaled = {
+			building_employment_farmers_mult = -0.25
+			building_employment_peasants_mult = -0.25
+			building_employment_clergymen_mult = -0.25
+			building_employment_aristocrats_mult = -0.25
+			building_aristocrats_shares_add = -1
+			building_capitalists_shares_add = -1
 		}
 	}
 }
  
-manoralism_building_subsistence_arctic = {
-	texture = "gfx/interface/icons/production_method_icons/intensive_grazing.dds"
-	
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { #120
-			building_output_oil_add = 0.1
-			building_output_hardwood_add = 0.1 
-			building_output_wood_add = 0.8
-			building_output_fish_add = 2
-			building_output_meat_add = 1
-			building_output_services_add = 0.2
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
 tennant_farming_building_subsistence_arctic = {
 	texture = "gfx/interface/icons/production_method_icons/simple_ranching.dds"
 	
 	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
-	}
+		law_traditionalism	}
 
 	building_modifiers = {
-		workforce_scaled = { #120
-			building_output_oil_add = 0.1
-			building_output_hardwood_add = 0.1 
-			building_output_wood_add = 0.8
+		workforce_scaled = { #202
+			building_output_oil_add = 0.2
+			building_output_hardwood_add = 0.2 
+			building_output_wood_add = 2
 			building_output_fish_add = 2
-			building_output_meat_add = 1
-			building_output_services_add = 0.2
+			building_output_meat_add = 3
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4000
 		}
 		
 		unscaled = {
+			building_employment_farmers_mult = -0.25
+			building_employment_peasants_mult = -0.25
+			building_employment_clergymen_mult = -0.25
+			building_employment_aristocrats_mult = -0.25
+			building_aristocrats_shares_add = -1
+			building_capitalists_shares_add = -1
 		}
 	}
 }
@@ -373,55 +186,18 @@ shifting_cultivation_building_subsistence_tropical = {
 	}
 
 	building_modifiers = {
-		workforce_scaled = { #100
-			building_output_grain_add = 0.6
-			building_output_fabric_add = 1
-			building_output_wood_add = 1
-			building_output_fish_add = 1
-			building_output_meat_add = 0.4
-			building_output_fruit_add = 1.6
-			
-			building_output_sugar_add = 0.8
-			building_output_hardwood_add = 0.6
-			building_output_dye_add = 0.2
+		workforce_scaled = {
+		building_output_grain_add = 2.3
+		building_output_fabric_add = 0.3
+		building_output_wood_add = 1.3
+		building_output_fish_add = 0.4
+		building_output_meat_add = 0.5
+		building_output_fruit_add = 1.4
+		building_output_sugar_add = 0.2
+		building_output_hardwood_add = 0.2
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 6000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
-manoralism_building_subsistence_tropical = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 0.6
-			building_output_fabric_add = 1
-			building_output_wood_add = 1
-			building_output_fish_add = 1
-			building_output_meat_add = 0.4
-			building_output_fruit_add = 1.6
-			
-			building_output_sugar_add = 1
-			building_output_hardwood_add = 0.8
-			building_output_dye_add = 0.2
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
 		}
 		
 		unscaled = {
@@ -433,26 +209,23 @@ tennant_farming_building_subsistence_tropical = {
 	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
 	
 	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
-	}
+		law_traditionalism	}
 
 	building_modifiers = {
 		workforce_scaled = {
-		building_output_grain_add = 0.6
-		building_output_fabric_add = 1
-		building_output_wood_add = 1
-		building_output_fish_add = 1
-		building_output_meat_add = 0.4
-		building_output_fruit_add = 1.6
-		
-		building_output_sugar_add = 1
-		building_output_hardwood_add = 0.8
+		building_output_grain_add = 2.3
+		building_output_fabric_add = 0.3
+		building_output_wood_add = 1.4
+		building_output_fish_add = 0.5
+		building_output_meat_add = 0.7
+		building_output_fruit_add = 1.7
+		building_output_sugar_add = 0.3
+		building_output_hardwood_add = 0.4
 		building_output_dye_add = 0.2
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4000
+			
 		}
 		
 		unscaled = {
@@ -473,43 +246,9 @@ shifting_cultivation_building_subsistence_dry = {
 		building_output_grain_add = 2 
 		building_output_fabric_add = 2 
 		building_output_meat_add = 2
-		building_output_fruit_add = 0.5
+		building_output_fruit_add = 0.75
 		}
 
-		level_scaled = {
-			building_employment_peasants_add = 6000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
-manoralism_building_subsistence_dry = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-		building_output_grain_add = 2 
-		building_output_fabric_add = 2 
-		building_output_meat_add = 3
-		building_output_fruit_add = 1
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
-		}
-		
-		unscaled = {
-		}
 	}
 }
 
@@ -517,24 +256,17 @@ tennant_farming_building_subsistence_dry = {
 	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
 	
 	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
+		law_traditionalism	
 	}
 
-	building_modifiers = {
-		workforce_scaled = { 
+		building_modifiers = {
+			workforce_scaled = { 
 			building_output_grain_add = 2 
 			building_output_fabric_add = 2 
 			building_output_meat_add = 3
 			building_output_fruit_add = 1
 		}
 
-		level_scaled = {
-			building_employment_peasants_add = 4000
-		}
-		
-		unscaled = {
-		}
 	}
 }
 
@@ -550,75 +282,35 @@ shifting_cultivation_subsistence_mediterranean = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = 1.3 
-			building_output_fabric_add = 0.6
-			building_output_wood_add = 0.4
-			building_output_fish_add = 1
-			building_output_meat_add = 0.3
-			building_output_fruit_add = 0.5
-		}
-		level_scaled = {
-			building_employment_peasants_add = 5000
+			building_output_grain_add = 3 
+			building_output_fabric_add = 1
+			building_output_wood_add = 0.7
+			building_output_fish_add = 1.3
+			building_output_meat_add = 0.5
+			building_output_fruit_add = 0.6
+			building_output_wine_add = 0.1
 		}
 		
-		unscaled = {
-		}
 	  }
 
-}
-
-
-manoralism_building_subsistence_mediterranean = {
-	 texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	
-	 disallowing_laws = {
-		law_traditionalism
-	 }
-
-	 unlocking_laws = {
-		law_serfdom
-	 }
-
-		building_modifiers = {
-			workforce_scaled = { 
-				building_output_grain_add = 1.5 
-				building_output_fabric_add = 0.6
-				building_output_wood_add = 0.4
-				building_output_fish_add = 1
-				building_output_meat_add = 0.5
-				building_output_fruit_add = 1
-			}
-
-			level_scaled = {
-				building_employment_peasants_add = 4500
-			}
-			
-			unscaled = {
-				state_migration_pull_mult = 0.05
-			}
-		}
 }
 
 tennant_farming_building_subsistence_mediterranean = {
 	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
 	
 	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
+		law_traditionalism	
 	}
 
 	building_modifiers = {
 		workforce_scaled = { 
-			building_output_grain_add = 1.5 
-				building_output_fabric_add = 0.6
-				building_output_wood_add = 0.4
-				building_output_fish_add = 1
-				building_output_meat_add = 0.5
-				building_output_fruit_add = 1
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 4000
+			building_output_grain_add = 3 
+			building_output_fabric_add = 1.2
+			building_output_wood_add = 0.8
+			building_output_fish_add = 1.8
+			building_output_meat_add = 0.7
+			building_output_fruit_add = 0.8
+			building_output_wine_add = 0.3
 		}
 		
 		unscaled = {
@@ -635,51 +327,14 @@ shifting_cultivation_building_subsistence_european = {
 		law_traditionalism
 	}
 
-	building_modifiers = {
+	building_modifiers = { # 200
 		workforce_scaled = { 
 			building_output_grain_add = 3.4
 			building_output_fabric_add = 0.6
-			building_output_wood_add = 1.2
-			building_output_fish_add = 1.6
-			building_output_meat_add = 1.2
-			building_output_fruit_add = 0.2
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
-manoralism_building_subsistence_european = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 3.4
-			building_output_fabric_add = 0.6
-			building_output_wood_add = 1.2
-			building_output_fish_add = 2
-			building_output_meat_add = 1.7
+			building_output_wood_add = 0.9
+			building_output_fish_add = 1.4
+			building_output_meat_add = 1
 			building_output_fruit_add = 0.3
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 4500
-		}
-		
-		unscaled = {
 		}
 	}
 }
@@ -688,29 +343,21 @@ tennant_farming_building_subsistence_european = {
 	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
 	
 	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
+		law_traditionalism	
 	}
 
 	building_modifiers = {
 		workforce_scaled = { 
 			building_output_grain_add = 3.4
-			building_output_fabric_add = 0.6
-			building_output_wood_add = 1.2
+			building_output_fabric_add = 0.8
+			building_output_wood_add = 1
 			building_output_fish_add = 2
 			building_output_meat_add = 1.7
 			building_output_fruit_add = 0.3
 		}
 
-		level_scaled = {
-			building_employment_peasants_add = 4000
-		}
-		
-		unscaled = {
-		}
 	}
 }
-
 
 # Russia and North-Eastern Europe +
 
@@ -724,51 +371,15 @@ shifting_cultivation_building_subsistence_russia = {
 	building_modifiers = {
 		workforce_scaled = { 
 			building_output_grain_add = 3
-			building_output_fabric_add = 0.6
-			building_output_wood_add = 2
-			building_output_fish_add = 0.1
-			building_output_meat_add = 0.6
-			building_output_fruit_add = 0.1
-			building_output_hardwood_add = 0.6
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
-manoralism_building_subsistence_russia = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 3
-			building_output_fabric_add = 0.6
-			building_output_wood_add = 2
+			building_output_fabric_add = 0.8
+			building_output_wood_add = 1.4
 			building_output_fish_add = 0.2
-			building_output_meat_add = 1
-			building_output_fruit_add = 0.2
-			building_output_hardwood_add = 1
+			building_output_meat_add = 1.3
+			building_output_fruit_add = 0.6
+			building_output_hardwood_add = 0.3
 		}
 
-		level_scaled = {
-			building_employment_peasants_add = 4500
-		}
 		
-		unscaled = {
-		}
 	}
 }
 
@@ -777,25 +388,174 @@ tennant_farming_building_subsistence_russia = {
 	
 	disallowing_laws = {
 		law_traditionalism
-		law_serfdom
+		}
+
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			building_output_grain_add = 3
+			building_output_fabric_add = 0.9
+			building_output_wood_add = 1.7
+			building_output_fish_add = 0.2
+			building_output_meat_add = 1.3
+			building_output_fruit_add = 0.6
+			building_output_hardwood_add = 0.6
+		}
+	}
+}
+
+
+
+ tennant_farming_building_subsistence_east_asia = {
+	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
+	
+	disallowing_laws = {
+		law_traditionalism	}
+
+	building_modifiers = {
+		workforce_scaled = { #900
+		building_output_grain_add = 12
+		building_output_fabric_add = 4.5
+		building_output_wood_add = 4
+		building_output_services_add = 2
+		building_output_tea_add = 2
+		building_output_silk_add = 1.5
+		building_output_fish_add = 7
+		building_output_meat_add = 2
+		building_output_fruit_add = 2
+		}
+
+		level_scaled = {
+		}
+		
+		unscaled = {
+			building_throughput_mult = -0.2
+		}
+	}
+	state_modifier = {
+		unscaled = {
+			building_group_bg_agriculture_throughput_mult = 0.2
+			building_group_bg_plantations_throughput_mult = 0.2
+			building_group_bg_ranching_throughput_mult = 0.2
+		}
+	}
+}
+# South East Asia +
+shifting_cultivation_building_subsistence_south_east_asia = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	unlocking_laws = {
+		law_traditionalism
 	}
 
 	building_modifiers = {
 		workforce_scaled = { 
-			building_output_grain_add = 3
-			building_output_fabric_add = 0.6
-			building_output_wood_add = 2
-			building_output_fish_add = 0.2
-			building_output_meat_add = 1
-			building_output_fruit_add = 0.2
-			building_output_hardwood_add = 1
+			building_output_grain_add = 2.7
+			building_output_fabric_add = 0.7
+			building_output_wood_add = 0.7
+			
+			building_output_tea_add = 0.1
+			building_output_fish_add = 1.4
+			building_output_meat_add = 0.5
+			building_output_fruit_add = 0.5
+			building_output_hardwood_add = 0.1
 		}
 
-		level_scaled = {
-			building_employment_peasants_add = 4000
+	}
+}
+
+tennant_farming_building_subsistence_south_east_asia = {
+	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
+	
+	disallowing_laws = {
+		law_traditionalism	
+	}
+
+	building_modifiers = {
+		workforce_scaled = { 
+			building_output_grain_add = 2.7
+			building_output_fabric_add = 1
+			building_output_wood_add = 1
+			
+			building_output_tea_add = 0.2
+			building_output_silk_add = 0.1
+			building_output_fish_add = 1.5
+			building_output_meat_add = 0.7
+			building_output_fruit_add = 0.8
+			building_output_hardwood_add = 0.2
+		}
+
+	}
+}
+
+	
+# South East Asian Intensive +
+shifting_cultivation_building_subsistence_south_east_asia_intensive = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	#can_enact = {}
+
+	unlocking_laws = {
+		law_traditionalism
+	}
+
+	building_modifiers = {
+		workforce_scaled = { 
+			building_output_grain_add = 13.5
+			building_output_fabric_add = 3.5
+			building_output_wood_add = 3.5
+			
+			building_output_tea_add = 0.5
+			building_output_fish_add = 7
+			building_output_meat_add = 2.5
+			building_output_fruit_add = 2.5
+			building_output_hardwood_add = 0.5
+		}
+
+		unscaled = {
+			building_throughput_mult = -0.1
+		}
+	}
+	state_modifier = {
+		unscaled = {
+			building_group_bg_agriculture_throughput_mult = 0.1
+			building_group_bg_plantations_throughput_mult = 0.1
+			building_group_bg_ranching_throughput_mult = 0.1
+		}
+	}
+}
+
+tennant_farming_building_subsistence_south_east_asia_intensive = {
+	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
+	
+	disallowing_laws = {
+		law_traditionalism	
+	}
+
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			building_output_grain_add = 13.5
+			building_output_fabric_add = 5
+			building_output_wood_add = 5
+			
+			building_output_tea_add = 1
+			building_output_silk_add = 0.5
+			building_output_fish_add = 7.5
+			building_output_meat_add = 3.5
+			building_output_fruit_add = 4
+			building_output_hardwood_add = 1
 		}
 		
 		unscaled = {
+			building_throughput_mult = -0.2
+		}
+	}
+	state_modifier = {
+		unscaled = {
+			building_group_bg_agriculture_throughput_mult = 0.2
+			building_group_bg_plantations_throughput_mult = 0.2
+			building_group_bg_ranching_throughput_mult = 0.2
 		}
 	}
 }
@@ -808,21 +568,17 @@ shifting_cultivation_building_subsistence_east_asia = {
 		law_traditionalism
 	}
 
-	building_modifiers = { #800
+	building_modifiers = { #
 		workforce_scaled = { 
-			building_output_grain_add = 12
-			building_output_fabric_add = 2.5
-			building_output_wood_add = 3
-			building_output_services_add = 2
-			building_output_tea_add = 1
-			building_output_silk_add = 1
-			building_output_fish_add = 7
-			building_output_meat_add = 1.5
-			building_output_fruit_add = 1.5
-		}
+			building_output_grain_add = 14
+			building_output_fabric_add = 5
+			building_output_wood_add = 5
 
-		level_scaled = {
-			building_employment_peasants_add = 24000
+			building_output_fish_add = 6
+			building_output_meat_add = 1.5
+			building_output_fruit_add = 2.7
+			
+			building_output_tea_add = 0.3
 		}
 		
 		unscaled = {
@@ -850,20 +606,18 @@ manoralism_building_subsistence_east_asia = {
 	}
 
 	building_modifiers = {
-		workforce_scaled = { #960
-		building_output_grain_add = 12
-		building_output_fabric_add = 4.5
-		building_output_wood_add = 4
-		building_output_services_add = 2
-		building_output_tea_add = 2
-		building_output_silk_add = 1.5
-		building_output_fish_add = 7
-		building_output_meat_add = 2
-		building_output_fruit_add = 2
-		}
+		workforce_scaled = { #
+		building_output_grain_add = 14
+			building_output_fabric_add = 7
+			building_output_wood_add = 7
 
-		level_scaled = {
-			building_employment_peasants_add = 20000
+			building_output_fish_add = 8
+			building_output_meat_add = 2
+			building_output_fruit_add = 4
+			
+			building_output_tea_add = 0.7
+			building_output_dye_add = 0.1
+			building_output_silk_add = 0.2
 		}
 		
 		unscaled = {
@@ -878,46 +632,9 @@ manoralism_building_subsistence_east_asia = {
 		}
 	}
 }
-
-tennant_farming_building_subsistence_east_asia = {
-	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
+# India
 	
-	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
-	}
-
-	building_modifiers = {
-		workforce_scaled = { #900
-		building_output_grain_add = 12
-		building_output_fabric_add = 4.5
-		building_output_wood_add = 4
-		building_output_services_add = 2
-		building_output_tea_add = 2
-		building_output_silk_add = 1.5
-		building_output_fish_add = 7
-		building_output_meat_add = 2
-		building_output_fruit_add = 2
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 16000
-		}
-		
-		unscaled = {
-			building_throughput_mult = -0.2
-		}
-	}
-	state_modifier = {
-		unscaled = {
-			building_group_bg_agriculture_throughput_mult = 0.2
-			building_group_bg_plantations_throughput_mult = 0.2
-			building_group_bg_ranching_throughput_mult = 0.2
-		}
-	}
-}
-# South East Asia +
-shifting_cultivation_building_subsistence_south_east_asia = {
+shifting_cultivation_building_subsistence_india = {
 	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
 	
 	unlocking_laws = {
@@ -925,117 +642,16 @@ shifting_cultivation_building_subsistence_south_east_asia = {
 	}
 
 	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 3 
-			building_output_fabric_add = 1
-			building_output_wood_add = 1
-			
-			building_output_tea_add = 0.2
-			building_output_fish_add = 2
-			building_output_meat_add = 0.5
-			building_output_fruit_add = 0.5
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 6000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
-manoralism_building_subsistence_south_east_asia = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
-	
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	unlocking_laws = {
-		law_serfdom
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 3 
-			building_output_fabric_add = 1
-			building_output_wood_add = 1
-			
-			building_output_tea_add = 0.2
-			building_output_silk_add = 0.1
+		workforce_scaled = { #800
+			building_output_grain_add = 19
+			building_output_fabric_add = 4.5
+			building_output_wood_add = 4.5
 			building_output_fish_add = 2.5
-			building_output_meat_add = 0.5
-			building_output_fruit_add = 0.5
-			building_output_hardwood_add = 0.15
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 5000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
-tennant_farming_building_subsistence_south_east_asia = {
-	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
-	
-	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 3 
-			building_output_fabric_add = 1
-			building_output_wood_add = 1
-			
-			building_output_tea_add = 0.2
-			building_output_silk_add = 0.1
-			building_output_fish_add = 2.5
-			building_output_meat_add = 0.5
-			building_output_fruit_add = 0.5
-			building_output_hardwood_add = 0.15
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 4000
-		}
-		
-		unscaled = {
-		}
-	}
-}
-
-#NEW
-
-# South East Asian Intensive +
-shifting_cultivation_building_subsistence_south_east_asia_intensive = {
-	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
-	
-	#can_enact = {}
-
-	unlocking_laws = {
-		law_traditionalism
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 24 
-			building_output_fabric_add = 8
-			building_output_wood_add = 8
-
-			building_output_tea_add = 1.6
-			building_output_fish_add = 16
-			building_output_meat_add = 4
-			building_output_fruit_add = 4
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 24000
+			building_output_hardwood_add = 0.6
+			building_output_fruit_add = 5
+			building_output_opium_add = 0.4
+			building_output_dye_add = 1
+			building_output_silk_add = 0.3
 		}
 		
 		unscaled = {
@@ -1051,72 +667,23 @@ shifting_cultivation_building_subsistence_south_east_asia_intensive = {
 	}
 }
 
-manoralism_building_subsistence_south_east_asia_intensive = {
-	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
+tennant_farming_building_subsistence_india = {
+	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming"
 	
 	disallowing_laws = {
-		law_traditionalism
-	}
-
-	unlocking_laws = {
-		law_serfdom
-	}
+		law_traditionalism	}
 
 	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 24 
-			building_output_fabric_add = 8
-			building_output_wood_add = 8
-			
-			building_output_tea_add = 1.6
-			building_output_silk_add = 0.8
-			building_output_fish_add = 20
-			building_output_meat_add = 4
-			building_output_fruit_add = 4
-			building_output_hardwood_add = 1.2
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 20000
-		}
-		
-		unscaled = {
-			building_throughput_mult = -0.15
-		}
-	}
-	state_modifier = {
-		unscaled = {
-			building_group_bg_agriculture_throughput_mult = 0.15
-			building_group_bg_plantations_throughput_mult = 0.15
-			building_group_bg_ranching_throughput_mult = 0.15
-		}
-	}
-}
-
-tennant_farming_building_subsistence_south_east_asia_intensive = {
-	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
-	
-	disallowing_laws = {
-		law_traditionalism
-		law_serfdom
-	}
-
-	building_modifiers = {
-		workforce_scaled = { 
-			building_output_grain_add = 24 
-			building_output_fabric_add = 8
-			building_output_wood_add = 8
-			
-			building_output_tea_add = 1.6
-			building_output_silk_add = 0.8
-			building_output_fish_add = 20
-			building_output_meat_add = 4
-			building_output_fruit_add = 4
-			building_output_hardwood_add = 1.2
-		}
-
-		level_scaled = {
-			building_employment_peasants_add = 16000
+		workforce_scaled = { #1000
+		building_output_grain_add = 19
+		building_output_fabric_add = 4
+		building_output_wood_add = 4
+		building_output_fish_add = 3
+		building_output_hardwood_add = 1
+		building_output_fruit_add = 6
+		building_output_opium_add = 1
+		building_output_dye_add = 2
+		building_output_silk_add = 0.5
 		}
 		
 		unscaled = {
@@ -1132,3 +699,46 @@ tennant_farming_building_subsistence_south_east_asia_intensive = {
 	}
 }
 
+# North america
+shifting_cultivation_subsistence_north_america = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	unlocking_laws = {
+		law_traditionalism
+	}
+
+	building_modifiers = {
+		workforce_scaled = { 
+			building_output_grain_add = 2.8
+			building_output_fabric_add = 1.3
+			building_output_wood_add = 1.4
+			building_output_fish_add = 0.3
+			building_output_meat_add = 1.1
+			building_output_fruit_add = 0.2
+			
+			building_output_tobacco_add = 0.2
+			building_output_hardwood_add = 0.1
+		}
+	}
+}
+tennant_farming_subsistence_north_america = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	disallowing_laws = {
+		law_traditionalism
+	}
+
+	building_modifiers = {
+		workforce_scaled = { 
+			building_output_grain_add = 2.8
+			building_output_fabric_add = 1.8 
+			building_output_wood_add = 1.8
+			building_output_fish_add = 0.4
+			building_output_meat_add = 1.4
+			building_output_fruit_add = 0.2
+			
+			building_output_tobacco_add = 0.3
+			building_output_hardwood_add = 0.3
+		}
+	}
+}

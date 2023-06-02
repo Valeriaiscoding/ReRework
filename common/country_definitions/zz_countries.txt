@@ -18,3 +18,35 @@ BNT = {
 	is_named_from_capital = yes
 	capital = STATE_BANAT
 }
+VAL = {
+	color = { 21  79  174 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { valencian }
+	capital = STATE_VALENCIA
+}
+GIB = {
+	color = { 218 0 12 }
+	
+	country_type = colonial
+
+	tier = city_state
+	
+	cultures = { british }
+	capital = STATE_GIBRALTAR
+}
+
+ANL = {
+	color = hsv360{ 145  100  48 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { andalusian }
+	capital = STATE_ANDALUSIA
+	is_named_from_capital = yes
+}

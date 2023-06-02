@@ -1,0 +1,24 @@
+﻿AUS = { # Austria
+	dynamic_country_name = {
+		name = dyn_c_austria-hungary
+		adjective = dyn_c_austria-hungary_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = { country_has_primary_culture = cu:hungarian }
+			c:AUS = {
+				any_scope_state = {
+						state_region = {
+						is_homeland = cu:hungarian
+					}
+					NOT = {
+						has_variable = burgenland_region
+					}
+				}
+			}
+		}
+	}
+}

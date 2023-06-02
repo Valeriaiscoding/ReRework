@@ -1,0 +1,37 @@
+building_synthetics_plants = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/synthetics_plants.dds"
+	city_type = city
+	levels_per_mesh = 10
+	
+	unlocking_technologies = {
+		aniline
+	}
+	
+	production_method_groups = {
+		pmg_synthetic_input_type
+		pmg_synthetic_output_type
+		pmg_ownership_capital_building_synthetics_plants
+	}
+	
+	can_build_government = {
+		owner = {
+			NOR = {
+				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_synthetics_plants_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_synthetics_plants_pc_disallowed
+		}
+	}
+	
+	required_construction = construction_cost_high
+}

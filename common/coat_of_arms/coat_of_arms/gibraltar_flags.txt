@@ -1,0 +1,134 @@
+GIB = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+	color3 = "yellow"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color1
+		color2 = color2
+	}
+	
+	colored_emblem = {
+		texture = "ce_coa_gibraltar.dds"
+		color1 = color2
+		color2 = color4
+		color3 = color3
+		
+		instance = { scale = { 0.95 0.95 } position = { 0.5 0.47 } }
+	}		
+}
+#ANL_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "green"
+
+	textured_emblem = {
+		texture = "te_coa_absolute_anl.dds"
+		instance = { position = { 0.5 0.5 }scale = { 0.9 0.9 } } 
+	}
+}
+#ANL_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color1
+	}
+	textured_emblem = {
+		texture = "te_coa_andalusian_republic.dds"
+		instance = { position = { 0.5 0.48 }scale = { 0.55 0.55 } } 
+	}
+}
+#ANL_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "black"
+
+	
+	colored_emblem = {
+		texture = "ce_coa_baetic_state.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 1 } position = { 0.5 0.5 } }
+	}		
+	
+}
+
+#ANL_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color1
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color3
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.52 } }
+	}
+}
+#ANL_anarchy = {
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "red"
+	color2 = "black"
+	
+	textured_emblem = {
+		texture = "te_coa_anl_anarchy.dds"
+		instance = { position = { 0.5 0.5 }scale = { 0.55 0.55 } } 
+	}	
+}
+#ANL_theocracy = {
+	pattern = "pattern_border_of_4.dds"
+	color1 = "white"
+	color2 = "green"
+	
+	textured_emblem = {
+		texture = "te_coa_arzobispado_de_andalucia.dds"
+		instance = { position = { 0.5 0.5 }scale = { 0.69 0.69 } } 
+	}	
+}
+
+#ANL_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color1
+	}
+}
+
+#ANL_dictatorship = { ANTIGUA DICTATORSHIP
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "black"
+
+	
+	colored_emblem = {
+		texture = "ce_anl_star.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}		
+	colored_emblem = {
+		texture = "ce_anl_star.dds"
+		color1 = "black"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}		
+	
+}

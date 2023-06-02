@@ -1,0 +1,7 @@
+﻿l_english:
+   DEI:0 "East Indies"
+   DEI_ADJ:0 "East Indian"
+   dyn_c_colonial_east_indies:0 "[Country.GetOverlord.GetAdjective] East Indies"
+   dyn_c_colonial_east_indies_adj:0 "[Country.GetOverlord.GetAdjective] East Indian"
+   dyn_c_colonial_raj:0 "[Country.GetOverlord.GetAdjective] Raj"
+  # dyn_c_colonial_raj_adj:0 "[Country.GetOverlord.GetAdjective] Indian"  

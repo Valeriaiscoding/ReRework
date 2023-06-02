@@ -205,12 +205,13 @@ STATE_SINAI = {
 STATE_ERITREA = {
     id = 181
     subsistence_building = "building_subsistence_dry"
+   # provinces = { "x03442D" "x035501" "x0EBF6B" "x140193" "x1B0B1E" "x3EE4D1" "x409D6F" "x40E050" "x48573C" "x569C7E" "x593F30" "x59AB39" "x5D45FC" "x64B77C" "x66F6C3" "x7090A0" "x70A072" "x9970A0" "x9B6C39" "x9E4472" "x9E8FDD" "xA07E70" "xC5D429" "xE00AC4" "xE64992" "xEB1C6A" "xEC9D04" "xF786F9" }
     provinces = { "x03442D" "x035501" "x0EBF6B" "x140193" "x1B0B1E" "x3EE4D1" "x409D6F" "x40E050" "x48573C" "x569C7E" "x593F30" "x59AB39" "x5D45FC" "x64B77C" "x66F6C3" "x7090A0" "x70A072" "x9970A0" "x9B6C39" "x9E4472" "x9E8FDD" "xA07E70" "xC5D429" "xE00AC4" "xE64992" "xEB1C6A" "xEC9D04" "xF786F9" }
     traits = { "state_trait_natural_harbors" "state_trait_babel_mandeb" }
     city = "x0EBF6B"
     port = "x40E050"
     farm = "x7090A0"
-    mine = "xA07E70"
+   # mine = "xA07E70"
     wood = "x9E4472"
     arable_land = 30
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" }
@@ -412,7 +413,7 @@ STATE_AL_RIF = {
 }
 
 STATE_AGMOD = {
-    id = 188
+    id = 3265
     subsistence_building = "building_subsistence_middle_eastern"
     provinces = { "x2853A6" "x75DC50" "x75EBCA" "x8FBBB6" "xA0EFC0" "xDF30C0" "xE2981F" "xE3D0F0" "xE521ED" "xF05E87" "xFAE302" }
     arable_land = 42
@@ -430,6 +431,7 @@ STATE_INNER_MOROCCO = {
     subsistence_building = "building_subsistence_dry"
     provinces = { "x0277E9" "x031705" "x0488C2" "x07D47A" "x0B4734" "x0FA44F" "x1AA449" "x26277F" "x2D7AF0" "x360984" "x370312" "x45FD26" "x4B50E0" "x4C6494" "x4DE76B" "x4F8487" "x53C5EF" "x593CFE" "x603080" "x6070C0" "x66D4E9" "x830671" "x88C527" "x8971F5" "x8ACEDE" "x8DCD09" "x9015D0" "x95A1C3" "x977DCA" "x9E582E" "xA21408" "xAC4646" "xB096BF" "xBA134C" "xBC1415" "xBD6AB5" "xCA258A" "xD89587" "xDFEF40" "xE1981C" "xE1B48A" "xE80E2E" "xE92045" "xF414B2" }
     impassable = { "x9E582E" "x53C5EF" "x8ACEDE" "x4DE76B" "x8DCD09" }
+    traits = { "state_trait_atlas_mountains" }
     city = "xDFEF40"
     port = "xA21408"
     farm = "x0488C2"
@@ -467,7 +469,7 @@ STATE_ALGIERS = {
 }
 
 STATE_CONSTANTINE = {
-    id = 191
+    id = 3260
     subsistence_building = "building_subsistence_dry"
     provinces = { "x0050A0" "x0090A0" "x01D0A0" "x137E91" "x1AF7B7" "x265E07" "x2DF9DB" "x3A0E38" "x3AD789" "x7C6240" "x8050A0" "x9AF6A4" "xA12B39" "xA31194" "xA39A15" "xB5486B" "xC65997" "xDC0687" "xFCF985" }
     city = "x1AF7B7"
@@ -499,8 +501,28 @@ STATE_LAGHOUAT = {
     }
     naval_exit_id = 3032
 }
-STATE_TLEMCEN = {
+STATE_ORAN = {
     id = 192
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { "x0D2515" "x207040" "x3E6888" "x465605" "x4CE79E" "x60D278" "x6736D2" "x6F831B" "x7534E5" "x8C4FD5" "x95CBD4" "xA07040" "xB735DB" "xB78BBE" "xBCA418" "xC2269C" "xCEB068" "xDFB0C0" "xE76FA0" "xEFD8F4" }
+    prime_land = { "xDFB0C0" "xB735DB" }
+    traits = { "state_trait_atlas_mountains" }
+    city = "x3A0E38"
+    port = "x3E6888"
+    farm = "xAA79B2"
+    mine = "xC2269C"
+    wood = "xB951DE"
+    arable_land = 53
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 12
+        bg_fishing = 5
+        bg_logging = 3
+    }
+    naval_exit_id = 3032
+}
+STATE_TLEMCEN = {
+    id = 3259
     subsistence_building = "building_subsistence_mediterranean"
     provinces = { "x207040" "x3E6888" "x60D278" "x6736D2" "x6F831B" "x7534E5" "x7E5293" "x95CBD4" "xA75E78" "xB735DB" "xB951DE" "xC2269C" "xC6BA37" "xDFB0C0" "xE76FA0" }
     city = "xDFB0C0"
@@ -921,4 +943,22 @@ STATE_CHAD = {
         undiscovered_amount = 10
     }
 }
-
+##
+STATE_DJIBOUTI = {
+    id = 3258
+    subsistence_building = "building_subsistence_dry"
+    provinces = { x40E050 x9B6C39 x3EE4D1 x9E8FDD xA07E70 }
+    traits = { "state_trait_natural_harbors" "state_trait_babel_mandeb" }
+    city = "x0EBF6B"
+    port = "x40E050"
+    farm = "x7090A0"
+    mine = "xA07E70"
+    wood = "x9E4472"
+    arable_land = 30
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" }
+    capped_resources = {
+        bg_iron_mining = 22
+        bg_fishing = 8
+    }
+    naval_exit_id = 3047
+}

@@ -1578,3 +1578,64 @@ allowdisallow_building_building_ia_river_port_pc = {
 		}
     }
 }
+check_if_can_invest = {
+	scope = country
+	
+	saved_scopes = { state } 
+	
+    is_valid = {
+		has_technology_researched = central_banking
+		is_revolutionary = no
+		NOT = { is_country_type = decentralized }
+		NOT = {
+			custom_tooltip = {
+				text = isconductinganinvestment_tooltip
+				has_modifier = investing_modifier
+			}
+		}
+		in_default = no
+		is_player = yes
+		custom_tooltip = {
+			text = has_enough_construction_20_tooltip
+			ec_construction_points > 20
+		}
+		# custom_tooltip = {
+		# 	text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
+		# 	scope:state.owner.relations:root > relations_threshold:poor
+		# }
+		country_rank >= rank_value:major_power
+		has_diplomatic_relevance = scope:state.owner
+		scope:state = {
+			owner = {
+				NOT = {
+					is_country_type = decentralized
+					this = root
+				}
+				is_revolutionary = no
+			}
+		}
+		OR = {
+			AND = {
+				scope:state.owner = {
+					has_law = law_type:law_free_trade
+				}
+				custom_tooltip = {
+					text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
+					scope:state.owner.relations:root > relations_threshold:poor
+				}
+			}
+			has_diplomatic_pact = {
+				who = scope:state.owner
+				type = customs_union
+			}
+			has_diplomatic_pact = {
+				who = scope:state.owner
+				type = trade_agreement
+			}
+			owns_treaty_port_in = scope:state.state_region
+			scope_state_owner = {
+				is_subject_of = ROOT
+			}
+		}
+    }
+}

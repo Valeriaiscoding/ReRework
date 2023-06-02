@@ -48,8 +48,9 @@ building_hydroelectric_power_plant = {
 	}
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -108,8 +109,9 @@ building_ia_river_port = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -147,8 +149,9 @@ building_ia_silver_mine = {
 	}
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -189,8 +192,9 @@ building_vineyard = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -210,4 +214,44 @@ building_vineyard = {
 	possible = {
 		always = no
 	}
+}
+
+building_arts_academy = {
+	building_group = bg_arts
+
+	city_type = city
+	
+	levels_per_mesh = 10
+
+	unlocking_technologies = {
+		romanticism
+	}
+
+	production_method_groups = {
+		pmg_base_building_arts_academy
+		pmg_ownership_building_arts_academy
+	}
+	
+	can_build_government = {
+		owner = {
+			NOR = {
+				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
+			}
+		}
+	}
+	can_build_private = {
+		owner = {
+			NOT = {
+				has_variable = building_arts_academy_pc_disallowed_national
+			}
+		}
+		NOT = {
+			has_variable = building_arts_academy_pc_disallowed
+		}
+	}
+	
+	texture = "gfx/interface/icons/building_icons/building_arts_academy.dds"
+
+	required_construction = construction_cost_high
 }

@@ -1,0 +1,68 @@
+﻿# Root = Building
+on_building_built = {
+	## will be event
+	set_variable = {
+		name = small_scale_ownership # shopkeepers/farmers
+		value = 0
+		min = 0
+	}
+	set_variable = {
+		name = private_ownership # private companies
+		value = 0
+		min = 0
+	}
+	set_variable = {
+		name = corpotate_ownership # public companies
+		value = 0
+		min = 0
+	}
+	set_variable = {
+		name = cooperative_ownership # cooperative ownership
+		value = 0
+		min = 0
+	}
+	set_variable = {
+		name = state_ownership # State owned
+		value = 0
+		min = 0
+	}
+	# if = {
+	# 	limit  = {
+	# 		OR = {
+	# 			is_building_type = bg_agriculture
+	# 			is_building_type = bg_plantations
+	# 		}
+	# 	}
+	# 	set_variable = {
+	# 		name = aristocratic_ownership
+	# 		value = 0
+	# 		min = 0
+	# 	}
+	# }
+	random_list = {
+		0 = { # small scale ownership
+			modifier = {
+				limit = {
+						
+				}
+				add = 1
+			}
+		}
+		0 = { # private ownership
+
+		}
+		0 = { # corporate ownership
+
+		}
+		0 = { # cooperative ownership
+
+		}
+		0 = { # state ownership
+
+		}
+ 	}
+}
+
+# Root = Building
+on_building_expanded = {
+}

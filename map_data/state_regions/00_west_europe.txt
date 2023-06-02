@@ -295,7 +295,7 @@ STATE_WALES = {
     id = 17
     subsistence_building = "building_subsistence_european"
     provinces = { x2020C0 x20A040 x633EF5 x70D92B x775D55 xA02040 xA0A040 xA2308A xB7FC74 }
-    traits = { state_trait_south_wales_valleys state_traite_milford_haven }
+    traits = { "state_trait_south_wales_valleys" "state_trait_milford_haven" }
     city = x2020C0
     port = xA2308A
     farm = xB7FC74
@@ -336,7 +336,7 @@ STATE_HIGHLANDS = {
 STATE_EAST_ANGLIA = {
     id = 21
     subsistence_building = "building_subsistence_european"
-    provinces = { x5024FD x516676 x60A040 x618949 x6D87D7 x73EF57 x8C667B xE02040 xE0A040 }
+    provinces = { x5024FD x516676 x60A040 x618949 x6D87D7 x73EF57 xE02040 xE0A040 }
     traits = { state_trait_good_soils state_trait_natural_harbors }
     city = x8C667B
     port = xE02040
@@ -362,7 +362,7 @@ STATE_WEST_COUNTRY = {
     id = 22
     subsistence_building = "building_subsistence_european"
     provinces = { x1E38F8 x225544 x6060C0 x63EF7E x65B395 xA2DD9E xB78E54 xC900EF xE0E040 xEB9862 }
-    traits = { state_tstate_trait_poole_harborrait_natural_harbors }
+    traits = { state_trait_poole_harbor }
     city = xE0E040
     port = x63EF7E
     farm = xE0E040
@@ -899,58 +899,58 @@ STATE_AUSTRIA = {
     }
 }
 
-STATE_BOHEMIA = {
-    id = 52
-    subsistence_building = "building_subsistence_european"
-    provinces = { x0B9B4F x2ED2B3 x465A13 x61902F x71E041 x74C71F x81C142 x9080A0 xAFD2D1 xCDE96E xD286DB }
-    traits = { state_trait_elbe_river }
-    city = x81C142
-    farm = x9C175D
-    mine = x74C71F
-    wood = xAFD2D1
-    arable_land = 180
-    arable_resources = { bg_rye_farms bg_livestock_ranches }
-    capped_resources = {
-        bg_coal_mining = 48
-        bg_iron_mining = 45
-        bg_logging = 17
-    }
-}
+# STATE_BOHEMIA = {
+#     id = 52
+#     subsistence_building = "building_subsistence_european"
+#     provinces = { x0B9B4F x2ED2B3 x465A13 x61902F x71E041 x74C71F x81C142 x9080A0 xAFD2D1 xCDE96E xD286DB }
+#     traits = { state_trait_elbe_river }
+#     city = x81C142
+#     farm = x9C175D
+#     mine = x74C71F
+#     wood = xAFD2D1
+#     arable_land = 180
+#     arable_resources = { bg_rye_farms bg_livestock_ranches }
+#     capped_resources = {
+#         bg_coal_mining = 48
+#         bg_iron_mining = 45
+#         bg_logging = 17
+#     }
+# }
 
-STATE_MORAVIA = {
-    id = 53
-    subsistence_building = "building_subsistence_european"
-    provinces = { x08AA4B x10DFDF x12778D x49C8F7 x71E080 xD9A784 xEF6080 }
-    traits = { state_trait_danube_river }
-    city = xD9A784
-    farm = xEF6080
-    mine = x1D088E
-    wood = x12778D
-    arable_land = 80
-    arable_resources = { bg_wheat_farms bg_livestock_ranches }
-    capped_resources = {
-        bg_coal_mining = 68
-        bg_logging = 28
-    }
-}
+# STATE_MORAVIA = {
+#     id = 53
+#     subsistence_building = "building_subsistence_european"
+#     provinces = { x08AA4B x10DFDF x12778D x49C8F7 x71E080 xD9A784 xEF6080 }
+#     traits = { state_trait_danube_river }
+#     city = xD9A784
+#     farm = xEF6080
+#     mine = x1D088E
+#     wood = x12778D
+#     arable_land = 80
+#     arable_resources = { bg_wheat_farms bg_livestock_ranches }
+#     capped_resources = {
+#         bg_coal_mining = 68
+#         bg_logging = 28
+#     }
+# }
 
-STATE_EASTSUDETEN = {
-    id = 6025
-    subsistence_building = "building_subsistence_european"
-    provinces = { "x1D088E" "x4B3444" "x9C175D" "xF0E080" "xFA371D" }
-    traits = { "state_trait_elbe_river" }
-    # city = "xF0E080"
-    # farm = "x1D088E"
-    # mine = "x4B3444"
-    # wood = "xFA371D"
-    arable_land = 45
-    arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
-    capped_resources = {
-        bg_coal_mining = 27
-        bg_iron_mining = 14
-        bg_logging = 5
-    }
-}
+# STATE_EASTSUDETEN = {
+#     id = 6025
+#     subsistence_building = "building_subsistence_european"
+#     provinces = { "x1D088E" "x4B3444" "x9C175D" "xF0E080" "xFA371D" }
+#     traits = { "state_trait_elbe_river" }
+#     # city = "xF0E080"
+#     # farm = "x1D088E"
+#     # mine = "x4B3444"
+#     # wood = "xFA371D"
+#     arable_land = 45
+#     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
+#     capped_resources = {
+#         bg_coal_mining = 27
+#         bg_iron_mining = 14
+#         bg_logging = 5
+#     }
+# }
 
 STATE_STYRIA = {
     id = 54
@@ -1052,25 +1052,25 @@ STATE_ELBE = {
 
 
 
-STATE_WESTPHALIA = {
-    id = 61
-    subsistence_building = "building_subsistence_european"
-    provinces = { x0180E0 x165E05 x1DD141 x218061 x910095 x99BAEE xA08061 }
-    prime_land = { xA08061 x218061 x1DD141 }
-    traits = { state_trait_ruhr_coalfield }
-    city = xA08061
-    farm = x1DD141
-    mine = x218061
-    wood = x0180E0
-    arable_land = 60
-    arable_resources = { bg_rye_farms bg_livestock_ranches }
-    capped_resources = {
-        bg_coal_mining = 75
-        bg_iron_mining = 40
-        bg_sulfur_mining = 35
-        bg_logging = 48
-    }
-}
+# STATE_WESTPHALIA = {
+#     id = 61
+#     subsistence_building = "building_subsistence_european"
+#     provinces = { x0180E0 x165E05 x1DD141 x218061 x910095 x99BAEE xA08061 }
+#     prime_land = { xA08061 x218061 x1DD141 }
+#     traits = { state_trait_ruhr_coalfield }
+#     city = xA08061
+#     farm = x1DD141
+#     mine = x218061
+#     wood = x0180E0
+#     arable_land = 60
+#     arable_resources = { bg_rye_farms bg_livestock_ranches }
+#     capped_resources = {
+#         bg_coal_mining = 75
+#         bg_iron_mining = 40
+#         bg_sulfur_mining = 35
+#         bg_logging = 48
+#     }
+# }
 
 STATE_ANHALT = {
     id = 62
@@ -1386,23 +1386,23 @@ STATE_DAUPHINE = {
         bg_logging = 22
     }
 }
-STATE_SUDETENLAND = {
-    id = 5022
-    subsistence_building = "building_subsistence_european"
-    provinces = { x1D6B94 x400226 x67FE18 x716141 xA40163 xEE1941 xF06141 xF0E041 }
-    traits = { state_trait_elbe_river }
-    city = x716141
-    farm = xF0E041
-    mine = x1D088E
-    wood = x1D6B94
-    arable_land = 100
-    arable_resources = { bg_rye_farms bg_livestock_ranches }
-    capped_resources = {
-        bg_coal_mining = 28
-        bg_iron_mining = 25
-        bg_logging = 17
-    }
-}
+# STATE_SUDETENLAND = {
+#     id = 5022
+#     subsistence_building = "building_subsistence_european"
+#     provinces = { x1D6B94 x400226 x67FE18 x716141 xA40163 xEE1941 xF06141 xF0E041 }
+#     traits = { state_trait_elbe_river }
+#     city = x716141
+#     farm = xF0E041
+#     mine = x1D088E
+#     wood = x1D6B94
+#     arable_land = 100
+#     arable_resources = { bg_rye_farms bg_livestock_ranches }
+#     capped_resources = {
+#         bg_coal_mining = 28
+#         bg_iron_mining = 25
+#         bg_logging = 17
+#     }
+# }
 STATE_ARTOIS = {
     id = 5064
     subsistence_building = "building_subsistence_european"

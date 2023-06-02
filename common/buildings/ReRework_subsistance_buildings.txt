@@ -69,7 +69,7 @@ building_subsistence_arctic = {
 		pmg_base_building_subsistence_arctic
 		pmg_home_workshops_building_subsistence_farms
 		pmg_subsitence_mining
-		pmg_subsistance_rare_pelts
+		pmg_subsistance_distilling
 		pmg_ownership_building_subsistence
 		pmg_clerical_ownership_subsistance
 	}
@@ -149,7 +149,7 @@ building_subsistence_mediterranean = {
 		pmg_base_building_subsistence_mediterranean
 		pmg_subsitence_mining
 		pmg_home_workshops_building_subsistence_farms
-		pmg_subsistance_vineyards
+		pmg_subsistance_distilling
 		pmg_ownership_building_subsistence
 		pmg_clerical_ownership_subsistance
 	}
@@ -281,8 +281,6 @@ building_subsistence_japan = {
 	slaves_role = peasants
 }
 
-# NEW
-
 building_subsistence_south_east_asia_intensive = {
 	building_group = bg_subsistence_agriculture
 	texture = "gfx/interface/icons/building_icons/south_east_asian_subsistance_intensive.dds"
@@ -301,3 +299,23 @@ building_subsistence_south_east_asia_intensive = {
 	min_raise_to_hire = 0.30
 	slaves_role = peasants
 }	
+
+building_subsistence_north_america = {
+	building_group = bg_subsistence_agriculture
+	texture = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_north_america
+		pmg_subsitence_mining
+		pmg_home_workshops_building_subsistence_farms
+		pmg_subsistance_distilling
+		pmg_ownership_building_subsistence
+		pmg_clerical_ownership_subsistance
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+}

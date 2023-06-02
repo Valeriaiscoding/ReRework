@@ -1,0 +1,96 @@
+﻿VAL = { # Valencia
+	flag_definition = {
+		coa = VAL
+		subject_canton = VAL
+		coa_with_overlord_canton = VAL_subject
+		allow_overlord_canton = yes
+	}
+	flag_definition = {
+		coa = VAL_republic
+		subject_canton = VAL_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = VAL_absolute_monarchy
+		subject_canton = VAL_absolute_monarchy	
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = VAL_dictatorship
+		subject_canton = VAL_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = VAL_communist
+		subject_canton = VAL_communist
+		priority = 15
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = VAL_theocracy
+		subject_canton = VAL_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = VAL_anarchy
+		subject_canton = VAL_anarchy
+		priority = 20
+		trigger = {
+			exists = c:VAL
+			c:VAL = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+	flag_definition = {
+		coa = VAL_subject_GBR
+		allow_overlord_canton = yes		
+		priority = 50
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = VAL_subject
+		allow_overlord_canton = yes		
+		priority = 50
+		trigger = { 
+			exists = c:VAL
+			c:VAL = { coa_def_independent_trigger = no }
+			}
+	}	
+	flag_definition = {
+		coa = VAL_subject_SPA
+		allow_overlord_canton = yes		
+		priority = 100
+		trigger = { 
+			exists = c:VAL
+			c:VAL = { coa_def_spanish_ensign_trigger = yes }
+			}
+	}
+	flag_definition = {
+		coa = VAL_subject_GBR
+		allow_overlord_canton = yes		
+		priority = 75
+		trigger = { 
+			exists = c:VAL
+			c:VAL = { coa_def_british_ensign_trigger = yes }
+			}
+	}
+}
+}

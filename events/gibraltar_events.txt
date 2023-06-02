@@ -1,0 +1,90 @@
+﻿namespace = gibraltar
+
+# Gibraltarian Identity event
+gibraltar.1 = {
+	type = country_event
+
+	title = gibraltar.1.t
+	desc = gibraltar.1.d
+	flavor = gibraltar.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	duration = 3
+
+	trigger = {
+		# triggered by gibraltarian_identity_decision
+	}
+
+	immediate = {
+
+	}
+
+	option = { #multicultural
+		name = gibraltar.1.a
+		trigger = {
+
+		}
+		default_option = yes
+		activate_law = law_type:law_multicultural
+		add_loyalists = {
+			value = 0.05
+		}
+		add_radicals = {
+			value = large_radicals
+			culture = cu:british
+		}
+	}
+	option = { #british
+		name = gibraltar.1.b
+		trigger = {
+		}
+		activate_law = law_type:law_national_supremacy
+		add_loyalists = {
+			culture = cu:british
+			value = 0.2
+		}
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:north_italian
+		}
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:portuguese
+		}
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:spanish
+		}
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:sephardic
+		}
+		add_radicals = {
+			value = medium_radicals
+			culture = cu:catalan
+		}
+	}
+}
+
+#Gibraltarian Independence
+gibraltar.2 = {
+	type = country_event
+	hidden = yes
+	trigger = {
+		exists = c:GIB
+		c:GIB = scope:target
+		
+	}
+
+	immediate = {
+		activate_law = law_type:law_presidential_republic
+	}
+}

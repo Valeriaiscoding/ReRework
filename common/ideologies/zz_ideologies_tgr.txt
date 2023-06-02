@@ -1,0 +1,273 @@
+﻿ideology_ottoman_reformism = {
+	icon = "gfx/interface/icons/ideology_icons/ottoman_reformism.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_economic_system = {	
+		law_mixed_market = strongly_approve
+		law_laissez_faire = neutral
+		law_interventionism = approve
+		law_agrarianism = disapprove
+		law_traditionalism = disapprove		
+		law_command_economy = strongly_disapprove
+		law_cooperative_ownership = strongly_disapprove
+	}
+	
+	lawgroup_currency_standard = {		
+		law_commodity_standard = strongly_disapprove	
+		law_metallic_currency = strongly_disapprove
+		law_silver_standard = neutral
+		law_gold_standard = approve
+		law_credit_standard = strongly_approve
+	}
+	
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = disapprove
+		law_compulsory_primary_school = strongly_disapprove
+	}	
+	
+	lawgroup_trade_policy = {
+		law_free_trade = neutral
+		law_mercantilism = disapprove
+		law_protectionism = strongly_approve		
+		law_isolationism = strongly_disapprove
+	}
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_centralization= {
+		law_totalitarian = neutral
+		law_unitary = strongly_approve
+		law_cooperative_federalism = neutral
+		law_dual_federalism = disapprove
+		law_regionalism = strongly_disapprove
+	}
+	
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = neutral
+		law_commercialized_agriculture = approve
+		law_homesteading = disapprove
+		law_collectivized_agriculture = strongly_disapprove
+	}
+	
+	lawgroup_workhours = { 
+		law_unlimited_workday = strongly_disapprove
+		law_14_hours = disapprove
+		law_12_hours = neutral
+		law_10_hours = disapprove
+		law_8_hours = strongly_disapprove
+	}
+	
+	lawgroup_minimum_wage = { 
+		law_no_minimum_wage = strongly_disapprove
+		law_trinket_minimum_wage = disapprove
+		law_low_minimum_wage = approve
+		law_acceptable_minimum_wage = disapprove
+		law_generous_minimum_wage = strongly_disapprove
+	}
+	lawgroup_labor_unions = { 
+		law_illegal_labor_unions = strongly_approve
+		law_state_controlled_labor_unions = disapprove
+		law_non_socialist_labor_unions = disapprove
+		law_all_labor_unions_allowed = strongly_disapprove
+	}
+	lawgroup_penal_system = {		
+		law_capital_punishment = strongly_disapprove
+		law_transportation = neutral
+		law_incarceration = approve
+		law_rehabilitation = neutral
+	}
+	
+	lawgroup_safety_regulations = { 
+		law_no_safety_regulations = strongly_disapprove
+		law_minimal_safety = disapprove
+		law_regulatory_bodies = neutral
+		law_worker_protections = disapprove
+		law_excellent_safety = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_single_party_state = approve
+		law_oligarchy = neutral
+		law_technocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_census_voting = strongly_disapprove
+		law_weighted_wealth_voting = strongly_disapprove
+		law_wealth_voting = strongly_disapprove
+		law_landed_voting = strongly_disapprove				
+	}
+	
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_approve
+		law_freedom_of_conscience = neutral
+		law_freedom_of_faith = disapprove
+		law_total_separation = disapprove
+		law_state_atheism = strongly_disapprove
+	}
+	lawgroup_education_system = {
+		law_private_schools = approve
+		law_public_schools = strongly_approve
+		law_religious_schools = neutral
+		law_no_schools = strongly_disapprove
+	}
+	possible = {
+		exists = c:TUR
+		owner = { c:TUR = THIS }
+		has_global_variable = abdulhamid_ii_spawned
+	}
+}
+ideology_hamidism = {
+	icon = "gfx/interface/icons/ideology_icons/ottoman_reformism.dds"
+	
+	lawgroup_economic_system = {	
+		law_mixed_market = strongly_approve
+		law_laissez_faire = neutral
+		law_interventionism = approve
+		law_agrarianism = disapprove
+		law_traditionalism = disapprove		
+		law_command_economy = strongly_disapprove
+		law_cooperative_ownership = strongly_disapprove
+	}
+	
+	lawgroup_currency_standard = {		
+		law_commodity_standard = strongly_disapprove	
+		law_metallic_currency = strongly_disapprove
+		law_silver_standard = neutral
+		law_gold_standard = approve
+		law_credit_standard = strongly_approve
+	}
+	
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = disapprove
+		law_compulsory_primary_school = strongly_disapprove
+	}	
+	
+	lawgroup_trade_policy = {
+		law_free_trade = neutral
+		law_mercantilism = disapprove
+		law_protectionism = strongly_approve		
+		law_isolationism = strongly_disapprove
+	}
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_centralization= {
+		law_totalitarian = approve
+		law_unitary = strongly_approve
+		law_cooperative_federalism = neutral
+		law_dual_federalism = disapprove
+		law_regionalism = strongly_disapprove
+	}
+	
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = neutral
+		law_commercialized_agriculture = approve
+		law_homesteading = disapprove
+		law_collectivized_agriculture = strongly_disapprove
+	}
+	
+	lawgroup_workhours = { 
+		law_unlimited_workday = strongly_disapprove
+		law_14_hours = disapprove
+		law_12_hours = neutral
+		law_10_hours = disapprove
+		law_8_hours = strongly_disapprove
+	}
+	
+	lawgroup_minimum_wage = { 
+		law_no_minimum_wage = strongly_disapprove
+		law_trinket_minimum_wage = disapprove
+		law_low_minimum_wage = approve
+		law_acceptable_minimum_wage = disapprove
+		law_generous_minimum_wage = strongly_disapprove
+	}
+	lawgroup_labor_unions = { 
+		law_illegal_labor_unions = strongly_approve
+		law_state_controlled_labor_unions = disapprove
+		law_non_socialist_labor_unions = disapprove
+		law_all_labor_unions_allowed = strongly_disapprove
+	}
+	lawgroup_penal_system = {		
+		law_capital_punishment = strongly_disapprove
+		law_transportation = neutral
+		law_incarceration = approve
+		law_rehabilitation = neutral
+	}
+	
+	lawgroup_safety_regulations = { 
+		law_no_safety_regulations = strongly_disapprove
+		law_minimal_safety = disapprove
+		law_regulatory_bodies = neutral
+		law_worker_protections = disapprove
+		law_excellent_safety = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_single_party_state = approve
+		law_oligarchy = neutral
+		law_technocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_census_voting = strongly_disapprove
+		law_weighted_wealth_voting = strongly_disapprove
+		law_wealth_voting = strongly_disapprove
+		law_landed_voting = strongly_disapprove				
+	}
+	
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_approve
+		law_freedom_of_conscience = approve
+		law_freedom_of_faith = neutral
+		law_total_separation = disapprove
+		law_state_atheism = strongly_disapprove
+	}
+	
+	lawgroup_education_system = {
+		law_private_schools = approve
+		law_public_schools = strongly_approve
+		law_religious_schools = neutral
+		law_no_schools = strongly_disapprove
+	}
+
+	possible = {
+		exists = c:TUR
+		owner = { c:TUR = THIS }
+		has_global_variable = abdulhamid_ii_spawned
+	}
+	
+}

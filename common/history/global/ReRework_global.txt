@@ -84,6 +84,19 @@ c:KOR = {
     add_technology_researched = empiricism #to allow state atheism, remove if unnecesary.
     activate_law = law_type:law_state_atheism #Choson dynasty crackdown on buddhism
 }
+s:STATE_BURGENLAND = {
+
+    set_variable = {
+        name = burgenland_region
+        value = yes
+    }
 
 }
-
+c:SOK = {
+    activate_law = law_type:law_theocracy
+    ig:ig_devout = {
+        remove_ideology = ideology_moralist
+        add_ideology = ideology_moralist_theocratic
+    }
+}
+}

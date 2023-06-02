@@ -1,0 +1,83 @@
+﻿DEI = {
+	dynamic_country_name = {
+		name = dyn_c_colonial_east_indies
+		adjective = dyn_c_colonial_east_indies_adj
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			any_country = {
+				OR = {
+					has_diplomatic_pact = {
+						who = c:DEI
+						type = puppet
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:DEI
+						type = dominion
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+}
+BIC = { # British East India Company
+	dynamic_country_name = { #NFM
+		name = NFM_dcn_east_india_company
+
+		is_main_tag_only = yes
+		priority = 70
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 	
+				has_law = law_type:law_presidential_republic
+				OR = {
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_colonial_raj
+	 #	adjective = dyn_c_colonial_raj_adj
+
+		is_main_tag_only = yes
+		priority = 100
+		
+		trigger = {
+			any_country = {
+				OR = {
+					has_diplomatic_pact = {
+						who = c:BIC
+						type = puppet
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:BIC
+						type = dominion
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+}
+DEFAULT = {
+	dynamic_country_name = { 
+		name = DCN_dcn_United_Kingdom_of_TAG
+		priority = 10
+		is_revolutionary = no
+		trigger = { exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_hm_gov
+				has_generic_name = yes
+			}
+		}
+	}
+}

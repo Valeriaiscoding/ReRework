@@ -1,0 +1,39 @@
+﻿gov_tsardom = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_TSAR" 
+	female_ruler = "RULER_TITLE_TSARINA"
+
+	male_heir = "RULER_TITLE_TSESAREVICH"
+	female_heir = "RULER_TITLE_TSAREVNA" 
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		OR = {
+			AND = {
+				exists = c:RUS
+				c:RUS = ROOT
+			}
+			AND = {
+				exists = c:BUL
+				c:BUL = ROOT
+				is_subject = no
+			}
+		}
+	}
+}
+gov_caliphate = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_CALIPH"
+	female_ruler = "" # Empty on purpose
+
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		has_law = law_type:law_theocracy
+		exists = c:SOK
+		c:SOK = ROOT
+	}
+}

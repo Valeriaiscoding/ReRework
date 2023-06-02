@@ -24,8 +24,9 @@ building_rye_farm = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -69,8 +70,9 @@ building_wheat_farm = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -114,8 +116,9 @@ building_rice_farm = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -159,8 +162,9 @@ building_maize_farm = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -204,8 +208,9 @@ building_millet_farm = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
@@ -249,8 +254,9 @@ building_livestock_ranch = {
 
 	can_build_government = {
 		owner = {
-			NOT = {
+			NOR = {
 				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_mixed_market
 			}
 		}
 	}
