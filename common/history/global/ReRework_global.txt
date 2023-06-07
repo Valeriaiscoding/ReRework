@@ -85,7 +85,6 @@ c:KOR = {
     activate_law = law_type:law_state_atheism #Choson dynasty crackdown on buddhism
 }
 s:STATE_BURGENLAND = {
-
     set_variable = {
         name = burgenland_region
         value = yes
@@ -98,5 +97,11 @@ c:SOK = {
         remove_ideology = ideology_moralist
         add_ideology = ideology_moralist_theocratic
     }
+}
+c:OMA = {
+    ig:ig_devout = {
+        set_interest_group_name = ig_ibadi_madrasahs
+    }
+    
 }
 }

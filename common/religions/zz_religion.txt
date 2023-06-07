@@ -73,7 +73,6 @@ sikh = {
 	traits = {
 		eastern
 		vedic
-	
 	}
 	
 	color = { 1 1 0.1 }
@@ -82,9 +81,9 @@ sikh = {
 atheist = {
 	texture = "gfx/interface/icons/religion_icons/atheist.dds"
 	color = { 1.0 1.0 1.0 }
-	# traits = {
-	# 	philosophical
-	# }
+	traits = {
+		philosophical
+	}
 }
 
 # should be all gone, but left in just in case
@@ -153,7 +152,15 @@ polynesian_faith = {
 	}
 	color = { 255 159 31 }
 }
-
+indonesian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		austronesian
+		australasian
+		eastern
+	}
+	color = { 48 15 179 }
+}
 malagasy_faith = {
 	texture = "gfx/interface/icons/religion_icons/madagascaran_faith.dds"
 	traits = {
@@ -429,3 +436,24 @@ confucianism = {
 # 	}
 # 	color = { 0.6 0.1 0.1 }
 # }
+
+###
+ibadi = {
+	texture = "gfx/interface/icons/religion_icons/ibadi.dds"
+	traits = {
+		muslim
+	}
+	color = { 0.3 0.3 1 }
+	
+	taboos = {
+		liquor wine
+	}
+}
+
+yazidism = {
+	texture = "gfx/interface/icons/religion_icons/yazidism.dds"
+	traits = {
+		eastern
+	}
+	color = { 139 105 173 }
+}

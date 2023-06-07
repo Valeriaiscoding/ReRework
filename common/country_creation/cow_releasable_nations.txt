@@ -1,0 +1,200 @@
+﻿######################
+# Cabinet of Wonders #
+# created by Lord R  #
+######################
+
+#Aosta
+AOS = {
+	provinces = {
+		x90C060
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Alsace-Lorraine
+FAL = { 
+    states = {
+        STATE_ALSACE_LORRAINE
+    }
+    ai_will_do = { always = no }
+}
+
+#Aquitaine
+AQT = {
+	states = {
+		STATE_AQUITAINE
+	}
+	ai_will_do = { always = no }
+}
+
+#Auvergne
+AUV = {
+	states = {
+		STATE_AUVERGNE
+		STATE_LIMOUSIN
+	}
+	ai_will_do = { always = no }
+}
+
+#Dauphiné
+DPH = {
+	states = {
+		STATE_RHONE
+		STATE_DAUPHINE
+    }
+    ai_will_do = { always = no }
+}
+
+#Elsass-Lothringen
+GEL = { 
+    states = {
+        STATE_ALSACE_LORRAINE
+    }
+    ai_will_do = { always = no }
+}
+
+#Gascogne
+GSC = { 
+    states = {
+        STATE_ARMAGNAC
+    }
+    ai_will_do = { always = no }
+}
+
+#Genoa
+GEN = {
+	states = {
+		STATE_LIGURIA
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Haute-Savoie
+HSV = {
+	provinces = {
+		x56B04B
+		xDDDD3B
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Konstanz
+KNZ = {
+	provinces = {
+		xAEBA2A
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Languedoc
+LDO = { 
+    states = {
+        STATE_LANGUEDOC
+    }
+    ai_will_do = { always = no }
+}
+
+#Mulhouse
+MLH = {
+	provinces = {
+		xB000E0
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Nice
+NCE = {
+	provinces = {
+		x5080E0
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Piedmont
+PID = {
+	provinces = {
+		x1140E0 x11C061 x90C060 xA9397D xAA6958 xACB500 xD080E0 xDA86EA xF00544
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Provence
+PRO = { 
+    states = {
+        STATE_PROVENCE
+    }
+    ai_will_do = { always = no }
+}
+
+#Savoie
+LSV = {
+	provinces = {
+		xD000E0
+		x6B4BA4
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Savoy
+SAV = {
+	states = {
+		STATE_SAVOY
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#South Tyrol
+SUT = {
+	states = {
+		STATE_SOUTH_TYROL
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Trent
+TRT = {
+	provinces = {
+		xD0BF60
+		x1120FF
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Tyrol
+TYR = {
+	states = {
+		STATE_TYROL
+		STATE_SOUTH_TYROL
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Vorarlberg
+VAB = {
+	provinces = {
+		xD0C0E0
+	}
+	
+	ai_will_do = { always = no }
+}
+
+#Ossola
+VOS = {
+	provinces = {
+		xF00544
+	}
+	
+	ai_will_do = { always = no }
+}

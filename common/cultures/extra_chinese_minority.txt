@@ -1,0 +1,758 @@
+Hui={
+	color= hsv{ 0.41 0.3 0.4 }
+	religion = sunni
+	traits = { sinosphere middle_eastern_heritage han_chinese east_asian_heritage }
+	male_common_first_names={
+		Afaq
+		Ali
+		Abbas
+		Alim Allah
+		Ahmed
+		Arshad
+		Bahayeddin
+		Bakhytzhan
+		Burhan
+		Daud
+		Ehmetjan
+		Esmail 
+		Ebrahim
+		Hakim
+		Husayin
+		Kemal
+		Maqsud
+		Abdul Malik
+		Muhammad
+		Mohammed Ayub
+		Musa
+		Rashidin
+		Satuq
+		Timur
+		Yaqub
+	}
+	female_common_first_names = {
+		Akew
+		Dilraba
+		Gulimina
+		Gulnazar
+		Omar
+		Madina
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Asieh
+		Bibi_Khatoom
+		Ghazaleh
+		Marjane
+		Marsha 
+		Maryam
+		Sedigheh
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Ma
+		Bai
+	}
+	common_last_names={
+		Ma
+		Bai
+		Mu
+		Han
+		Zheng
+		Sha
+		Guo
+		Ha
+		Hai
+		Hu
+		Sai
+		Cai
+		Na
+		Su
+		La
+		Ding
+		Bau
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+Wu={
+	color= hsv{ 0.40 0.66 0.39 }
+	religion = confucianism
+	traits = { sinosphere southern_han_chinese east_asian_heritage}
+	male_common_first_names={
+		Rongtin
+		Yanbing
+		Junru
+		Zui
+		Dianxia
+		Baozheng
+		Weijun
+		Jiegang
+		Junxiu
+		Yanwu
+		Zhutong
+		Zhuxuan
+		Sanqiang
+		Weichang
+		Mu
+		Yiling
+		Baili
+		Mengling
+		Dingwen
+		Xueseng
+		Zhongshu
+		Dajun
+		Zhimo
+		Wang
+		Pingbo
+		Feihong
+		Yueseng
+		Xiongbai
+		Bihui
+		Xie
+		Jiahua
+		Guangqian
+		Ziqing
+		Peide
+		Zhixing
+		Yang
+		Yu
+		Zhang
+		Zhu
+		Enbo
+		Taiyan
+		Jitao
+		Li
+		Shuwang
+		Cong
+		Xiling
+		Gaizun
+		Dafu
+		Xiaotong
+		Jingmo
+		Zhecun
+		Zhaoji
+		Huiao
+		Yifu
+		Zuiweng
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Manzheng
+		Manlu
+		Ailing
+		Bijun
+		Chong
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+		Guoli
+
+	}	
+	noble_last_names = {
+		Lv
+		Sheng
+		Gu
+		Tang
+		Qian
+		Zhang
+		Jiang
+		Dai
+	}
+	common_last_names={
+		Dong
+		Zhu
+		Xia
+		Xu
+		Yu
+		Ni
+		Dai
+		Ding
+		Tu
+		Zhu
+		Shao
+		Tang
+		Jing
+		Jiang
+		Shi
+		Qian
+		Lv
+		Sheng
+		Fei
+		Gu
+		Qian
+		Zhang
+		Jiang
+		Dai
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Zhang
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+Yao={
+	color= hsv{ 0.82 0.60 0.50 }
+	religion = chinese_pagan
+	traits = { hmong_mien_language east_asian_heritage }
+	male_common_first_names={
+		Bang
+		Blong
+		Chay
+		Dia
+		Hang
+		Ka
+		Kak
+		Kao
+		Mai
+		Mee
+		Neng
+		Pa
+		Qin
+		Shen
+		Zong
+		Zoua
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Cha
+		Congwen
+		Her
+		Liangyu
+		Lo
+		Lyfoung
+		Moua
+		Pao
+		Sao
+		Thao
+		Vue
+		Yang
+		Zhiming
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+Bai={
+	color= rgb{ 55 15 20 }
+	religion = mahayana
+	traits = { sinosphere east_asian_heritage }
+	obsessions = {
+		opium
+	}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+Jin={
+	color= rgb{ 25 85 40 }
+	religion = confucianism
+	traits = { sinosphere han_chinese east_asian_heritage }
+	obsessions = {
+		opium
+	}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+Gan={
+	color= rgb{ 25 85 80 }
+	religion = chinese_pagan
+	traits = { sinosphere southern_han_chinese east_asian_heritage }
+	obsessions = {
+		opium
+	}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+Xiang={
+	color= rgb{ 25 5 40 }
+	religion = chinese_pagan
+	traits = { sinosphere southern_han_chinese east_asian_heritage }
+	obsessions = {
+		opium
+	}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+yue={
+	color= hsv{ 0.80 0.36 0.39 }
+	religion = confucianism
+	traits = { southern_han_chinese east_asian_heritage}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+min={
+	color= hsv{ 0.71 0.54 0.78 }
+	religion = confucianism
+	traits = { southern_han_chinese east_asian_heritage }
+	male_common_first_names={
+		Bing
+		Chen
+		Du
+		He
+		Hou
+		Lin
+		Qin
+		Sa
+		Shen
+		Tan
+		Wong
+		Wu
+		Xu
+		Xue
+		Yan
+		Zheng
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Baochen
+		Baozhen
+		Debang
+		Fu
+		Huiyin
+		Nai-siong
+		Nee
+		Sen
+		Shu
+		Xin
+		Zexu
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}

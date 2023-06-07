@@ -1301,3 +1301,6539 @@ ainu={
 	}
 	graphics = asian
 }
+hakka={
+	color= hsv{ 0.1 0.43 0.34 }
+	religion = confucianism
+	traits = { han_chinese east_asian_heritage }
+	male_common_first_names={
+		Chen
+		Deng
+		Feng
+		Hong
+		Huang
+		Li
+		Liao
+		Liu
+		Qiu
+		Shi
+		Shu
+		Soong
+		Sun
+		Tsai
+		Wu
+		Xie
+		Xue
+		Yang
+		Ye
+		Zhang
+		Zhen
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dakai
+		Fengjia
+		Qiu
+		Rengan
+		Xiuqing
+		Xiuquan
+		Yatsen
+		Yongfu
+		Yucheng
+		Yunshan
+		Zicai
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+miao={
+	color= hsv{ 0.62 0.46 0.50 }
+	religion = chinese_pagan
+	traits = { hmong_mien_language east_asian_heritage }
+	male_common_first_names={
+		Bang
+		Blong
+		Chay
+		Dia
+		Hang
+		Ka
+		Kak
+		Kao
+		Mai
+		Mee
+		Neng
+		Pa
+		Qin
+		Shen
+		Zong
+		Zoua
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Cha
+		Congwen
+		Her
+		Liangyu
+		Lo
+		Lyfoung
+		Moua
+		Pao
+		Sao
+		Thao
+		Vue
+		Yang
+		Zhiming
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+zhuang={
+	color= hsv{ 0.92 0.32 0.88 }
+	religion = chinese_pagan
+	traits = { tai east_asian_heritage }
+	male_common_first_names={
+		Be
+		Duc
+		Hoang
+		Le
+		Nong
+		Quoc
+		Quynh
+		The
+		Van
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Cao
+		Chan
+		Den
+		Hau
+		Khanh
+		Manh
+		Phach
+		Phung
+		Thu
+		Trieu
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+
+yi={
+	color= hsv{ 0.91 0.51 0.52 }
+	religion = chinese_pagan
+	traits = { tibetan_language east_asian_heritage }
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+polynesian={
+	color= hsv{ 0.73 0.49 0.65 }
+	religion = polynesian_faith
+	traits = { polynesian_group indigenous_oceanic_heritage }
+	male_common_first_names={
+		Finau
+		Havaiki
+		Iosefo
+		Lika
+		Longotahi
+		Malietoa
+		Taufa_ahau
+		Taupe
+		Tavita
+		Te_Taulu
+		Tupou
+		Ulukalala
+		Vaopuka
+		William
+	}
+	female_common_first_names = {
+		Auli'i
+		Elizabeth
+		Kina'u
+		Kaliko
+		Kamamalu
+		Kamaikui
+		Kekelaokalani
+		Mary
+		Pane
+		Pauahi
+		Pomare
+	}	
+	noble_last_names = {
+		Keliimaikai
+		Kalakaua
+		Kamehameha
+		Kawananakoa
+		Keoua
+		Pomare
+	}
+	common_last_names={
+		Feletoa
+		Ielemia
+		Ma_ufanga
+		Maeakafa
+		Moengangongo
+		Te_Fuli
+		Tuabayi
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+hawaiian={ # 
+	color= hsv{ 0.29 0.26 0.60 }
+	religion = polynesian_faith
+	traits = { polynesian_group indigenous_oceanic_heritage }
+	male_noble_first_names = {
+		Alapa_imaloiki _Aikanaka
+		Eia
+		Ha_alo_u Ha_alelea
+		Kuhio Kala_imamahu Keaweamahi Kalaniulumoku Koakanu Kekaulike Kauakahiakua Kehahana Kiwala_o Kauhane Kaiakea Kahanamoku Ka_opuiki Kaisera Kamaunu
+		Lunalilo
+		Maile
+		Nahili Namaile Noukana Nahi_ole_a
+		Paoa
+		Zorobabela
+	}
+	male_common_first_names={
+		Aberahama _Alika _Anederea
+		Beniamina
+		Dani_ela
+		_Enoka Ehu
+		Hekekia Hairama Hugo 
+		Iosepa Ioane Iona Iosua Io_ela Ieremia Isaac
+		Kawika Keoni Kepano Keoki Kimo Kolomona
+		Lewi Luka Lakalo
+		Mika_ele Mareko Mataio Mose Makini
+		Noah
+		Paulo Petero Pilipo
+		Samuel
+		Timoteo Toma
+		Zakaria
+	}
+	female_common_first_names = {
+		Abigail Ahia Ana Analea
+		Elizabeth
+		Haupa Hana Haleloke 
+		Inaina
+		Kala Kina'u Kaliko Kamamalu Kamaikui Kekahili Kekelaokalani Kauwahine Kalukuna Kipa Kahiliopua Kauwa Kaha
+		Lucy Laura Lanihau
+		Maria Miriama Mareta Maile Mele
+		Naomi Namahana Namokuelua Na_awa
+		Pane Pauahi Papapaunauapu
+		Rahela
+	}	
+	noble_last_names = {
+		Aholo
+		Hua Hoapili
+		Keliimaikai Kalakaua Kalaniana_ole Kamehameha Kawananakoa Keoua Kaneakua Ka_auwai Keawe Kalakaua Kanoa Kapeau Kina_u Kanehoa Kekaaniau Kamamali Ka_eo
+		La_anui Loeau Leleiohoku 
+		Moehonua Maheha Mahoe
+		Nakuina Nohomualani Namakeha Naea
+		Olohana
+		Pi_ikoi Peleioholani Palekaluhi Papaiahiahi Pahulemu 
+	}
+	common_last_names={
+		Akaka Apoliona Aki Akina Apaka Alapai
+		Boyd Bipikane
+		Hanaike Hakuole Hiwauli Ho_opi_i Haili Hohopa
+		Iaukea _I_i
+		Kahanawai Kahanamoku Kanahele Kekumano Kawelo Kapena Kapaa Kamauoha Kamakau Kapahu Kaunamano Koahou Kaluna Kauhi Kaai Kekuku Kalama Kahauolopua Kaapana Kamakahi
+		Lilikalani Lahilahi 
+		Muolo Maikai Momoa Mahealani Makalua Malo
+		Nawahi Nowlein Napuaelua Nahakuelua Nahinu Nahaolelua Nainoa
+		Piianaia Pua Pukui Punahoa Pavao
+		Ukeke
+		Waiamau Waipuilani Waipa
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+melanesian={
+	color= hsv{ 0.85 0.47 0.73 }
+	religion = polynesian_faith
+	traits = { indigenous_oceanic_heritage polynesian_group }
+	male_common_first_names={
+		Epenisa
+		Eroni
+		Kanendjo
+		Kaoua
+		Lubati
+		Raivalita
+		Ralulu
+		Rasolo
+		Samuel
+		Seru
+		Taltai
+		Tamavunisa
+		Ti-Abel
+		Ti-Quatchium
+		Ti-Toorou
+		Yavala
+	}
+	female_common_first_names = {
+		Alanieta
+		Manjula
+		Noelene
+		Salote
+		Sarojini
+		Tauta
+	}	
+	noble_last_names = {
+		Dovi
+		Sukuna
+		Uluviti
+	}
+	common_last_names={
+		Banuve
+		Cakobau
+		Cokanauto
+		Hortense
+		Lakeba
+		Loganimoce
+		Qaraniqio
+		Tupou
+		Tyuienon
+		Vendegou
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+micronesian={
+	color= hsv{ 0.35 0.38 0.83 }
+	religion = polynesian_faith
+	traits = { indigenous_oceanic_heritage polynesian_group }
+	male_common_first_names={
+		Aghurubw
+		Aweijeda
+		Deireragea 
+		Hakana
+		Hakapeke
+		Maehua
+		Makiatia
+		Poiaka
+		Takahihi
+		Tawehi
+		Tem
+		Tikoro
+		Wekeia
+	}
+	female_common_first_names = {
+		Eibiaun
+		Eidingab
+		Eidukiri
+		Eigamoiya
+		Eomien
+		Jacinta
+	}	
+	noble_last_names = {
+		Elato
+		Emea
+		Ghatoliyool
+		Satawal
+		Sablan
+	}
+	common_last_names={
+		Baiteke
+		Bauro
+		Binoka
+		Karotu
+		Mensile
+		Namoriki
+		Panena
+		Sapwasap
+		Tawaia
+		Tetabo
+		Tokatake
+		Totonu
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+maori={
+	color= hsv{ 0.74 0.32 0.63 }
+	religion = polynesian_faith
+	traits = { polynesian_group indigenous_oceanic_heritage }
+	male_common_first_names={
+		Auha
+		Koroki
+		Mahuta
+		Matutaera
+		Potatau
+		Rangi-Kahu
+		Tawhiao
+		Te_Ata-i
+		Te_Rata
+		Tukaroto
+		Pokaia
+	}
+	female_common_first_names = {
+		Hariata
+		Kahupeka
+		Parengaope
+		Ruawehea
+		Tarore
+		Tiahuia
+		Te_Tahuna
+		Ta_Puea
+		Te_Marama
+		Te_Kona
+		Tuhikura
+		Whakaawi
+	}	
+	noble_last_names = {
+		Herangi
+		Heke
+		Hongi
+		Te_Wherowhero
+		Whaanga
+	}
+	common_last_names={
+		Ataarangikaahu
+		Kenena
+		Ngapora
+		Raouparah
+		Wherowhero
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+yuanzhumin={
+	color= hsv { 0.272 0.75 0.54 }
+	religion = polynesian_faith
+	traits = { polynesian_group indigenous_oceanic_heritage }
+	male_common_first_names={
+		Alizu Attun Suniuo Baqah Bokeh Kilash Maraos Mona Paelabang Pelin Rapongan Sorong Tahas Taiban Uyongu Walis WaLiSsu Yohani YuKan Yungai Toril Botel Tawu Kanas Difang
+	}
+	female_common_first_names = {
+		Giwas Mavivo Sorong Mona Tain Hulijun Sumay Kacaw Mayaw Biho Peishan Xinyi Panai Kusui Ado Kalitiang Pacidal Jiahui Gewas Mevevo Iami Igay
+	}
+	common_last_names={
+		Shiqatafu Hayung Rudao Kosang Pacidal Tuwana Ciro Kaybaybaw Isqaqavut Yatauyungana Siqeya Qaljupayare Sasala Danapan SiNan
+		SiApenKotan SiAman Ryuzo Tao Thao Palalin Kociang
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+aborigine={ # Aboriginal
+	color= hsv{ 0.08 0.28 0.61 }
+	religion = dreamtime
+	traits = { indigenous_oceanic_heritage aboriginal_australian }
+	male_common_first_names={
+		Bennelong
+		Billibellary
+		Calyute
+		Derrimut
+		Ellemarra
+		Jandamarra
+		Loongkoonan
+		Mokare
+		Morndi
+		Midgegooroo
+		Nemarluk
+		Pemulwy
+		Tollamareena
+		Tjyllyungoo
+		Umbarra
+		Wylie
+		Yagan
+		Yellagonga
+	}
+	female_common_first_names = {
+		Mindup
+		Naata
+		Yamup
+	}	
+	noble_last_names = {
+		Agwamin
+		Ayabakan
+		Badjiri
+		Bigambul
+		Bunuba
+		Dhiraila
+		Giabal Gulngay
+		Injinoo
+		Jarowair
+		Kooma
+		Kutjal
+		Quandamooka
+		Rakaya
+		Tepiti
+		Totj
+	}
+	common_last_names={
+		Bunurong
+		Lanne
+		Mullagh
+		Noongar
+		Nannup
+		Nungurray
+		Windich
+		Wonga
+		Wangkatha
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+zapotec={
+	color= hsv{ 0.32 0.29 0.78 }
+	religion = nahuatl
+	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	male_common_first_names={
+		Agustin
+		Alberto
+		Alfonso
+		Alfredo
+		Andres
+		Benito
+		Carlos
+		Cesar
+		Eduardo
+		Eugenio_2
+		Felipe
+		Fernando
+		Gabriel
+		Gilberto
+		Gregorio
+		Jacinto
+		Jesus
+		Jose
+		Juan
+		Julio
+		Macario
+		Manuel
+		Miguel
+		Nazario
+		Nicolas_2
+		Oliverio
+		Pablo
+		Porfirio
+		Rodolfo
+		Rufino
+	}
+	female_common_first_names = {
+		Amaranta
+		Blanca
+		Delfina
+		Eufrosina
+		Lina
+		Sofia
+		Violeta
+	}	
+	noble_last_names = {
+		Charis
+		Cortes
+		Henestrosa
+		Juarez
+		Tamayo
+	}
+	common_last_names={
+		Alonso
+		Antunez
+		Cabrera
+		Cajigas
+		Chacon
+		Chinas
+		Fernandez
+		Gamboa
+		Garcia
+		Gonzalez
+		Gutierrez
+		Guzman
+		Isael
+		Jimenez
+		Lopez
+		Matus
+		Morales
+		Merida
+		Nayeli
+		Orozco
+		Ortiz
+		Pineda
+		Rojas
+		Ruiz_2
+		Suarez
+		Vichido
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+mayan={
+	color= hsv{ 0.69 0.08 0.55 }
+	religion = mayan_faith
+	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	male_common_first_names={
+		Agustin
+		Akbal
+		Alejandro
+		Andres
+		Antonio
+		Anibal
+		Armando
+		Bernardo
+		Carlos
+		Crescencio
+		Cristobal_2
+		Cuautehmoc
+		Diego
+		Felipe
+		Gaspar
+		Hernando
+		Hilario
+		Humberto
+		Ignacio
+		Jacinto
+		Jesus
+		Luis
+		Marcial
+		Martin_2
+		Miguel
+		Ramiro
+		Rodolfo
+		Rolando
+		Santiago
+		Yumil
+	}
+	female_common_first_names = {
+		Ana
+		Catarina
+		Concepcion
+		Cristina
+		Elvia
+		Felipa
+		Maria
+		Paula
+		Ramona
+		Rigoberta
+		Rosalina
+		Thelma
+	}	
+	noble_last_names = {
+		Ay
+		Ceel
+		Chan
+		Chi
+		Pat
+		Pec
+		Poot
+	}
+	common_last_names={
+		Ak_ab_al
+		Cal
+		Canek
+		Canul
+		Carrillo
+		Ceh
+		Chee
+		Choc
+		Coc
+		Curruchic
+		Ixquiac
+		Kan
+		Lopez
+		Manzanero
+		Mas
+		Menchu
+		Mes
+		Merida
+		Osorio
+		Pek
+		Pop
+		Puk
+		Shal
+		Sho
+		Tecu
+		Teul
+		Tuyuc
+		Xicara
+		Xiloj
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+nahua={
+	color= hsv{ 0.47 0.29 0.38 }
+	religion = nahuatl
+	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	male_common_first_names={
+		Antonio
+		Carlos
+		Diego
+		Emiliano
+		Emilio
+		Felipe
+		Fernando
+		Francisco
+		Gaspar
+		Hernando
+		Hilario
+		Ignacio
+		Isaac
+		Jacinto
+		Jesus
+		Jose
+		Juan
+		Julio
+		Lorenzo
+		Manuel
+		Marcial
+		Mario
+		Martin_2
+		Natalio
+		Oliverio
+		Pedro
+		Roberto
+		Rodolfo
+		Santiago
+		Victor_2
+	}
+	female_common_first_names = {
+		Antonia
+		Celsa
+		Cleofas
+		Eva
+		Jovita
+		Laureana
+		Margarita
+		Maria
+		Marta
+		Matilde
+		Modesta
+		Ramona
+	}	
+	noble_last_names = {
+		Altamirano
+		Cortes
+		Gonzalez
+		Moyotlan
+		Neri
+		Palafox
+		Salazar
+		Zapata
+	}
+	common_last_names={
+		Ahuactzin
+		Atlanteco
+		Badiano
+		Bernardino
+		Coaguila
+		Coyotl
+		Cuautlaxahue
+		Gutierrez
+		Hernandez
+		Huanitzin
+		Itzel
+		Ixtlilxochitl
+		Jimenez
+		Matlacuahuac
+		Mayahuel
+		Moxo
+		Munoz
+		Nahui
+		Ocelotl
+		Panecatl
+		Tlaxca
+		Tletla
+		Tzehe
+		Valeriano
+		Xaxalpa
+		Xochitl
+		Zapotitla
+		Zicotencatl
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+tarascan={
+	color= hsv{ 0.50 0.24 0.75 }
+	religion = nahuatl
+	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	male_common_first_names={
+		Agustin
+		Alberto
+		Alfredo
+		Antonio
+		Armando
+		Arturo
+		Carlos
+		Cenobio
+		Daniel
+		Diego
+		Everardo
+		Gerardo
+		Gumersindo
+		Hector
+		Jesus
+		Juan
+		Leobardo
+		Luis
+		Manuel
+		Marcial
+		Marco_Antonio
+		Melchor
+		Pedro
+		Ricardo
+		Salvador
+		Samuel
+		Sergio
+		Silvano
+		Silvestre
+		Victor_2
+	}
+	female_common_first_names = {
+		Amalia
+		Antonia
+		Celsa
+		Erendira
+		Eva
+		Jovita
+		Laureana
+		Margarita
+		Maria
+		Marta
+		Matilde
+		Modesta
+		Ramona
+	}	
+	noble_last_names = {
+		Calderon
+		Cristobal_2
+		Ochoa
+		Paniagua
+		Ocampo
+	}
+	common_last_names={
+		Almonte
+		Arredondo
+		Arriaga
+		Aureoles
+		Bernal
+		Brito
+		Cano
+		Carrillo
+		Cuevas
+		Dimas
+		Esquivel
+		Estrada
+		Galeana
+		Gallardo
+		Garcia
+		Gomez
+		Lopez
+		Maciel
+		Magana
+		Medrano
+		Mena
+		Tinoco
+		Toryo
+		Vargas
+		Zendejas
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+quechua={
+	color= hsv{ 0.10 0.22 0.69 }
+	religion = inti
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Agustin
+		Alejandro
+		Antauro
+		Antonio
+		Basilio
+		Daniel
+		Diego
+		Eugenio_2
+		Facundo
+		Felipe
+		Francisco
+		Gustavo
+		Hilario
+		Inca
+		Isaac
+		Jose_Maria
+		Julio
+		Lorenzo
+		Manuel
+		Marcos
+		Mariano
+		Martin_2
+		Nicolas_2
+		Osvaldo
+		RenE_
+		Roberto
+		Simon_2
+		Tupac
+		Ulises
+		Victor_2
+	}
+	female_common_first_names = {
+		Angelica
+		Casimira
+		Felicita
+		Juanita
+		Luzmila
+		Mercedes
+		Micael
+		Nilda
+		Savina
+		Silvia
+	}	
+	noble_last_names = {
+		Collahuazo
+		Duchicela
+		Poma
+		Quispe
+		Santa_Cruz
+	}
+	common_last_names={
+		Arguedas
+		Barrientos
+		Cajahuanca
+		Canchata
+		Chambi
+		Chihuan
+		Cusurichi
+		Espejo
+		Frisancho
+		Gamarra
+		Guaman
+		Guayasamin
+		Gutierrez
+		Heredia
+		Humala
+		Iturri
+		Lazarte
+		Luduena
+		Melgarejo
+		Noguera
+		Palacios
+		Patino
+		Rodriguez
+		Roncaglia
+		Sosa
+		Sumac
+		Toledo
+		Vargas
+		Wallparrimachi
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+guarani={
+	color= rgb{ 194 109 46 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Aniceto
+		Antonio
+		Bartolome
+		Camilo
+		Carlos
+		Claudio
+		David
+		Emiliano
+		Eugenio_2
+		Felipe
+		Fernando
+		Felix
+		Gregorio
+		Jacinto
+		Jesus
+		Jose
+		Juan
+		Julio
+		Luis
+		Manuel
+		Marcos
+		Maximo
+		Narciso
+		Pablo
+		Pedro
+		Rodrigo
+		Roque
+		Simon_2
+		Teodoro
+		Victor_2
+	}
+	female_common_first_names = {
+		Adela
+		Blanca
+		Carola
+		Celsa
+		Eliza
+		Ermelina
+		Hercilia
+		Lindaura
+		Maria
+		Modesta
+		Sara
+		Ubalda
+		Veronica
+	}	
+	noble_last_names = {
+		Anzoategui
+		Campero
+		Santa_Cruz
+		Tiaraju
+		Tumpa
+	}
+	common_last_names={
+		Abjaisu
+		Ayegua
+		Camba
+		Chuaie
+		Correa
+		Cunhagatu
+		Diaz_2
+		Fernandez
+		Galeano
+		Gonzalez
+		Guaracay
+		Guarani
+		Guerrero
+		Gomez
+		Jopara
+		Lopez
+		Mongelos
+		Morla
+		Ortiz
+		Parave
+		Picagua
+		Rodas
+		Riquelme
+		Rivarola
+		Tarayu
+		Torga
+		Velazquez
+		Yaguarete
+		Yrahi
+		Alvarez
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+aimara={
+	color= hsv{ 0.02 0.57 0.74 }
+	religion = inti
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Agustin
+		Alejandro
+		Antonio
+		Bartolome
+		Carlos
+		David
+		Eduardo
+		Enrique
+		Evo
+		Facundo
+		Felipe
+		Francisco
+		Gregorio
+		Hugo
+		Jose
+		Juan
+		Juan_Jose
+		Manuel
+		Marcos
+		Mario
+		Maximo
+		Nicolas_2
+		Osvaldo
+		Ramon
+		Roberto
+		Santiago
+		Tupac
+		Vicente
+		Victor_2
+		Victor_Hugo
+	}
+	female_common_first_names = {
+		Adela
+		Bartolina
+		Blanca
+		Carola
+		Celsa
+		Claudia
+		Eliza
+		Ermelina
+		Gregoria
+		Hercilia
+		Lindaura
+		Maria
+		Maxima
+		Modesta
+		Sara
+		Silvia
+		Ubalda
+		Veronica
+	}
+	noble_last_names = {
+		Apaza
+		Cusicanqui
+		Katari
+		Sisa
+		Vargas
+	}
+	common_last_names={
+		Ayme
+		Calisaya
+		Cardenas
+		Castilla
+		Chino
+		Choquehuanca
+		Condori
+		Corahua
+		Hoffmann
+		Huachua
+		Huallpa
+		Larico
+		Machaca
+		Mamani
+		Morales
+		Paredes
+		Penaranda
+		Puma
+		Quilca
+		Quispe
+		Rivera
+		Sisa
+		Tamayo
+		Taquiri
+		Torres
+		Yllanes
+		Yucra
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+amazonian={
+	color= hsv{ 0.38 0.58 0.59 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Anibal
+		Augusto
+		Bento
+		Bernardo
+		Cesar
+		Daniel
+		David
+		Donato
+		Duarte
+		Ernesto
+		Estevao_2
+		Fernando
+		Francisco
+		Gabriel
+		Graciano
+		Hugo
+		Joao
+		Julio
+		Kananoe
+		Leopoldo
+		Lucas
+		Miguel
+		Nuno
+		Paulinho
+		Raoni
+		Rafael_2
+		Roberto
+		Sebastiao
+		Sergio
+		Simao
+		Vasco
+		Zeferino
+		Oscar_2
+	}
+	female_common_first_names = {
+		Catarina
+		Clara
+		Cristina
+		Maria
+		Teresa
+	}	
+	noble_last_names = {
+		Aikana
+		Amahuaca
+		Apetina
+		Baniwa
+		Bororo
+		Canela
+		Guaycuru
+		Hupda
+		Jecupe
+		Metuktire
+		Minuane
+		Nambikwara
+		Paiakan
+		Parintintin
+		Umutina
+		Wayana
+		Yanomami
+	}
+	common_last_names={
+		Arawak
+		Arawa
+		Bororo
+		Garifuna
+		Guayana
+		Ge
+		Jeiko
+		Kaingang
+		Kalinago
+		Kamakan
+		Karaja
+		Kayapo
+		Matses
+		Maxakali
+		Puri
+		Timbira
+		Xavante
+		Xerente
+		Xokieng
+		Yanomamo
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+patagonian={
+	color=hsv{ 0.23 0.24 0.9 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Agustin
+		Antonio
+		Aquiles
+		Arturo
+		Aucan
+		Aurelio
+		Bernardo
+		Carlos
+		Claudio
+		Diego
+		Facundo
+		Fernando
+		Francisco
+		Felix
+		Gerardo
+		Gregorio
+		Hugo
+		Ignacio
+		Jose
+		Juan
+		Luis
+		Manuel
+		Marcos
+		Martin_2
+		Melchor
+		Maximo
+		Pedro
+		Ramon
+		Raul_2
+		Santiago
+		Victor_2
+	}
+	female_common_first_names = {
+		Emilia
+		Janequeo
+		Juana
+		Maria
+		Rosario
+		Ximena
+	}	
+	noble_last_names = {
+		Calfucura
+		Colipi
+		Conoepan
+		Melin
+		Namuncura
+		Paillalef
+		Quilapan
+	}
+	common_last_names={
+		Aliwen
+		Amuylifko
+		Aukan
+		Ayllapan
+		Bravo
+		Chiguay
+		Cumin
+		Curumilla
+		Epulewfu
+		Foyelkay
+		Guaiquil
+		Huichaman
+		Ilwen
+		Kayupi
+		Kumlafken
+		Kvlapi
+		Levinanco
+		Lincoman
+		Marifil
+		Melifilu
+		Millakoyam
+		Millapani
+		Nahuel
+		Paillacar
+		Pillancar
+		Quelin
+		Remultray
+		Unquen
+		Waikimill
+		Yankvleufu
+		Nanku
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+guajiro={
+	color={ 221 248 75 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Baltasar
+		Bernardo
+		Carlos
+		Celestino
+		Diego
+		Emilio
+		Felipe
+		Fernando
+		Fidel
+		Francisco
+		Gaspar
+		Gregorio
+		Hugo
+		Ignacio
+		Jose
+		Juan
+		Manuel
+		Marcos
+		Mario
+		Mateo
+		Melchor
+		Narciso
+		Pablo
+		Pedro
+		Ramon
+		Roberto
+		Santiago
+		Sebastian
+		Simon_2
+		Tomas
+	}
+	female_common_first_names = {
+		Lido
+		Patricia
+	}	
+	noble_last_names = {
+		Aapashuna
+		Epieyu
+		Iguana
+		Tijuana
+		Ulewana
+	}
+	common_last_names={
+		Jayaliyuu
+		Jusayuu
+		Pausayuu
+		Sapuana
+		Uliana
+		Uliyuu
+		Uraliyyu
+		Walapuana
+		Walepushana
+		Eirakajaule
+		Pimienta
+		Velasquez
+		Kanakantui
+		Lumoulein
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+tupinamba={
+	color= hsv{ 0.44 0.24 0.71 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Andre
+		Carlos
+		Diogo
+		Emilio
+		Eusebio
+		Fernando
+		Filipe
+		Francisco
+		Fabio_2
+		Gabriel
+		Gaspar
+		Goncalo
+		Gustavo
+		Henrique
+		Inacio
+		Jordao_2
+		Jose
+		Joao
+		Luis_2
+		Lucio
+		Manuel
+		Mateus
+		Nicolau
+		Paulo
+		Pedro
+		Roque
+		Sergio
+		Tomas
+		Vitor
+		Alvaro
+	}
+	female_common_first_names = {
+		Antonia
+		Bartira
+		Catarina
+		Clara
+		Joana
+		Margarida
+		Maria
+	}	
+	noble_last_names = {
+		Caiubi
+		Jaguaranha
+		Maracaiaguacu
+		Paraguacu
+		Piquerobi 
+		Rodelas
+		Tibirica
+	}
+	common_last_names={
+		Caetes
+		Potiguara
+		Tabajara
+		Tamoios
+		Temimino
+		Tupinamba
+		Tupiniquim
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+metis={
+	color= rgb{ 200 111 62 }
+	religion = catholic
+	traits = { indigenous_american_heritage francophone north_american_group }
+	male_common_first_names={
+		Amroise-Dydime
+		Daniel
+		Gabriel
+		James
+		Jaque
+		Joel
+		John
+		Louis
+		William
+	}
+	female_common_first_names = {
+		Blance
+		Charlotte
+		Helene_2
+		Josephte 
+		Julie
+		Laura
+		Maria
+		Marie-Anne
+		Michele
+		Rosalie
+	}	
+	noble_last_names = {
+		Lepine
+		Riel
+		Sayer
+	}
+	common_last_names={
+		Bruce
+		Clarence
+		Dumont
+		Lacerte
+		Lesperance
+		Martin
+		Vandal
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+dakota={
+	color= hsv{ 0.63 0.30 0.52 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Hehaka
+		Inkpaduta
+		Istahba
+		Mahpiya
+		Monkaushka
+		Sinte
+		Tamaha
+		Thahca
+		Thasunke
+		Thathanka
+		Thaoyate_Duta
+		Wanbdisapa
+		Wanata
+	}
+	female_common_first_names = {
+		Azayamankawin
+		Topahhdewin
+		Wakanmaniwin
+		Wakantakawin
+		Wakhan_Inazin_Win
+	}	
+	noble_last_names = {
+		Hakadah
+		Ohiya_S-a
+		Tamaha
+		Wakinyanduta
+		Wowinape
+	}
+	common_last_names={
+		Duta
+		Gleska
+		Huste
+		Iyotake
+		Kohkophapi
+		Kramarae
+		Luta
+		Pecan_Wakpa
+		Sapa
+		Thankja
+		Witko
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+cherokee={
+	color= rgb{ 105 145 40 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Andrew
+		Charles
+		Dennis
+		Edward Elias
+		Frank
+		Jeremiah Joel John
+		Lewis
+		Tahlonteeskee Takatoka Thomas
+		William
+	}
+	female_common_first_names = {
+		Amanda
+		Barbara
+		Eva
+		Frances
+		Jenny
+		Lilah Lydia
+		Martha
+		Norma
+		Rebecca Rowena Ruth
+		Sharon
+		Virginia
+		Wahnenauhi
+	}	
+	noble_last_names = {
+		Boudinot
+		Christie
+		Ridge
+		Ross
+		Rogers
+		Vann
+	}
+	common_last_names={
+		Awiakta Allstring Ashtola Antowie
+		Ballard Buffington Benge Bumeatt Barley Boggs Burner Baldridge Broom Bearmeat Bushead Bechunter
+		Cowart Cheek Crawfeeder Cahoost Chickleece Coulson Cullake
+		Downing Dick Deerhead Dreadfulwater Dunbeans
+		Euker
+		Fields Fish Frog Fry Falling
+		Gilbreath Grimmett Grass Geeska Grasshopper Grubworm Graves
+		Harris Hass Hogshooter Harnage Harriss
+		Justice
+		Kary
+		Lowry Lamar Lasley Love Lauchee Lowen Landrum Lyingfish
+		Mayes McIntosh Mankiller McCamin Muskrat McCray More Mays McDaniel
+		Neal Nockman
+		Orr Owane
+		Potter Peck Proctor Pritchett
+		Ruddle Reed
+		Sinnes Shine Scrimsher Sanders Sankier Snail Sixkiller Still Salterfield Salloee Sweecullee Swimmer
+		Thompson Tehee Thayah Timpson Tucker Towie Toter
+		Vickory Vann
+		Wolf Wickliff Weaver Woodard Walkingstick
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+muskogean={ # Creek and Seminole
+	color= hsv{ 0.27 0.2 0.67 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Alexander
+		Billy
+		Gideon
+		John Joseph Jack
+		Kose
+		Micanopy
+		Peter
+		Roley
+		Sam Solomon
+	}
+	female_common_first_names = {
+		Ann
+		Cindoche
+		Delilah
+		Kecharte
+		Lucy
+		Martha
+		Polly Polikissut
+		Yulaka
+	}	
+	noble_last_names = {
+		Ahhajumba
+		Bowlegs Brim
+		Checote
+		McIntosh
+		Stedham
+	}
+	common_last_names={
+		Anderson Arthur
+		Beaver Barnett Berryhill
+		Coppinger Callahan Carr
+		Dreadfulwater Davis
+		Fixico
+		Hicks Hardage Harjo
+		Isaac
+		Jones
+		McQueen
+		Powell Perryman Prince Potter
+		Sixkiller
+		Yoholo
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+pueblo={
+	color= hsv{ 0.19 0.34 0.93 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Alchesay
+		Amisoli
+		Cochise
+		Geronimo
+		Loco
+		Mangas
+		Naiche
+		Nana
+		Taza
+		Victorio
+	}
+	female_common_first_names = {
+		Alfonsita
+		Crucita
+		Elizabeth
+		Evelina
+		Geronima
+		Helen
+		Juanita
+		Lisa
+		Lucy
+		Laurencita
+		Louise
+		Margaret
+		Martina
+		Ramita
+		Susan
+		Vera
+	}	
+	noble_last_names = {
+		Abeita
+		Herrera
+		Potsunu
+		Romero
+	}
+	common_last_names={
+		Arivaipa
+		Cibecue
+		Coyotero
+		Jicarilla
+		Llanero
+		Mescalero
+		Nateges
+		Naranjo
+		Tonto
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+inuit={
+	color= hsv{ 0.49 0.03 0.99 }
+	religion = eskaleut
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Caubvick
+		David
+		Ernie
+		Germaine
+		Markoosie
+		Ipeelee
+		Jack
+		James
+		Jose_2
+		Kenojuak
+		Naalak
+		Peter
+		Pitseolak
+		Steve
+		Simeonie
+		Titus
+	}
+	female_common_first_names = {
+		Alacie
+		Beatrice
+		Josephine
+		Madeline
+		Mina
+		Mitiarjuk
+		Sheila
+	}	
+	noble_last_names = {
+		Atagotaaluk
+		Tullaugaq
+	}
+	common_last_names={
+		Alakannuark
+		Arreak
+		Ashoona
+		Enuaraq
+		Evaloarjuk
+		Ipeelee
+		Irgittuq
+		Keenainak
+		Kunuk
+		Kusugak
+		Maksagak
+		Nappaaluk
+		Nutarak
+		Paniloo
+		Piugattuk
+		Pudluk
+		Tiktaalaaq
+		Ungallaq
+		Quissa
+		Sivuarapik
+	}
+	ethnicities = {
+		1 = circumpolar
+	}
+	graphics = asian
+}
+
+cree={
+	color= hsv{ 0.30 0.39 0.95 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Alexis
+		Baptiste
+		Felix_2
+		Jacob
+		James
+		Joe
+		Louis
+		Maskipitonew
+		Samson
+	}
+	female_common_first_names = {
+		Amelia
+		Freda
+		Glecia
+		Georgina
+		Judy
+		Rosanna
+		Shirley
+		Tishynah Tuhbenahneequay Tekarihogen
+		Verna
+	}	
+	noble_last_names = {
+		Ahenakew
+		Ahtahkakoop
+		Kahkewistahaw
+		Lathlin
+	}
+	common_last_names={
+		Assiniwi
+		Buffalo
+		Callahan
+		Crane
+		Decoteau
+		Douglas
+		Kiskiyew
+		Piche
+		Rain
+		Saddleback
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+navajo={
+	color= hsv{ 0.62 0.26 0.74 }
+	traits = { indigenous_american_heritage north_american_group }
+	religion = totemism
+	male_common_first_names={
+		Barboncito
+		Digul_Chee
+		Ganado
+		Henry_Chee
+		Herrero
+		Jeremiah
+		Manuelito
+		Mariano
+		Narbona
+		Zarcillos
+	}
+	female_common_first_names = {
+		Amanda
+		Claudeen
+		Geraldine
+		Jacqueline
+		Maria
+		Pablita
+		Theresa
+	}	
+	noble_last_names = {
+		Begay
+		Dodge
+		Hastiin_Dagha
+		K-aayelii
+	}
+	common_last_names={
+		Ch_ilhanjini
+		Da_ghaaii
+		Delagado
+		Grande
+		Largos
+		Martinez
+		Naat_aa
+		Redcloud
+		To_tso_nii
+		Zah
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+athabaskan={
+	color= rgb{ 96 108 64 }
+	religion = eskaleut
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Caubvick
+		David
+		Ernie
+		Germaine
+		Markoosie
+		Ipeelee
+		Jack
+		James
+		Jose_2
+		Kenojuak
+		Naalak
+		Peter
+		Pitseolak
+		Steve
+		Simeonie
+		Titus
+	}
+	female_common_first_names = {
+		Alacie
+		Beatrice
+		Josephine
+		Madeline
+		Mina
+		Mitiarjuk
+		Sheila
+	}	
+	noble_last_names = {
+		Atagotaaluk
+		Tullaugaq
+	}
+	common_last_names={
+		Alakannuark
+		Arreak
+		Ashoona
+		Enuaraq
+		Evaloarjuk
+		Ipeelee
+		Irgittuq
+		Keenainak
+		Kunuk
+		Kusugak
+		Maksagak
+		Nappaaluk
+		Nutarak
+		Paniloo
+		Piugattuk
+		Pudluk
+		Tiktaalaaq
+		Ungallaq
+		Quissa
+		Sivuarapik
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+salish={ # Tlingit and Haida merged together, forgive me
+	color= hsv{ 0.55 0.47 0.54 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Cumshewa
+		Cuneah
+		Dah-egin
+		Gush_X-een
+		Guujaaw
+		Hluugitgaa
+		Masset
+		Ninstints
+		Skaay
+		Skidegate
+		Tahaygen
+		Wiisheyksh
+		Xhuuyaa
+	}
+	female_common_first_names = {
+		Ansnaq
+		Jadal_q-eganga
+		Kung_Jaadee
+		Kwiigeliones
+		K-woiyang
+		Qawkuna
+		Skil_Kew_Wat
+	}	
+	noble_last_names = {
+		Gispwudwada
+		Idinsaw
+		Taantakwaan
+		Y-akwa-lanas
+	}
+	common_last_names={
+		Daaxan
+		Hak
+		Ni-isyuus
+		Psday
+		Yahgulanaas
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+nez_perce={ # Nez Perce
+	color= hsv{ 0.06 0.45 0.70 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Allalimya_Takanin
+		Apash_Wyakaikt
+		Ellis
+		Hahtalekin
+		Hallalhotsoot
+		Hinmatoowyalahtqit
+		Husishusis_Kute
+		Ippakness_Wayhayken
+		Ollokot
+		Peopeo_Kiskiok_Hihih
+		Sousouquee
+		Toohoolhoolzote
+		Tuekakas
+	}
+	female_common_first_names = {
+		Claudia
+		Heyoon_Yoyikt
+		Khapkhaponimi
+	}	
+	noble_last_names = {
+		Alpowai
+		Lamatta
+		Pikunin
+		Wallowa
+	}
+	common_last_names={
+		Piatote
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+siouan={
+	color= hsv{ 0.14 0.35 0.99 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Hehaka
+		Inkpaduta
+		Istahba
+		Mahpiya
+		Monkaushka
+		Sinte
+		Tamaha
+		Thahca
+		Thasunke
+		Thathanka
+		Thaoyate_Duta
+		Wanbdisapa
+		Wanata
+	}
+	female_common_first_names = {
+		Pi_tamaka
+		Topahhdewin
+		Wakanmaniwin
+		Wakantakawin
+		Wakhan_Inazin_Win
+	}	
+	noble_last_names = {
+		Hakadah
+		Ohiya_S-a
+		Tamaha
+		Wakinyanduta
+		Wowinape
+	}
+	common_last_names={
+		Duta
+		Gleska
+		Huste
+		Iyotake
+		Kohkophapi
+		Kramarae
+		Luta
+		Pecan_Wakpa
+		Sapa
+		Thankja
+		Witko
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+comanche={
+	color= hsv{ 0.08 0.5 0.37 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Esihabit
+		Huupi-pahati Hitetetsi
+		Isaviah Isananaka
+		Ketsumse
+		Mopechucope
+		Nocona
+		Puhihwitsikwasu Parosawano Pocheha-quehip Pahayoko
+		Quanah Quenah-evah
+		Tabby-nocca Tawaquenah
+		Waakakwasi Wulea-boo
+	}
+	female_common_first_names = {
+		Ahuhwuthtakum
+		Chony
+		Mahchettawookey
+		Naduah
+		Topsannah Toepay Tonarcy
+		Weakeah
+	}	
+	noble_last_names = {
+		Hois
+		Kwahadi Kotsoteka
+		Nokoni
+		Penateka
+		Yamparika
+	}
+	common_last_names={
+		Esarosavit
+		Itehtah_o
+		Ketahtoh
+		Jupe
+		Motso Motsai
+		Pohee Pigianigwai Pahnaixte
+		Tenawa Tanima Tekapwai
+		Wahkoh Wohoi WahaToya Wia_ne
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+algonquian={
+	color= hsv{ 0.22 0.15 0.86 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Catecahassa Cottawamago Cheeseekau
+		Gakiiwegwanebi 
+		Hokoleskwa
+		Kekewepelethy
+		Lalawethika Lawoughqua
+		MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+		Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+		Quatawapea 
+		Spemica_Lawba Shemanetoo
+		Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+	}
+	female_common_first_names = {
+		Haayiitaapama
+		Methoataske MayataakwipiiwehS_i
+		Nonhelema
+		Peahchepeahso
+		WelepiiwehS_i
+	}
+	common_last_names={
+		Chalahgawtha
+		Eskippakithiki
+		Hokolesqua
+		Kispokotha KaskE_
+		Mecoce
+		Opessa
+		Pekowi Peckuwe 
+		ShipakA_kamithagI_
+		Thawikila
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+iroquoian={
+	color= rgb{ 233 116 10 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Akwiraron Akwirente
+		Domagaya
+		Ga-Na-Gua Guyasuta Ganio-dai-io Gyantwachia
+		Hadawa-ko Hayonhwonhish Honayawas Hutgohsodoneh
+		Kaintwakon
+		Skenandoa Sganyodaiyo Sakokwenionkwas Sagoyewatha Sayenqueraghta Sigwaahdohgwih Sosondowa
+		Tanacharison Thaonawyuthe Tejonihokarawa Taignoagny Tewahangarahken 
+	}
+	female_common_first_names = {
+		Akat Alliquippa
+		Dehhewanis
+		Gahonnoneh Gowongo
+		Kaniehtiio Kateri Kawisenhawe
+		Lydia
+		Tekakwitha Tyonajanegen
+	}
+	noble_last_names = {
+		Abeel
+		Brant Blacksnake
+		Chaussi Cornplanter
+	}
+	common_last_names={
+		Bennett Buck Brant
+		Crants
+		Gibson
+		Heron Hubbard
+		Jemison
+		Lyons Longboat
+		Mohawk Montour
+		Pallan Parker Pierce Plummer
+		Seneca Steele
+		Watt
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+caddoan={ # Choctaw
+	color= hsv{ 0.16 0.65 0.85 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Apuckshunubbee
+		Benjamin
+		Greenwood
+		Hollis
+		James
+		Mushulatubbee
+		Pushmataha
+		Tuskaloosa
+	}
+	female_common_first_names = {
+		Owanah
+		Rosella
+		Samantha
+	}
+	noble_last_names = {
+		Cole
+		LeFlore
+		Smallwood
+		Roberts
+	}
+	common_last_names={
+		Anderson
+		Folsom
+		Hightower
+		Lomahaftewa
+		McCurtain
+		Oklahombi
+		Pickens
+		Pitchlynn
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+paiute={ # Ute and Shoshone
+	color= hsv{ 0.06 0.39 0.80 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Antonga
+		Arapeen
+		Canalla
+		Cameahwait
+		Colorow
+		Guero
+		Ignacio
+		Kanosh
+		Ouray
+		Owitze
+		Paseego
+		Pinquanah
+		Pocatello
+		Posey
+		Sanpitch
+		Sapiah
+		Sapinero
+		Severo
+		Tabby-To-Hwanah
+		Tse-Ne-Gat
+		Walkara
+		Washakie
+		Wirasuap
+	}
+	female_common_first_names = {
+		Chipeta
+		Nanawu
+		Pearl
+		Shawsheen
+		Wenega
+	}	
+	noble_last_names = {
+		House
+		Timbimboo
+		Timpanog
+		Tussawehee
+		Umatilla
+	}
+	common_last_names={
+		Box
+		Daggett
+		Estep
+		Manning
+		Rael
+		Teton
+		Trahant
+		Trudell
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+hokan={
+	color= hsv{ 0.94 0.27 0.87 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Aurelio
+		Camilo
+		Estanislao
+		Kagama
+		Numaga
+		Pahninee
+		Tau-Gu
+		Tenaya
+		Tutsegabit
+		Virgil
+	}
+	female_common_first_names = {
+		Anna
+		Aurelia
+		Candida
+		Cayetana
+		Elena
+		Julia
+		Louisa
+		Mineru
+		Omesia
+		Pamahas
+	}	
+	noble_last_names = {
+		Ahwahne
+		Chochenyo
+		Cucunuchi
+		Gashowu
+		Lakisamni
+		Okwanuchu
+		Tawalimnu
+		Winnemucca
+		Wukchumni
+		Ynitia
+	}
+	common_last_names={
+		Abinanti
+		Aguilar
+		Follis
+		Masten
+		Parker
+		Perez
+		Pico
+		Sandoval
+		Sarris
+		Telles
+		Teyoc
+		Thom
+		Tillohash
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+apache={
+	color= hsv{ 0.11 0.58 0.94 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Klaesh
+		Lomayumtewa
+		Tuba
+		Yukiuma
+	}
+	female_common_first_names = {
+		Dahteste
+		Grace
+		Nampeyo
+		Otellie
+	}	
+	noble_last_names = {
+		Begaye
+		Katchongva
+		Naha
+		Sekaquaptewa
+	}
+	common_last_names={
+		Banyacya
+		Chapella
+		Evehema
+		Honyestewa
+		Humetewa
+		Ishii
+		Loloma
+		Lomayesva
+		Zachai
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+oodham={
+	color= hsv{ 0.94 0.63 0.58 }
+	religion = totemism
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Charles
+		David
+		Ganado
+		Henry
+		Herandez
+		Jack
+		James
+		Joel
+		John
+		Jose
+		Louis
+		Mariano
+		Paul
+	}
+	female_common_first_names = {
+		Claudia
+		Gladys
+		Maria
+		Rosa
+		Rowena
+		Sadie
+	}	
+	noble_last_names = {
+		Crane
+		Ross
+		Delgado
+	}
+	common_last_names={
+		Alvarez_2
+		Dagardo
+		Hill
+		Lafayet
+		Mayes
+		Piche
+		Ridge
+		Smith
+		Thompson
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+mixtec={
+	color={ 150 80 70 }
+	religion = nahuatl
+	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	male_common_first_names={
+		Agustin
+		Akbal
+		Alejandro
+		Andres
+		Antonio
+		Anibal
+		Armando
+		Bernardo
+		Carlos
+		Crescencio
+		Cristobal_2
+		Cuautehmoc
+		Diego
+		Felipe
+		Gaspar
+		Hernando
+		Hilario
+		Humberto
+		Ignacio
+		Jacinto
+		Jesus
+		Luis
+		Marcial
+		Martin_2
+		Miguel
+		Ramiro
+		Rodolfo
+		Rolando
+		Santiago
+		Yumil
+	}
+	female_common_first_names = {
+		Ana
+		Catarina
+		Concepcion
+		Cristina
+		Elvia
+		Felipa
+		Maria
+		Paula
+		Ramona
+		Rigoberta
+		Rosalina
+		Thelma
+	}	
+	noble_last_names = {
+		Ay
+		Ceel
+		Chan
+		Chi
+		Pat
+		Pec
+		Poot
+	}
+	common_last_names={
+		Ak_ab_al
+		Cal
+		Canek
+		Canul
+		Carrillo
+		Ceh
+		Chee
+		Choc
+		Coc
+		Curruchic
+		Ixquiac
+		Kan
+		Lopez
+		Manzanero
+		Mas
+		Menchu
+		Mes
+		Merida
+		Osorio
+		Pek
+		Pop
+		Puk
+		Shal
+		Sho
+		Tecu
+		Teul
+		Tuyuc
+		Xicara
+		Xiloj
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+muisca={
+	color={ 125 12 52 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group }
+	male_common_first_names={
+		Alonso
+		Brizuela
+		Comerio
+		Enriquillo
+		Guama
+		Jumacao
+		Mabey
+		Nasio
+		Ornofay
+		Pedro
+		Yaureibo
+	}
+	female_common_first_names = {
+		Anacaona
+		Barbe
+		Casiguaya
+		Ines
+		Isabel
+		Maria
+		Tinima
+		Yahima
+		Yuisa
+	}	
+	noble_last_names = {
+		Baitiquiri
+		de_Iguanama
+		Majibacoa
+		Wakanik
+	}
+	common_last_names={
+		Barreiro
+		Carrera
+		Coa
+		Guani
+		Mendez
+		Mexias
+		Nibonri
+		Torres
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+miskito = {
+	color={ 240 240 100 }
+	religion = south_american
+	traits = { indigenous_american_heritage native_mesoamerican_culture_group }
+	
+	male_common_first_names={
+		Alexander Albert
+		Bedford
+		Clarence Colvin Clement
+		Eugene
+		Francis
+		Henry
+		Isaac
+		Jonathan Jeremy
+		Lowry
+		Matthew Morton
+		Perry
+		Robin
+		Stephen Steadman Sean
+		Timothy Trelawney Thomas
+		William Wellington
+	}
+	female_common_first_names={
+		Hazel
+		Irene Inez
+		Lyndia
+		Mary
+		Rosalyn
+	}
+	male_regal_first_names = {
+		Augustus Andrew
+		Charles
+		Edward
+		Frederic
+		George
+		Jeremy
+		Peter
+		Robert 
+	}
+	female_regal_first_names = {
+		Agnes Anne
+		Frederica
+		Juliana Joanna
+		Matilda
+		Victoria
+	}
+	noble_last_names = {
+		Briton Brigales Boccaterra
+		Cuthbert Clarence
+		Hendy Hanibal Hodgson
+		MacDonald Morrison
+		Otway
+		Patterson
+	}
+	common_last_names = {
+		Armstrong
+		Cunningham
+		Dilson
+		Hall Haymond Hewlett
+		Israel
+		Johnson
+		Le_Shaw
+		McCrea
+		Newport
+		Pitts Pym
+		Robinson Rivera
+		Warren Wood Weaver
+	}
+	
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
+	color={ 52 120 25 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group }
+	
+	male_common_first_names={
+		Antonio Aurelio
+		Brigido
+		Damaso Domingo
+		Eloy Esteban Ebedimu Enes
+		Francisco
+		Geronimo Gunfuli
+		Jaime Jose
+		Marco
+		Pantaleon
+		Ramon
+		Segundo Seme_n
+		Teodoro
+		Uboni
+	}
+	female_common_first_names = {
+		Aurelia
+		Haya
+		Isani
+		Maria
+		Patricia
+		Woryi
+	}	
+	noble_last_names = {
+		Chatoyer
+		Kalina
+		Panapi
+	}
+	common_last_names={
+		Baltazar
+		Colo_n
+		Flores
+		Lorenzano Lopez
+		Martinez
+		Pae_z Palacio
+		Rivero Ramos
+		Zapata
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+afro_caribbean={
+	color= hsv{ 0.32 0.27 0.32 }
+	religion = voodoo
+	traits = { african_heritage anglophone }
+	male_common_first_names={
+		Anderson
+		Anselm
+		Arthur
+		Ben
+		Colville
+		Cuffee
+		Cyril
+		Earl
+		Edwin
+		Ellis
+		Eric
+		Geoffrey
+		George
+		Graham
+		Henry
+		Herbert
+		Hubert
+		Jeffrey
+		John
+		Josiah
+		Lennox
+		Lloyd
+		Malcolm
+		Mervyn
+		Nicholas
+		Rainford
+		Reginald
+		Robert
+		Stokely
+		William
+		Winston
+	}
+	female_common_first_names = {
+		Amy
+		Barbara
+		Carolyn
+		Christine
+		Cubah
+		Delores
+		Erna
+		Fanny
+		Hazel
+		Joanna
+		Louisa
+		Mary
+		Obeah
+		Sylvia
+		Vanessa
+		Vera
+		Violet
+	}	
+	noble_last_names = {
+		Cotton
+		Duperly
+		Eyre
+		Gordon
+		Hill
+		Jordon
+		Osborn
+		Sharpe
+	}
+	common_last_names={
+		Abbott
+		Best
+		Blaize
+		Brathwaite
+		Carmichael
+		Chambers
+		Clark
+		Douglas
+		Dymally
+		Findley
+		Goddard
+		Hall
+		Henson
+		Holder
+		James
+		Jones
+		Julian
+		Kilgour
+		Lassalle
+		Lovelace
+		McIntosh
+		Nurse
+		Perry
+		Roberts
+		Robinson
+		Shadd
+		Stollmeyer
+		Sylvester
+		Williams
+		Young
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+afro_caribeno={
+	color= hsv{ 0.33 0.45 0.32 }
+	religion = voodoo
+	traits = { african_heritage hispanophone }
+	male_common_first_names={
+		Antonio
+		Armando
+		Arsenio
+		Arturo
+		Bartolome
+		Carlos
+		Damaso
+		Enrique
+		Francisco
+		Generoso
+		Guillermo
+		Gumersindo
+		Ignacio
+		Israel
+		Jacinto
+		Jaime
+		Jose_Celso
+		Juan
+		Luciano
+		Mario
+		Maximo
+		Nelson
+		Nicolas_2
+		Orestes
+		Orlando
+		Pedro
+		Pio
+		Ramon
+		Ruben_2
+		Wifredo
+	}
+	female_common_first_names = {
+		Ana
+		Angelamaria
+		Carlota
+		Isabel
+		Josefina
+		Luz
+		Maria
+		Mercedes
+		Milagros
+		Olivia
+		Palmira
+		Paula
+		Trinidad
+		Ulpiana
+		Victoria
+	}	
+	noble_last_names = {
+		Batista
+		Colon
+		de_Gordils
+		Maceo
+		Macias
+		de_Cespedes
+		de_Merino
+		de_Rojas
+		de_la_Rosa
+		de_Ortega
+		de_la_Torre
+	}
+	common_last_names={
+		Albizu
+		Barbosa
+		Barreto
+		Bauza
+		Diaz_2
+		Egues
+		Estupinan
+		Garay
+		Gonzalez
+		Guillen
+		Gutierrez
+		Hurtado
+		Jimenez
+		Jorrin
+		Lam
+		Leyva
+		Lopez
+		Maceo
+		Morel
+		More
+		Peraza
+		Pineiro
+		Pozo
+		Perez
+		Repilado
+		Rodriguez
+		Santamaria
+		Schomburg
+		Valdes
+		Villa
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+afro_brazilian={
+	color= hsv{ 0.77 0.22 0.50 }
+	religion = catholic
+	traits = { african_heritage lusophone }
+	male_common_first_names={
+		Afonso
+		Aleixo
+		Alexandre
+		Anderson
+		Andre
+		Artur
+		Carlos
+		Candido
+		Denilson
+		Djalma
+		Francisco
+		Felix
+		Guilherme
+		Itamar
+		Joaquim
+		Jorge
+		Jose
+		Joao
+		Kleber
+		Leandro
+		Luis_2
+		Manuel
+		Marco
+		Marcos
+		Mauro
+		Mauricio
+		Nilo
+		Procopio
+		Ricardo
+		Ronaldo
+	}
+	female_common_first_names = {
+		Adelia
+		Amalia_2
+		Beatriz
+		Carmen
+		Cristina
+		Domitila
+		Emilia
+		Francisca
+		Isabel
+		Josefina
+		Julia
+		Maria
+		Mariana
+		Narcisa
+		Teresa
+		Veridiana
+		Violanta
+	}	
+	noble_last_names = {
+		Boaventura
+		de_Beaurepaire-Rohan
+		de_Braganca
+		de_Carvalho
+		de_Lima_e_Silva
+		da_Camara
+		da_Costa
+		da_Fonseca
+		de_Aguiar
+		de_Barros
+		de_Itapevi
+		de_Melo
+		de_Noronha
+		de_Oliveira
+		de_Orleans
+		de_Souza_Neto
+		de_Suruf
+		de_Castro
+		de_Alcantara
+		da_Silva_Prado
+	}
+	common_last_names={
+		Aragao
+		Assuncao
+		Bahia
+		Barbosa
+		Borges
+		Fidalgo
+		Filho
+		Gil
+		Gomes
+		Machado_de_Assis
+		Nunes
+		Oliveira
+		Otelo
+		Paim
+		Pandeiro
+		Pereira
+		Pecanha
+		Pitanga
+		Rodrigues
+		Santos
+		Silva
+		Teixeira
+		da_Lima
+		de_Cruz_e_Sousa
+		de_Lima_Barreto
+		de_Ouro
+		de_Sousa
+		de_Souza
+		dos_Reis
+		dos_Santos
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+afro_antillean={
+	color= hsv{ 0.53 0.21 0.29 }
+	religion = voodoo
+	traits = { african_heritage francophone }
+	male_common_first_names={
+		Alexis
+		Andre
+		Antoine
+		Antenor
+		Augustin
+		Balthazar
+		Beaubrun
+		Charlemagne
+		Charles
+		Cincinnatus
+		Celigny
+		Dantes
+		Demesvar
+		Denys
+		Emmanuel
+		Eugene
+		Fabre
+		Faustin
+		Florvil
+		Francois
+		Guillaume
+		Hannibal
+		Henri
+		Jacques
+		Jean
+		Jean-Baptiste
+		Jean-Louis
+		Jean_Pierre
+		Jonathas
+		Joseph
+		Louis
+		Louis-Eugene
+		Louis-Joseph
+		Lysius
+		Leon
+		Michel
+		Monpoint
+		Nissage
+		Nord
+		Oreste
+		Philippe
+		Pierre
+		Simon
+		Stenio
+		Sylvain
+		Tandrede
+		Thomas
+		Timoleon
+		Tiresias
+		Vilbrum
+	}
+	female_common_first_names = {
+		Adelina
+		Amethyste
+		Anne
+		Argentine
+		Athenais
+		Cecile
+		Celestina
+		Claire
+		Elisabeth
+		Euphemie
+		Francoise
+		Hersilie
+		Jeanne
+		Marie
+		Marie-Claire
+		Marie-Louise
+		Marie-Madeleine
+		Marie-Rose
+		Olive
+		Paulette
+		Pauline
+		Simone
+		Suzanne
+		Timemenne
+	}	
+	noble_last_names = {
+		Bonheur
+		Breda
+		Dessalines
+		Lachenais
+		Lobelot
+		Rigaud
+		Petion
+		Soulouque
+	}
+	common_last_names={
+		Alexis
+		Ardouin
+		Auguste
+		Bellegarde
+		Boisrond-Canal
+		Bonnet
+		Borno
+		Boyer
+		Brutus
+		Christophe
+		Conze
+		Dartiguenave
+		Delorme
+		Domingue
+		Firmin
+		Geffrad
+		Granville
+		Guerrier
+		Hyppolite
+		Iginac
+		Janvier
+		Jeune
+		Lafontant
+		Laleau
+		Leconte
+		Legouaze
+		Lherisson
+		Legitime
+		Leon
+		Madiou
+		Pierrot
+		Planchet
+		Price
+		Price-Mars
+		Peralte
+		Riche
+		Rigaud
+		Riviere-Herard
+		Roumain
+		Roy
+		Saget
+		Salnave
+		Salomon
+		Sam
+		Simon
+		Theodore
+		Vincent
+		Zamor
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+akan={
+	color= hsv{ 0.70 0.43 0.47}
+	religion = akom
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Agyeman
+		Akyampon
+		Amanquatia
+		Atakora
+		Kofi
+		Kwabena
+		Kwaku
+		Kwame
+		Mensa
+		Onsei
+		Opoku
+		Owusu
+	}
+	female_common_first_names = {
+		Akofa
+		Akousua
+		Kalsoume
+		Serwaa_Nyarko
+		Yaa_Akyaa
+	}	
+	noble_last_names = {
+		Asante
+		Bonoman
+		Denkyira
+		Jukwaa
+	}
+	common_last_names={
+		Asiba
+		Bonsu
+		Dua
+		Dwomo
+		Fofie
+		Karikari
+		Panyin
+		Prempeh
+		Sekyere
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+bambara={
+	color= rgb{ 160 69 58 }
+	religion = mande_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Ben
+		Bina
+		Biton
+		Bodyan
+		Do
+		Kaladian
+		Karamoko
+		Kege
+		Kuma
+		Mamari
+		Mamuru
+		Mari
+		Masala
+		Masaloma
+		Nyenemba
+		Turukoro
+		Tyefolo
+	}
+	female_common_first_names = {
+		Aissa
+		Aminata
+		Fatoumata
+		Kouta
+		Sidibe
+		Sy
+		Touty
+		Youma
+	}	
+	noble_last_names = {
+		Bari
+		Bo
+		Diallo
+		Niamody
+		Tall
+	}
+	common_last_names={
+		Bari
+		Coulibaly
+		Demba
+		Dembele
+		Dyara
+		Keryengole
+		Koro
+		Makoto
+		Mari
+		Naluma
+		Tonkomo
+		Tonmansa
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+bassa={
+	color= hsv{ 0.71 0.46 0.73 }
+	religion = akom
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names = {
+		Somayou
+		Zea
+	}
+	female_common_first_names = {
+		Mary
+	}
+	noble_last_names = {
+		Clayou
+		Gboboh
+	}
+	common_last_names = {
+		Flo
+		Penick
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+edo={
+	color= hsv{ 0.63 0.32 0.6 }
+	religion = orisa_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Adolo
+		Akenzua
+		Edegbe
+		Erediauwa
+		Esigie
+		Eweka
+		Ezoti
+		Igodo
+		Odayon
+		Ode
+		Osahon
+		Osayuki
+		Osemwende
+		Ovonramwen
+	}
+	female_common_first_names = {
+		Emose
+		Orrorro
+	}	
+	noble_last_names = {
+		Akenzua
+		Idahosa
+		Obaseki
+		Ogbemudia
+		Oshodin
+	}
+	common_last_names={
+		Akengbedo
+		Akenzua
+		Ehengbuda
+		Ewuare
+		Nogbaisi
+		Ogbebo
+		Orhogbua
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+ewe={
+	color= hsv{ 0.58 0.42 0.61 }
+	religion = akom
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Adika
+		Ametefe
+		Atsu
+		Coblah
+		Coujoe
+		Kofi
+		Komla
+		Kpodo
+		Kwakou
+		Mavuli
+		Mawwolawde
+		Mensah
+		Quaashie
+	}
+	female_common_first_names = {
+		Afua
+		Akua
+		Mawuena
+	}	
+	noble_last_names = {
+		Adadevoh
+		Baeta
+		Gbeho
+	}
+	common_last_names={
+		Abagba
+		Agidi
+		Agodo
+		Atasa
+		Avumbe
+		Butiyi
+		Diogo
+		Dumor
+		Jiagge
+		Kpengla
+		Muna
+		Nkulenu
+		Tona
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+fon={
+	color= hsv{ 0.05 0.45 0.73 }
+	religion = orisa_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Adandozan
+		Agadja
+		Agonglo
+		Behanzin
+		Ghezo
+		Glele
+		Kpengla
+		Tegbessou
+	}
+	female_common_first_names = {
+		Hangbe
+		Hwanjile
+	}	
+	noble_last_names = {
+		Agonglo
+		Aladaxonou
+		Danhome
+		Djigla
+		Guedegbe
+		Houegbadja
+	}
+	common_last_names={
+		Basagla
+		Chadakogundo
+		Madogugu
+		Zedoko
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+haratin={
+	color= hsv{ 0.95 0.39 0.78 }
+	religion = sunni
+	traits = { west_african_culture_group arab_speaking african_heritage }
+	male_common_first_names = {
+		Messaoud
+	}
+	female_common_first_names = {
+		Aicha
+		Amina
+		Batoul
+		Fadhma
+		Nadia
+		Souhila
+		Touria
+		Zina
+	}	
+	noble_last_names = {
+		al-Alawi
+		ben_Gana
+		Benaissa
+		Djellouli
+	}
+	common_last_names = {
+		Ould_Boulkheir
+		ibn_Ali
+		ibn_Yusuf
+		Sabiri
+		Sharvit
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+ibibio={
+	color= hsv{ 0.27 0.26 0.61 }
+	religion = orisa_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Agosi
+		Akpan
+		Asibong
+		Ededem
+		Edem
+		Effefiong
+		Effiom
+		Ekpenyong
+		Ekpo
+		Eyamba
+		Eyo
+		Iheme
+		Izuogu
+		Offiong
+		Okoho
+		Orok
+		Tete
+	}
+	female_common_first_names = {
+		Ifeoma
+		Nwametu
+		Obianuju
+	}	
+	noble_last_names = {
+		Mgbokpo
+		Nnubi
+		Okon
+		Okoro
+		Olumba
+		Udo_Udoma
+	}
+	common_last_names={
+		Efa
+		Ekpe
+		Ene
+		Eyamba
+		Minika
+		Nsit
+		Nta
+		Nzimiro
+		Oku
+		Ubium
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+ibo={
+	color= hsv{ 0.72 0.55 0.75 }
+	religion = orisa_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Anene
+		Azuka
+		Chiemeka
+		Dibia
+		Dumaka
+		Elechi
+		Enweleana
+		Ewenetem
+		Ikenna
+		Jideofor
+		Jiofo
+		Mgbawa
+		Nnaemeka
+		Nnamdi
+		Nnanna
+		Nonyelum
+		Obalike
+		Obijiaku
+		Oji
+		Onyeka
+		Orji
+		Olaudah
+		Rapuluchukwu
+		Taabansi
+		Udoka
+		Zebenjo
+		Zinachukwudi
+	}
+	female_common_first_names = {
+		Ahebi
+		Awkusaku
+		Chima
+		Nwaoluchi
+		Nwaozichi
+		Nwanyieze
+		Ugboaku
+	}	
+	noble_last_names = {
+		Nnofo
+		Nri
+		Onuorah
+		Ugbabe
+		Wachuku
+	}
+	common_last_names={
+		Achebe
+		Equiano
+		Onyeso
+		Opobo
+		Ohuhu
+		Udene
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+kissi={
+	color= hsv{ 0.33 0.39 0.56 }
+	religion = orisa_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Asana
+		Benya
+		Fadaka
+		Kai
+		Kourani-Sori
+		Sundiata
+		Suleimani
+	}
+	female_common_first_names = {
+		Ahebi
+		Awkusaku
+		Chima
+		Nwaoluchi
+		Nwaozichi
+		Nwanyieze
+		Ugboaku
+	}	
+	noble_last_names = {
+		Keita
+		Leno
+		Londo
+		Mara
+	}
+	common_last_names = {
+		Boakai
+		Feindouno
+		Foryoh
+		Fortu
+		Kallon
+		Solee
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+kru={
+	color= hsv{ 0.38 0.56 0.78 }
+	religion = akom
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Borforh
+		Boryee
+		Didwho
+		Forkay
+		Gbwe
+		George
+		Gyude
+		Henry
+		Jlakon
+		Konmlan
+		Nimene
+		Nyennoh
+		Odeleia
+		Pennon
+		Samuel
+		Teh
+		Tehpoe
+		Togba
+		William
+		Yenseloh
+	}
+	female_common_first_names = {
+		Antoinette
+		Fatima
+		Gloria
+		Mary
+		Musue
+		Regina
+	}	
+	noble_last_names = {
+		Twe
+	}
+	common_last_names={
+		Banguro
+		Banna
+		Bombali
+		Broh
+		Gbanka
+		Kama
+		Kanta
+		Kindo
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+bidan={
+	color= hsv{ 0.04 0.39 0.88 }
+	religion = sunni
+	traits = { arab_speaking west_african_culture_group middle_eastern_heritage }
+	male_common_first_names={
+		Abbas
+		Abu
+		Amira
+		Asim
+		Farraj
+		Galib
+		Hajib
+		Hasan
+		Hayyan
+		Ibn_Muhammad
+		Jalaf
+		Malamah
+		Mansur
+		Maymun
+		Mujahid
+		Mutarrif
+		Nasr
+		Tabit
+		Tamim
+		Tariq
+		Ubada
+		Ufayr
+		Umar
+		Wasil
+		Yazid
+		Yunus
+		Zuhayr
+	}
+	female_common_first_names = {
+		Fatima
+		Sayyida
+	}	
+	noble_last_names = {
+		Battuta
+		al-Zahrawi
+	}
+	common_last_names={
+		Bajjah
+		Firnas
+		Khaldon
+		Rushd
+		Tufail
+		Ziyad
+		Zuhr
+		al-Baitar
+		al-Idrisi
+		al-Majriti
+		al-Qalasadi
+		al-Rahman
+		al-Zarqali
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+mossi={
+	color= hsv{ 0.84 0.43 0.80 }
+	religion = mande_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Alfa
+		Ali
+		Babato
+		Bako
+		Builsa
+		Coutoucou
+		Dyori
+		Gazari
+		Karamoko
+		Kokoroko
+		Koom
+		Korongo
+		Laganfyela
+		Nyambre
+		Pintyeba
+		Sabana
+		Salma
+		Sanum
+		Sapilem
+		Tigre
+		Tyeba
+		Yamba
+		Yameogo
+		Zoungrana
+	}
+	female_common_first_names = {
+		Fatimah
+		Koudpoko
+	}	
+	noble_last_names = {
+		Kandi
+		Kwande
+		Nikki
+		Ouattara
+		Paraku
+		Wobogu
+	}
+	common_last_names={
+		Dyan
+		Hamaria
+		Hano
+		Moru
+		Ouedraogo
+		Nyandane
+		Wattara
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+senufo={
+	color= hsv{ 0.29 0.37 0.34 }
+	religion = mande_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Abdullahi
+		Aburahman
+		Ali
+		Babemba
+		Bako
+		Brahima
+		Bubakar
+		Dramani
+		Dyori
+		Famaghan
+		Karamoko
+		Kere
+		Kokoroko
+		Laganfyela
+		Magan
+		Pntyeba
+		Sabana
+		Salifu
+		Seku
+		Tyeba
+		Usman
+	}
+	female_common_first_names = {
+		Fatima
+	}	
+	noble_last_names = {
+		Ba_Traore
+	}
+	common_last_names={
+		Dyan
+		Moru
+		Wattara
+		bi_Faruku
+		bi_Hama
+		bi_Isa
+		bi_Salifu
+		bi_Saydu
+		bi_Sori
+		dan_Tyeba
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+tiv={
+	color= hsv{ 0.17 0.16 0.99 }
+	religion = orisa_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Akawe
+		Gondo
+		Makare
+		Malam
+		Orchivirigh
+	}
+	female_common_first_names = {
+		Igirgi
+	}	
+	noble_last_names = {
+		Akahan
+		Akaagerger
+		Ichongo
+		Ipusu
+	}
+	common_last_names={
+		Akperan
+		Aluor
+		Dzakpe
+		Orshi
+		Torkula
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+yoruba={
+	color= hsv{ 0.98 0.38 0.94 }
+	religion = orisa_faith
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Abisi
+		Adebo
+		Adelu
+		Ademufekun
+		Adeyemi
+		Agidigbo
+		Ajikin
+		Amodo
+		Atiba
+		Bello
+		Gbadegesin
+		Kase
+		Ladopo
+		Lauru
+		Lawani
+		Majotu
+		Makua
+		Oluewu
+		Onikepe
+		Siyanbola
+	}
+	female_common_first_names = {
+		Abibatu
+		Adebumi
+		Adesemi
+		Folashade
+		Funke
+		Idowu
+		Mulikat
+		Oluremi
+		Opo_Olu
+		Tejumade
+	}	
+	noble_last_names = {
+		Adelana
+		Ademola
+		Akinsuroju
+		Aladesanmi
+		Alakija
+		Dosunmu
+		Jadesimi
+		Mogaji
+		Ojulari
+		Ologbenla
+		Tinubu
+	}
+	common_last_names={
+		Adeniran
+		Agogoja
+		Alowolodu
+		Atobatele
+		Bezon
+		Bucknor
+		Dudu
+		Hungbo
+		Oladigbolu
+		Oyo
+		Tofa
+		Tonyon
+		Zumaw
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+bakongo={
+	color= hsv{ 0.28 0.29 0.60 }
+	religion = bantu_faith
+	traits = { central_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Garcia
+		Kenje
+		Kivuzi
+		Loembe
+		M_voudoukousala
+		M_voumbe
+		Mfutila
+		N_Gangue
+		Nteve
+		Poaty
+		Pratt
+	}
+	female_common_first_names = {
+		Beatriz
+		Isabel
+		Maria
+		Kimpa_Vita
+	}	
+	noble_last_names = {
+		Kimpanzu
+		Kinlaza
+		Mankala
+		Nobrega
+	}
+	common_last_names={
+		Lukeni
+		Ma_N_Sangou
+		Ma_Nombo
+		Matou
+		Mpanzu
+		Mvemba
+		N_Gombi
+		Nimi
+		Nsindi
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+fang={
+	color= hsv{ 0.81 0.40 0.70 }
+	religion = bantu_faith
+	traits = { central_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Channa
+		Dossou
+		Mferri
+	}	
+	noble_last_names = {
+		Badjogo
+		Bongo
+		Gonjout
+		Moukala
+		Naki
+	}
+	common_last_names={
+		Atangana
+		Kumong
+		Ndi
+		Nggam
+		Nze_Nzoughe
+		Samba
+		Tufoyn
+		Yuh
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+luba={
+	color= hsv{ 0.90 0.18 0.54 }
+	religion = bantu_faith
+	traits = { central_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Ilunga
+		Kasongo
+		Kisula
+		Kitamba
+		Kumwimba
+		Maloba
+		Maniema
+		Nday
+		Ndaye
+		Umpafu
+	}
+	female_common_first_names = {
+		Bulanda
+		Mabela
+		Tshiambuaya
+	}	
+	noble_last_names = {
+		Futa
+		Ilunga
+		Mbili
+	}
+	common_last_names={
+		Kabale
+		Kalombo
+		Konkola
+		Kukaya
+		Mande
+		Muzinga
+		Ngombe
+		Nsungu
+		Nyembo
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+lunda={
+	color= hsv{ 0.77 0.35 0.73 }
+	religion = bantu_faith
+	traits = { central_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Cakasekene
+		Cikombe
+		Cimbindu
+		Kangapu
+		Kaumba
+		Mbala
+		Mbumb
+		Mudib
+		Mulay
+		Mushidi
+		Mutand
+		Muteba
+		Nawej
+		Waranankong
+	}
+	female_common_first_names = {
+		Bulanda
+		Mabela
+		Tshiambuaya
+	}	
+	noble_last_names = {
+		Futa
+		Ilunga
+		Mbili
+	}
+	common_last_names={
+		Ditend
+		Isot
+		Kalong
+		Kamong
+		Kasang
+		Kat
+		Mukaz
+		Muteba
+		Nambing
+		Namwan
+		Naweej
+		Yaava
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+mongo={
+	color= hsv{ 0.01 0.47 67 }
+	religion = bantu_faith
+	traits = { central_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Bulanda
+		Mabela
+		Tshiambuaya
+	}	
+	noble_last_names = {
+		Bokondji
+		Bolamba
+		Bomboko
+		Kanza
+	}
+	common_last_names={
+		Bokote
+		Bolia
+		Bongandu
+		Dengese
+		Ekonda
+		Mbole
+		Nkutu
+		Ntomba
+		Sengele
+		Songomeno
+		Tetela-Kusu
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+sara={
+	color= hsv{ 0.87 0.25 0.56 }
+	religion = bori
+	traits = { central_african_culture_group african_heritage }
+	male_common_first_names={
+		Ikpiro
+		Mbomou
+		Momi
+		Nounga
+		Tikima
+		Zangabirou
+	}
+	female_common_first_names = {
+		Dadji
+		Salma
+		Zenab
+	}	
+	noble_last_names = {
+		Ngakoutou
+		Tombalbaye
+	}
+	common_last_names={
+		Djimasta
+		Moungar
+		Odingar
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+equatorial_bantu={ # Gabon + Cameroon + CAR
+	color= rgb{ 227 194 96 }
+	religion = bantu_faith
+	traits = { central_african_culture_group bantu african_heritage }
+	male_common_first_names = {
+		Bakar
+		Essomba
+		Fifen
+		Monjou
+		Ndengue
+		Ngapna
+		Ngouhouno
+		Nsangou
+		Ntsama
+		Omgba
+	}
+	female_common_first_names = {
+		Aissa
+		Assiga
+		Djaili
+		Edzimbi
+		Nizpah
+		Soukda
+	}	
+	noble_last_names = {
+		a_Doo
+		a_Ewale
+		Atangana
+		Bissogo
+		Dgijama
+		Douala
+		Njoya
+		Sankre
+	}	
+	common_last_names = {
+		Atabong
+		Beyala
+		Boum
+		Chinje
+		Fomumbod
+		Fotso
+		Ngatansou
+		Njeuma
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+fluvian_bantu = { # DRC
+	color= hsv{ 0.95 0.29 0.30 }
+	religion = bantu_faith
+	traits = { central_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Banyingela
+		Banza
+		Ilunga
+		Kalenga
+		Kisula
+		Kisempia
+		Koloso
+		Mabi
+		Mauva
+		Mosambaye
+	}
+	female_common_first_names = {
+		Katana
+		Kavidi
+		Masika
+		Moza
+		Mudima
+		Mwanakitata
+		Neema
+	}	
+	noble_last_names = {
+		Alenga
+		Bukuru
+	}
+	common_last_names={
+		Bihamba
+		Katsuva
+		Kazadi
+		Mbangu
+		Munsensa
+		Muwayi
+		Nyirambarato
+		Pongo
+		Sungilanga
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+nilotic = {
+	color= hsv{ 0.88 0.35 0.64 }
+	religion = waaqeffanna
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Adongo
+		Kimoi
+		Matayo
+		Toroitich
+		Tuitoek
+	}
+	female_common_first_names = {
+		Kabon
+		Zahra
+	}	
+	noble_last_names = {
+		arap_Chebii
+		arap_Moi
+		Cheptirim
+	}
+	common_last_names={
+		Cham
+		Garang
+		Kandie
+		Kiplagat
+		Kulei
+		Mwaita
+		ole_Tameno
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+azande={
+	color= hsv{ 0.58 0.49 0.58 }
+	religion = kushitic
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Bigomokero
+		Birhenjira
+		Kabare
+		Makome
+		Mwerve
+		Ngabwe
+		Rugema
+		Rugemaninzi
+		Rutanganda
+		Souau
+	}
+	female_common_first_names = {
+		Catarina
+	}	
+	noble_last_names = {
+		Dericoyard
+		Vungara
+	}
+	common_last_names={
+		Muhigirwa
+		Nabushi
+		Ntayitunda
+		Younga
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+baganda={
+	color= hsv{ 0.55 0.17 0.73 }
+	religion = bantu_faith
+	traits = { east_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Jjunju
+		Kabulu
+		Kagali
+		Kalema
+		Kikulwe
+		Kiweewa
+		Kyabaggo
+		Musanje
+		Mutesa
+		Mwanga
+		Namugala
+		Semakookiro
+		Terwewalwa
+	}
+	female_common_first_names = {
+		Abisagi
+		Basuuta
+		Damali
+		Esiteri
+		Gwolyoowa
+		Laakeeri
+		Loyiroosa
+		Muganzirwazzaza
+		Najjuka
+		Nakangu
+		Nakijoba
+		Nalubowa
+		Nalunga
+		Nawaguma
+		Nfambe
+		Samali
+	}	
+	noble_last_names = {
+		Abalasangeye
+		Bagalayze
+		Butiko
+		Ffumbe
+		Lugave
+	}
+	common_last_names={
+		Mmamba
+		Ndiga
+		Ngabi
+		Ngo
+		Ngonge
+		Njovu
+		Nseenene
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+dinka={
+	color= hsv{ 0.63 0.46 0.96 }
+	religion = kushitic
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Abel
+		Akex
+		Alier
+		Awino
+		Ayak
+		Bul
+		Kiir
+		Luol
+		Mach
+		Manute
+		Manyang
+		Nyankol
+		Yar
+	}
+	female_common_first_names = {
+		Ajok
+		Aluat
+		Ataui
+		Nyandeng
+	}	
+	noble_last_names = {
+		Deng
+		Zenab
+	}
+	common_last_names={
+		Ageerdit
+		Akook
+		Anyieth
+		Arol
+		Ayiec
+		Ayuel
+		Bol
+		Juuk
+		Kuai
+		Maduot
+		Malual
+		Thiik
+		Wek
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+kikuyu={
+	color= hsv{ 0.28 0.24 0.34 }
+	religion = bantu_faith
+	traits = { east_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Gacoki
+		Githinji
+		Gitonga
+		Hiuhu
+		Ikinya
+		Kanja
+		Kariuki
+		Karuri
+		Kiara
+		Kioi
+		Kirimi
+		Matu
+		Mbogo
+		Muiru
+		Mukanda
+		Murathi
+		Muriu
+		Muthengi
+		Nderitu
+		Ngengi
+		Ngigi
+		Nyamu
+		Riitho
+		Runo
+		Waitimu
+		Wamungunda
+		Wamwara
+		Warui
+	}
+	female_common_first_names = {
+		Ngina
+		Wambui
+		Wangu
+		Wawira
+	}	
+	noble_last_names = {
+		wa_Gakure
+		wa_Gathecha
+		wa_Makeri
+		wa_Ngengi
+	}
+	common_last_names={
+		Agu
+		Chege
+		Ciira
+		Cuma
+		Gathuru
+		Gitau
+		Iregi
+		Karanja
+		Kiarie
+		Kinuthia
+		Kinyanjui
+		Maina
+		Mamba
+		Manduti
+		Manjiri
+		Mathathi
+		Mbugua
+		Mwangi
+		Ndemi
+		Nganga
+		Njenga
+		Njoroge
+		Njuguna
+		Tene
+		Wairia
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+luo={
+	color=hsv{ 0.16 0.12 0.61 }
+	religion = maasai_faith
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Isingoma
+		Jaramobi
+		Odongo
+		Okeyo
+		Okoth
+		Oluoch
+		Oso
+		Othiamba
+		Waga
+		Wanyanga
+	}
+	female_common_first_names = {
+		Anyango
+		Habiba
+		Opondo
+	}	
+	noble_last_names = {
+		Adhiambo
+		Odinga
+	}
+	common_last_names={
+		Kony
+		Luwum
+		Obote
+		Oculi
+		Oneko
+		Orombi
+		Ramogi
+		p_Bitek
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+maasai={
+	color= hsv{ 0.97 0.37 0.52 }
+	religion = maasai_faith
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Kakenya
+		Kimnyole
+		Koyati
+		Lekuton
+		Lenana
+		Mbatian
+		Meitikini
+		Olemeeli
+		Parasayip
+		Segi
+		Turukat
+	}
+	female_common_first_names = {
+		Nailantei
+		Sianto
+	}	
+	noble_last_names = {
+		Arap_Koilege
+		Arap_Samoei
+	}
+	common_last_names={
+		Ole_Koyati
+		Ole_Lenana
+		Ole_Mbatian
+		Ole_Parasayip
+		Ole_Segi
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+nuer={
+	color= hsv{ 0.50 0.36 0.80 }
+	religion = kushitic
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Chol
+		Dei
+		Deng
+		Diu
+		Gai
+		Hon
+		Ngundeng
+		Nyuon
+		Ochan
+		Pal
+		Puot
+		Ruai
+		Tongyiik
+	}
+	female_common_first_names = {
+		Kabon
+		Zahra
+	}	
+	noble_last_names = {
+		arap_Chebii
+		arap_Moi
+		Bong
+	}
+	common_last_names={
+		Anya-Nya
+		Bany
+		Chotper
+		Gaach
+		Juak
+		Lieth
+		Luth
+		Nyuot
+		Top
+		Weiu
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+nuba={
+	color= hsv{ 0.63 0.47 0.83 }
+	religion = kushitic
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Ajang
+		Akoc
+		Aney
+		Awin
+		Dedunyal
+		Fadyet
+		Fafiti
+		Kodit
+		Kuikon
+		Kur
+		Kwadker
+		Muko
+		Nyadwai
+		Nyidok
+		Tyelgut
+		Wak
+		Yor
+	}
+	female_common_first_names = {
+		Kabon
+		Zahra
+	}	
+	noble_last_names = {
+		al_Suwaylih
+		El_Din
+	}
+	common_last_names={
+		wad_Ajang
+		wad_Akoc
+		wad_Akwot
+		wad_Kudit
+		wad_Kur
+		wad_Kwadker
+		wad_Nyakwac
+		wad_Nyidok
+		wad_Yor
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+ruanda={
+	color= hsv{ 0.97 0.58 0.72 }
+	religion = bantu_faith
+	traits = { east_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Dukuzumuremyi
+		Gahiji
+		Habimana
+		Hakizimana
+		Kagame
+		Kigeli
+		Nkundiushuti
+		Nyillingondo
+		Runihura
+		Rwabuguri
+		Sebahive
+		Sentwali
+		Yuhi
+	}
+	female_common_first_names = {
+		Kankazi
+		Mukashema
+		Nyiraburunga
+		Nyirakabuga
+		Nyiramakomali
+		Soraya
+	}	
+	noble_last_names = {
+		Abanyiginya
+		Hindiro
+		Nyiginya
+	}
+	common_last_names={
+		Gahindiro
+		Musinga
+		Mutara
+		Ndahindurwa
+		Rutarindwa
+		Rwogera
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+rundi={
+	color= hsv{ 0.33 0.43 0.73 }
+	religion = bantu_faith
+	traits = { east_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+		Sekawonyi
+	}
+	female_common_first_names = {
+		Inankinso
+		Niyakire
+		Ngenzahayo
+		Ririkumutima
+	}	
+	noble_last_names = {
+		Abaganwa
+		Ntwero
+	}
+	common_last_names={
+		Butama
+		Gisabo
+		Mbikije
+		Mutamo
+		Ndagushimiye
+		Rugamba
+		Rushatsi
+		Senyamwisa
+		Serushambo
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+unyamwezi={
+	color= hsv{ 0.52 0.09 0.55 }
+	religion = bantu_faith
+	traits = { east_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Jokate
+		Kajala
+		Khalila
+		Wema
+		Yobnesh
+	}	
+	noble_last_names = {
+		Kasanda
+		Watuta
+		Zwagendaba
+	}
+	common_last_names={
+		Bulungute
+		Mirambo
+		Mkasiwa
+		Mnywasele
+		Msemwa
+		Mudimbe
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+lacustrine_bantu={ # Lake Victoria + Lake Tanganyika + Lake Malawi
+	color= hsv{ 0.58 0.51 0.96 }
+	religion = bantu_faith
+	traits = { east_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Jokate
+		Kajala
+		Khalila
+		Wema
+		Yobnesh
+	}	
+	noble_last_names = {
+		Kasanda
+		Watuta
+		Zwagendaba
+	}
+	common_last_names={
+		Bulungute
+		Mirambo
+		Mkasiwa
+		Mnywasele
+		Msemwa
+		Mudimbe
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+chewa={
+	color= hsv{ 0.45 0.6 0.34 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Ambwene
+		Taonere
+		Tapiwa
+		Temwa
+	}	
+	noble_last_names = {
+		Banda
+		Chisakamzondi
+		Kalonga
+	}
+	common_last_names={
+		Chakwera
+		Kalimakudzulu
+		Malewezi
+		Mbewe
+		Mkunkhuntha
+		Msume
+		Mwale
+		Phiri
+		Tembo
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+herero={
+	color= hsv{ 0.27 0.46 0.70 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mburumba
+		Morathi
+		Musawenkosi
+		Obeth
+		Raimi
+		Razi
+		Reth
+		Vekuii 
+		Vipuakuje 
+		Samuel
+	}
+	female_common_first_names = {
+		Kovambo
+		Penehupifo
+		Neshani
+		Tsakana
+	}	
+	noble_last_names = {
+		Hoveka
+		Kambazembi
+		Maharero
+		Nguvauva
+		Rukoro
+		Tyiseseta
+		Zeraua
+	}
+	common_last_names={
+		Hakawona
+		Maharero
+		Tjavikwa
+		Tjimba
+		Witbooi
+		vaKuvale
+		vaZemba
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+khoisan={
+	color= hsv{ 0.16 0.37 0.84 }
+	religion = san_faith
+	traits = { southern_african_culture_group african_heritage }
+	male_common_first_names={
+		Aruseb
+		Autshumato
+		Gabeb
+		Gaob
+		Gorakhab
+		Hab
+		Hanab
+		Khaub
+		Khomab
+		Na-khom
+		Nanseb
+		Naresib
+		O-Naib
+		Oasib
+		Tsawub
+		Xamseb
+	}
+	female_common_first_names = {
+		Inaviposa
+		Kamboi
+		Kanuni
+		Krotoa
+		Penehupifo
+	}
+	noble_last_names = {
+		Garoeb
+		Goeseb
+		Guxanus
+	}
+	common_last_names={
+		Gamab
+		Hamab
+		Hanamab
+		Khaumab
+		Khomaa
+		Manassee
+		Nakhomab
+		O-Naimab
+		Oasmab
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+lomwe={
+	color= hsv{ 0.19 0.55 0.86 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Ambwene
+		Taonere
+		Tapiwa
+		Temwa
+	}	
+	noble_last_names = {
+		Banda
+		Chisakamzondi
+		Kalonga
+	}
+	common_last_names={
+		Bari_Bwana
+		Bwana_Mkuu
+		Camakama
+		Mugosirima
+		Muhsini
+		Musa_Quanto
+		Usufu
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+makua={
+	color= hsv{ 0.30 0.17 0.41 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Ambwene
+		Taonere
+		Tapiwa
+		Temwa
+	}	
+	noble_last_names = {
+		Banda
+		Chisakamzondi
+		Kalonga
+	}
+	common_last_names={
+		Ali_Ibrahimu
+		Marave
+		Molidi
+		Muhammad
+		Muhammad_Raja
+		Mukusedi
+		Raja
+		Umkubu_Muntu
+		Usufu
+		Uthman
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+nguni={
+	color= hsv{ 0.02 0.59 0.64 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Atepa
+		Chakoma
+		Chapwanya
+		Ebabruma
+		Fambaltate
+		Kapola
+		Kapungu
+		Kindunda
+		Kinjalla
+		Kinjikitile
+		Kiwanga
+		Magobi
+		Mahengu
+		Makhado
+		Matola
+		Mbemchapa
+		Mbulaeni 
+		Mburu
+		Mhavanginonya
+		Mputa
+		Namkina
+		Ngosingosi
+		Rinyizea
+		Rjoroza
+		Schabruma
+		Sekonyela
+		Sentambandu
+		Songea
+		Tshilidzi 
+		Uawula
+		Ulanga
+		Wasesse
+	}
+	female_common_first_names = {
+		Fulu
+		Matodzi
+		Mmanthatisi
+		Nthatisi
+		Ntlo-Kholo
+		Tsakane
+	}	
+	noble_last_names = {
+		Bakgatla
+		kaJama
+		kaLanga
+		kaXaba
+		Ntombazi
+		Vzasenzi
+	}
+	common_last_names={
+		Amari
+		Chimai
+		Farhenga
+		Hanga
+		Kwira
+		Mbano
+		Mtemi
+		Mwanawalifa
+		Ngwale
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+ovimbundu={
+	color= hsv{ 0.69 0.42 0.90 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Ciasungu
+		Cikunyu
+		Cingi
+		Ciponge
+		Hungulu
+		Kahala
+		Kakembembe
+		Kapoko
+		Kayangula
+		Kinya
+		Livonge
+		Ngelo
+		Nguvenge
+		Vilombo
+		Wambu
+	}
+	female_common_first_names = {
+		Mussasa
+		Njinga
+		Tembandumba
+	}	
+	noble_last_names = {
+		Kaza
+		Matamba
+		Mbande
+	}
+	common_last_names={
+		Cilemo
+		Cimbungu
+		Cinene
+		Hundungulu
+		Kacingangu
+		Kaneketela
+		Kanene
+		Kapusukusu
+		Kiapungo
+		Ndunduma
+		Njambayamina
+		Vasovava
+		Yale
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+sena={
+	color= rgb{ 221 206 86 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Ambwene
+		Taonere
+		Tapiwa
+		Temwa
+	}	
+	noble_last_names = {
+		Banda
+		Chisakamzondi
+		Kalonga
+	}
+	common_last_names={
+		Cimininyambo
+		Cipfumba
+		Dambamupute
+		Kandeya
+		Mutiwapangome
+		nyasoro
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+shona={
+	color= hsv{ 0.21 0.56 0.36 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Banga
+		Chinouyazue
+		Chionesu
+		Gamba
+		Goredenna
+		Mashama
+		Mboro
+		Muchaneta
+		Mwanyisa
+		Nyakambira
+		Pepukayi
+		Petiri
+		Runako
+		Sekayi
+		Sundai
+		Tichawonna
+		Tohwechipi
+		Zuka
+	}
+	female_common_first_names = {
+		Charwe
+		Danai
+		Nyamazana
+	}	
+	noble_last_names = {
+		Hungwe
+		Nzou
+		Rozwi
+		Tjilisamhulu
+		Torwa
+	}
+	common_last_names={
+		Kwenda
+		Lobengula
+		Magaya
+		Maraire
+		Mlimo
+		Muhuru
+		Mzilikazi
+		Soshangane
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+sotho={
+	color= hsv{ 0.56 0.46 0.69 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Letsie
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Arabang
+		Khalo
+		Mantsebo
+		Nomaka
+		Nthomeng
+		Senate
+	}	
+	noble_last_names = {
+		Bamokoteli
+		Masupha
+		Moshoeshoe
+		Nkoebe
+	}
+	common_last_names={
+		Leabua
+		Lerotholi
+		Mamohato
+		Masopha
+		Matsaba
+		Moerane
+		Moshoeshoe
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+tonga={
+	color= hsv{ 0.26 0.50 0.73 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Ambwene
+		Taonere
+		Tapiwa
+		Temwa
+	}	
+	noble_last_names = {
+		Banda
+		Chisakamzondi
+		Kalonga
+	}
+	common_last_names={
+		Chizimu
+		Kalagho
+		Kayuni
+		Malokotela
+		Muyila
+		Nyondo
+		Panja
+		Sibale
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+tswana={
+	color= rgb{ 192 123 31 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Baruti
+		Bathoen
+		Boipelu
+		Gaone
+		Kabelo
+		Kedikilwe
+		Kefentse
+		Khama
+		Moetapele
+		Molefi
+		Morwe
+		Mosegi
+		Mothudi
+		Mowen
+		Sebele
+		Tale
+		Thabo
+		Turnelo
+	}
+	female_common_first_names = {
+		Thandi
+		Tshepo
+	}	
+	noble_last_names = {
+		Kgosiemang
+		Mogale
+	}
+	common_last_names={
+		Bakalaka
+		Bakgalakgadi
+		Bakgatla
+		Bakwna
+		Balete
+		Bamangwato
+		Bangwaketse
+		Barolong
+		Batawana
+		Batlokwa
+		Batsapong
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+xhosa={
+	color= hsv{ 0.60 0.38 0.51 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Mthuthuzeli
+		Nolizwe
+		Nonceba
+		Paki
+		Sipliwo
+		Thandiwe
+		Themba
+		Uuka
+	}
+	female_common_first_names = {
+		Bukelwa
+		Nogaweni
+		Nolitha
+		Noloyiso
+		Nolusapho
+		Nondwe
+		Nontathu
+		Nozamile
+		Thobeka
+		Vuyiswa
+	}	
+	noble_last_names = {
+		kaGcaleka
+		kaHintsa
+		kaPhalo
+		Sigcawu
+	}
+	common_last_names={
+		Behle
+		Dlamini
+		Dosini
+		Gqunu
+		Gxarha
+		Hegebe
+		Khawatu
+		Khumalo
+		Kwayi
+		Maduna
+		Mpemvu
+		Ncuthu
+		Qadi
+		Rhadebe
+		Sikhosana
+		Xesibe
+		Zangwa
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+yao={
+	color= hsv{ 0.98 0.59 0.64 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Chekandino
+		Chikumbu
+		Chisisi
+		Citiwala
+		Kajombo
+		Kapendi
+		Linje
+		Lukongolo
+		Mapira
+		Masibuwa
+		Mbiya
+		Ndembo
+		Ngolinga
+		Ngombe
+		Thenga
+		Umi
+		Utni
+	}
+	female_common_first_names = {
+		Bukelwa
+		Nogaweni
+		Nolitha
+		Noloyiso
+		Nolusapho
+		Nondwe
+		Nontathu
+		Nozamile
+		Thobeka
+		Vuyiswa
+	}
+	noble_last_names = {
+		Banda
+		Muluzi
+	}
+	common_last_names={
+		Cimtunga
+		Gwaza_Jere
+		Hlatshwayo
+		Mgayi
+		Mmbelwa
+		Mwamba
+		Ntabeni
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+zulu={
+	color= hsv{ 0.72 0.43 0.63 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group bantu african_heritage }
+	male_common_first_names={
+		Cetshwayo
+		Dabulamanzi
+		Dingiswayo
+		Gawozi
+		Hamu
+		Hehlokazulu
+		Mahubulwana
+		Manyonyoba
+		Mavumengwana
+		Mbilini
+		Mgojana
+		Mkhosana
+		Mnyamana
+		Ntshingwayo
+		Sekethwayo
+		Sekhukhune
+		Senzagkhona
+		Sigujana
+		Sihayo
+		Sikukuni
+		Somopho
+		Zibhebhu
+	}
+	female_common_first_names = {
+		Mabamba
+		Magogo
+		Mkabayi
+		Mthaniya
+		Nandi
+		Ngqumbazi
+		Mthethwa
+		Sibusile
+	}	
+	noble_last_names = {
+		Buthelezei
+		kaDinuzulu
+		kaJama
+		kaMaphitha
+		kaNdaba
+		kaSenzangakhona
+		Sibiya
+	}
+	common_last_names={
+		Entabeni
+		KaMdlela
+		Khoza
+		kaMahole
+		kaMaphitha
+		kaMpande
+		kaMvundlana
+		kaSihayo
+		kaZikhala
+		waMswati
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+kavango_bantu={ # Angola + Namibia
+	color= hsv{ 0.1 0.29 0.60 }
+	religion = bantu_faith
+	traits = { southern_african_culture_group african_heritage bantu }
+	male_common_first_names={
+		Katuutire
+		Kongongolo
+		Ciasungu
+		Cikunyu
+		Cingi
+		Ciponge
+		Hungulu
+		Kahala
+		Kakembembe
+		Kapoko
+		Kayangula
+		Kinya
+		Livonge
+		Ngelo
+		Nguvenge
+		Vilombo
+		Wambu
+	}
+	female_common_first_names = {
+		Mussasa
+		Njinga
+		Tembandumba
+	}	
+	noble_last_names = {
+		Kaza
+		Matamba
+		Mbande
+	}
+	common_last_names={
+		Cilemo
+		Cimbungu
+		Cinene
+		Hundungulu
+		Kacingangu
+		Kaneketela
+		Kanene
+		Kapusukusu
+		Kiapungo
+		Ndunduma
+		Njambayamina
+		Vasovava
+		Yale
+		Haingura
+		Kaura
+		Mabuku
+		Mamili
+		Nyambe
+		Simbwaye
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+anglo_canadian={
+	color= hsv{ 0.22 0.22 0.45 }
+	religion = anglican
+	traits = { anglophone european_heritage }
+	male_common_first_names={
+		Albert
+		Alexander
+		Alfred
+		Angus
+		Archibald
+		Arthur
+		Charles
+		Christopher
+		Colin
+		David
+		Edmund
+		Frederick
+		George
+		Gordon
+		Hugh
+		James
+		John
+		Joseph
+		Mackenzie
+		Mark
+		Matthew
+		Michael
+		Nicholas
+		Norman
+		Patrick
+		Paul
+		Peter
+		Robert
+		Samuel
+		Simon
+		Sydney
+		Thomas
+		William
+	}
+	female_common_first_names = {
+		Agnes
+		Alice
+		Amelia
+		Anne
+		Berengera
+		Caroline
+		Charlotte
+		Clara
+		Clementina
+		Constance
+		Edith
+		Eleanor
+		Eliza
+		Ellen
+		Emily
+		Ethelwyn
+		Florence
+		Frances
+		Georgina
+		Grizelda
+		Harriet
+		Helena
+		Henriette
+		Hortense
+		Jane
+		Josephine
+		Julia
+		Katie
+		Lily
+		Louisa
+		Lucy
+		Margaret
+		Martha
+		Mary
+		Matilda
+		Pamelia
+		Pauline
+		Pearl
+		Rebecca
+		Rhoda
+		Rosanna
+		Sarah
+		Victoria
+		Virna
+	}	
+	noble_last_names = {
+		Abbott
+		Acheson
+		Bishop
+		Byng
+		Colborne
+		Hamilton-Temple-Blackwood
+		Kempt
+		Lambton
+		Lansdowne
+		Lennox
+		Lisgar
+		Lorne
+		Macdonald
+		Monck
+		Preston
+		Stanley
+		Thomson
+		Whitworth-Aylmer
+		Young
+	}
+	common_last_names={
+		Affleck
+		Armour
+		Bates
+		Beavan
+		Beckwith
+		Bernard
+		Bethune
+		Bishop
+		Blewett
+		Borden
+		Bowell
+		Bradford
+		Brown
+		Calder
+		Campbell
+		Caron
+		Churchill
+		Clark
+		Coleman
+		Conan
+		Corrigan
+		Crawford
+		Currie
+		Curzon
+		Cushing
+		Deeks
+		Dickey
+		Diggs
+		Dougall
+		Duncan
+		Field
+		Fleming
+		Garner
+		Graham
+		Guthrie
+		Harrison
+		Hayes
+		Herbert
+		Holmes
+		Hughes
+		Jennings
+		Jones
+		Katzmann
+		Kemp
+		Kennedy
+		King
+		Langton
+		Lawson
+		Lefevre
+		Leprohon
+		Mackenzie
+		MacNab
+		Maitland
+		McDonald
+		McIlwraith
+		McIsaac
+		McKellar
+		Merrick
+		Mewburn
+		Mitchell
+		Monthomery
+		Moodie
+		Morin
+		Mountcastle
+		Murray
+		Neil
+		Newhall
+		Panet
+		Parke
+		Patterson
+		Piers
+		Pope
+		Pottinger
+		Rae
+		Robertson
+		Rogers
+		Ross
+		Sedgewick
+		Shaw
+		Sheard
+		Sivell
+		Smith
+		Strong
+		Thompson
+		Tisdale
+		Tonge
+		Traill
+		Trenholme
+		Vail
+		Vining
+		Walker
+		Walshe
+		Wetherald
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+yuanzhumin={
+	color= hsv { 0.272 0.75 0.54 }
+	religion = polynesian_faith
+	traits = { polynesian_group indigenous_oceanic_heritage }
+	male_common_first_names={
+		Alizu Attun Suniuo Baqah Bokeh Kilash Maraos Mona Paelabang Pelin Rapongan Sorong Tahas Taiban Uyongu Walis WaLiSsu Yohani YuKan Yungai Toril Botel Tawu Kanas Difang
+	}
+	female_common_first_names = {
+		Giwas Mavivo Sorong Mona Tain Hulijun Sumay Kacaw Mayaw Biho Peishan Xinyi Panai Kusui Ado Kalitiang Pacidal Jiahui Gewas Mevevo Iami Igay
+	}
+	common_last_names={
+		Shiqatafu Hayung Rudao Kosang Pacidal Tuwana Ciro Kaybaybaw Isqaqavut Yatauyungana Siqeya Qaljupayare Sasala Danapan SiNan
+		SiApenKotan SiAman Ryuzo Tao Thao Palalin Kociang
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+parsi={
+	color= hsv{ 202 176 48 }
+	religion = mazdayasna
+	traits = { iranian_turanian_culture_group middle_eastern_heritage }
+	male_common_first_names={
+		Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Ahmad
+		Bahram 
+		Ebrahim Esmail 
+		Fath_Ali Fazlollah
+		Hamzeh Hasan Hossein
+		Kamran Karim
+		Nosret
+		Reza
+		Sadegh
+	}
+	female_common_first_names = {
+		Asieh
+		Bibi_Khatoom
+		Ghazaleh
+		Marjane Marsha Maryam
+		Sedigheh
+	}	
+	noble_last_names = {
+		Alamir Astarabadi Ashtiani
+		Bakhtiari
+		Farmanfarma
+		Hakimi Hedayat
+		Khalatbari 
+		Pirnia
+		Qajar
+	}
+	common_last_names={
+		Airom Ansari Ayrum
+		Buzarjomehri
+		Davallu
+		Esfahani
+		Farhani
+		Jahanbani Jamshidian
+		Kashani Khan Khuzai
+		Meshhedi
+		Nakhchevani
+		Pesyan
+		Rokni
+		Sadegh Shafaei Shahbakhti Shirazi
+		Tabrizi Tahmasebi
+		Zahedi
+	}
+	male_regal_first_names = {
+		Ahmad
+		Fath_Ali Fereydoun
+		Naser_ed-Din
+		Sultan_Hamid
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = mideast_indian
+}

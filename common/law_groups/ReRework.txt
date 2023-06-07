@@ -1,8 +1,0 @@
-﻿lawgroup_land_ownership = {
-	base_enactment_days = 120
-	law_group_category = economy
-	enactment_approval_mult = 1.5
-
-	progressive_movement_chance = 5
-	regressive_movement_chance = 0.5
-}

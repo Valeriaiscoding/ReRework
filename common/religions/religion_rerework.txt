@@ -99,6 +99,7 @@ godworshippingsociety = {
 	texture = "gfx/interface/icons/religion_icons/taiping.dds"
 	traits = {
 		christian
+		eastern
 	}
 	taboos = {
 		liquor wine opium tobacco

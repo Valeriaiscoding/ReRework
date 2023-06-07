@@ -1,0 +1,102 @@
+﻿l_english:
+
+
+# Original Faiths
+
+ catholic:0 "Catholic"
+ protestant:0 "Protestant"
+ orthodox:0 "Orthodox"
+ oriental_orthodox:1 "Oriental Orthodox"
+ sunni:0 "Sunni"
+ shiite:0 "Shiite"
+ jewish:0 "Jewish"
+ mahayana:0 "Mahayana"
+ gelugpa:0 "Gelugpa"
+ theravada:0 "Theravada"
+ hindu:0 "Hindu"
+ shinto:0 "Shinto"
+ sikh:0 "Sikh"
+ animist:0 "Animist"
+
+
+# Original Religious Traits
+
+ eastern:0 "Eastern"
+ buddhist:0 "Buddhist"
+ christian:0 "Christian"
+ muslim:0 "Muslim"
+ animist:0 "Animism"
+
+
+# New Faiths
+
+ totemism:0 "Native North American"
+ inti:0 "Inti"
+ nahuatl:0 "Nahuatl"
+ mayan_faith:0 "Mayan"
+ south_american:0 "Native South American"
+ polynesian_faith:0 "Austronesian"
+ indonesian:0 "Kepercayaan"
+ malagasy_faith:0 "Malagasy"
+ tai_faith:0 "Satsana Phi"
+ donyi_polo:0 "Indian Tribal Faith"
+ tengriism:0 "Tengriism"
+ eskaleut:0 "Eskaleut Shamanism"
+ siberian_faith:0 "Siberian Shamanism"
+ chinese_pagan:0 "Chinese Folk Religion"
+ dreamtime:0 "Alcheringa"
+ akom:0 "Akom"
+ mande_faith:0 "Mandé"
+ roogan:0 "Roog Sene"
+ orisa_faith:0 "Orisa"
+ bantu_faith:0 "Bantu Folk Religion"
+ bori:0 "Bori"
+ waaqeffanna:0 "Waaqeffanna"
+ kushitic:0 "Kushitic"
+ maasai_faith:0 "Rift Valley Folk Religion"
+ san_faith:0 "Khoisan Folk Religion"
+ suomenusko:0 "Suomenusko"
+ bon:0 "Bön"
+ mazdayasna:0 "Zoroastrian"
+ anglican:0 "Anglican"
+ mormon:0 "Mormon"
+ voodoo:0 "Vodun"
+ jain:0 "Jain"
+ taoism:0 "Taoist"
+ confucianism:0 "Confucian"
+ taiping:0 "Taiping"
+
+# New Religious Traits
+
+ new_world_native:0 "Native Amercican"
+ austronesian:0 "Austronesian"
+ african_faith:0 "African"
+ monotheist:0 "Monotheistic"
+ polytheist:0 "Polytheistic"
+ vedic:0 "Vedic"
+ shamanist:0 "Shamanist"
+ philosophical:0 "Philosophical"
+ steppe:0 "Steppe Folk Religion"
+ circumpolar:0 "Arctic Folk Religion"
+ taoic:0 "Taoic"
+ australian_faith:0 "Aboriginal"
+ australasian:0 "Australasian"
+ west_african_faith:0 "West African"
+ central_african_faith:0 "Central African"
+ east_african_faith:0 "East African"
+ kemetic_faith:0 "Kemetic"
+ south_african_faith:0 "East African"
+ europagan:0 "European Pagan"
+ east_pagan:0 "Eastern Folk Religion"
+ zoroastrian:0 "Zoroastrian"
+
+# Bonus Faiths
+
+ kemetism:0 "Kemetic"
+ hellenism:0 "Hellenic"
+
+# Bonus Religious Traits
+
+ bronze_age_faith:0 "Bronze Age Faith"
+# ReRework 
+  mesomerican:0 "Mesomerican"

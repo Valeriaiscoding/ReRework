@@ -1,0 +1,330 @@
+﻿######################
+# Cabinet of Wonders #
+# created by Lord R  #
+######################
+
+#Aosta
+AOS = {
+
+	color = { 30 30 30 }
+	
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { french north_italian }
+	
+	capital = STATE_PIEDMONT
+	
+}
+
+#Alsace-Lorraine
+FAL = {
+    color = { 216 124 136 }
+
+    country_type = recognized
+
+    tier = principality
+
+    cultures = { french }
+	
+    capital = STATE_ALSACE_LORRAINE
+}
+
+#Aquitaine
+AQT = {
+
+	color = "red_light"
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { occitan }
+	
+	capital = STATE_AQUITAINE
+	
+}
+
+#Auvergne
+AUV = {
+
+	color = { 20 90 0 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { occitan }
+	
+	capital = STATE_AUVERGNE
+	
+}
+
+#Dauphiné
+DPH = {
+
+	color = "yellow"
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { francoprovencal occitan }
+	
+	capital = STATE_DAUPHINE
+	
+}
+
+#Elsass-Lothringen
+GEL = {
+    color = { 216 124 136 }
+
+    country_type = recognized
+
+    tier = principality
+
+    cultures = { alemannic south_german }
+
+    capital = STATE_ALSACE_LORRAINE
+}
+
+#Gascogne
+GSC = {
+
+	color = "white"
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { occitan }
+	
+	capital = STATE_ARMAGNAC
+	
+}
+
+#Genoa
+GEN = {
+
+	color = "yellow"
+	
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { north_italian }
+	
+	capital = STATE_LIGURIA
+	
+}
+
+#Haute-Savoie
+HSV = {
+
+	color = { 215  225  250 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { francoprovencal north_italian }
+	
+	capital = STATE_SAVOY
+	
+}
+
+#Konstanz
+KNZ = {
+
+	color = { 50 50 50 }
+	
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { south_german }
+	
+	capital = STATE_BADEN
+	
+}
+
+#Languedoc
+LDO = {
+
+	color = { 255 100 0}
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { occitan catalan }
+	
+	capital = STATE_LANGUEDOC
+	
+}
+
+#Mulhouse
+MLH = {
+
+	color = "white"
+	
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { south_german french }
+	
+	capital = STATE_ALSACE_LORRAINE
+	
+}
+
+#Nice
+NCE = {
+
+	color = { 100 160 255 }
+	
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { north_italian }
+	
+	capital = STATE_PROVENCE
+	
+}
+
+#Ossola
+VOS = {
+
+	color = "red"
+	
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { north_italian }
+	
+	capital = STATE_PIEDMONT
+	
+}
+
+#Piedmont
+PID = {
+
+	color = { 20  20  100 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { north_italian }
+	
+	capital = STATE_PIEDMONT
+	
+}
+
+#Provence
+PRO = {
+
+	color = { 0  150  255 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { occitan french }
+	
+	capital = STATE_PROVENCE
+	
+}
+
+#Savoie
+LSV = {
+
+	color = { 80  120  255 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { francoprovencal north_italian }
+	
+	capital = STATE_SAVOY
+	
+}
+
+#Savoy
+SAV = {
+
+	color = { 235 196 231 }
+	
+	country_type = recognized
+	
+	tier = grand_principality
+	
+	cultures = { francoprovencal north_italian }
+	
+	capital = STATE_SAVOY
+	
+}
+
+#South Tyrol
+SUT = {
+
+	color = { 100 0 0}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { south_german }
+	
+	capital = STATE_SOUTH_TYROL
+	
+}
+
+#Trent
+TRT = {
+
+	color = { 40 180 0 }
+	
+	country_type = recognized
+	
+	tier = city_state
+	
+	cultures = { north_italian }
+	
+	capital = STATE_SOUTH_TYROL
+	
+}
+
+#Tyrol
+TYR = {
+
+	color = { 150 150 150 }
+	
+	country_type = recognized
+	
+	tier = grand_principality
+	
+	cultures = { south_german }
+	
+	capital = STATE_TYROL
+	
+}
+
+#Vorarlberg
+VAB = {
+
+	color = { 255  0  0 }
+	
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { south_german }
+	
+	capital = STATE_TYROL
+	
+}

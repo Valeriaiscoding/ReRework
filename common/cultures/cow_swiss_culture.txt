@@ -1,0 +1,537 @@
+﻿alemannic={
+	color= hsv{ 0.0 0.47 0.70 }
+	religion = dutch_reformed
+	traits = { german_speaking swiss european_heritage }
+	male_common_first_names={
+		Adolf cow_adrian cow_albrecht Alexander cow_alfred cow_alfons Antoine Anton cow_arnold Augustus Augusto Albert Andreas Ambros Alois
+		cow_beat Benedicht Bernhard
+		Carl Charles Christoph Christian Constant CA_sar Carl-Friedrich
+		Damian cow_david Dominik
+		cow_edmond Eduard Ernst Eugen cow_eugene Emmanuel Emil Enrico Ernst_August
+		Friedrich Franz cow_frederic Flavio Florian Franz Franz_Xaver cow_fridolin
+		Gall Gabriel Gustav Gottfried cow_gotthold Georg Gottlieb
+		Hans cow_heiner Heinrich Hermann Hugo
+		Imbert
+		Johann Jakob cow_james cow_jean_jaques Joseph Josef Johann_Baptist Johann_Konrad Johann_Peter cow_johannes cow_jonas cow_jorg Jakob_Christoph cow_jurg
+		Kajetan cow_karl Kaspar cow_kilian Klemens Konrad Konstantin
+		Leo Louis Ludwig
+		Manfred Marc cow_marcel cow_matthias Martin cow_max Melchior Moritz
+		Nazar Nikolaus
+		cow_oscar Oswald Otto
+		Paul Peter Placidus Philipp
+		cow_raphaeel cow_reto cow_richard Robert Rudolf
+		Samuel Severin Silvan cow_silvio Stephan
+		Theodor cow_thomas
+		cow_ueli Ulrich cow_urs
+		Walter cow_werner Wilhelm cow_willy Wolfgang
+		Xavier
+	}
+	female_common_first_names = {
+		cow_adele cow_amalia cow_anais cow_angela cow_anita Anna
+		Barbara cow_bertha
+		cow_celine cow_charlotte cow_clara
+		cow_elisabeth Emilie cow_emily cow_emma cow_erna cow_esther
+		cow_flurina cow_frieda
+		Gertrud Germaine
+		cow_heidi Henriette
+		cow_ida cow_iris Isabelle
+		Johanna cow_josephine Julie
+		cow_laura cow_leonie cow_louise cow_lucia Lydia
+		cow_margarethe Maria cow_marie cow_martha cow_martina cow_meta cow_minna
+		cow_rosa Rosalie cow_rosina
+		cow_selma cow_serafina cow_sophie
+		cow_therese
+		cow_verena
+	}	
+	noble_last_names = { # mostly patrician families of Bern
+		cow_a_marca cow_ab_yberg cow_abis cow_achermann_ab_ennerberg cow_am_rhyn cow_am_stad cow_aregger_von_wildensteg cow_arnold_von_spiringen cow_aspermont cow_auf_der_maur
+		cow_bavier cow_beeli cow_belmont cow_bernoulli cow_besenwal cow_bessler cow_blosch cow_bodmer cow_bonstetten cow_brugger cow_bruegger cow_brun cow_brumsi cow_burckhardt cow_burkli cow_bueler cow_buolvon_Bonstetten von_BU_ren von_Bergmann
+		cow_cabalzar cow_capol cow_caprez cow_castelberg cow_castelmur cow_caviezel cow_chiffelle cow_crivelli cow_cron
+		cow_dachselhofer von_Donatz cow_durler
+		Effinger cow_ehrenfels cow_enderlin cow_escher cow_escher_vom_glas cow_escher_vom_luchs von_Erlach
+		cow_falck cow_flisch_von_scheidt cow_frauenberg cow_frey cow_frey_herose cow_frolich von_Frisching
+		von_Graffenried cow_geiger cow_glutz cow_goldlin_von_tiefenau cow_goldschmid cow_graf cow_graviseth cow_grimm_von_wartenfels cow_gugelberg_von_moos cow_guler von_Hettlingen
+		cow_hafner cow_haldenstein cow_hegner cow_hettlinger cow_hirzel cow_holzhalb cow_hunerwadel cow_hunger cow_hunziker
+		cow_im_thurn cow_imer cow_imhof cow_in-albon cow_iselin
+		cow_jauch cow_jecklin cow_jenatsch cow_jenner cow_jochberg cow_juvalt
+		cow_kaufmann cow_keller_vom_steinbock cow_kilchsperger cow_kuon
+		cow_landenberg cow_landolt cow_latour Lentulus cow_leuw cow_liechtenhan Lombach cow_lusser cow_lussi von_Ligerz
+		cow_manuel cow_marmels May cow_mayr_von_baldegg cow_meiss cow_merian cow_meyer cow_meyer_von_knonau cow_meyer_von_schauensee cow_michel_von_schwertschwendi cow_mohr cow_montalt cow_mossu cow_mulner von_Muelinen von_Muralt
+		cow_nageli cow_necker
+		cow_oeri cow_orelli
+		cow_pestalozzi cow_peyer_im_hof cow_peyer_mit_den_wecken cow_pfyffer_von_altishofen cow_planta cow_preiswerk cow_puntener
+		cow_rascher cow_reding cow_ringg_von_baldenstein cow_ringier cow_rosenroll cow_roten cow_rothpletz cow_rudellad cow_ruhenberg von_Reding-Biberegg von_RU_pplin
+		cow_salis cow_sarasin cow_schauenstein cow_schlumberger cow_schmuziger cow_schmid_von_bellikon cow_schmid_von_der_kugel cow_schnyder_von_wartensee cow_schorsch
+		cow_schwytzer_von_Buonas cow_segesser_von_brunegg cow_senn cow_seyler cow_spengler cow_sprecher_von_bernegg cow_staehelin cow_steiger_von_rolle
+		cow_steiner cow_stockalper cow_stockar_von_neunforn cow_strauss cow_stricker cow_sulzer cow_supersaxo cow_surbeck cow_suttervon_Salis-Soglio von_Steiger von_Schorno von_Streng
+		cow_tanner cow_travers cow_troger cow_tscharner cow_thut von_Tavel von_Thurn
+		cow_ubercastel cow_unterwegen
+		cow_varnbuler cow_voitel cow_vom_staal cow_von_arx cow_von_balthasar cow_von_beroldingen von_Bonstetten cow_von_der_weid cow_von_diesbach
+		cow_von_fulach von_Graffenried cow_vischer cow_von_hallwyl cow_von_hartmann cow_von_hertenstein cow_von_kellern cow_von_kessler cow_von_luternau
+		cow_von_mandach cow_von_meyenburg cow_von_riedmatten cow_von_roll cow_von_ruttimann cow_von_spiegelberg cow_von_stokar cow_von_streng cow_von_sury cow_von_vigier cow_von_waldkirch von_Wattenwyl von_Weber
+		cow_wallier cow_weber cow_werdmuller cow_wyttenbach
+		Zehender cow_ziegler cow_zimmermann cow_zellweger cow_zollikofer_von_altenklingen cow_zumbrunnen cow_zurlauben cow_zur_gilgen cow_zurcher cow_zweyer_von_evenbach
+	}
+	common_last_names={
+		cow_abderhalden Ador Anderwert Angehrn Altwegg Aepli
+		Brenner BA_chtold Bacher BlO_sch Barblan Balmer Bodenheimer Bitzius Burren Benzinger BU_eler Bachmann Bamert Bettschart Binzegger
+		cow_baggi cow_betschart cow_blaser cow_bonetti cow_bossy cow_buchli cow_burki cow_bustelli
+		Calonder Corrodi Castell Camenzind
+		cow_disteli Deucher DA_hler Dieth Dinkelmann DU_rrenmatt DU_ggelin Dumelin
+		cow_eder cow_ehrensberger cow_emmenegger
+		Enderlin ElsA_sser Eggenschwyler Eggli Eberle Etter Egloff
+		cow_flach cow_forrer cow_frei
+		Fornerod Funk Fassbind Freyenmuth
+		cow_germann cow_gruber cow_glarner
+		cow_haldemann cow_holzherr cow_huber cow_hunsperger
+		Haab Herzog Haller HU_gelberger Henggeler Hegglin
+		Iten
+		cow_jacobi Jaggi cow_jucker
+		cow_kaser Knusel cow_kohler Kuoni Kurz KlA_y KO_nitzer KU_ndig KA_lin
+		cow_laimbacher cow_lardon cow_leu
+		Leinert Loosli Lindt Lienhard Lohner Litschi Loser Labhardt Leutenegger
+		cow_maurer cow_meier cow_meister cow_mockli cow_muller
+		Motta Munzinger Meyer Morel Marti Minder Morgenthaler Moser Mettler Moos Merz MO_rikofer
+		Naff cow_niederer cow_niklaus Nussbaumer
+		Oethiker cow_ochsenbein Ochsner
+		cow_piccard
+		cow_roschi cow_roth cow_rufenacht RA_z Ritschard Ruoss Rogenmoser Ruckstuhl Reutlinger Roth
+		cow_salzmann cow_schlapfer cow_schlatter cow_schmid cow_sempach cow_siegenthaler cow_stamm cow_stampfli cow_studer cow_stucki cow_sutter Schneider de_Staeel Siegwart-Muller Stutz Streiff StA_mpfli Stockmar Schneider Schurer SchA_r Simonin Stutzer Steinegger Styger Sidler Schwerzmann Sulzberger Scherb
+		cow_thomann cow_tommen cow_thurneysen Tschudi Tschiemer Theiler Trinkler
+		Usteri
+		cow_vogel cow_vogt ValA_r Villiger
+		cow_wanner cow_wehrli cow_wenger cow_wernli cow_wicki cow_widmer Wille Wyss Wynistorf Willi Winet Wiss
+		Zeni Zeerleder Ziltener ZU_rcher
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+francoprovencal = {
+	color= rgb{ 158 41 12 }
+	religion = catholic
+	traits = { francophone swiss european_heritage }
+
+	male_common_first_names = {
+		cow_adolphe cow_albert cow_alexandre cow_alexis cow_alphonse cow_andre cow_antoine cow_auguste AmE_dE_ AntouE_no Anjo Adrien Armand Andre
+		BarthE_lemy BernA_rd 
+		Charles cow_claude cow_charles_louisChA_rlo CE_sA_r 
+		cow_eugene Eduard E_douard E_manuE_l Ercole Ernest E_tiE_no
+		cow_francois cow_frederic Franc_E_s Felipo Fabien FE_rnand
+		cow_gerard Guillaume Gustave GaspA_r GllO_do GuelyO_mo Gabriel Gaston
+		Henri Hildebrand Hugo Hiacinte
+		cow_isaac cow_james cow_jean_francois cow_jean_jacob cow_jean_jaques cow_jean_pierre cow_jules Jian Justo JosE_t JosE_t-Marie Jules JA_que JO_rjo Jian-E_tiE_no
+		cow_lambert cow_leonard Louis Laurence LE_O_
+		cow_maurice cow_marcel cow_maximilien cow_michel Martin Michel MO_ris Marc Marius
+		NicolA_s
+		cow_oscar O_gusto
+		cow_pierre cow_pierre_elie PO_l Pierro
+		cow_raphaeelncow_raymondncow_rolin cow_richard Roberto RenE_ Rogi_E_r
+		Simon Sandro
+		cow_theodore Tom_A_s
+		Victor VA_rtiE_r
+	}
+	female_common_first_names = {
+		cow_adele cow_alice cow_aline cow_anais cow_angela Adelayida Ana
+		BE_atriz Bianca BE_rta
+		cow_camille cow_celine cow_charlotte Cristina
+		Denise
+		Emilie
+		FE_dE_rica FelibE_rta
+		Germaine GabriE_la GllO_dina Guila
+		Henriette
+		Isabelle
+		cow_josephine Julie JiA_na
+		cow_laura cow_leonie cow_louise_lucrece cow_lucia Louise LE_onora LO_ra
+		cow_marguerite cow_marie cow_marie_blanche Maria MargarE_ta
+		O_rE_lie
+		Rosalie
+		cow_sarah cow_sophie Sara
+		cow_therese
+		Yolanda
+	}
+	noble_last_names = {
+		cow_allet
+		cow_bergier cow_bugnion cow_burnat
+		cow_de_mieville cow_de_praroman cow_de_preux cow_de_pury cow_de_raemy cow_de_ratze cow_de_reynold cow_de_reyff cow_de_rich cow_de_sacconay
+		cow_de_saydor cow_de_schroeter cow_de_techtermann cow_de_tiefenthal cow_de_vevey cow_de_weck cow_de_werro cow_demont cow_du_dyn cow_du_paquier
+		cow_frey_herose
+		cow_griset_de_forel
+		cow_latour cow_lullin
+		cow_rilliet cow_rosselet-dit-charpillod
+		cow_sarasin cow_seigneux cow_socin
+		cow_voitel
+		cow_wavre
+	}
+	common_last_names = {
+		Ansermet Anthonioz Addor Aynard Ambuel Asperlin Agodino Auberjonois
+		Blavignac Berlioz Burdet Baud Balavoine Boissonnas Bret Beller Bornens Brand Bal Baizelon Berthoz Bornichet Buffat BiO_rd Blatter BurcA_rd
+		Chappuis Chappaz Combaz Choisy Christen Charvaz Catagnolaz Cattin Calliaz Chatagnat Cognac Colletaz Corchier Curtenaz Curial CO_rtecuisse Clerc Chaudet Comtesse
+		Dunant Deletraz Deruaz Ducroz Dupraz Darier Destraz Denkinger Duckert Dorz Decurninge Desgrande DiE_moz Demotz Dufour
+		Elzingre Epelly Esquillan Eigler
+		Fritz Fabri Fournier Ferrier Franchet Fumaz Fornerod Fogliardi
+		Girardin Gotteland Gaillard Goth Genequand Guillot Gonnet Gaydioz Godet Gustaz Grainez Gachet Gendre Goddet Gonod Guonoz GO_chat Guisan
+		Hugonnin Hirschgartner
+		Jaquet Jacottet Jacquier Josseron Journal Justiniani Jardinier Jost Jordan Jans Jeanjaquet Jolissaint
+		Keller
+		Lenoir Lucas Lacombe Laplace Laperiere Laravoire Lucendre LE_pine LiotA_rd
+		Morand Mugnier Martin Matossi Maystre Muller Mermillod Machard Maillet Messiez Metraz Michard Molaz Morel Mortmard Moyriaz ME_rmelyO_d
+		Nicoud Neyret
+		Ostervald
+		Pernoud Personnaz Poulin PagE_t Parenthoux Pellet Pernod Pochon
+		Quillot
+		Ronjat Riond Rivollet Roehrich Rochat Roten Ruffinen Rosand Roloz Ramuz Ruchet Ruchonnet
+		Saillet Samoens SursE_x SolA_r Sache Saunier Sermet Squilian Sonzhon
+		Thomas Tronchin Tissot Taninge Tasso Tappolet Truffier
+		Vittoz Vaucher Vulliet Vallette VeiniE_ Vincent Vionnet Viviant Voisin
+		cow_advocat #Needs to be merged at some point...
+		cow_aspermont
+		cow_bavier
+		cow_belmont
+		cow_chambrier
+		cow_chiffelle
+		cow_d_alt
+		cow_d_allinges
+		cow_d_affry
+		cow_d_amman
+		cow_d_englisberg
+		cow_d_odet
+		cow_dachselhofer
+		cow_de_bellevaux
+		cow_de_blonay
+		cow_de_boccard
+		cow_de_bourgknecht
+		cow_de_buman
+		cow_de_castella
+		cow_de_chambrier
+		cow_de_courten
+		cow_de_crousaz
+		cow_de_diesbach
+		cow_de_duens
+		cow_de_faucigny
+		cow_de_fegely
+		cow_de_gady
+		de_Gingins
+		cow_girard
+		cow_girardin
+		cow_de_gottrau
+		de_Goumoeens
+		cow_de_lanthen-heid
+		cow_de_lenzbourg
+		cow_de_maillardoz
+		cow_de_mestral
+		cow_de_meuron
+		cow_de_montenach
+		de_Prangins
+		cow_aubert
+		Chaudet
+		Comtesse
+		cow_druey
+		Dufour
+		cow_favre
+		cow_fazy
+		Guisan
+		cow_lardon
+		cow_mandrot
+		cow_meli
+		cow_meuron
+		cow_morandi
+		cow_piccard
+		cow_pictet
+		cow_pury
+		cow_rochat
+		Ruchet
+		Ruchonnet
+		cow_sandoz
+		cow_secretan
+		cow_sellon
+		de_Staeel
+		cow_viollier
+	}
+
+	ethnicities = {
+		1 = caucasian
+	}
+	graphics = european
+}
+
+ticinese={
+	color= { 57 140 75 }
+	religion = catholic
+	traits = { italophone swiss european_heritage }
+
+	obsessions = {
+		wine
+	}
+
+	male_common_first_names={
+		cow_adolfo
+		cow_agostino
+		cow_andrea
+		cow_angelo
+		cow_angiolo
+		cow_antonio
+		Augusto
+		cow_bartolomeo
+		cow_carlo
+		cow_eligio
+		Enrico
+		Flavio
+		cow_francesco
+		cow_giacobbo
+		cow_giacomo
+		cow_giorgio
+		cow_giovanni
+		Giuseppe
+		cow_lodovico
+		cow_luigi
+		cow_martino
+		cow_pascale
+		cow_pietro
+		cow_pierino
+		cow_pio
+		cow_rocco
+		cow_silvio
+		cow_simone
+		cow_stanislao
+		cow_stefano
+		cow_taddeo
+		Vincenzo
+	}
+	female_common_first_names = {
+		cow_alfonsina
+		cow_alina
+		cow_angela
+		cow_angelica
+		cow_caterina
+		cow_carolina
+		cow_elena
+		cow_giulietta
+		cow_laura
+		cow_lucia
+		Maria
+		cow_martina
+		cow_rosa
+		cow_teresa
+	}
+	noble_last_names = {
+		cow_a_marca
+		cow_bernoulli
+		cow_crivelli
+		cow_de_boccard
+		cow_florin
+		cow_orelli
+		cow_pestalozzi
+		cow_ruinelli
+		cow_scarpatetti
+		cow_stoppani
+		cow_torricelli
+		cow_visetti
+	}
+	common_last_names={
+		cow_amadio
+		cow_andreazzi
+		cow_bonetti
+		cow_bruni
+		cow_bustelli
+		cow_cantoni
+		Celio
+		cow_chiesa
+		cow_cometta
+		Cotti
+		Fogliardi
+		cow_franscini
+		cow_giacometti
+		cow_mazio
+		Motta
+		cow_paravincini
+		cow_pedrazzini
+		cow_pometta
+		cow_rusca
+		cow_scolar
+		cow_soldati
+		cow_soldini
+		cow_somazzi
+		cow_taddei
+		cow_tatti
+		cow_varrone
+		cow_veladini
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+rumantsch={
+	color= { 120 140 140 }
+	religion = protestant
+	traits = { rhaeto_romance swiss european_heritage }
+	male_common_first_names={
+		cow_adam
+		cow_alesch
+		cow_andri
+		cow_andrin
+		cow_badin
+		cow_barclamiu
+		cow_bengiamin
+		cow_bistgaun
+		cow_cassian
+		cow_chasper
+		cow_cornel
+		cow_corsin
+		cow_curdin
+		cow_dumeng
+		cow_duri
+		cow_durs
+		cow_fadri
+		cow_flurin
+		cow_giachen
+		cow_gian
+		cow_gianrico
+		cow_gieri
+		cow_gion
+		cow_giosch
+		cow_giusep
+		cow_godenzi
+		cow_hercli
+		cow_jachen
+		cow_jero
+		cow_jonin
+		cow_jori
+		cow_joeri
+		cow_jovin
+		cow_juli
+		cow_laurin
+		cow_linard
+		cow_liun
+		cow_londer
+		cow_luregn
+		cow_lurin
+		cow_maurin
+		cow_mian
+		cow_mudest
+		cow_niculin
+		cow_pirmin
+		cow_rageth
+		cow_ramon
+		cow_ramun
+		cow_rato
+		cow_reto
+		cow_rinaldo
+		cow_ruinell
+		cow_ruosch
+		cow_savin
+		cow_sereno
+		cow_silvan
+		cow_steivan
+		cow_ursin
+		cow_tschander
+		cow_tumasch
+		cow_vigeli
+		cow_viturin
+		cow_zander
+	}
+	female_common_first_names = {
+		cow_aita
+		cow_andrina
+		cow_annigna
+		cow_barlamina
+		cow_bigna
+		cow_blanka
+		cow_chatrina
+		cow_cilgia
+		cow_dorela
+		cow_emerita
+		cow_flurina
+		cow_gelgia
+		cow_gianna
+		cow_giuanna
+		cow_giulitta
+		cow_inglina
+		cow_jelscha
+		cow_jori
+		cow_juli
+		cow_ladina
+		cow_laraina
+		cow_laura
+		cow_lole
+		cow_madlaina
+		cow_mengia
+		cow_mierta
+		cow_nanina
+		cow_neisina
+		cow_nescha
+		cow_onna
+		cow_paluongia
+		cow_rosina
+		cow_serafina
+		cow_seraina
+		cow_severine
+		cow_ursina
+		cow_ursulina
+		cow_varena
+	}
+	noble_last_names = {
+		cow_buol
+		cow_castelberg
+		cow_castelmur
+		cow_caviezel
+		cow_danz
+		cow_donatz
+		cow_genatsch
+		cow_jenatsch
+		cow_planta
+		cow_prevost
+		cow_salis
+		cow_saluz
+		cow_travers
+		cow_valar
+		cow_von_porta
+		cow_von_somvig
+	}
+	common_last_names={
+		cow_barbeisch
+		cow_battalaua
+		cow_bellvatsch
+		cow_caderas
+		cow_caflisch
+		Calonder
+		cow_caluoster
+		cow_camenisch
+		cow_cantieni
+		cow_caramamma
+		cow_chandan
+		cow_condrau
+		cow_conrad
+		cow_davatz
+		cow_digaun
+		cow_faver
+		cow_fawonn
+		cow_gambalonga
+		cow_gorf
+		cow_grisenti
+		cow_gujan
+		cow_kuoni
+		cow_liver
+		cow_maissen
+		cow_palolli
+		cow_parler
+		cow_saratz
+		cow_schucan
+		cow_stuorn
+		cow_sudrell
+		cow_tognola
+		cow_tondury
+		cow_tschavoll
+		cow_tschegn
+		cow_vieli
+		cow_vincenz
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

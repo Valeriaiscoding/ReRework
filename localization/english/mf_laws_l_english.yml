@@ -1,0 +1,127 @@
+﻿l_english:
+  
+  ### Base Game Leader Ideologies
+
+  ### Religious Interest Group Ideologies
+
+   
+ ideology_zealous:0 "Zealous"
+ ideology_zealous_desc:0 "#lore This religiously dominant group believes that the tenants of their faith are the ultimate and correct way to organize a society, and wish to cement their spiritual dominance as soon as possible.#!"
+   
+ ideology_heretical:0 "Heretical"
+ ideology_heretical_desc:0 "#lore This group follows beliefs considered anathema to the doctrines which we have founded our nation on, and will fight against entrenching traditional religious powers further.#!"
+   
+ ideology_matriarchal:0 "Matriarchal"
+ ideology_matriarchal_desc:0 "#lore This group holds beliefs that turn the traditional gender heirarchy on its head, and will vigorously fight towards dismantling any sort of patriarchy that finds its way into their lands.#!"
+   
+ ideology_anti_colonial:0 "Anti-Colonial"
+ ideology_anti_colonial_desc:0 "#lore This group fears the encroachment of European settlers, and as such has been turned off of the idea of colonialism in general.#!"
+   
+ ideology_colonial_victim:0 "Colonial Victims"
+ ideology_colonial_victim_desc:0 "#lore This group has already suffered under the institution of colonialism, and will fight strenuously against furthering its suffering.#!"
+   
+ ideology_evangelist:0 "Evangelist"
+ ideology_evangelist_desc:0 "#lore This group believes that it is their holy responsibility to spread the word of their god to all corners of the globe.#!"
+   
+ ideology_pro_gender_equality:0 "Pro-Gender Equality"
+ ideology_pro_gender_equality_desc:0 "#lore This group has never truly struggled with the concept that men and women should be treated as equals, and will find themselves unconfortable with any attempts to disenfranchise women.#!"
+   
+ ideology_buddhist_piety:0 "Buddhist Piousness"
+ ideology_buddhist_piety_desc:0 "#lore This group follows the teachings of the Buddha - who notably made few claims on the subject of God(s). As such, they will quite happily coexist alongside other faiths.#!"
+   
+ ideology_east_asian_piety:0 "East Asian Piousness"
+ ideology_east_asian_piety_desc:0 "#lore This group follows the teachings of one of the many coexisting faiths and philosophies of East Asia. So long as the dominant faith is one that is familiar to them, they will have little problem tolerating their existence.#!"
+   
+ ideology_sikh_zealotry:0 "Sikh Zealotry"
+ ideology_sikh_zealotry_desc:0 "#lore This group follows the teachings of the Sikh gurus - which includes that there is no one true path to the one God, and that they must fight valiantly against oppressors.#!"
+   
+ ideology_vedic_zealotry:0 "Vedic Zealotry"
+ ideology_vedic_zealotry_desc:0 "#lore This group follows teachings derived from the ancient Vedic faith of India - as such, they are very comfortable and familiar with alternative interpretations of their own faith.#!"
+   
+ ideology_pagan_zealotry:0 "Pagan Zealotry"
+ ideology_pagan_zealotry_desc:0 "#lore This group follows a spiritual system which the more mainstream faiths would refer to as "Pagan". They yearn to enjoy spiritual right they once had long ago.#!"
+   
+ ideology_abrahamic_moralist:0 "Abrahamic Moralism"
+ ideology_abrahamic_moralist_desc:0 "#lore This group follows one of several religions that worship the God of Abraham - though they can rarely agree on much else.#!"
+   
+ ideology_american_moralist:0 "Mormon Moralism"
+ ideology_american_moralist_desc:0 "#lore This group believes that a man named Joseph Smith was led by an angel to a buried book made of golden plates which told of Jesus's time in the Americas spreading his teachings to the Native Americans.#!"
+   
+ ideology_buddhist_moralist:0 "Dharmavinaya"
+ ideology_buddhist_moralist_desc:0 "#lore This group believes that one can attain Enlightenment by following the Noble Eightfold Path laid out by the Buddha.#!"
+   
+ ideology_confucian_moralist:0 "Confucian Traditionalism"
+ ideology_confucian_moralist_desc:0 "#lore This group believes that human beings are fundamentally good, teachable, improvable, and perfectible through personal and communal endeavor.#!"
+   
+ ideology_hindu_moralist:0 "Hindu Traditionalism"
+ ideology_hindu_moralist_desc:0 "#lore This group follows teachings and practices which are largely or entirely compatible with the traditional practices of Hinduism.#!"
+ 
+ ideology_jain_moralist:0 "Jain Moralism"
+ ideology_jain_moralist_desc:0 "#lore This group believes in a doctrine of non-violence and asceticism based in Vedic traditions.#!"
+   
+ ideology_sikh_moralist:0 "Sikh Moralism"
+ ideology_sikh_moralist_desc:0 "#lore This group follows the teachings of the Sikh gurus, believing that any divisions between people are artificial and that there is no one path to reaching the one true God.#!"
+   
+ ideology_taiping_moralist:0 "Taiping Moralism"
+ ideology_taiping_moralist_desc:0 "#lore This group follows the teachings of the God-Worshipping Society and believes that the old power structures of China should be dismantled in favor of something new.#!"
+   
+ ideology_taoist_moralist:0 "Taoist Moralism"
+ ideology_taoist_moralist_desc:0 "#lore This group believes in emphasizing the virtues of non-action, spontaneity, and simplicity; as well as emphasizing the three treasures of compassion, frugality, and humility.#!"
+   
+ ideology_zoroastrianism_moralist:0 "Zoroastrian Moralism"
+ ideology_zoroastrianism_moralist_desc:0 "#lore This group believes in an eternal battle between the forces of good and evil, and believes in practicing purity in order to keep oneself from assisting the side of evil.#!"
+   
+ ideology_african_moralist:0 "African Traditionalism"
+ ideology_african_moralist_desc:0 "#lore This group follows the rituals and practices of one of Africa's many indigenous faiths - or at least a faith that models itself off of them.#!"
+   
+ ideology_kemetic_moralist:0 "Kemetic Traditionalism"
+ ideology_kemetic_moralist_desc:0 "#lore This group follows customs and teachings that would not be entirely out of place in the temples of ancient Egypt.#!"
+   
+ ideology_tapu_moralist:0 "Tapu System"
+ ideology_tapu_moralist_desc:0 "#lore This group follows a spiritual tradition where certain acts and words can end up being spiritually restricted - it is from this system that the word "taboo" was coined.#!"
+   
+ ideology_inti_moralist:0 "Inti Traditionalism"
+ ideology_inti_moralist_desc:0 "#lore This group clings to what remains of the ancient rites and practices of the Incan Empire following the arrival of the conquistadors.#!"
+   
+ ideology_new_world_moralist:0 "New World Traditionalism"
+ ideology_new_world_moralist_desc:0 "#lore This group clings to what remains of the ancient beliefs and practices of the native peoples of the Americas following the advent of European colonialism.#!"
+   
+ ideology_centroamerican_moralist:0 "Central American Traditionalism"
+ ideology_centroamerican_moralist_desc:0 "#lore This group clings to what remains of the ancient rites and practices of the native peoples of Central America following the arrival of the conquistadors.#!"
+   
+ ideology_alcheringa_moralist:0 "Alcheringa Traditionalism"
+ ideology_alcheringa_moralist_desc:0 "#lore This group clings to what remains of the ancient beliefs and practices of the native peoples of Australia following the arrival of the British colonizers.#!"
+   
+ ideology_steppe_moralist:0 "Steppe Traditionalism"
+ ideology_steppe_moralist_desc:0 "#lore This group follows one of the traditional beliefs that were once commonplace on the Eurasian steppe and its largely nomadic peoples.#!"
+   
+ ideology_tibetan_moralist:0 "Tibetan Traditionalism"
+ ideology_tibetan_moralist_desc:0 "#lore This group follows the pre-Buddhist rites and rituals of the Tibetan people.#!"
+   
+ ideology_europagan_moralist:0 "European Pagan Traditionalism"
+ ideology_europagan_moralist_desc:0 "#lore This group clings to what remains of the traditional beliefs and rituals of the pre-Christian peoples of Europe.#!"
+
+
+  ### Faith specific Ideologies
+   
+ ideology_russian_orthodox_primacy:0 "Russian Patriarchate"
+ ideology_russian_orthodox_primacy_desc:0 "#lore The Eastern Orthodox Church in Russia pushes their dogma in order to further the toiling of the brutal Russian system of serfdom.#!"
+
+
+  # new flavor ideologies
+ 
+ ideology_donyi_polo_moralist:0 "Indian Traditionalism"
+ ideology_donyi_polo_moralist_desc:0 "#lore This group believes in the traditions of the tribal faiths of India.#!"
+
+
+  # Church and State Group
+
+ law_freedom_of_conscience:0 "Doctrinal Tolerance"
+ law_freedom_of_conscience_desc:0 "The state supports a specific doctrine of its religion as the state religion but any interpretation of the same core belief system is tolerated."
+ law_freedom_of_faith:0 "Freedom of Conscience"
+ law_freedom_of_faith_desc:0 "The state has an official state religion but the people may choose what to believe. Only particularly exotic religions are discriminated against."
+  
+  # Citizenship group
+ 
+ law_lingua_franca:0 "Lingua Franca"
+ law_lingua_franca_desc:0 "While we will make no accomodations for those who cannot speak or act like us; neither the color of one's skin nor the place of one's birth shall be held against them."

@@ -1,0 +1,177 @@
+﻿l_english:
+
+### Dominant Churches ###
+ 
+ ig_voodoo:0 "Grand Ounfò"
+ ig_voodoo_desc:0 "Representing the various Ounfò of Voodoo practitioners in the nation, this loose coalition of oungan and manbo push to prioritize Voodoo practices over the old religions of their former masters."
+ 
+ ig_nahuatl:0 "Quetzalcoatlus"
+ ig_nahuatl_desc:0 "Somewhat akin to the archbishops of the Catholic Church, the Quetzalcoatlus of the Nahuatl faith keep charge of the pilgrimage centers of the faith and weild sweeping religious authority."
+ 
+ ig_mayan_faith:0 "Itzá priesthood"
+ ig_mayan_faith_desc:0 "The national priesthood who hold religious authority over the Mayan faithful in this nation."
+ 
+ ig_inti:0 "Keepers of the Huacas"
+ ig_inti_desc:0 "Largely composed of the priestly caste, the Keepers of the Huacas maintain the few ancient sacred objects that survived the ransacking of the Inca Empire by the Spanish."
+
+ ig_mazdayasna:0 "Keepers of the Sacred Flames"
+ ig_mazdayasna_desc:0 "With the highest ranking of them being focused on the Fire Temples, this coalition of Zoroastrian priests push to ensure the power of the true faith."
+
+ ig_totemism:0 "Native American Elders"
+ ig_totemism_desc:0 "Holding true to their ancestral beliefs in spite of the efforts of white colonizers, the Native American Elders push for a return to the religious ceremonies and practices of old."
+
+ ig_south_american:0 "South American Shamans"
+ ig_south_american_desc:0 "Holding true to their ancestral beliefs in spite of the efforts of white colonizers, the South American Shamans push for a return to the religious ceremonies and practices of old."
+
+ ig_tohunga_council:0 "Tohunga Council"
+ ig_tohunga_council_desc:0 "Wielders of great amounts of Mana and going by different names in different cultures, these priests of the Polynesian faith hope to enforce the Tapu system nationwide."
+
+ ig_indonesian_priesthood:0 "Indonesian Priesthood"
+ ig_indonesian_priesthood:0 "With religious practices incorporating some of the Hindu structure, the followers of the various traditional faiths of Indonesia have banded together to ensure their worship's safeguarding."
+
+ ig_keepers_of_fady:0 "Keepers of Fady"
+ ig_keepers_of_fady:0 "Safeguarders of the traditional beliefs of the Malagasy people and their system of practices and taboos, this group seeks to ensure the preeminence of their religious beliefs."
+
+ ig_mophi_council:0 "Mophi Council"
+ ig_mophi_council:0 "Priests of the Satsana Phi faith, they strive to regain a foothold in the political workings of our society."
+
+ ig_mophi_council:0 "Mophi Council"
+ ig_mophi_council:0 "Priests of the Satsana Phi faith, they strive to regain a foothold in the political workings of our society."
+
+ ig_pawo_council:0 "Pawo Council"
+ ig_pawo_council:0 "Priests of the traditional polytheistic faith of Tibet and the surrounding regions, they seek to establish their religious order as a political force."
+
+ ig_indian_tribal_council:0 "Indian Tribal Council"
+ ig_indian_tribal_council:0 "Formed from the religious leaders of communities where the majority religion is one of the non-vedic faiths of the Indian subcontinent, they seek to assert political power in our nation."
+
+ ig_shamans_of_tengri:0 "Shamans of Tengri"
+ ig_shamans_of_tengri:0 "The traditional shamans of the Turko-Mongolic peoples, the followers of Tengri seek a return to their old ways."
+
+ ig_eskaleut_shamans:0 "Eskaleut Shamans"
+ ig_eskaleut_shamans:0 "The traditional shamans of the Eskaleut peoples, they seek a return to their traditions in the social fabric."
+
+ ig_siberian_shamans:0 "Siberian Shamans"
+ ig_siberian_shamans:0 "The traditional shamans of the Siberian peoples, they seek a return to their traditions in the social fabric."
+ 
+ ig_akom:0 "Akom Elders"
+ ig_akom_desc:0 "Community elders of the traditional faith of the peoples of the eastern Ivory Coast, they lead the faithful in your nation to uphold the old ways."
+
+ ig_anglican:0 "Anglican Church"
+ ig_anglican_desc:0 "The Anglican Church was created by King Henry VIII during the Protestant Reformation. Anglicans believe that the Bible is the main authority on Christian dogma, rejecting the Pope while being less radical than other Evangelical churches."
+ 
+ ig_bantu_faith:0 "Bantu Elders"
+ ig_bantu_faith_desc:0 "Community elders of the traditional faith of the Bantu peoples, they lead the faithful in your nation to uphold the old ways."
+ 
+ ig_bon:0 "Council of Pawos"
+ ig_bon_desc:0 "Run by a priestly caste known as the Pawos, the traditional Tibetan faith of Bon has made a resurgence and hopes to position itself in the political sphere."
+ 
+ ig_bori:0 "Bori Elders"
+ ig_bori_desc:0 "Community elders of the traditional faith of the Hausa peoples, they lead the faithful in your nation to uphold the old ways."
+
+ ig_catholic:0 "Catholic Church"
+ ig_catholic_desc:0 "Catholicism is the largest sect of Christianity. Believers hold that the Archbishop of Rome, the Pope, is the uninterrupted successor to the authority of Jesus Christ via Saint Peter. Other important beliefs include veneration of the saints and of the Virgin Mary."
+
+ ig_chinese_pagan:0 "Wu Elders"
+ ig_chinese_pagan_desc:0 "The traditions of China run deeper than even its major philosophies and religions. With a resurgence of such Chinese Folk Religion, shamans of old known as Wu have gained power again in our society."
+
+ ig_confucianism:0 "Confucian Scholars"
+ ig_confucianism_desc:0 "More of a social tradition, Confucianism coexists comfortably with a multitude of faiths, but nonetheless demands social harmony and strong morals from those that follow it."
+ 
+ ig_donyi_polo:0 "Indian Elders"
+ ig_donyi_polo_desc:0 "Some few followers of the pre-vedic faiths of the Indian subcontinent still cling to their old ways, and their elders still hold great sway in their communities."
+ 
+ ig_dreamtime:0 "Alcheringa Elders"
+ ig_dreamtime_desc:0 "Community elders of the traditional faith of the natives of Australia, they fight to uphold their faith in the face of colonial exploitation."
+ 
+ ig_eskaleut:0 "Eskaleut Shamans"
+ ig_eskaleut_desc:0 "Shamans of the traditional faith of the Eskaleut people, they fight to uphold their faith in the face of colonial exploitation."
+
+ ig_gelugpa:0 "Vajrayana Monks"
+ ig_gelugpa_desc:0 "Vajrayana Buddhism is strongest in Tibet and Mongolia. It emphasizes the use of meditation and self-discipline."
+
+ ig_hindu:0 "Hindu Priesthood"
+ ig_hindu_desc:0 "Probably the oldest organized religion still in existence, Hinduism holds that breaking the cycle of reincarnation and achieving Nirvana requires adherence to a caste system whereby individuals serve a role to improve their karma, just as the many gods worshiped by Hindus serve different roles."
+
+ ig_indonesian:0 "Kepercayaan Priesthood"
+ ig_indonesian_desc:0 "A coverall term for the various traditions of the peoples of Indonesia, the followers of Kepercayaan have variously syncretised with faiths such as Hinduism over the years."
+
+ ig_jain:0 "Jain Monks"
+ ig_jain_desc:0 "A religion comprably as old as Hinduism and having grown up alongside it, Jainism is a religion that focuses on asceticism and nonviolence."
+
+ ig_jewish:0 "Rabbinical Council"
+ ig_jewish_desc:0 "The leadership of a country's Jewish populace tend to be well-educated Rabbis with strong traditions of debate and scholarship."
+ 
+ ig_kushitic:0 "Kushitic Priests"
+ ig_kushitic_desc:0 "Priests of the traditional faith of the peoples of the upper Nile, they lead the faithful in your nation to uphold the old ways."
+ 
+ ig_maasai_faith:0 "Rift Valley Elders"
+ ig_maasai_faith_desc:0 "Community elders of the traditional faith of the African Rift Valley, they lead the faithful in your nation to uphold the old ways."
+
+ ig_mahayana:0 "Mahayana Monks"
+ ig_mahayana_desc:0 "Mahayana Buddhism is strongest in China, Vietnam and Korea. It emphasizes that everyone in society should be encouraged to seek enlightenment through perfection. Mahayana sees Buddha as a God-like figure."
+
+ ig_malagasy_faith:0 "Keepers of Fady"
+ ig_malagasy_faith_desc:0 "The traditional faith of the the Malagasy people contains a number of social taboos known as Fady. Their elders hold great sway over its enforcement."
+ 
+ ig_mande_faith:0 "Council of Hogons"
+ ig_mande_faith_desc:0 "The traditional faith of the Mandé people holds religious figures known as Hogons in high positions of authority in their communities. With enough authority in your nation, they will hold sway on a national level as well."
+
+ ig_mormon:0 "Church of Jesus Christ of Latter-day Saints"
+ ig_mormon_desc:0 "Alternatively referred to as the Mormon Church, this American-born branch of Christianity believes that Jesus visited the Americas after the events of the New Testament and preached to the Native Americans of the time."
+
+ ig_oriental_orthodox:1 "Oriental Patriarchate"
+ ig_oriental_orthodox_desc:1 "The Oriental Orthodox churches tend to be Middle Eastern churches not in communion with the Pope."
+ 
+ ig_orisa_faith:0 "Orisa Priests"
+ ig_orisa_faith_desc:0 "Priests of the traditional faith of the Yoruba peoples, they lead the faithful in your nation to uphold the old ways."
+
+ ig_orthodox:0 "Eastern Patriarchate"
+ ig_orthodox_desc:0 "The Orthodox churches tend to be Eastern churches not in communion with the Pope."
+
+ ig_polynesian_faith:0 "Keepers of Tapu"
+ ig_polynesian_faith_desc:0 "The traditional faith of the the Polynesian peoples contains a number of social taboos known as Tapu. Their elders hold great sway over its enforcement."
+
+ ig_protestant:0 "Evangelical Church"
+ ig_protestant_desc:0 "The Evangelical churches were created mostly in Northern Europe during the Protestant Reformation. Evangelicals believe that the Bible is the sole authority on Christian dogma, rejecting the Pope and seeing the Catholic veneration of the saints as bordering on idolatry."
+ 
+ ig_roogan:0 "Secret Order of the Saltigue"
+ ig_roogan_desc:0 "Less an actual secret order and more of a mystery cult, this order of spiritual elders leads the religious lives of those following the traditional Roog Sene faith of the people of Senegal."
+ 
+ ig_san_faith:0 "Khoisan Elders"
+ ig_san_faith_desc:0 "Community elders of the traditional faith of the Khoisan people, they lead the faithful in your nation to uphold the old ways."
+
+ ig_shiite:1 "Shi'a Ulema"
+ ig_shiite_desc:1 "Shi'ism is the second largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his son-in-law, Ali, as opposed to the Sunni view that his uncle Abu Bakr was the legitimate successor."
+
+ ig_shinto:0 "Shinto Priests"
+ ig_shinto_desc:0 "Shintoism is a syncretic faith, combining Buddhist concepts of karma and reincarnation with worship and placation of kami, the spirits of nature and dead ancestors."
+ 
+ ig_siberian_faith:0 "Siberian Shamans"
+ ig_siberian_faith_desc:0 "Shamans of the traditional faith of the peoples of Siberia, they lead the faithful in your nation to uphold the old ways."
+
+ ig_sikh:0 "Sikh Priesthood"
+ ig_sikh_desc:0 "A relatively young religion, founded in the 16th century in Punjab, Sikhism is a monotheistic faith holding that worldly pursuits are distractions from the oneness of God."
+
+ ig_sunni:1 "Sunni Ulema"
+ ig_sunni_desc:1 "Sunnism is the largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his uncle, Abu Bakr, as opposed to the Shi'a view that his son-in-law Ali was the legitimate successor."
+ 
+ ig_suomenusko:0 "Suomenusko Shamans"
+ ig_suomenusko_desc:0 "Shamans of the traditional faith of the Finno-Ugric peoples, they lead the faithful in your nation to uphold the old ways."
+ 
+ ig_tai_faith:0 "Mophi Council"
+ ig_tai_faith_desc:0 "The traditional folk religion of the Tai peoples, Satsana Phi incorporates aspects of Buddhism alongside more traditional practices. They are led by shaman-priests known as mophi."
+
+ ig_taiping:0 "God-Worshipping Society"
+ ig_taiping_desc:0 "The God-Worshipping, or Emperor-Worshipping Society, is a syncretic Christian faith prominent amongst the Heavenly Kingdom, supporting an interpretation of Christianity that views all believers as sons and daughters of God."
+
+ ig_taoism:0 "Daoshi Order"
+ ig_taoism_desc:0 "Led by their temple keepers and priests known as the daoshi, Taoic practitioners hope to become one with the natural flow of the Dao."
+
+ ig_tengriism:0 "Tengri Shamans"
+ ig_tengriism_desc:0 "Shamans of the traditional faith of the nomadic Turkic and Mongolic peoples, they lead the faithful in your nation to uphold the old ways."
+
+ ig_theravada:0 "Theravada Monks"
+ ig_theravada_desc:0 "Theravada Buddhism is strongest in Burma, Siam, Cambodia and Ceylon. It places great emphasis on individuals seeking Nirvana to break the cycle of reincarnation. Theravada sees Buddha not as a God, but as an enlightened man who showed the rest of mankind the path to perfection."
+
+ ig_waaqeffanna:0 "Council of Wadaads"
+ ig_waaqeffanna_desc:0 "Led by a priest known as a wadaad, the traditional Waaqeffanna faith of the Orisa people believe that they can commune with spirits which serve as the intermediary between the father and creator of the universe."

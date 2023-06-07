@@ -46,7 +46,7 @@
 		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = ibadi
 				size = 158000
 			}
 			create_pop = {
@@ -60,7 +60,7 @@
 			create_pop = {
 				culture = bedouin
 				religion = sunni
-				size = 38000
+				size = 36000
 			}
 			create_pop = {
 				culture = persian
@@ -82,6 +82,11 @@
 				pop_type = slaves
 				culture = lacustrine_bantu
 				size = 9000
+			}
+			create_pop = {
+				culture = bedouin
+				religion = shiite
+				size = 2000
 			}
 		}
 	}
@@ -117,7 +122,7 @@
 		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = ibadi
 				size = 1600
 			}
 			create_pop = {
@@ -761,7 +766,12 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = kurdish
-				size = 103004
+				size = 80004
+			}
+			create_pop = {
+				culture = kurdish
+				religion = yazidism
+				size = 20300
 			}
 			create_pop = {
 				culture = assyrian
@@ -843,6 +853,7 @@
 			}
 			create_pop = {
 				culture = kurdish
+				religion = yazidism
 				size = 49600
 			}
 			create_pop = {
@@ -971,6 +982,7 @@
 			create_pop = {
 				culture = bedouin
 				size = 9300
+				religion = ibadi
 			}
 			create_pop = {
 				culture = somali

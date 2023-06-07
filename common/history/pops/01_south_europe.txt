@@ -234,18 +234,34 @@
 		region_state:CAR = {
 			create_pop = {
 				culture = spanish
-				size = 1130808
+				size = 920808
 			}
 			create_pop = {
 				culture = basque
 				size = 4000
 			}
 		}
+		# region_state:SPA = {
+		# 	create_pop = {
+		# 		culture = spanish
+		# 		size = 130202
+		# 	}
+		# }
+	}
+	s:STATE_LEON = {
 		region_state:SPA = {
 			create_pop = {
 				culture = spanish
-				size = 330808
+				size = 455404
 			}
+			
+		}
+		region_state:CAR = {
+			create_pop = {
+				culture = spanish
+				size = 255404
+			}
+			
 		}
 	}
 	s:STATE_NAVARRA = {
@@ -773,27 +789,47 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 124400
+				size = 	71964
 			}
-			create_pop = {
-				culture = bosniak
-				size = 22396
-			}
+			# create_pop = {
+			# 	culture = bosniak
+			# 	size = 22396
+			# }
 			create_pop = {
 				culture = serb
-				size = 581800
-			}
-			create_pop = {
-				culture = greek
-				size = 8000
-			}
-			create_pop = {
-				culture = albanian
-				size = 192596
+				size = 448324
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 49404
+				size = 38350
+			}
+		}
+	}
+	s:STATE_KOSOVO = {
+		region_state:TUR = {
+			create_pop = {
+				culture = turkish
+				size = 52436
+			}
+			create_pop = {
+				culture = bosniak
+				size = 29364
+			}
+			create_pop = {
+				culture = serb
+				size = 133476
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 11544
+			}
+			create_pop = {
+				culture = greek
+				size = 8032
+			}
+			create_pop = {
+				culture = albanian
+				size = 253600
 			}
 		}
 	}
@@ -838,15 +874,15 @@
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
-				size = 637592
+				size = 551592
 			}
 		}
 	}
-	s:STATE_THESSALIA = {
+	s:STATE_EPIRUS = {
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 76208
+				size = 36208
 			}
 			create_pop = {
 				culture = albanian
@@ -854,16 +890,40 @@
 			}
 			create_pop = {
 				culture = greek
-				size = 935900
-			}
-			create_pop = {
-				culture = sephardic
-				size = 3796
+				size = 235900
 			}
 			create_pop = {
 				culture = albanian
 				religion = orthodox
 				size = 104000
+			}
+		}
+		region_state:GRE = {
+			create_pop = {
+				culture = greek
+				size = 133592
+			}
+		}
+	}
+	s:STATE_THESSALIA = {
+		region_state:TUR = {
+			create_pop = {
+				culture = turkish
+				size = 40208
+			}
+			create_pop = {
+				culture = greek
+				size = 390900
+			}
+			create_pop = {
+				culture = sephardic
+				size = 3796
+			}
+		}
+		region_state:GRE = {
+			create_pop = {
+				culture = greek
+				size = 101592
 			}
 		}
 	}

@@ -1,0 +1,61 @@
+﻿l_english:
+  # State Religion Conversions
+ voodoo_decision:0 "Adopt State Voodoo"
+ voodoo_decision_desc:0 "Now that we are free of our former slave masters, it may be time to reassess our relationship with religion. Are our Christian traditions not just more chains we have been shackled to by the white man? Why not try a religion that blends the ways of Africa and the New World?"
+
+ totemism_decision:0 "Adopt Native Traditions"
+ totemism_decision_desc:0 "When the white man came to our lands, they not only took our land but forced us to adopt their foreign faith. Is it not time to return to our old traditions?"
+
+ nahuatl_decision:0 "Adopt Native Traditions"
+ nahuatl_decision_desc:0 "When the white man came to our lands, they not only took our land but forced us to adopt their foreign faith. Is it not time to return to our old traditions?"
+
+ mayan_decision:0 "Adopt Native Traditions"
+ mayan_decision_desc:0 "When the white man came to our lands, they not only took our land but forced us to adopt their foreign faith. Is it not time to return to our old traditions?"
+
+ inti_decision:0 "Adopt Native Traditions"
+ inti_decision_desc:0 "When the white man came to our lands, they not only took our land but forced us to adopt their foreign faith. Is it not time to return to our old traditions?"
+
+ hawaiian_polynesian_decision:0 "Reintroduce the Kapu System"
+ hawaiian_polynesian_decision_desc:0 "We had embraced the religion of the visitors from foreign shores to facilitate good relations, but many yearn for our old traditions still. Perhaps it is time to bring back the old ways?"
+
+ mayan_centroamerican_decision:0 "Embrace Native Traditions"
+ mayan_centroamerican_decision_desc:0 "We came here as colonizers, forcing our ways and faith upon the native peoples of this land. Perhaps though, there is value in their traditions. If we bridge the gap between our worlds, we may be able to form a society based on their values."
+
+ mayan_yucatan_decision:0 "Embrace Native Traditions"
+ mayan_yucatan_decision_desc:0 "We came here as colonizers, forcing our ways and faith upon the native peoples of this land. Perhaps though, there is value in their traditions. If we bridge the gap between our worlds, we may be able to form a society based on their values."
+
+ nahuatl_mexican_decision:0 "Embrace Native Traditions"
+ nahuatl_mexican_decision_desc:0 "We came here as colonizers, forcing our ways and faith upon the native peoples of this land. Perhaps though, there is value in their traditions. If we bridge the gap between our worlds, we may be able to form a society based on their values."
+
+ inti_spanish_decision:0 "Embrace Native Traditions"
+ inti_spanish_decision_desc:0 "We came here as colonizers, forcing our ways and faith upon the native peoples of this land. Perhaps though, there is value in their traditions. If we bridge the gap between our worlds, we may be able to form a society based on their values."
+
+ zoroastrianism_decision:0 "Return to Ahura Mazda's Light"
+ zoroastrianism_decision_desc:0 "The ancient teachings of the prophet Zoroaster were once the religion of our ancient land. Perhaps it is time to reject the new Prophet's teachings and return to our old one?"
+
+ jain_decision:0 "Embrace the Twenty-Four Tirthankaras"
+ jain_decision_desc:0 "The Jain communities of our nations preach a doctrine of incredible asceticism and non-violence. Perhaps we would be better off building a nation based on their religious principles?"
+
+ hindu_decision:0 "Embrace the Eternal Dharma"
+ hindu_decision_desc:0 "The traditional religion of the Indian continent has been that of Hinduism. Perhaps it is best if we return to the old traditions?"
+
+ donyi_polo_decision:0 "Embrace the Tribal Traditions"
+ donyi_polo_decision_desc:0 "Some of our more tribal citizens embrace some far more ancient traditions than that of Hinduism. Perhaps we should embrace their ways as a basis for our governance?"
+
+ sikh_decision:0 "Embrace the Eleven Gurus"
+ sikh_decision_desc:0 "A newer belief system has popped up in our backyard - these Sikhs preach a doctrine including a single unifying god and decrying the divisions between all mankind. Perhaps these are better principles to base our political system on?"
+
+ buddhist_indian_decision:0 "Embrace the Middle Way"
+ buddhist_indian_decision_desc:0 "The Buddhist tradition originates from India, teaching the path to enlightenment. Perhaps enlightenment is just what our government needs?"
+
+ buddhist_chinese_decision:0 "Embrace the Middle Way"
+ buddhist_chinese_decision_desc:0 "The Buddhist tradition has a storied history in China, teaching the path to enlightenment. Perhaps enlightenment is just what our government needs?"
+
+ chinese_pagan_decision:0 "Embrace the Old Ways"
+ chinese_pagan_decision_desc:0 "Our oldest ways of local gods and spirits has fallen to the wayside. Is it not time to reembrace these traditions at the state level?"
+
+ daoism_decision:0 "Embrace Wu Wei"
+ daoism_decision_desc:0 "We have lost touch with our older traditions, including the Daoist teachings. Perhaps we should reemphasize these traditions in our governance?"
+
+ confucian_decision:0 "Embrace Confucian Rites"
+ confucian_decision_desc:0 "We have lost touch with our older traditions, including the teachings of Kong Qiu which once formed a bedrock of our society. Perhaps we should reemphasize these traditions in our governance?"

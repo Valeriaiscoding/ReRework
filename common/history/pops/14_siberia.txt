@@ -43,7 +43,7 @@
 			}
 			create_pop = {
 				culture = tatar
-				religion = animist
+				religion = tengriism
 				size = 24000
 			}
 			create_pop = {
@@ -312,7 +312,12 @@
 			}
 			create_pop = {
 				culture = mongol
-				size = 36000
+				size = 30000
+				religion = tengriism
+			}
+			create_pop = {
+				culture = mongol
+				size = 6000
 			}
 			create_pop = {
 				culture = siberian
@@ -329,7 +334,13 @@
 			}
 			create_pop = {
 				culture = mongol
-				size = 66004
+				size = 40004
+	
+			}
+			create_pop = {
+				culture = mongol
+				size = 26000
+				religion = tengriism
 			}
 			create_pop = {
 				culture = siberian
@@ -346,7 +357,12 @@
 			}
 			create_pop = {
 				culture = mongol
-				size = 50004
+				size = 30004
+			}
+			create_pop = {
+				culture = mongol
+				size = 20000
+				religion = tengriism
 			}
 			create_pop = {
 				culture = siberian

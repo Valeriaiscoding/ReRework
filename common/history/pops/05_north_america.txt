@@ -48,7 +48,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = afro_antillean
-				religion = catholic
+				religion = voodoo
 				size = 16000
 			}
 		}
@@ -57,7 +57,12 @@
 		region_state:USA = {
 			create_pop = {
 				culture = yankee
-				size = 2135000
+				size = 2112000
+			}
+			create_pop = {
+				culture = yankee
+				religion = mormonism
+				size = 23000
 			}
 			create_pop = {
 				culture = yankee
@@ -79,7 +84,12 @@
 			}
 			create_pop = {
 				culture = iroquoian
-				size = 8000
+				size = 3500
+			}
+			create_pop = {
+				culture = iroquoian
+				religion = protestant
+				size = 4500
 			}
 		}
 	}
@@ -179,7 +189,7 @@
 		region_state:MEX = {
 			create_pop = {
 				culture = siouan
-				size = 1200
+				size = 2000
 			}
 			create_pop = {
 				culture = mexican
@@ -410,7 +420,12 @@
 			}
 			create_pop = {
 				culture = cherokee
-				size = 30136
+				religion = protestant
+				size = 10136
+			}
+			create_pop = {
+				culture = cherokee
+				size = 20000
 			}
 		}
 	}
@@ -423,8 +438,14 @@
 			}
 			create_pop = {
 				culture = dixie
-				size = 138666
+				size = 109666
 			}
+			create_pop = {
+				culture = dixie
+				religion = mormonism
+				size = 29000
+			}
+				
 			create_pop = {
 				culture = pennsyldutch
 				religion = anabaptist
@@ -432,7 +453,12 @@
 			}
 			create_pop = {
 				culture = midwestern
-				size = 165204
+				size = 153204
+			}
+			create_pop = {
+				culture = midwestern
+				religion = mormonism
+				size = 12000
 			}
 			create_pop = {
 				culture = dixie
@@ -458,12 +484,17 @@
 		region_state:USA = {
 			create_pop = {
 				culture = algonquian
-				size = 12000
+				size = 8000
+			}
+			create_pop = {
+				culture = algonquian
+				religion = protestant
+				size = 4000
 			}
 			create_pop = {
 				culture = dakota
 				size = 8000
-		}
+			}
 			create_pop = {
 				culture = midwestern
 				size = 23992
@@ -473,7 +504,7 @@
 				culture = algonquian
 				size = 16000
 			}
-		}
+			}
 		region_state:LKT = {
 			create_pop = {
 				culture = dakota
@@ -481,7 +512,7 @@
 			}
 		}
 	
-}
+	}
 
 
 	s:STATE_MINNESOTA = {
@@ -515,7 +546,12 @@
 		region_state:USA = {
 			create_pop = {
 				culture = midwestern
-				size = 631504
+				size = 614504
+			}
+			create_pop = {
+				culture = yankee
+				religion = mormonism
+				size = 17000
 			}
 			create_pop = {
 				culture = irish
@@ -540,7 +576,17 @@
 			}
 			create_pop = {
 				culture = algonquian
-				size = 12000
+				size = 7000
+			}
+			create_pop = {
+				culture = algonquian
+				religion = catholic
+				size = 3000
+			}
+			create_pop = {
+				culture = algonquian
+				religion = protestant
+				size = 2000
 			}
 			create_pop = {
 				culture = siouan
@@ -561,7 +607,12 @@
 		region_state:USA = {
 			create_pop = {
 				culture = midwestern
-				size = 1092200
+				size = 1017200
+			}
+			create_pop = {
+				culture = midwestern
+				religion = mormonism
+				size = 75000
 			}
 			create_pop = {
 				culture = afro_american
@@ -636,6 +687,7 @@
 			}
 			create_pop = {
 				culture = cherokee
+				religion = protestant
 				size = 2528 # 1835 Cherokee Census "Henderson Roll"
 			}
 		}
@@ -679,6 +731,7 @@
 			}
 			create_pop = {
 				culture = cherokee
+				religion = protestant
 				size = 1424 # 1835 Cherokee Census "Henderson Roll"
 			}
 			create_pop = {
@@ -806,7 +859,12 @@
 		region_state:USA = {
 			create_pop = {
 				culture = yankee
-				size = 1200000
+				size = 1150000
+			}
+			create_pop = {
+				culture = yankee
+				religion = mormonism
+				size = 50000
 			}
 			create_pop = {
 				culture = pennsyldutch
@@ -853,7 +911,12 @@
 		region_state:USA = {
 			create_pop = {
 				culture = midwestern
-				size = 452400
+				size = 424400
+			}
+			create_pop = {
+				culture = midwestern
+				religion = mormonism
+				size = 28000
 			}
 			create_pop = {
 				culture = pennsyldutch
@@ -965,6 +1028,7 @@
 			}
 			create_pop = {
 				culture = cherokee
+				religion = protestant
 				size = 3644 # 1835 Cherokee Census "Henderson Roll"
 			}
 		}
@@ -1014,6 +1078,7 @@
 			}
 			create_pop = {
 				culture = cherokee
+				religion = protestant
 				size = 6960
 			}
 			create_pop = {
@@ -1054,7 +1119,11 @@
 			create_pop = {
 				culture = hawaiian
 				religion = protestant
-				size = 132304
+				size = 29104
+			}
+			create_pop = {
+				culture = hawaiian
+				size = 103200
 			}
 			create_pop = {
 				culture = hawaiian
@@ -1071,7 +1140,12 @@
 		region_state:ONT = {
 			create_pop = {
 				culture = anglo_canadian
-				size = 366792
+				size = 260092
+			}
+			create_pop = {
+				culture = anglo_canadian
+				religion = protestant
+				size = 106700
 			}
 			create_pop = {
 				culture = cree
@@ -1083,7 +1157,12 @@
 			}
 			create_pop = {
 				culture = iroquoian
-				size = 3902
+				size = 3000
+			}
+			create_pop = {
+				culture = iroquoian
+				religion = catholic
+				size = 902
 			}
 			create_pop = {
 				culture = algonquian
@@ -1106,7 +1185,12 @@
 			}
 			create_pop = {
 				culture = anglo_canadian
-				size = 12000
+				size = 9500
+			}
+			create_pop = {
+				culture = anglo_canadian
+				religion = protestant
+				size = 3500
 			}
 			create_pop = {
 				culture = cree
@@ -1119,7 +1203,12 @@
 		region_state:NBS = {
 			create_pop = {
 				culture = anglo_canadian
-				size = 65990
+				size = 53660
+			}
+			create_pop = {
+				culture = anglo_canadian
+				religion = protestant
+				size = 12330
 			}
 			create_pop = {
 				culture = afro_american
@@ -1134,7 +1223,12 @@
 		region_state:NVS = {
 			create_pop = {
 				culture = anglo_canadian
-				size = 196573
+				size = 111503
+			}
+			create_pop = {
+				culture = anglo_canadian
+				religion = protestant
+				size = 85070
 			}
 			create_pop = {
 				culture = afro_american
@@ -1188,7 +1282,12 @@
 			}
 			create_pop = {
 				culture = anglo_canadian
-				size = 46000
+				size = 30096
+			}
+			create_pop = {
+				culture = anglo_canadian
+				religion = protestant
+				size = 9900
 			}
 		}
 	}
@@ -1247,6 +1346,10 @@
 	s:STATE_SASKATCHEWAN = {
 		region_state:HBC = {
 			create_pop = {
+				culture = anglo_canadian
+				size = 3000
+			}			
+			create_pop = {
 				culture = siouan
 				size = 4200
 			}
@@ -1270,7 +1373,12 @@
 		region_state:HBC = {
 			create_pop = {
 				culture = anglo_canadian
-				size = 14848
+				size = 10048
+			}	
+			create_pop = {
+				culture = anglo_canadian
+				religion = protestant
+				size = 4800
 			}		
 			create_pop = {
 				culture = siouan
@@ -1329,7 +1437,12 @@
 			}
 			create_pop = {
 				culture = afro_caribbean
-				size = 12352
+				religion = protestant
+				size = 10052
+			}
+			create_pop = {
+				culture = afro_caribbean
+				size = 2300
 			}
 		}
 	}
@@ -1519,6 +1632,7 @@
 			}
 			create_pop = {
 				culture = afro_caribeno
+				religion = catholic
 				size = 6000
 			}
 		}
@@ -1543,6 +1657,7 @@
 			}
 			create_pop = {
 				culture = afro_caribeno
+				religion = catholic
 				size = 800
 			}
 		}
@@ -1559,6 +1674,7 @@
 			}
 			create_pop = {
 				culture = afro_caribeno
+				religion = catholic
 				size = 1100
 			}
 		}
@@ -1575,14 +1691,25 @@
 			}
 			create_pop = {
 				culture = nahua
-				size = 266461
+				religion = catholic
+				size = 200000
+			}
+			create_pop = {
+				culture = nahua
+				size = 66461
 			}
 			create_pop = {
 				culture = tarascan
-				size = 85162
+				religion = catholic
+				size = 70000
+			}
+			create_pop = {
+				culture = tarascan
+				size = 15162
 			}
 			create_pop = {
 				culture = afro_caribeno
+				religion = catholic
 				size = 3801
 			}
 		}
@@ -1599,10 +1726,16 @@
 			}
 			create_pop = {
 				culture = mayan
-				size = 388804
+				size = 88804
+			}
+			create_pop = {
+				culture = mayan
+				religion = catholic
+				size = 300000
 			}
 			create_pop = {
 				culture = afro_caribeno
+				religion = catholic
 				size = 1400
 			}
 		}
@@ -1620,19 +1753,38 @@
 			create_pop = {
 				culture = mixtec
 				religion = catholic
-				size = 39996
+				size = 30000
+			}
+			create_pop = {
+				culture = mixtec
+				size = 9996
 			}
 			create_pop = {
 				culture = nahua
-				size = 689604
+				religion = catholic
+				size = 600000
+			}
+			create_pop = {
+				culture = nahua
+				size = 89604
 			}
 			create_pop = {
 				culture = zapotec
-				size = 264004
+				religion = catholic
+				size = 200000
+			}
+			create_pop = {
+				culture = zapotec
+				size = 64004
 			}
 			create_pop = {
 				culture = afro_caribeno
-				size = 54000
+				religion = catholic
+				size = 50000
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 4000
 			}
 		}
 	}
@@ -1647,19 +1799,39 @@
 			}
 			create_pop = {
 				culture = zapotec
-				size = 13183
+				size = 3183
+			}
+			create_pop = {
+				culture = zapotec
+				religion = catholic
+				size = 10000
 			}
 			create_pop = {
 				culture = tarascan
-				size = 60846
+				size = 20000
+			}
+			create_pop = {
+				culture = tarascan
+				religion = catholic
+				size = 40846
 			}
 			create_pop = {
 				culture = nahua
-				size = 27381
+				size = 7381
+			}
+			create_pop = {
+				culture = nahua
+				religion = catholic
+				size = 20000
 			}
 			create_pop = {
 				culture = afro_caribeno
-				size = 15036
+				religion = catholic
+				size = 12000
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 3036
 			}
 		}
 	}
@@ -1671,19 +1843,39 @@
 			}
 			create_pop = {
 				culture = zapotec
-				size = 40532
+				religion = catholic
+				size = 30532
+			}
+			create_pop = {
+				culture = zapotec
+				size = 10000
 			}
 			create_pop = {
 				culture = tarascan
-				size = 187073
+				religion = catholic
+				size = 100000
+			}
+			create_pop = {
+				culture = tarascan
+				size = 87073
 			}
 			create_pop = {
 				culture = nahua
-				size = 84182
+				religion = catholic
+				size = 70000
+			}
+			create_pop = {
+				culture = nahua
+				size = 14182
 			}
 			create_pop = {
 				culture = afro_caribeno
-				size = 23984
+				religion = catholic
+				size = 18084
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 5900
 			}
 		}
 	}
@@ -1720,7 +1912,12 @@
 			}
 			create_pop = {
 				culture = nahua
-				size = 175961
+				size = 45961
+			}
+			create_pop = {
+				culture = nahua
+				religion = catholic
+				size = 130000
 			}
 		}
 	}
@@ -1748,7 +1945,12 @@
 			}
 			create_pop = {
 				culture = mayan
-				size = 9251
+				size = 2000
+			}
+			create_pop = {
+				culture = mayan
+				religion = catholic
+				size = 7251
 			}
 		}
 	}
@@ -1764,6 +1966,7 @@
 			}
 			create_pop = {
 				culture = afro_caribeno
+				religion = catholic
 				size = 1300
 			}
 		}
